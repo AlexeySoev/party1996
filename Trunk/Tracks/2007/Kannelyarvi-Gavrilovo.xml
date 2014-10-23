@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+
+	<PageHead Title="Велопробег Каннельярви - Гаврилово"></PageHead>
+
+	<PageBody SnakeText="">
+		<PageElement>
+			<MainMenu />
+		</PageElement>
+		<PageElement>
+			<Chapter Title="Велопробег Каннельярви - Гаврилово"></Chapter>
+		</PageElement>
+	</PageBody>
+
+	<GPSTrackFrame>
+		<GPSTrackLink Title="Kannelyarvi - Gavrilovo" TrackFile="gpsdata/Kannelyarvi-Gavrilovo.gpx.xml"></GPSTrackLink>
+	</GPSTrackFrame>
+
+</PageTemplate>
+
+
+
+

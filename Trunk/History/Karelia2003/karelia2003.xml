@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Карелия 2003"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Карелия 2003">
+		<Line><Emphasize>Продолжительность: </Emphasize>27 Июля - 9 Августа - 16 Августа 2003 года.</Line>
+		<Line><Emphasize>Район: </Emphasize>Республика Карелия</Line>
+		<Line><Emphasize>Маршрут: </Emphasize>С-Петербург - Медвежьегорск - Кижи - Петрозаводск - водопад Кивач - Сортавала - Кузнечное</Line>
+		<Line><Emphasize>Участники: </Emphasize>Соев, Женя, Николаич, Ваня Тарасов</Line>
+		<Line><Emphasize>Маршрут (часть 2): </Emphasize>Кузнечное - ладожские шхеры и острова - Валаам - ладожские шхеры и острова - Кузнечное</Line>
+		<Line><Emphasize>Участники (часть 2): </Emphasize>Я и мои коллеги по фирме STAR</Line>
+		
+		<Paragraph>
+		<Line><Link Url="../../Album/Karelia2003/index.xml">Фотоальбом</Link></Line>
+		<Line><Link Url="../../Tracks/2003/Karelia/Karelia.xml">GPS треки</Link></Line>
+		</Paragraph>
+		
+		</Chapter></PageElement>
+	</PageBody>
+</PageTemplate>
+
+

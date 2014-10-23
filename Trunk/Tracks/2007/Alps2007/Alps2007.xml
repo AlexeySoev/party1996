@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	
+	<PageHead Title="Альпы 2007"></PageHead>
+	
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Альпы 2007"></Chapter></PageElement>
+	</PageBody>
+		
+	<GPSTrackFrame>
+		<GPSTrackLink Title="Flight SPb - Paris" TrackFile="gpsdata/01-FlightSPb-Paris26.01.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Paris 1 day" TrackFile="gpsdata/02-Pariswalk126.01.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Megeve walk" TrackFile="gpsdata/03-Megevewalk27.01.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Megeve 1 day" TrackFile="gpsdata/04-Megeve1day28.01.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Megeve 2 day" TrackFile="gpsdata/05-Megeve2day29.01.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Megeve 3 day" TrackFile="gpsdata/06-Megeve3day30.01.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Megeve 4 day" TrackFile="gpsdata/07-Megeve4day31.01.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Megeve 5 day" TrackFile="gpsdata/08-Megeve5day01.02.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Megeve 6 day" TrackFile="gpsdata/09-Megeve6day02.02.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Bus Megeve - Chamonix" TrackFile="gpsdata/10-MovingMegeve-Chamonix03.02.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Chamonix 1 day - Le Tour" TrackFile="gpsdata/11-Chamonix1day-LeTour04.02.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Chamonix 2 day - Brevent" TrackFile="gpsdata/12-Chamonix2day-Brevent05.02.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Chamonix 3 day - Courmayeur" TrackFile="gpsdata/13-Chamonix3day-Courmayeur06.02.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Chamonix 4 day - Grands Montets" TrackFile="gpsdata/14-Chamonix4day-GrandsMontets07.02.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Chamonix 5 day - Les Houches" TrackFile="gpsdata/15-Chamonix5day-LesHouches08.02.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Chamonix 6 day - Vallee Blanche" TrackFile="gpsdata/16-Chamonix6day-ValleeBlanche09.02.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Paris 2 day" TrackFile="gpsdata/17-Pariswalk210.02.07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Flight Paris - SPb" TrackFile="gpsdata/18-FlightParis-SPb11.02.07.xml"></GPSTrackLink>
+	</GPSTrackFrame>
+	
+</PageTemplate>
+

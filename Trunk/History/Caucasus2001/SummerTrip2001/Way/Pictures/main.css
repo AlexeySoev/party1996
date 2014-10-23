@@ -1,0 +1,33 @@
+A {
+	FONT-WEIGHT: bold; COLOR: #0000c0; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #8080ff
+}
+A:hover {
+	COLOR: #e08080
+}
+BODY {
+	BACKGROUND-COLOR: #e0e0e8
+}
+.bigheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 24px; COLOR: #00008b; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.meanheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; MARGIN-BOTTOM: 0px; COLOR: #907000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.smallheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN-BOTTOM: 0px; COLOR: black; FONT-STYLE: italic; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.maintext {
+	MARGIN-TOP: 0px; FONT-SIZE: 16px; MARGIN-BOTTOM: 0px; TEXT-INDENT: 25px; FONT-FAMILY: serif; TEXT-ALIGN: justify
+}
+.picstext {
+	MARGIN-TOP: 0px; FONT-SIZE: 10px; MARGIN-BOTTOM: 20px; WIDTH: 140px; COLOR: #000080; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.locname {
+	FONT-SIZE: 12px; COLOR: #004080; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.remark {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}

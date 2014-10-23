@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	
+	<PageHead Title="Аланды 2006"></PageHead>
+	
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Аланды 2006"></Chapter></PageElement>
+	</PageBody>
+		
+	<GPSTrackFrame>
+		<GPSTrackLink Title="Overview of Aland days" TrackFile="gpsdata/overview.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day-2 - Helsinki" TrackFile="gpsdata/Day00-Helsinki-Day1.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day-1 - Helsinki" TrackFile="gpsdata/Day00-Helsinki-Day2.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 0 - Helsinki" TrackFile="gpsdata/Day01-Helsinki-Day3.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 1" TrackFile="gpsdata/Day01.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 2" TrackFile="gpsdata/Day02.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 3" TrackFile="gpsdata/Day03.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 4" TrackFile="gpsdata/Day04.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 5" TrackFile="gpsdata/Day05.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 6" TrackFile="gpsdata/Day06.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 7" TrackFile="gpsdata/Day07.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 8" TrackFile="gpsdata/Day08.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 9 - Stockholm" TrackFile="gpsdata/Day09-Stockholm-Day1.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 10 - Stockholm" TrackFile="gpsdata/Day10-Stockholm-Day2.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 11 - Stockholm" TrackFile="gpsdata/Day11-Stockholm-Day3.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 11" TrackFile="gpsdata/Day11.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 12" TrackFile="gpsdata/Day12.xml"></GPSTrackLink>
+	</GPSTrackFrame>
+	
+</PageTemplate>

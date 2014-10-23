@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="III ПАРТИЙНАЯ КОНФЕРЕНЦИЯ"></PageHead>
+		
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		
+		<PageElement>
+		
+		<Title Text="III ПАРТИЙНАЯ КОНФЕРЕНЦИЯ" Epigraph="26 апреля 1999 года" />
+		<Title Text="посвященная подготовке к традиционному майскому походу Партии Любителей" />
+		
+		<Chapter Title="Повестка дня">
+			
+			<Paragraph Title="18:00 Торжественное открытие">
+			<List>
+			<ListItem>Вступительное слово. (Соев А.Г.)</ListItem>
+			</List>
+			</Paragraph>
+			
+			<Paragraph Title="18:10 Доклады членов президиума и рядовых членов партии">
+			<List>
+			<ListItem>Партия Любителей. Взгляд в будущее. Докладчик Умников Д.В.</ListItem>
+			<ListItem>О достижениях в производстве крепких, крепленых и слабоалкогольных спиртных напитков в рядах Партии.
+						 История и перспективы. Докладчик Лукаянов С.Л.</ListItem>
+			<ListItem>Стремление к снижению негативного влияния на окружающую среду в свете обновленной концепции употребления
+						спиртных напитков. Докладчик Крылов Е.А.</ListItem>
+			<ListItem>Поход и бабы. Плюсы и минусы рассматриваемого вопроса. Теория, факты, комментарии. Докладчик Лотенков И.В.</ListItem>
+			<ListItem>Стиль и образ походной жизни как зеркало партийной идеологии. Докладчик Яковлев Д.С.</ListItem>
+			</List>
+			</Paragraph>
+			
+			<Paragraph Title="19:30 Внутрипартийные вопросы">
+			<List>
+			<ListItem>Представление партийной символики.</ListItem>
+			<ListItem>О руководстве партии.</ListItem>
+			<ListItem>Торжественное вручение партбилетов.</ListItem>
+			</List>
+			</Paragraph>
+			
+			<Paragraph Title="20:30 Организационная часть">
+			<List>
+			<ListItem>Рассмотрение вопроса о маршруте и сроках предстоящего путешествия.</ListItem>
+			<ListItem>Хозяйственно-финансовые вопросы.</ListItem>
+			<ListItem>Назначение лиц, ответственных за дальнейшую подготовку к мероприятию.</ListItem>
+			</List>
+			</Paragraph>
+			
+			<Paragraph Title="21:30 Агитационная часть">
+			<List>
+			<ListItem>Демонстрация культового эпохального фильма.</ListItem>
+			<ListItem>Просмотр фотоархива и документов партии.</ListItem>
+			</List>
+			</Paragraph>
+									
+			<Paragraph Title="23:30 Торжественное закрытие" />
+		
+		</Chapter>
+		
+		<Line>Протокол заседания <Emphasize>Скоро</Emphasize></Line>
+		<Line>Материалы конференции <Emphasize>Скоро</Emphasize></Line>
+		
+		</PageElement>
+		
+	</PageBody>
+</PageTemplate>

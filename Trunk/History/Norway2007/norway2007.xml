@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Норвегия 2007"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement>
+			<MainMenu />
+		</PageElement>
+		<PageElement>
+			<Chapter Title="Норвегия 2007">
+				<Line><Emphasize>Продолжительность: </Emphasize>20 июля - 4 августа 2007 года</Line>
+				<Line><Emphasize>Район: </Emphasize>Финляндия, Швеция, Норвегия</Line>
+				<Line><Emphasize>Маршрут: </Emphasize>С-Петербург - Хельсинки - Стокгольм - Осло - Андалснес - Гейрангер - Лом - Зондал - Флом - Вос - Берген - С-Петербург</Line>
+				<Line><Emphasize>Участники: </Emphasize>Я Надя, Настя, Коля, Катя, Илья</Line>
+
+				<Paragraph>
+					<Line><Link Url="../../Album/Norway2007/index.xml">Фотоальбом</Link></Line>
+					<Line><Link Url="../../Tracks/2007/Norway/Norway.xml">GPS треки</Link></Line>
+				</Paragraph>
+
+			</Chapter>
+		</PageElement>
+	</PageBody>
+</PageTemplate>

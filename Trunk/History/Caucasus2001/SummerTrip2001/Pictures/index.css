@@ -1,0 +1,21 @@
+BODY {
+	FONT-SIZE: 16px; COLOR: #000000; FONT-FAMILY: Times,Arial
+}
+A {
+	FONT-SIZE: 16px; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 16px; COLOR: #ff3333
+}
+P {
+	FONT-SIZE: 16px
+}
+TR {
+	FONT-SIZE: 16px
+}
+TD {
+	FONT-SIZE: 16px
+}
+DD {
+	FONT-SIZE: 16px
+}

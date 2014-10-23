@@ -1,0 +1,181 @@
+<!-- A text copy of the Burlington Bike Ride Google Maps Project -->
+<!-- Created by Nick Fessel, with help from the Google Maps Group -->
+
+<style type="text/css">
+  v\:* {
+	behavior:url(#default#VML);
+  }
+</style>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Nick Fessel.com Alpha version 1.0</title>
+<!-- *** Gets a Google Maps API reference *** -->
+ <script src="http://maps.google.com/maps?file=api&amp;v=1&amp;key=ABQIAAAA1cyBAHrOeSe9b0ZoaFAK3hT2yXp_ZAY8_ufC3CFXhHIE1NvwkxSyZva3bCOrJkD906auWtIUk_qBZw" type="text/javascript"></script>
+</head>
+<body onload="renderMap()">
+<div id="map" style="height:88%; width:40%; z-index:0; position:absolute; margin-top:1%; margin-left:2%; margin-right:2%; float:left">
+</div>
+<script type="text/javascript">
+  //<![CDATA[
+    var distanceTotal=0;
+    var distancePrev=0;
+	var map;
+	var points=new Array();
+	var q=0;
+	var i = 0;
+    <!-- *** Loads the data from the XML file -->
+    function loadInfo() {
+	   var request = GXmlHttp.create();
+	   request.open("GET", "xml/bike_path2.xml", true);
+	   request.onreadystatechange = function() {
+	     if (request.readyState == 4) {
+	       var xmlDoc = request.responseXML;
+	      markers= xmlDoc.documentElement.getElementsByTagName("marker");
+	       plotPoint();
+	     }
+	   }
+	request.send(null);
+	}
+	<!-- *** Renders the map to the div on the left of the page -->
+	function renderMap() {
+		alert("1");
+	  if (GBrowserIsCompatible()) {
+		map = new GMap(document.getElementById("map"));
+		map.addControl(new GSmallMapControl());
+		map.addControl(new GMapTypeControl());
+		map.addControl(new GScaleControl());
+		map.centerAndZoom(new GPoint(-73.209556,44.481806), 4);
+		GEvent.addListener(map, 'click', function(overlay, point) {
+		  if (overlay) {
+		  // map.removeOverlay(overlay);
+		  }
+		  else if (point) {
+			map.addOverlay(new GMarker(point));
+			points[points.length]=point;
+		  }
+
+		});
+	  }
+	<!-- *** Loads the XML data and starts the show -->
+	loadInfo();
+	}
+	<!-- *** Clears all overlays (markers and polylines) and clears the array of points -->
+	function clearMap() {
+	  document.getElementById('pointList').innerHTML="";
+	  map.clearOverlays();
+	  points.length=0;
+	  q=0;
+	  i=0;
+	}
+
+	   function distance(lat1, lon1, lat2, lon2) {
+	   	var radlat1 = Math.PI * lat1/180;
+	   	var radlat2 = Math.PI * lat2/180;
+	   	var radlon1 = Math.PI * lon1/180;
+	   	var radlon2 = Math.PI * lon2/180;
+	   	var theta = lon1-lon2;
+	   	var radtheta = Math.PI * theta/180;
+	   	var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+	   	dist = Math.acos(dist);
+	   	dist = dist * 180/Math.PI;
+	   	dist = dist * 60 * 1.1515;
+ 		return dist;
+	  }
+    <!-- *** Draws the polylines from point to point. This fixed function provided by Joseph Oster-->
+	var i=0;
+	function plotPoint() {
+
+	 if (i < markers.length) {
+	   distancePrev=distanceTotal;
+	   var Lat = markers[i].getAttribute("lat");
+	   var Lng = markers[i].getAttribute("lng");
+	   var point = new GPoint(Lng, Lat);
+ 	   if (i < markers.length && i !=0 ){
+         var Lat1 = markers[i-1].getAttribute("lat");
+		 var Lng1 = markers[i-1].getAttribute("lng");
+ 		 var point1 = new GPoint(Lng1, Lat1);
+		 var points=[point, point1];
+		 //RECENTER MAP EVERY TEN POINTS
+		 if (i%10==0){map.recenterOrPanToLatLng(point, 2000);}
+		 if (i < markers.length/2){
+	 	   map.addOverlay(new GPolyline(points, "#0000ff",3,1));
+	 	 }
+	 	 else{
+	 	   map.addOverlay(new GPolyline(points, "#ff0000",3,1));
+	 	 }
+	 	 distanceTotal = distance(Lat, Lng, Lat1, Lng1);
+	 	 distanceTotal = distanceTotal+distancePrev;
+	 	 document.getElementById('distance').innerHTML = "Cumulative distance (in miles): <b>"+distanceTotal+"</b>";
+	   }
+	   if (i < markers.length-1) {
+	     window.setTimeout(plotPoint,20);
+	   } else {toggle('showmenow');}
+ 	   i++;
+     }
+   }
+   function toggle(nr) {
+     if (document.layers){
+  	   var	vista = (document.layers[nr].visibility == 'hide') ? 'show' : 'hide'
+  	   document.layers[nr].visibility = vista;
+  	 }
+     else if (document.all){
+  	   var	vista = (document.all[nr].style.visibility == 'hidden') ? 'visible'	: 'hidden';
+  	   document.all[nr].style.visibility = vista;
+  	 }
+  	 else if (document.getElementById){
+       var	vista = (document.getElementById(nr).style.visibility == 'hidden') ? 'visible' : 'hidden';
+	   document.getElementById(nr).style.visibility = vista;
+     }
+   }
+  //]]>
+</script>
+<div id="read_content" style="float:right; position:absolute; margin-left:45%; margin-top:1%; height:88%">
+  <div id="results_panel" style="width:100%;">
+    <p class="front"><strong>A Ride on the Burlington Bike Path</strong></p>
+	<p class="front"><b class="bluedot">aaaaaa</b> = First half of ride</p>
+	<p class="front"><b class="reddot">aaaaaa</b> = Last half of ride</p>
+	<div id="dist" style="background-color:#99CCFF; width:80%; margin-left:10%" ><p class="front" style="text-align:left; background-color:#99CCFF" id="distance">Cumulative distance (in miles): </p></div>
+	<p class="front">Created by Nick Fessel with help from the <a href="http://groups-beta.google.com/group/Google-Maps-API"  onclick="window.open(this.href); return false;">Google Maps Group</a>.</p>
+	<p class="front"><a href='dynaRender2.html' id='showmenow' onclick='window.location.reload();' style='margin-left:20px; visibility:hidden'>Cool. Do it again.</a></p>
+    <hr />
+    <p class="front"><strong>How this was done</strong></p>
+    <p class="front" style="font-color:#333333">
+      <img src="../images/etrex_legend.jpg" width="110" height="145" alt="Etrex Legend" style="float:left; padding:4px" />
+      I used a Garmin Etrex Legend GPS to store my latitude, longitude, time and elevation values during the bike ride. Some
+      careful use of duct tape allowed me to keep the GPS in a position for a direct view of the sky.
+    </p>
+    <p class="front" style="text-align:right"><strong>Gathering the Data</strong></p>
+    <p class="front">With my GPS in tow, I then took a long ride on the Champlain Bikeway in Burlington, VT while the Legend GPS did
+    the hard work of storing my point, time and elevation values every few seconds.
+    </p>
+    <p class="front" style="text-align:right"><strong>Reading the Data</strong></p>
+    <p class="front">
+    After the trip, I connected the GPS unit to the com port
+    on my P.C. Using a Windows program called Frontbase GPS 1.21, I pulled all the GPS data into a <a href="bike_path.txt" onclick="window.open(this.href); return false;">text file</a>.
+    </p>
+    <p class="front" style="text-align:right"><strong>Converting the Data</strong></p>
+    <p class="front">
+    The <a href="http://www.google.com/apis/maps/documentation/" onclick="window.open(this.href); return false;">Google Maps API</a> allows developers to call functions asynchronously. This technique is known as "AJAX" (<b>A</b>synchronous <b>J</b>avascript <b>a</b>nd <b>X</b>ML).
+    In order to make the AJAX function, first I needed to convert the text file of GPS data into an <a href="../xml/bike_path2.xml" onclick="window.open(this.href); return false;">XML document</a>.
+    </p>
+    <p class="front" style="text-align:right"><strong>Pulling it all together</strong></p>
+    <p class="front">
+    Once I had the GPS data in a proper format, I used the Google Maps API, Javascript and HTML to create the
+    <a href="dynaRender2.txt" onclick="window.open(this.href); return false;">program</a>. Feel free to peruse the code, but I'm not giving away all the secrets within. :)
+    </p>
+
+    <div class="w3cbutton3" style="margin-left:70%">
+	  <a href="http://validator.w3.org/check?uri=referer">
+	  <span class="w3c">W3C</span>
+	  <span class="spec">XHTML 1.0</span>
+	  </a>
+	</div>
+	<div class="w3cbutton3" style="margin-left:70%">
+	  <a href="http://jigsaw.w3.org/css-validator/check/referer">
+	  <span class="w3c">W3C</span>
+	  <span class="spec">CSS</span>
+	  </a>
+	</div>
+  </div>
+</div>
+</body>
+</html>

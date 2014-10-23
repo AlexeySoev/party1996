@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	
+	<PageHead Title="Велопоход Питкяранта - Сортавала"></PageHead>
+	
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Велопоход Питкяранта - Сортавала"></Chapter></PageElement>
+	</PageBody>
+		
+	<GPSTrackFrame>
+		<GPSTrackLink Title="Pitkyaranta - Sortavala" TrackFile="gpsdata/Pitkyaranta-Sortavala.gpx.xml"></GPSTrackLink>
+	</GPSTrackFrame>
+	
+</PageTemplate>
+
+
+

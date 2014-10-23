@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	
+	<PageHead Title="Просвет - Рахья - Болото"></PageHead>
+	
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Просвет - Рахья - Болото"></Chapter></PageElement>
+	</PageBody>
+		
+	<GPSTrackFrame>
+		<GPSTrackLink Title="Prosvet - Rahia - Boloto" TrackFile="gpsdata/Prosvet-Rahia-Boloto.trk.txt.xml"></GPSTrackLink>
+	</GPSTrackFrame>
+	
+</PageTemplate>
+

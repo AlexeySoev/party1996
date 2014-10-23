@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	
+	<PageHead Title="Лыжня в Кавголово 5 км"></PageHead>
+	
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Лыжня в Кавголово 5 км"></Chapter></PageElement>
+	</PageBody>
+		
+	<GPSTrackFrame>
+		<GPSTrackLink Title="Kavgolovo piste 5 km" TrackFile="gpsdata/Kavgolovopiste5km.trk.txt.xml"></GPSTrackLink>
+	</GPSTrackFrame>
+	
+</PageTemplate>
+

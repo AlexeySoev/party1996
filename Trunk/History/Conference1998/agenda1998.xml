@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="II ПАРТИЙНАЯ КОНФЕРЕНЦИЯ"></PageHead>
+		
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		
+		<PageElement>
+		
+		<Title Text="II ПАРТИЙНАЯ КОНФЕРЕНЦИЯ" Epigraph="26 апреля 1998 года" />
+		<Title Text="посвященная подготовке к праздничному походу 1-9 мая" />
+		
+		<Chapter Title="Повестка дня">
+			
+			<Paragraph Title="20:00 Торжественное открытие">
+			<List>
+			<ListItem>Вступительное слово. (Соев А.Г.)</ListItem>
+			</List>
+			</Paragraph>
+			
+			<Paragraph Title="20:10 Доклады членов президиума и рядовых членов партии">
+			<List>
+			<ListItem>О необходимости активизации партийной деятельности и увеличении числа проводимых партийных мероприятий.
+						Докладчик Лотенков И.В.</ListItem>
+			<ListItem>Пагубное влияние спиртных напитков на организм человека. Докладчик Яковлев Д.С.</ListItem>
+			<ListItem>Цели, причины и мотивы, побуждающие человека к употреблению алкоголя.
+						Докладчик Соев А.Г.</ListItem>
+			<ListItem>О необходимости бережного отношения к природе. Докладчик Лукаянов С.Л.</ListItem>
+			<ListItem>Зависимость количества и качества улова (добычи) от количества взятого
+						с собой спиртного. Докладчик Крылов Е.А.</ListItem>
+			</List>
+			</Paragraph>
+			
+			<Paragraph Title="21:00 Внутрипартийные вопросы">
+			<List>
+			<ListItem>Вступление в партию новых членов.</ListItem>
+			<ListItem>Торжественное вручение партбилетов.</ListItem>
+			<ListItem>Награждение активистов партии.</ListItem>
+			<ListItem>Рассмотрение вариантов партийной эмблемы.</ListItem>
+			<ListItem>О руководстве партии.</ListItem>
+			</List>
+			</Paragraph>
+			
+			<Paragraph Title="22:00 Организационная часть">
+			<List>
+			<ListItem>Рассмотрение вопроса о маршруте предстоящего путешествия.</ListItem>
+			<ListItem>Хозяйственно-финансовые вопросы.</ListItem>
+			<ListItem>Назначение ответственных лиц за дальнейшую подготовку к мероприятию.</ListItem>
+			</List>
+			</Paragraph>
+			
+			
+			
+			<Paragraph Title="22:30 Торжественное закрытие" />
+		
+		</Chapter>
+		
+		<Line>Протокол заседания <Emphasize>Скоро</Emphasize></Line>
+		<Line>Материалы конференции <Emphasize>Скоро</Emphasize></Line>
+				
+		</PageElement>
+		
+	</PageBody>
+</PageTemplate>

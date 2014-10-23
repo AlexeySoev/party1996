@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	
+	<PageHead Title="Велосипедно - лодочный поход 9 Мая"></PageHead>
+	
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Велосипедно - лодочный поход 9 Мая"></Chapter></PageElement>
+	</PageBody>
+		
+	<GPSTrackFrame>
+		<GPSTrackLink Title="9 May" TrackFile="gpsdata/9May.trk.txt.xml"></GPSTrackLink>
+	</GPSTrackFrame>
+	
+</PageTemplate>
+

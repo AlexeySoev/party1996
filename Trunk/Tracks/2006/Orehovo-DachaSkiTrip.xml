@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	
+	<PageHead Title="Лыжная прогулка Орехово - Дача"></PageHead>
+	
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Лыжная прогулка Орехово - Дача"></Chapter></PageElement>
+	</PageBody>
+		
+	<GPSTrackFrame>
+		<GPSTrackLink Title="Orehovo - Dacha Ski Trip" TrackFile="gpsdata/Orehovo-Dachaskitrip.trk.txt.xml"></GPSTrackLink>
+	</GPSTrackFrame>
+	
+</PageTemplate>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Альпы 2007"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Альпы 2007">
+		<Line><Emphasize>Продолжительность: </Emphasize>26 января -11 февраля 2007 года</Line>
+		<Line><Emphasize>Район: </Emphasize>Французские Альпы, Межев, Шамони, Монблан</Line>
+		<Line><Emphasize>Маршрут: </Emphasize>С-Петербург - Париж - Межев - Шамони - Париж - С-Петербург</Line>
+		<Line><Emphasize>Участники: </Emphasize>Я, Надя, Настя, Квадратик, Вася, Серега</Line>
+		
+		<Paragraph>
+		<Line><Link Url="../../Album/Alps2007/index.xml">Фотоальбом</Link></Line>
+		<Line><Link Url="../../Tracks/2007/Alps2007/Alps2007.xml">GPS треки</Link></Line>
+		</Paragraph>
+		
+		</Chapter></PageElement>
+	</PageBody>
+</PageTemplate>
+

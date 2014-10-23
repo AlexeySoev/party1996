@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Поход Май-1999"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Поход Май-1999">
+		<Line><Emphasize>Продолжительность: </Emphasize>30 апреля - 7 мая 1999 года</Line>
+		<Line><Emphasize>Район: </Emphasize>Карельский перешеек</Line>
+		<Line><Emphasize>Маршрут: </Emphasize>ст.Синево - оз.Вуокса - о.Олений - пос.Хирвисаари - г.Приозерск - ст.Синево</Line>
+		<Line><Emphasize>Участники: </Emphasize>Соев, Женя, Серега, Потапыч, Ваня, Сосед, Черный</Line>
+		
+		<Paragraph>
+		<Line><Link Url="May99/Index.htm">Воспоминания участников</Link></Line>
+		<Line><Link Url="PotapSpeech.xml">Речь Потапыча</Link></Line>
+		<Line><Link Url="../../Album/May1999/index.xml">Фотоальбом</Link></Line>
+		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">Место похода на карте</Link></Line>
+		</Paragraph>
+		
+		</Chapter></PageElement>
+	</PageBody>
+</PageTemplate>

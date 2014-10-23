@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Алексей Соев"></PageHead>
+
+	<PageBody SnakeText="">
+		<PageElement>
+			<MainMenu />
+		</PageElement>
+
+		<PageElement>
+			<Chapter Title="Алексей Соев">
+				<Line><Link Url="Avia/Avia.xml">Авиамоделизм</Link></Line>
+				<Line><Link Url="Geocaching/Geocaching.xml">Геокэшинг</Link></Line>
+			</Chapter>
+		</PageElement>
+	</PageBody>
+</PageTemplate>
+

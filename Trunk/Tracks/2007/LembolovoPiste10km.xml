@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	
+	<PageHead Title="Лыжня в Лемболово 5 и 10 км"></PageHead>
+	
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Лыжня в Лемболово 5 и 10 км"></Chapter></PageElement>
+	</PageBody>
+		
+	<GPSTrackFrame>
+		<GPSTrackLink Title="Lembolovo piste 10 km" TrackFile="gpsdata/LembolovoPiste10km.gpx.xml"></GPSTrackLink>
+	</GPSTrackFrame>
+	
+</PageTemplate>
+

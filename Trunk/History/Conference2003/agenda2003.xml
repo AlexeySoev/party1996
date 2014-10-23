@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Очередная ПАРТИЙНАЯ КОНФЕРЕНЦИЯ"></PageHead>
+		
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		
+		<PageElement>
+		
+		<Title Text="Очередная ПАРТИЙНАЯ КОНФЕРЕНЦИЯ Партии Любителей" Epigraph="19 апреля 2003 года" />
+		<Title Text="посвященная майскому походу" />
+		<Chapter>
+		
+			<Paragraph Title="Повестка дня">
+			<List>
+			<ListItem>Выступления партийцев на тему маршрута похода.</ListItem>
+			<ListItem>Конструктивная дисскуссия, переходящая во взаимные оскорбления и мордобой.</ListItem>
+			<ListItem>Выработка консенсуса.</ListItem>
+			<ListItem>Праздничный вечер.</ListItem>
+			<ListItem>Пьянка.</ListItem>
+			<ListItem>Дебош.</ListItem>
+			</List>
+			</Paragraph>
+			
+			<Paragraph Title="Виновными за маршрут назначены:">
+			<List>
+			<ListItem>План "По льду на Валаам" - Черный Игорь.</ListItem>
+			<ListItem>План "Поколено в карельском снегу" - Лукаянов Сергей.</ListItem>
+			<ListItem>План "Греби-нехочу. Вино-лодочная Вуокса" - Крылов Евгений.</ListItem>
+			<ListItem>План "Беспредел на эстонской погранзаставе" - Умников Дмитрий.</ListItem>
+			</List>
+			</Paragraph>
+					
+		</Chapter></PageElement>
+		
+	</PageBody>
+</PageTemplate>

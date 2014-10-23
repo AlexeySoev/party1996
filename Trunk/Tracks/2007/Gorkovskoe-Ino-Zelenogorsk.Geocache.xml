@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Тайники, найденые в походе 'Велопробег Горьковское - Зеленогорск'"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement>
+			<Paragraph Title="Тайники, найденые в походе 'Велопробег Горьковское - Зеленогорск'">
+				<Line><Link Url="http://www.geocaching.su/?pn=101&amp;cid=1720" Target="more">страница тайника "Одинокая могила"</Link></Line>
+				<Line><Link Url="http://www.geocaching.su/?pn=101&amp;cid=288" Target="more">страница тайника "форт Ino"</Link></Line>
+			</Paragraph>
+		</PageElement>
+	</PageBody>
+</PageTemplate>
+
+
+
+

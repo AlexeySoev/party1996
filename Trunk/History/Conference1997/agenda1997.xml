@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="I ПАРТИЙНАЯ КОНФЕРЕНЦИЯ"></PageHead>
+		
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		
+		<PageElement>
+		
+		<Title Text="I ПАРТИЙНАЯ КОНФЕРЕНЦИЯ" Epigraph="24 апреля 1997 года" />
+		<Title Text="посвященная подготовке к празднованию 1 мая" />
+		
+		<Chapter Title="Повестка дня">
+			
+			<Paragraph Title="20:00 Торжественное открытие">
+			<List>
+			<ListItem>Вступительное слово. (Соев А.Г.)</ListItem>
+			</List>
+			</Paragraph>
+			
+			<Paragraph Title="20:05 Доклады членов президиума и рядовых членов партии">
+			<List>
+			<ListItem>О текущем моменте. Докладчик Умников Д.В.</ListItem>
+			<ListItem>Философия туризма. Докладчик Лотенков И.В.</ListItem>
+			<ListItem>О месте пьянства и роли алкоголя в повседневной жизни каждого туриста.
+						Доминирование водки над другими спиртными напитками.
+						Докладчик Яковлев Д.С.</ListItem>
+			<ListItem>О морально-этическом облике современного туриста и нормах поведения 
+						на природе. Докладчик Лукаянов С.Л.</ListItem>
+			<ListItem>О необходимости рыбной ловли при коллективном выезде на природу.
+						Докладчик Крылов Е.А.</ListItem>
+			</List>
+			</Paragraph>
+			
+			<Paragraph Title="21:00 Организационная часть">
+			<List>
+			<ListItem>Рассмотрение вопроса о маршруте предстоящего путешествия.</ListItem>
+			<ListItem>Хозяйственно-финансовые вопросы.</ListItem>
+			<ListItem>Назначение ответственных лиц за дальнейшую подготовку к мероприятию.</ListItem>
+			</List>
+			</Paragraph>
+			
+			<Paragraph Title="22:00 Внутрипартийные вопросы">
+			<List>
+			<ListItem>О названии партии.</ListItem>
+			<ListItem>Устав партии, ее цель в современном обществе.</ListItem>
+			<ListItem>О партбилетах.</ListItem>
+			<ListItem>О руководстве партии.</ListItem>
+			</List>
+			</Paragraph>
+			
+			<Paragraph Title="22:30 Торжественное закрытие" />
+		
+		</Chapter>
+		
+		<Line><Link Url="Minutes/main.htm">Протокол заседания</Link></Line>
+		<Line>Материалы конференции <Emphasize>Скоро</Emphasize></Line>
+				
+		</PageElement>
+		
+	</PageBody>
+</PageTemplate>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	
+	<PageHead Title="Велопробег Горьковское - Сосново"></PageHead>
+	
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Велопробег Горьковское - Сосново"></Chapter></PageElement>
+	</PageBody>
+		
+	<GPSTrackFrame>
+		<GPSTrackLink Title="Gorkovskoe - Cache - Sosnovo" TrackFile="gpsdata/Gorkovskoe-Cache-Sosnovo.trk.txt.xml"></GPSTrackLink>
+	</GPSTrackFrame>
+	
+</PageTemplate>
+
+

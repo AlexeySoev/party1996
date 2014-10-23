@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	
+	<PageHead Title="Европа 2002"></PageHead>
+	
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Европа 2002"></Chapter></PageElement>
+	</PageBody>
+		
+	<GPSTrackFrame>
+		<GPSTrackLink Title="Day 1" TrackFile="gpsdata/01.trk.txt.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 2" TrackFile="gpsdata/02.trk.txt.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 3" TrackFile="gpsdata/03.trk.txt.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 4" TrackFile="gpsdata/04.trk.txt.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 5" TrackFile="gpsdata/05.trk.txt.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 6" TrackFile="gpsdata/06.trk.txt.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 7" TrackFile="gpsdata/07.trk.txt.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 8" TrackFile="gpsdata/08.trk.txt.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 9" TrackFile="gpsdata/09.trk.txt.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 10" TrackFile="gpsdata/10.trk.txt.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 11" TrackFile="gpsdata/11.trk.txt.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 12" TrackFile="gpsdata/12.trk.txt.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 13" TrackFile="gpsdata/13.trk.txt.xml"></GPSTrackLink>
+		
+	</GPSTrackFrame>
+	
+</PageTemplate>
+

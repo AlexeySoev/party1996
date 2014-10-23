@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	
+	<PageHead Title="Велопоход в Финляндию"></PageHead>
+	
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Велопоход в Финляндию"></Chapter></PageElement>
+	</PageBody>
+		
+	<GPSTrackFrame>
+		<GPSTrackLink Title="Day 1" TrackFile="gpsdata/Day1.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 2" TrackFile="gpsdata/Day2.xml"></GPSTrackLink>
+		<GPSTrackLink Title="Day 3" TrackFile="gpsdata/Day3.xml"></GPSTrackLink>
+		<GPSTrackLink Title="All Days" TrackFile="gpsdata/All.xml"></GPSTrackLink>
+	</GPSTrackFrame>
+	
+</PageTemplate>
+
+

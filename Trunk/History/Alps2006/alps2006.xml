@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Альпы 2006"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Альпы 2006">
+		<Line><Emphasize>Продолжительность: </Emphasize>25 февраля -11 марта 2006 года</Line>
+		<Line><Emphasize>Район: </Emphasize>Французские Альпы, Три долины</Line>
+		<Line><Emphasize>Маршрут: </Emphasize>С-Петербург - Москва - Гренобль - Мерибель, Куршавель, ВальТоранс - Гренобль - Москва - С-Петербург</Line>
+		<Line><Emphasize>Участники: </Emphasize>Я, Надя, Настя, Серега, Таня, Макс, КДСы</Line>
+		
+		<Paragraph>
+		<Line><Link Url="../../Album/Alps2006/index.xml">Фотоальбом</Link></Line>
+		<Line><Link Url="../../Tracks/2006/Alps2006/Alps2006.xml">GPS треки</Link></Line>
+		</Paragraph>
+		
+		</Chapter></PageElement>
+	</PageBody>
+</PageTemplate>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Поход Май-2001"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Поход Май-2001">
+		<Line><Emphasize>Продолжительность: </Emphasize>29 апреля - 5 мая 2001 года</Line>
+		<Line><Emphasize>Район: </Emphasize>Карелия, северная Ладога</Line>
+		<Line><Emphasize>Маршрут: </Emphasize>г.Сортавала - о.Риеккалансаари - г.Сортавала</Line>
+		<Line><Emphasize>Участники: </Emphasize>Соев, Серега, Потапыч, Черный</Line>
+		
+		<Paragraph>
+		<Line><Link Url="../../Album/May2001/index.xml">Фотоальбом</Link></Line>
+		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">Место похода на карте</Link></Line>
+		</Paragraph>
+		
+		</Chapter></PageElement>
+	</PageBody>
+</PageTemplate>

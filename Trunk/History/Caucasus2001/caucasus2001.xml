@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Кавказ 2001"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Кавказ 2001">
+		<Line><Emphasize>Продолжительность: </Emphasize>27 июля - 12 августа 2001 года</Line>
+		<Line><Emphasize>Район: </Emphasize>Северный Кавказ</Line>
+		<Line><Emphasize>Маршрут: </Emphasize>С-Петербург - Белореченск - Главный Кавказский Хребет - Дагомыс - Сочи</Line>
+		<Line><Emphasize>Участники: </Emphasize>Соев, Женя, Юля</Line>
+		
+		<Paragraph>
+			<Line><Link Url="SummerTrip2001/MainIdea.htm">Рассказ о путешествии</Link></Line>
+			<Line><Link Url="../../Tracks/2001/Caucasus2001.xml">GPS треки</Link></Line>
+			<Line>Фотоальбом <Emphasize>Скоро</Emphasize></Line>
+		</Paragraph>
+		
+		</Chapter></PageElement>
+	</PageBody>
+</PageTemplate>

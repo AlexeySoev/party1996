@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Аланды 2006"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement>
+			<MainMenu />
+		</PageElement>
+		<PageElement>
+			<Chapter Title="Аланды 2006">
+				<Line><Emphasize>Продолжительность: </Emphasize>29 июля - 13 августа 2006 года</Line>
+				<Line><Emphasize>Район: </Emphasize>Финляндия, Швеция, Аландские острова</Line>
+				<Line><Emphasize>Маршрут: </Emphasize>С-Петербург - Хельсинки - Турку - Аланды - Стокгольм - Аланды - Турку - Хельсинки - С-Петербург</Line>
+				<Line><Emphasize>Участники: </Emphasize>Я и Надя</Line>
+				
+				<Paragraph>
+					<Line><Link Url="../../Album/Aland2006/index.xml">Фотоальбом</Link></Line>
+					<Line><Link Url="../../Tracks/2006/Aland/Aland.xml">GPS треки</Link></Line>
+				</Paragraph>
+
+			</Chapter>
+		</PageElement>
+	</PageBody>
+</PageTemplate>

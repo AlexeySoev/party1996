@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Тайники, найденые в походе 'Велопоход в Финляндию'"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement>
+			<Paragraph Title="Тайники, найденые в походе 'Велопоход в Финляндию'">
+					<Line><Link Url="http://www.geocaching.su/?pn=101&amp;cid=1499" Target="more">страница тайника "Бетонный Циклоп"</Link></Line>
+					<Line><Link Url="http://www.geocaching.su/?pn=101&amp;cid=1452" Target="more">страница тайника "Пещеры в граните"</Link></Line>
+					<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=aae24a49-4f32-46de-8682-f4e973aec740" Target="more">страница тайника "Gladdagh II"</Link></Line>
+					<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=252c5e08-226b-42d2-abbd-e5f154b6ce49" Target="more">страница тайника "Saimaa Canal"</Link></Line>
+					<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=654afcaf-2e31-44ed-8c0f-0a5f2d43d9e6" Target="more">страница тайника "Thunder and Lightning"</Link></Line>
+					<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=c47997f1-c6be-4263-8e9d-81e0c900667f" Target="more">страница тайника "Imatrankoski"</Link></Line>			</Paragraph>
+		</PageElement>
+	</PageBody>
+</PageTemplate>

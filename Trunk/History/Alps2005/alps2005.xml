@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Альпы 2005"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Альпы 2005">
+		<Line><Emphasize>Продолжительность: </Emphasize>5-19 марта 2005 года</Line>
+		<Line><Emphasize>Район: </Emphasize>Французские и Швейцарские Альпы</Line>
+		<Line><Emphasize>Маршрут: </Emphasize>С-Петербург - Женева - Морзин - Авориаз - Гренобль - Альп'Дюез - Женева - С-Петербург</Line>
+		<Line><Emphasize>Участники: </Emphasize>Я, Настя и Надя</Line>
+		
+		<Paragraph>
+		<Line><Link Url="../../Album/Alps2005/index.xml">Фотоальбом</Link></Line>
+		<Line><Link Url="../../Tracks/2005/Alps2005/Alps2005.xml">GPS треки</Link></Line>
+		</Paragraph>
+		
+		</Chapter></PageElement>
+	</PageBody>
+</PageTemplate>

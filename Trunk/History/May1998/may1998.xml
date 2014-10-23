@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Поход Май-1998"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Поход Май-1998">
+		<Line><Emphasize>Продолжительность: </Emphasize>1-6 мая 1998 года</Line>
+		<Line><Emphasize>Район: </Emphasize>Карельский перешеек</Line>
+		<Line><Emphasize>Маршрут: </Emphasize>пл.78 км - оз.Раздолинское - пл.78 км - ст.Лосево - оз.Суходольское - пос.Суходолье - ст.Лосево</Line>
+		<Line><Emphasize>Участники: </Emphasize>Соев, Женя, Серега, Потапыч, Дасеич, Ваня, Сосед, Черный, Нагиев, Таня</Line>
+		
+		<Paragraph>
+		<Line>Потапыч. Недокументированные возможности <Emphasize>Скоро</Emphasize></Line>
+		<Line>Афоризмы, записанные на пачке Chesterfield'а <Emphasize>Скоро</Emphasize></Line>
+		<Line>Дневник похода <Emphasize>Скоро</Emphasize></Line>
+		<Line><Link Url="../../Album/May1998/index.xml">Фотоальбом</Link></Line>
+		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">Место похода на карте</Link></Line>
+		</Paragraph>
+		
+		</Chapter></PageElement>
+	</PageBody>
+</PageTemplate>

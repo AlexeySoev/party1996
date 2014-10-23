@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Тайники, найденые в походе 'Велопутешествие по Норвегии'"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement>
+			<Paragraph Title="Тайники, найденые в походе 'Велопутешествие по Норвегии'">
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=886e6d4b-21b4-43e1-ab04-17782a319b0c" Target="more">страница тайника "Trollstigen"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=7ed1601b-0f7e-46e5-81ba-458631af5942" Target="more">страница тайника "Geiranger (five Sisters)"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=6a9145ef-08e3-49eb-80ef-7e9dc2ae8ba0" Target="more">страница тайника "Challenge #6 - Geiranger"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=64ff2171-cf02-4e67-9c9c-184bf0a28b4b" Target="more">страница тайника "PPJ #67 Under Lomseggje"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=03dda2c4-31d7-43fd-ac60-2968ae436a2a" Target="more">страница тайника "PPJ #41 Enden pa Visa"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=fefb9615-edf4-4f6a-9e1a-b41f3b0b5a78" Target="more">страница тайника "Challenge # 19 - Boverdalen"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=85bc3c59-4007-4ab8-b4d8-85f567227648" Target="more">страница тайника "OK67 #4 Head of Mime"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=51836b57-26b6-444b-aaa6-21a175523534" Target="more">страница тайника "OK67 #3 Hervabu"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=9eb08414-7d7f-4a09-9669-5512059033ff" Target="more">страница тайника "AK#1 Turtagro"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=1da9d9a4-eb01-403a-8f5a-c2855ebff0fa" Target="more">страница тайника "OK67 #1 Valburstein"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=86870810-9c10-4534-b047-408bdbcc0d03" Target="more">страница тайника "AK#7 End of Sognefjorden"</Link></Line>
+				<Line><Link Url="http://www.geocaching.su/?pn=101&amp;cid=817" Target="more">страница тайника "Фломсбана"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=ffd0d0f5-5533-429c-b337-a0cc1ea423c3" Target="more">страница тайника "Flam"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=23ecd8af-05fe-4566-adad-095386a49709" Target="more">страница тайника "Skiple 1"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=604ebb10-733a-42c5-bcbe-90e505f16de6" Target="more">страница тайника "Rallarvegen, The Need for Speed - slm#6"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=fa196d27-caa7-46cf-ac1e-e998bf4306f6" Target="more">страница тайника "Rallarvegen, The End - slm#7"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=8858bb45-45b5-4c95-aa8b-b8de4a2c88a4" Target="more">страница тайника "Granvin Bygdatun"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=c53814f0-0223-45cc-ad74-6137c97133d8" Target="more">страница тайника "Fjord View Drive-in - ag#3"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=6f4b13cc-20c7-4098-b9b7-82166b7dac34" Target="more">страница тайника "Tokagjelet"</Link></Line>
+				<Line><Link Url="http://www.geocaching.su/?pn=101&amp;cid=810" Target="more">страница тайника "Старый Город"</Link></Line>
+			</Paragraph>
+		</PageElement>
+	</PageBody>
+</PageTemplate>

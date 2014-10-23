@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	
+	<PageHead Title="Велопробег Отрадное - Громово"></PageHead>
+	
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Велопробег Отрадное - Громово"></Chapter></PageElement>
+	</PageBody>
+		
+	<GPSTrackFrame>
+		<GPSTrackLink Title="Otradnoe - Gromovo" TrackFile="gpsdata/Otradnoe-Gromovo.gpx.xml"></GPSTrackLink>
+	</GPSTrackFrame>
+	
+</PageTemplate>
+
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Наша Гордость"></PageHead>
+		
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		
+		<PageElement><Chapter Title="Наша Гордость">
+		
+		<Image Src="John.JPG"><Chapter Title="Евгений Крылов">
+		<Paragraph><Emphasize>
+				Старейший член партии, участник подавляющего большинства всевозможных походов и путешествий,
+				заядлый рыбак и охотник. Не дурак выпить.
+		</Emphasize></Paragraph>
+		</Chapter></Image>
+		
+		<Image Src="Potapich.JPG"><Chapter Title="Дмитрий Яковлев &quot;Потапыч&quot;">
+		<Paragraph><Emphasize>
+				Старейший член партии, участник всех майскийх походов, немало сделавший для идеологии партии. Любит выпить.
+				В настоящее время женат. Имеет сына.
+		</Emphasize></Paragraph>
+		</Chapter></Image>
+		
+		<Image Src="Vano.JPG"><Chapter Title="Иван Лотенков">
+		<Paragraph><Emphasize>
+				Член партии с 1998 года, активно принимавший участие в партийной жизни с момента ее основания,
+				еще не будучи ее членом. С 2000 года отошел от партийных дел по семейным обстоятельствам.
+				Не пьет. Быстро напивается.
+		</Emphasize></Paragraph>
+		</Chapter></Image>
+		
+		<Image Src="Sergey.JPG"><Chapter Title="Сергей Лукаянов">
+		<Paragraph><Emphasize>
+				Старейший член партии, принимает активное участие во всех партийных мероприятиях.
+				Спокоен, рассудителен. В меру пьющий.
+		</Emphasize></Paragraph>
+		</Chapter></Image>
+		
+		<Image Src="Soev.JPG"><Chapter Title="Алексей Соев">
+		<Paragraph><Emphasize>
+				Член партии с момента основания. Принимает активное участие в организации партийных мероприятий,
+				походов и путешествий. И.о. председателя президиума. Пьет.
+		</Emphasize></Paragraph>
+		</Chapter></Image>
+		
+		<Image Src="Sosed.JPG"><Chapter Title="Дмитрий Умников &quot;Сосед&quot;">
+		<Paragraph><Emphasize>
+				Страрейший член партии. Участник нескольких майских походов. В меру пьющий.
+				Разведен. Имеет дочь.
+		</Emphasize></Paragraph>
+		</Chapter></Image>
+		
+		<Image Src="Igor.JPG"><Chapter Title="Игорь Черный">
+		<Paragraph><Emphasize>
+				Не-член партии по идеологическим соображениям. Не разделяет партийных взглядов и целей. Неоднократно выступал с критикой партийной линии.
+				Принимает активнейшее участие в жизни партии, деятельный участник большинства партийных мероприятий.
+				Не женат. Разумеецца пьет.
+		</Emphasize></Paragraph>
+		</Chapter></Image>
+		
+		</Chapter></PageElement>
+		
+	</PageBody>
+</PageTemplate>

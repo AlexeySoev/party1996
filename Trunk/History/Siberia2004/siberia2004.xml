@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Cибирь 2004"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		<PageElement><Chapter Title="Сибирь 2004">
+		<Line><Emphasize>Продолжительность: </Emphasize>17-29 марта 2004 года</Line>
+		<Line><Emphasize>Район: </Emphasize>Республика Хакасия, Юго-восточная Сибирь</Line>
+		<Line><Emphasize>Маршрут: </Emphasize>С-Петербург - Москва - Абакан - перевал Ергаки - Абакан - горнолыжный курорт Гладенькая - Абакан - Москва - С-Петербург</Line>
+		<Line><Emphasize>Участники: </Emphasize>Я, мои родители и друзья. Всем большое спасибо, это было незабываемо!</Line>
+		
+		<Paragraph>
+			<Line><Link Url="../../Album/Siberia2004/index.xml">Фотоальбом</Link></Line>
+			<Line><Link Url="../../Tracks/2004/Siberia/Siberia.xml">GPS треки</Link></Line>
+		</Paragraph>
+		
+		</Chapter></PageElement>
+	</PageBody>
+</PageTemplate>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Тайники, найденые в походе 'Питкяранта - Сортавала'"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement>
+			<Paragraph Title="Тайники, найденые в походе 'Питкяранта - Сортавала'">
+				<Line><Link Url="http://www.geocaching.su/?pn=101&amp;cid=45" Target="more">страница тайника "Линия Маннергейма"</Link></Line>
+				<Line><Link Url="http://www.geocaching.su/?pn=101&amp;cid=46" Target="more">страница тайника "Карельские Водопады"</Link></Line>
+				<Line><Link Url="http://www.geocaching.su/?pn=101&amp;cid=192" Target="more">страница тайника "Мраморное озеро"</Link></Line>
+			</Paragraph>
+		</PageElement>
+	</PageBody>
+</PageTemplate>
+
+
+

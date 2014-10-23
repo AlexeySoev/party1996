@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Европа 2002"></PageHead>
+	<PageBody SnakeText="">
+		<PageElement>
+			<MainMenu />
+		</PageElement>
+		<PageElement>
+			<Chapter Title="Европа 2002. Вело-Автопробег.">
+				<Line><Emphasize>Продолжительность: </Emphasize>19 июля - 11 августа 2002 года</Line>
+				<Line><Emphasize>Район: </Emphasize>Европа</Line>
+				<Line><Emphasize>Маршрут: </Emphasize>Россия - Финляндия - Швеция - Дания - Германия - Голландия - Бельгия - Франция - Монако - Италия - Австрия - Германия - Финляния - Россия</Line>
+				<Line><Emphasize>Участники: </Emphasize>Соев Алексей, Лукаянов Сергей - велокоманда, Крылов Евгений, Емельченко Андрей - автокоманда.</Line>
+				<Paragraph>
+					<Line><LinkToImage Url="Pics/way.jpg" H="1024" V="560">Фрагменты пути частей нашей команды :) </LinkToImage>
+			на карте Европы. Паромы через моря и автобусы через страны не изображны.</Line>
+					<Line><Link Url="../../Album/Europe2002/Bike/index.xml">Фотоальбом</Link> велосипедной части путешествия</Line>
+					<Line><Link Url="../../Album/Europe2002/Car/index.xml">Фотоальбом</Link> автомобильной части путешествия</Line>
+					<Line><Link Url="../../Tracks/2002/Europe/Europe.xml">GPS треки.</Link> В основном велосипедная часть</Line>
+				</Paragraph>
+				<Paragraph Title="Хронология пути. Велочасть.">
+					<List>
+						<ListItem>19 июля - 20 июля. <Emphasize>Автобус "Питер - Хельсинки</Emphasize></ListItem>
+						<ListItem>20 июля. <Emphasize>Хельсинки</Emphasize></ListItem>
+						<ListItem>21 июля. <Emphasize>Хельсинки - Паром VikingLine</Emphasize></ListItem>
+						<ListItem>22 июля. <Emphasize>Стокгольм - Private Property </Emphasize>Пробег: километров 50 наверное</ListItem>
+						<ListItem>23 июля. <Emphasize>Private Property - Никкопинг </Emphasize>Пробег: 116 км. Время в пути: 6:16</ListItem>
+						<ListItem>24 июля. <Emphasize>Никкопинг - Норкопинг - Холм </Emphasize>Пробег: 86 км. Время в пути: 4:04</ListItem>
+						<ListItem>25 июля. <Emphasize>Холм - Линкопинг - Лес у Е4 </Emphasize>Пробег: 87 км. Время в пути: 4:37</ListItem>
+						<ListItem>26 июля. <Emphasize>Лес у Е4 - Йонкопинг </Emphasize>Пробег: 83 км. Время в пути: 4:14</ListItem>
+						<ListItem>27 июля. <Emphasize>Йонкопинг - Варнамо </Emphasize>Пробег: 100 км. Время в пути: 5:15</ListItem>
+						<ListItem>28 июля. <Emphasize>Варнамо - Маркарид - Болото </Emphasize>Пробег: 105 км. Время в пути: 5:08</ListItem>
+						<ListItem>29 июля. <Emphasize>Болото - Маркарид - Хельсингор </Emphasize>Пробег: 109 км. Время в пути: 5:35</ListItem>
+						<ListItem>30 июля. <Emphasize>Хельсингор - Копенгаген </Emphasize>Пробег: 58 км. Время в пути: 3:32</ListItem>
+						<ListItem>31 июля. <Emphasize>Копенгаген - Обочина </Emphasize>Пробег: 82 км. Время в пути: 4:21</ListItem>
+						<ListItem>1 августа. <Emphasize>Обочина - Росток </Emphasize>Пробег: 98 км. Время в пути: 4:42</ListItem>
+						<ListItem>2 августа. <Emphasize>Росток - Автостоянка </Emphasize>Пробег: 5 км. Время в пути: 0:37</ListItem>
+					</List>
+				</Paragraph>
+				<Line>Судя по разнице на велокомпьютерах, за европейское велопутешествие пройдено около 1100 км, из них около 1000 км шоссейных дорог...</Line>
+				<Line>Далее транспортом нам служил автомобиль, экстрим закончился и двигаться стало проще и быстрее.</Line>
+				<Paragraph Title="Хронология пути. Авточасть.">				
+					<List>
+						<ListItem>3 августа. <Emphasize>Гамбург - Амстердам</Emphasize></ListItem>
+						<ListItem>4 августа. <Emphasize>Амстердам</Emphasize></ListItem>
+						<ListItem>5 августа. <Emphasize>Брюссель - Париж</Emphasize></ListItem>
+						<ListItem>6 августа. <Emphasize>Париж</Emphasize></ListItem>
+						<ListItem>7 августа. <Emphasize>Париж - Монако</Emphasize></ListItem>
+						<ListItem>8 августа. <Emphasize>Монако - Альпы - Нюрнберг</Emphasize></ListItem>
+						<ListItem>9 августа. <Emphasize>Нюрнберг - Росток - Паром SuperFast</Emphasize></ListItem>
+						<ListItem>10 августа. <Emphasize>Паром SuperFast - Хельсинки</Emphasize></ListItem>
+						<ListItem>11 августа. <Emphasize>Хельсинки - Питер</Emphasize></ListItem>
+					</List>
+				</Paragraph>
+				<Paragraph>
+				А еще есть два дневника - от <Link Url="Files/BikeEurope.doc">команды велосипедистов</Link> и <Link Url="http://www.niko.spb.ru/news" Target="more">команды автомобилистов.</Link>
+				По причине суровейших испытаний, выпавших на долю велокоманды, их записи пестрят ненормативной лексикой, а посему запаролены, дабы не шокировать неподготовленную публику.
+				Паролем является слитно написанное кирилицей число, получить которое можно, сложив даты рождений (только число месяца) всех членов партии.
+				Пример написания пароля - двестидвадцатьдва.
+				</Paragraph>				
+			</Chapter>
+		</PageElement>
+	</PageBody>
+</PageTemplate>
