@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <markers>
   <m tm="09:50:57 01/10/2006" al="31" lg="29.383508" lt="60.348071" />
   <m tm="09:51:24 01/10/2006" al="32" lg="29.382564" lt="60.347036" />
@@ -682,7 +682,7 @@
   <m tm="15:05:38 01/10/2006" al="9" lg="28.774914" lt="60.369222" />
   <m tm="15:06:05 01/10/2006" al="10" lg="28.774966" lt="60.369219" />
   <m tm="15:06:26 01/10/2006" al="12" lg="28.774959" lt="60.369229" />
-  <p tm="" al="" lg="29.137801" lt="60.264563" text="Карельский Десант - 2006" url="http://www.carabin.ru/desant/" urlname="Carabin.Ru" />
-  <p tm="" al="" lg="28.910783" lt="60.265733" text="Памятник Микаелю Агриколе, первая часть тайника" url="http://www.geocaching.su/?pn=101&amp;cid=186" urlname="Страница тайника" />
-  <p tm="" al="" lg="28.943717" lt="60.273283" text="Финский ДOT Ink 6 линии Маннергейма, вторая часть тайника" url="http://www.mannerheim-line.com/inkila/ink6.htm" urlname="Mannerheim Line Site" />
+  <p tm="" al="" lg="29.137801" lt="60.264563" text="РљР°СЂРµР»СЊСЃРєРёР№ Р”РµСЃР°РЅС‚ - 2006" url="http://www.carabin.ru/desant/" urlname="Carabin.Ru" />
+  <p tm="" al="" lg="28.910783" lt="60.265733" text="РџР°РјСЏС‚РЅРёРє РњРёРєР°РµР»СЋ РђРіСЂРёРєРѕР»Рµ, РїРµСЂРІР°СЏ С‡Р°СЃС‚СЊ С‚Р°Р№РЅРёРєР°" url="http://www.geocaching.su/?pn=101&amp;cid=186" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p tm="" al="" lg="28.943717" lt="60.273283" text="Р¤РёРЅСЃРєРёР№ Р”OT Ink 6 Р»РёРЅРёРё РњР°РЅРЅРµСЂРіРµР№РјР°, РІС‚РѕСЂР°СЏ С‡Р°СЃС‚СЊ С‚Р°Р№РЅРёРєР°" url="http://www.mannerheim-line.com/inkila/ink6.htm" urlname="Mannerheim Line Site" />
 </markers>

@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 
-	<PageHead Title="Велопробег Каннельярви - Гаврилово"></PageHead>
+	<PageHead Title="Р’РµР»РѕРїСЂРѕР±РµРі РљР°РЅРЅРµР»СЊСЏСЂРІРё - Р“Р°РІСЂРёР»РѕРІРѕ"></PageHead>
 
 	<PageBody SnakeText="">
 		<PageElement>
 			<MainMenu />
 		</PageElement>
 		<PageElement>
-			<Chapter Title="Велопробег Каннельярви - Гаврилово"></Chapter>
+			<Chapter Title="Р’РµР»РѕРїСЂРѕР±РµРі РљР°РЅРЅРµР»СЊСЏСЂРІРё - Р“Р°РІСЂРёР»РѕРІРѕ"></Chapter>
 		</PageElement>
 	</PageBody>
 

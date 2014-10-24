@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 	
-	<PageHead Title="Лыжня в Кавголово 5 км"></PageHead>
+	<PageHead Title="Р›С‹Р¶РЅСЏ РІ РљР°РІРіРѕР»РѕРІРѕ 5 РєРј"></PageHead>
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Лыжня в Кавголово 5 км"></Chapter></PageElement>
+		<PageElement><Chapter Title="Р›С‹Р¶РЅСЏ РІ РљР°РІРіРѕР»РѕРІРѕ 5 РєРј"></Chapter></PageElement>
 	</PageBody>
 		
 	<GPSTrackFrame>

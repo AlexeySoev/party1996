@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Поход Май-2001"></PageHead>
+	<PageHead Title="РџРѕС…РѕРґ РњР°Р№-2001"></PageHead>
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Поход Май-2001">
-		<Line><Emphasize>Продолжительность: </Emphasize>29 апреля - 5 мая 2001 года</Line>
-		<Line><Emphasize>Район: </Emphasize>Карелия, северная Ладога</Line>
-		<Line><Emphasize>Маршрут: </Emphasize>г.Сортавала - о.Риеккалансаари - г.Сортавала</Line>
-		<Line><Emphasize>Участники: </Emphasize>Соев, Серега, Потапыч, Черный</Line>
+		<PageElement><Chapter Title="РџРѕС…РѕРґ РњР°Р№-2001">
+		<Line><Emphasize>РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ: </Emphasize>29 Р°РїСЂРµР»СЏ - 5 РјР°СЏ 2001 РіРѕРґР°</Line>
+		<Line><Emphasize>Р Р°Р№РѕРЅ: </Emphasize>РљР°СЂРµР»РёСЏ, СЃРµРІРµСЂРЅР°СЏ Р›Р°РґРѕРіР°</Line>
+		<Line><Emphasize>РњР°СЂС€СЂСѓС‚: </Emphasize>Рі.РЎРѕСЂС‚Р°РІР°Р»Р° - Рѕ.Р РёРµРєРєР°Р»Р°РЅСЃР°Р°СЂРё - Рі.РЎРѕСЂС‚Р°РІР°Р»Р°</Line>
+		<Line><Emphasize>РЈС‡Р°СЃС‚РЅРёРєРё: </Emphasize>РЎРѕРµРІ, РЎРµСЂРµРіР°, РџРѕС‚Р°РїС‹С‡, Р§РµСЂРЅС‹Р№</Line>
 		
 		<Paragraph>
-		<Line><Link Url="../../Album/May2001/index.xml">Фотоальбом</Link></Line>
-		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">Место похода на карте</Link></Line>
+		<Line><Link Url="../../Album/May2001/index.xml">Р¤РѕС‚РѕР°Р»СЊР±РѕРј</Link></Line>
+		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">РњРµСЃС‚Рѕ РїРѕС…РѕРґР° РЅР° РєР°СЂС‚Рµ</Link></Line>
 		</Paragraph>
 		
 		</Chapter></PageElement>

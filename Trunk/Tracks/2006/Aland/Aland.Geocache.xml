@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Тайники, найденые в походе 'Велопутешествие по Аландам'"></PageHead>
+	<PageHead Title="РўР°Р№РЅРёРєРё, РЅР°Р№РґРµРЅС‹Рµ РІ РїРѕС…РѕРґРµ 'Р’РµР»РѕРїСѓС‚РµС€РµСЃС‚РІРёРµ РїРѕ РђР»Р°РЅРґР°Рј'"></PageHead>
 	<PageBody SnakeText="">
 		<PageElement>
-			<Paragraph Title="Тайники, найденые в походе 'Велопутешествие по Аландам'">
-				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=7fc50f43-bfe1-46b9-9923-fd606892757b" Target="more">страница тайника "KnightHill"</Link></Line>
-				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=abf92d05-24cd-4327-9a47-43be78b50889" Target="more">страница тайника "Postroad in Eckero"</Link></Line>
-				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=b6e74053-2f88-421e-8d7c-f4683bdd4993" Target="more">страница тайника "Aland"</Link></Line>
-				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=1e79d8a5-f847-4a94-b891-375a975f4d94" Target="more">страница тайника "Windmill in Vardo"</Link></Line>
+			<Paragraph Title="РўР°Р№РЅРёРєРё, РЅР°Р№РґРµРЅС‹Рµ РІ РїРѕС…РѕРґРµ 'Р’РµР»РѕРїСѓС‚РµС€РµСЃС‚РІРёРµ РїРѕ РђР»Р°РЅРґР°Рј'">
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=7fc50f43-bfe1-46b9-9923-fd606892757b" Target="more">СЃС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР° "KnightHill"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=abf92d05-24cd-4327-9a47-43be78b50889" Target="more">СЃС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР° "Postroad in Eckero"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=b6e74053-2f88-421e-8d7c-f4683bdd4993" Target="more">СЃС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР° "Aland"</Link></Line>
+				<Line><Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=1e79d8a5-f847-4a94-b891-375a975f4d94" Target="more">СЃС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР° "Windmill in Vardo"</Link></Line>
 			</Paragraph>
 		</PageElement>
 	</PageBody>

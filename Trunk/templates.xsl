@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE MyPage [
-<!ENTITY Root "file://localhost/H:/Data/!My Storage/My Projects/Personal/WEB Site/Party1996">
+<!ENTITY Root "file://localhost/D:/!Party/Trunk">
 <!ENTITY TestRoot1 "http://localhost/party1996">
 <!ENTITY TestRoot2 "http://party1996.narod.ru">
 <!ENTITY ScriptsDir "&Root;/Scripts">
@@ -10,7 +10,7 @@
 ]>
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:output method="html" encoding="windows-1251" indent="yes"/> 
+    <xsl:output method="html" encoding="UTF-8" indent="yes"/> 
 
     <xsl:template match="PageTemplate">
 	    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
@@ -21,7 +21,7 @@
 	<xsl:template match="PageHead">
 		<head>
 			<title>
-                Первый сайт Партии Любителей - <xsl:value-of select="@Title"/>
+                РџРµСЂРІС‹Р№ СЃР°Р№С‚ РџР°СЂС‚РёРё Р›СЋР±РёС‚РµР»РµР№ - <xsl:value-of select="@Title"/>
 			</title>
 
 			<STYLE>.spanstyle {
@@ -51,7 +51,7 @@
 	</xsl:template>
 
 	<xsl:template match="PageBody">
-		<body background="&PicsDir;/fon3_101.jpg">
+		<body background="&PicsDir;/background.jpg">
 		<table width="98%" border="0" cellpadding="0" cellspacing="0" align="center">
 		<xsl:apply-templates />
 		</table>
@@ -69,21 +69,20 @@
 		<tr>
 			<td colspan="9">
 				<font color="Black" style="font-size: 24pt">
-				<b>Первый сайт Партии Любителей</b>
+				<b>РџРµСЂРІС‹Р№ СЃР°Р№С‚ РџР°СЂС‚РёРё Р›СЋР±РёС‚РµР»РµР№</b>
 				</font>
 			</td>
 		</tr>
 		<tr bgcolor="#ccffff" align="center">
-		<td><a href="&Root;/index.html" target="_top">На главную</a></td>
-		<td><a href="http://www.narod.ru/guestbook/?owner=1638701&amp;mpp=50" target="_top">Гостевая книга</a></td>
-		<td><a href="http://narod.yandex.ru/userforum/?owner=party1996" target="_top">Форум</a></td>
-		<td><a href="&Root;/History/history.xml" target="_top">Фрагменты нашей истории</a></td>
-		<td><a href="&Root;/Members/members.xml" target="_top">Наша гордость</a></td>
-		<td><a href="&Root;/Album/album.xml" target="_top">Альбом</a></td>
-		<td><a href="&Root;/Tracks/Tracks.xml" target="_top">GPS Треки</a></td>
-		<td><a href="&Root;/Funs/funs.xml" target="_top">Приколись</a></td>
-		<td><a href="&Root;/Personal/Personal.xml" target="_top">Персональное</a></td>
-		<td><a href="&Root;/links.xml" target="_top">Линки</a></td>
+		<td><a href="&Root;/index.html" target="_top">РќР° РіР»Р°РІРЅСѓСЋ</a></td>
+		<td><a href="http://party1996.narod.ru/gb" target="_top">Р“РѕСЃС‚РµРІР°СЏ РєРЅРёРіР°</a></td>
+		<td><a href="&Root;/History/history.xml" target="_top">Р¤СЂР°РіРјРµРЅС‚С‹ РЅР°С€РµР№ РёСЃС‚РѕСЂРёРё</a></td>
+		<td><a href="&Root;/Members/members.xml" target="_top">РќР°С€Р° РіРѕСЂРґРѕСЃС‚СЊ</a></td>
+		<td><a href="&Root;/Album/album.xml" target="_top">РђР»СЊР±РѕРј</a></td>
+		<td><a href="&Root;/Tracks/Tracks.xml" target="_top">GPS РўСЂРµРєРё</a></td>
+		<td><a href="&Root;/Funs/funs.xml" target="_top">РџСЂРёРєРѕР»РёСЃСЊ</a></td>
+		<td><a href="&Root;/Personal/Personal.xml" target="_top">РџРµСЂСЃРѕРЅР°Р»СЊРЅРѕРµ</a></td>
+		<td><a href="&Root;/links.xml" target="_top">Р›РёРЅРєРё</a></td>
 		</tr>
 		</table>
 		<br />
@@ -302,9 +301,9 @@
 
     <xsl:template match="ThumbnailPage">
 	    <html>
-			<head><meta http-equiv="Content-Type" content="text/html;" charset="win-1251" /></head>
+			<head><meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" /></head>
 			<SCRIPT src="&ScriptsDir;/showphoto.js">error_preventing_string_for_FireFox3.0</SCRIPT>
-			<body background="&PicsDir;/fon3_101.jpg">
+			<body background="&PicsDir;/background.jpg">
 			<div align="center">
 			<table border="0" cellpadding="6" cellspacing="0">
 				<tr valign="bottom" align="center">				
@@ -331,9 +330,9 @@
 	    <html>
 			<head>
 				<title>
-					Первый сайт Партии Любителей - Альбом - <xsl:value-of select="@Title"/>
+					РџРµСЂРІС‹Р№ СЃР°Р№С‚ РџР°СЂС‚РёРё Р›СЋР±РёС‚РµР»РµР№ - РђР»СЊР±РѕРј - <xsl:value-of select="@Title"/>
 				</title>
-				<meta http-equiv="Content-Type" content="text/html;" charset="win-1251" />
+				<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
 			</head>
 			<SCRIPT src="&ScriptsDir;/showphoto.js"></SCRIPT>
 			<FRAMESET frameborder="no" border="0" rows="*,120">
@@ -402,7 +401,7 @@
 			
 				<div style="height:30px" >
 					<FONT color="#000000" size="3"><STRONG>
-						<span style="text-align:left">Список треков</span>
+						<span style="text-align:left">РЎРїРёСЃРѕРє С‚СЂРµРєРѕРІ</span>
 					</STRONG></FONT>
 				</div>			    		
 			
@@ -414,7 +413,7 @@
 			
 				<div class="gpslabel" style="height:30px" >
 					<FONT color="#000000" size="3"><STRONG>
-						<span style="text-align:left">Трек: </span></STRONG></FONT>
+						<span style="text-align:left">РўСЂРµРє: </span></STRONG></FONT>
 						<span style="text-align:left" id="trackName"></span>
 				</div>
 				
@@ -422,7 +421,7 @@
 												
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Начало движения:*
+							РќР°С‡Р°Р»Рѕ РґРІРёР¶РµРЅРёСЏ:*
 						</div>
 						<div id="trackStartTime">
 							<span style="text-align:right; margin-left:10px"></span>
@@ -431,7 +430,7 @@
 					
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Oкончание движения:*
+							OРєРѕРЅС‡Р°РЅРёРµ РґРІРёР¶РµРЅРёСЏ:*
 						</div>
 						<div id="trackFinishTime">
 							<span style="text-align:right; margin-left:10px"></span>
@@ -440,7 +439,7 @@
 					
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Время в пути:
+							Р’СЂРµРјСЏ РІ РїСѓС‚Рё:
 						</div>
 						<div id="trackTimeEnroute">
 							<span style="text-align:right; margin-left:10px"></span>
@@ -449,61 +448,61 @@
 									
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Общая дистанция:
+							РћР±С‰Р°СЏ РґРёСЃС‚Р°РЅС†РёСЏ:
 						</div>
 						<div>
 							<span style="text-align:right" id="trackDistance"><B>0.0</B></span>
-							<span style="text-align:right; margin-left:10px"><B>км</B></span>
+							<span style="text-align:right; margin-left:10px"><B>РєРј</B></span>
 						</div>
 					</div>
 									
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Средняя скорость:
+							РЎСЂРµРґРЅСЏСЏ СЃРєРѕСЂРѕСЃС‚СЊ:
 						</div>
 						<div>
 							<span style="text-align:right" id="trackAverageSpeed"><B>0.0</B></span>
-							<span style="text-align:right; margin-left:10px"><B>км/ч</B></span>
+							<span style="text-align:right; margin-left:10px"><B>РєРј/С‡</B></span>
 						</div>
 					</div>
 					
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Максимальная скорость:**
+							РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ:**
 						</div>
 						<div>
 							<span style="text-align:right" id="trackMaxSpeed"><B>0.0</B></span>
-							<span style="text-align:right; margin-left:10px"><B>км/ч</B></span>
+							<span style="text-align:right; margin-left:10px"><B>РєРј/С‡</B></span>
 						</div>
 					</div>
 								
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Минимальная высота:
+							РњРёРЅРёРјР°Р»СЊРЅР°СЏ РІС‹СЃРѕС‚Р°:
 						</div>
 						<div>
 							<span style="text-align:left" id="trackMinAltitude"><B>0</B></span>
-							<span style="text-align:left; margin-left:10px"><B>м</B></span>
+							<span style="text-align:left; margin-left:10px"><B>Рј</B></span>
 						</div>
 					</div>
 					
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Максимальная высота:
+							РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ РІС‹СЃРѕС‚Р°:
 						</div>
 						<div>
 							<span style="text-align:left" id="trackMaxAltitude"><B>0</B></span>
-							<span style="text-align:left; margin-left:10px"><B>м</B></span>
+							<span style="text-align:left; margin-left:10px"><B>Рј</B></span>
 						</div>
 					</div>
 				
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Перепад высоты:
+							РџРµСЂРµРїР°Рґ РІС‹СЃРѕС‚С‹:
 						</div>
 						<div>
 							<span style="text-align:left" id="trackDeltaAltitude"><B>0</B></span>
-							<span style="text-align:left; margin-left:10px"><B>м</B></span>
+							<span style="text-align:left; margin-left:10px"><B>Рј</B></span>
 						</div>
 					</div>
 				
@@ -515,51 +514,51 @@
 				<div id="divModulation" style="background-color:#eeeeee; background-image: none; border:1px solid grey; padding:5px; visibility:hidden;">
 				
 					<div style="background-color:#dddddd; padding:5px">
-						<span><a href="javascript:simulateTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="simulateBtn">Старт</a></span>
-						<span><a href="javascript:pauseTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="pauseBtn">Пауза</a></span>
-						<span><a href="javascript:resumeTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="resumeBtn">Продолжить</a></span>
-						<span><a href="javascript:stopTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="stopBtn">Стоп</a></span>
+						<span><a href="javascript:simulateTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="simulateBtn">РЎС‚Р°СЂС‚</a></span>
+						<span><a href="javascript:pauseTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="pauseBtn">РџР°СѓР·Р°</a></span>
+						<span><a href="javascript:resumeTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="resumeBtn">РџСЂРѕРґРѕР»Р¶РёС‚СЊ</a></span>
+						<span><a href="javascript:stopTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="stopBtn">РЎС‚РѕРї</a></span>
 					</div>
 					
 					<br/>
 					
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Время:*
+							Р’СЂРµРјСЏ:*
 						</div>
 						<div id="time" />
 					</div>
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Время в пути:
+							Р’СЂРµРјСЏ РІ РїСѓС‚Рё:
 						</div>
 						<div id="timeEnroute" />
 					</div>
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Дистанция:
+							Р”РёСЃС‚Р°РЅС†РёСЏ:
 						</div>
 						<div>
 							<span style="text-align:left" id="distance"><B>0.0</B></span>
-							<span style="text-align:left; margin-left:10px"><B>км</B></span>
+							<span style="text-align:left; margin-left:10px"><B>РєРј</B></span>
 						</div>
 					</div>
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Скорость:
+							РЎРєРѕСЂРѕСЃС‚СЊ:
 						</div>
 						<div>
 							<span style="text-align:left" id="speed"><B>0</B></span>
-							<span style="text-align:left; margin-left:10px"><B>км/ч</B></span>
+							<span style="text-align:left; margin-left:10px"><B>РєРј/С‡</B></span>
 						</div>
 					</div>
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Высота:
+							Р’С‹СЃРѕС‚Р°:
 						</div>
 						<div>
 							<span style="text-align:left" id="elevation"><B>0</B></span>
-							<span style="text-align:left; margin-left:10px"><B>м</B></span>
+							<span style="text-align:left; margin-left:10px"><B>Рј</B></span>
 						</div>
 					</div>
 				
@@ -569,14 +568,14 @@
 				
 				<div class="gpslabel" style="padding:5px;">
 					<FONT size="2">
-						<span style="text-align:left; color:gray">* Время по Гринвичу.</span>
+						<span style="text-align:left; color:gray">* Р’СЂРµРјСЏ РїРѕ Р“СЂРёРЅРІРёС‡Сѓ.</span>
 						<br/>
-						<span style="text-align:left; color:gray">Париж, Стокгольм +1 (+2), Хельсинки +2 (+3),</span>
+						<span style="text-align:left; color:gray">РџР°СЂРёР¶, РЎС‚РѕРєРіРѕР»СЊРј +1 (+2), РҐРµР»СЊСЃРёРЅРєРё +2 (+3),</span>
 						<br/>
-						<span style="text-align:left; color:gray">Москва,Петербург +3 (+4), Красноярск,Абакан +7 (+8)</span>
+						<span style="text-align:left; color:gray">РњРѕСЃРєРІР°,РџРµС‚РµСЂР±СѓСЂРі +3 (+4), РљСЂР°СЃРЅРѕСЏСЂСЃРє,РђР±Р°РєР°РЅ +7 (+8)</span>
 						<br/>
 						<br/>
-						<span style="text-align:left; color:gray">** Может глючить по страшному :)</span>
+						<span style="text-align:left; color:gray">** РњРѕР¶РµС‚ РіР»СЋС‡РёС‚СЊ РїРѕ СЃС‚СЂР°С€РЅРѕРјСѓ :)</span>
 					</FONT>
 				</div>
 				
@@ -587,9 +586,9 @@
 				</div>
 				<br></br>
 				<div>
-					<input id="chkCenterAndZoomMap" type="checkbox" checked="checked" onclick="CenterAndZoomMap()">Центрировать и масштабировать карту при смене трека</input>
+					<input id="chkCenterAndZoomMap" type="checkbox" checked="checked" onclick="CenterAndZoomMap()">Р¦РµРЅС‚СЂРёСЂРѕРІР°С‚СЊ Рё РјР°СЃС€С‚Р°Р±РёСЂРѕРІР°С‚СЊ РєР°СЂС‚Сѓ РїСЂРё СЃРјРµРЅРµ С‚СЂРµРєР°</input>
 					<br/>
-					<span style="text-align:left">(Рекомендуется отключить при просмотре последовательных треков)</span>
+					<span style="text-align:left">(Р РµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ РѕС‚РєР»СЋС‡РёС‚СЊ РїСЂРё РїСЂРѕСЃРјРѕС‚СЂРµ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅС‹С… С‚СЂРµРєРѕРІ)</span>
 				</div>
 			</div>
 		

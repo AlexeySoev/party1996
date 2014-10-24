@@ -1,33 +1,33 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Приколись"></PageHead>
+	<PageHead Title="РџСЂРёРєРѕР»РёСЃСЊ"></PageHead>
 		
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
 		
-		<PageElement><Chapter Title="Приколись">
+		<PageElement><Chapter Title="РџСЂРёРєРѕР»РёСЃСЊ">
 		<List>
 			<ListItem>
-			<Paragraph Title="Левак">
-				<LinkWithDescription Url="trouble.xml" Text="Банный трабл">Рассказ одного идиота, посетившего баню</LinkWithDescription>
-				<LinkWithDescription Url="butter.xml" Text="Масло">Рассказ о проблемах брэндирования</LinkWithDescription>
-				<LinkWithDescription Url="../Files/metadoll_mj6.swf" Target="child" Text="Метадолл">По многочисленным просьбам посетителей</LinkWithDescription>
+			<Paragraph Title="Р›РµРІР°Рє">
+				<LinkWithDescription Url="trouble.xml" Text="Р‘Р°РЅРЅС‹Р№ С‚СЂР°Р±Р»">Р Р°СЃСЃРєР°Р· РѕРґРЅРѕРіРѕ РёРґРёРѕС‚Р°, РїРѕСЃРµС‚РёРІС€РµРіРѕ Р±Р°РЅСЋ</LinkWithDescription>
+				<LinkWithDescription Url="butter.xml" Text="РњР°СЃР»Рѕ">Р Р°СЃСЃРєР°Р· Рѕ РїСЂРѕР±Р»РµРјР°С… Р±СЂСЌРЅРґРёСЂРѕРІР°РЅРёСЏ</LinkWithDescription>
+				<LinkWithDescription Url="../Files/metadoll_mj6.swf" Target="child" Text="РњРµС‚Р°РґРѕР»Р»">РџРѕ РјРЅРѕРіРѕС‡РёСЃР»РµРЅРЅС‹Рј РїСЂРѕСЃСЊР±Р°Рј РїРѕСЃРµС‚РёС‚РµР»РµР№</LinkWithDescription>
 			</Paragraph>
 			</ListItem>
 			
 			<ListItem>
-			<Paragraph Title="Наше">
-				<Paragraph><LinkToImage Url="../Photos/Telega.jpg" H="600" V="800">Телега</LinkToImage></Paragraph>
-				<Paragraph><LinkToImage Url="../Photos/ObchN8.jpg" H="640" V="600">Общ. №8</LinkToImage></Paragraph>
-				<Paragraph><LinkToImage Url="../Photos/Foto.jpg" H="800" V="547">Пляж</LinkToImage></Paragraph>
-				<Paragraph><LinkToImage Url="../Photos/Serega.jpg" H="440" V="600">Серега</LinkToImage></Paragraph>
-				<Paragraph><LinkToImage Url="../Photos/Camp.jpg" H="800" V="600">Пикник на обочине</LinkToImage></Paragraph>
-				<Paragraph>В этой комнате не пьют <Emphasize>Скоро</Emphasize></Paragraph>
-				<Paragraph>Креативы <Emphasize>Скоро</Emphasize></Paragraph>
-				<Paragraph>Пивные Пробки <Emphasize>Скоро</Emphasize></Paragraph>
-				<Link Url="aphorisms.xml">Афоризмы собственного изготовления</Link>
+			<Paragraph Title="РќР°С€Рµ">
+				<Paragraph><LinkToImage Url="../Photos/Telega.jpg" H="600" V="800">РўРµР»РµРіР°</LinkToImage></Paragraph>
+				<Paragraph><LinkToImage Url="../Photos/ObchN8.jpg" H="640" V="600">РћР±С‰. в„–8</LinkToImage></Paragraph>
+				<Paragraph><LinkToImage Url="../Photos/Foto.jpg" H="800" V="547">РџР»СЏР¶</LinkToImage></Paragraph>
+				<Paragraph><LinkToImage Url="../Photos/Serega.jpg" H="440" V="600">РЎРµСЂРµРіР°</LinkToImage></Paragraph>
+				<Paragraph><LinkToImage Url="../Photos/Camp.jpg" H="800" V="600">РџРёРєРЅРёРє РЅР° РѕР±РѕС‡РёРЅРµ</LinkToImage></Paragraph>
+				<Paragraph>Р’ СЌС‚РѕР№ РєРѕРјРЅР°С‚Рµ РЅРµ РїСЊСЋС‚ <Emphasize>РЎРєРѕСЂРѕ</Emphasize></Paragraph>
+				<Paragraph>РљСЂРµР°С‚РёРІС‹ <Emphasize>РЎРєРѕСЂРѕ</Emphasize></Paragraph>
+				<Paragraph>РџРёРІРЅС‹Рµ РџСЂРѕР±РєРё <Emphasize>РЎРєРѕСЂРѕ</Emphasize></Paragraph>
+				<Link Url="aphorisms.xml">РђС„РѕСЂРёР·РјС‹ СЃРѕР±СЃС‚РІРµРЅРЅРѕРіРѕ РёР·РіРѕС‚РѕРІР»РµРЅРёСЏ</Link>
 			</Paragraph>
 			</ListItem>
 		</List>

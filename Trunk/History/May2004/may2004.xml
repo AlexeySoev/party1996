@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Поход Май-2004"></PageHead>
+	<PageHead Title="РџРѕС…РѕРґ РњР°Р№-2004"></PageHead>
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Поход Май-2004">
-		<Line><Emphasize>Продолжительность: </Emphasize>30 апреля - 5 мая 2004 года</Line>
-		<Line><Emphasize>Район: </Emphasize>Псковская область</Line>
-		<Line><Emphasize>Маршрут: </Emphasize>С-Петербург - г.Остров - р.Великая - г.Псков - С-Петербург</Line>
-		<Line><Emphasize>Участники: </Emphasize>Соев, Женя, Серега, Потапыч, Черный, Сосед</Line>
+		<PageElement><Chapter Title="РџРѕС…РѕРґ РњР°Р№-2004">
+		<Line><Emphasize>РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ: </Emphasize>30 Р°РїСЂРµР»СЏ - 5 РјР°СЏ 2004 РіРѕРґР°</Line>
+		<Line><Emphasize>Р Р°Р№РѕРЅ: </Emphasize>РџСЃРєРѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</Line>
+		<Line><Emphasize>РњР°СЂС€СЂСѓС‚: </Emphasize>РЎ-РџРµС‚РµСЂР±СѓСЂРі - Рі.РћСЃС‚СЂРѕРІ - СЂ.Р’РµР»РёРєР°СЏ - Рі.РџСЃРєРѕРІ - РЎ-РџРµС‚РµСЂР±СѓСЂРі</Line>
+		<Line><Emphasize>РЈС‡Р°СЃС‚РЅРёРєРё: </Emphasize>РЎРѕРµРІ, Р–РµРЅСЏ, РЎРµСЂРµРіР°, РџРѕС‚Р°РїС‹С‡, Р§РµСЂРЅС‹Р№, РЎРѕСЃРµРґ</Line>
 		
 		<Paragraph>
-		<Line><Link Url="../../Album/May2004/index.xml">Фотоальбом</Link></Line>
-		<Line><Link Url="../../Tracks/2004/May2004.xml">GPS трек</Link></Line>
+		<Line><Link Url="../../Album/May2004/index.xml">Р¤РѕС‚РѕР°Р»СЊР±РѕРј</Link></Line>
+		<Line><Link Url="../../Tracks/2004/May2004.xml">GPS С‚СЂРµРє</Link></Line>
 		</Paragraph>
 		
 		</Chapter></PageElement>

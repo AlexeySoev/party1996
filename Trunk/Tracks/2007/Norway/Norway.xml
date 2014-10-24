@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 
-	<PageHead Title="Норвегия 2007"></PageHead>
+	<PageHead Title="РќРѕСЂРІРµРіРёСЏ 2007"></PageHead>
 
 	<PageBody SnakeText="">
 		<PageElement>
 			<MainMenu />
 		</PageElement>
 		<PageElement>
-			<Chapter Title="Норвегия 2007"></Chapter>
+			<Chapter Title="РќРѕСЂРІРµРіРёСЏ 2007"></Chapter>
 		</PageElement>
 	</PageBody>
 

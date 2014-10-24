@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 
-	<PageHead Title="Велопробег Войбокало - Кировск"></PageHead>
+	<PageHead Title="Р’РµР»РѕРїСЂРѕР±РµРі Р’РѕР№Р±РѕРєР°Р»Рѕ - РљРёСЂРѕРІСЃРє"></PageHead>
 
 	<PageBody SnakeText="">
 		<PageElement>
 			<MainMenu />
 		</PageElement>
 		<PageElement>
-			<Chapter Title="Велопробег Войбокало - Кировск"></Chapter>
+			<Chapter Title="Р’РµР»РѕРїСЂРѕР±РµРі Р’РѕР№Р±РѕРєР°Р»Рѕ - РљРёСЂРѕРІСЃРє"></Chapter>
 		</PageElement>
 	</PageBody>
 

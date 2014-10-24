@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 
-	<PageHead Title="Кавказ 2001"></PageHead>
+	<PageHead Title="РљР°РІРєР°Р· 2001"></PageHead>
 
 	<PageBody SnakeText="">
 		<PageElement>
 			<MainMenu />
 		</PageElement>
 		<PageElement>
-			<Chapter Title="Кавказ 2001"></Chapter>
+			<Chapter Title="РљР°РІРєР°Р· 2001"></Chapter>
 		</PageElement>
 	</PageBody>
 

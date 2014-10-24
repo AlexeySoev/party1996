@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Альпы 2006"></PageHead>
+	<PageHead Title="РђР»СЊРїС‹ 2006"></PageHead>
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Альпы 2006">
-		<Line><Emphasize>Продолжительность: </Emphasize>25 февраля -11 марта 2006 года</Line>
-		<Line><Emphasize>Район: </Emphasize>Французские Альпы, Три долины</Line>
-		<Line><Emphasize>Маршрут: </Emphasize>С-Петербург - Москва - Гренобль - Мерибель, Куршавель, ВальТоранс - Гренобль - Москва - С-Петербург</Line>
-		<Line><Emphasize>Участники: </Emphasize>Я, Надя, Настя, Серега, Таня, Макс, КДСы</Line>
+		<PageElement><Chapter Title="РђР»СЊРїС‹ 2006">
+		<Line><Emphasize>РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ: </Emphasize>25 С„РµРІСЂР°Р»СЏ -11 РјР°СЂС‚Р° 2006 РіРѕРґР°</Line>
+		<Line><Emphasize>Р Р°Р№РѕРЅ: </Emphasize>Р¤СЂР°РЅС†СѓР·СЃРєРёРµ РђР»СЊРїС‹, РўСЂРё РґРѕР»РёРЅС‹</Line>
+		<Line><Emphasize>РњР°СЂС€СЂСѓС‚: </Emphasize>РЎ-РџРµС‚РµСЂР±СѓСЂРі - РњРѕСЃРєРІР° - Р“СЂРµРЅРѕР±Р»СЊ - РњРµСЂРёР±РµР»СЊ, РљСѓСЂС€Р°РІРµР»СЊ, Р’Р°Р»СЊРўРѕСЂР°РЅСЃ - Р“СЂРµРЅРѕР±Р»СЊ - РњРѕСЃРєРІР° - РЎ-РџРµС‚РµСЂР±СѓСЂРі</Line>
+		<Line><Emphasize>РЈС‡Р°СЃС‚РЅРёРєРё: </Emphasize>РЇ, РќР°РґСЏ, РќР°СЃС‚СЏ, РЎРµСЂРµРіР°, РўР°РЅСЏ, РњР°РєСЃ, РљР”РЎС‹</Line>
 		
 		<Paragraph>
-		<Line><Link Url="../../Album/Alps2006/index.xml">Фотоальбом</Link></Line>
-		<Line><Link Url="../../Tracks/2006/Alps2006/Alps2006.xml">GPS треки</Link></Line>
+		<Line><Link Url="../../Album/Alps2006/index.xml">Р¤РѕС‚РѕР°Р»СЊР±РѕРј</Link></Line>
+		<Line><Link Url="../../Tracks/2006/Alps2006/Alps2006.xml">GPS С‚СЂРµРєРё</Link></Line>
 		</Paragraph>
 		
 		</Chapter></PageElement>

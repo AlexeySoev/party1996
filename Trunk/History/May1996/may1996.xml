@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Поход Май-1996"></PageHead>
+	<PageHead Title="РџРѕС…РѕРґ РњР°Р№-1996"></PageHead>
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Поход Май-1996">
-		<Line><Emphasize>Продолжительность: </Emphasize>1-3 мая 1996 года</Line>
-		<Line><Emphasize>Район: </Emphasize>Карельский перешеек</Line>
-		<Line><Emphasize>Маршрут: </Emphasize>Кавголово</Line>
-		<Line><Emphasize>Участники: </Emphasize>Соев, Женя, Серега, Потапыч, Дасеич</Line>
+		<PageElement><Chapter Title="РџРѕС…РѕРґ РњР°Р№-1996">
+		<Line><Emphasize>РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ: </Emphasize>1-3 РјР°СЏ 1996 РіРѕРґР°</Line>
+		<Line><Emphasize>Р Р°Р№РѕРЅ: </Emphasize>РљР°СЂРµР»СЊСЃРєРёР№ РїРµСЂРµС€РµРµРє</Line>
+		<Line><Emphasize>РњР°СЂС€СЂСѓС‚: </Emphasize>РљР°РІРіРѕР»РѕРІРѕ</Line>
+		<Line><Emphasize>РЈС‡Р°СЃС‚РЅРёРєРё: </Emphasize>РЎРѕРµРІ, Р–РµРЅСЏ, РЎРµСЂРµРіР°, РџРѕС‚Р°РїС‹С‡, Р”Р°СЃРµРёС‡</Line>
 		
 		<Paragraph>
-		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">Место похода на карте</Link></Line>
+		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">РњРµСЃС‚Рѕ РїРѕС…РѕРґР° РЅР° РєР°СЂС‚Рµ</Link></Line>
 		</Paragraph>
 		
 		</Chapter></PageElement>

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Алексей Соев"></PageHead>
+	<PageHead Title="РђР»РµРєСЃРµР№ РЎРѕРµРІ"></PageHead>
 
 	<PageBody SnakeText="">
 		<PageElement>
@@ -10,9 +10,9 @@
 		</PageElement>
 
 		<PageElement>
-			<Chapter Title="Алексей Соев">
-				<Line><Link Url="Avia/Avia.xml">Авиамоделизм</Link></Line>
-				<Line><Link Url="Geocaching/Geocaching.xml">Геокэшинг</Link></Line>
+			<Chapter Title="РђР»РµРєСЃРµР№ РЎРѕРµРІ">
+				<Line><Link Url="Avia/Avia.xml">РђРІРёР°РјРѕРґРµР»РёР·Рј</Link></Line>
+				<Line><Link Url="Geocaching/Geocaching.xml">Р“РµРѕРєСЌС€РёРЅРі</Link></Line>
 			</Chapter>
 		</PageElement>
 	</PageBody>

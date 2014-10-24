@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Поход Май-2000"></PageHead>
+	<PageHead Title="РџРѕС…РѕРґ РњР°Р№-2000"></PageHead>
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Поход Май-2000">
-		<Line><Emphasize>Продолжительность: </Emphasize>29 апреля - 2 мая 2000 года</Line>
-		<Line><Emphasize>Район: </Emphasize>Карельский перешеек</Line>
-		<Line><Emphasize>Маршрут: </Emphasize>ст.Кузнечное - оз.Неизвестное(до сих пор) - ст.Кузнечное</Line>
-		<Line><Emphasize>Участники: </Emphasize>Соев, Женя, Серега, Потапыч, Дасеич, Черный, Сосед</Line>
+		<PageElement><Chapter Title="РџРѕС…РѕРґ РњР°Р№-2000">
+		<Line><Emphasize>РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ: </Emphasize>29 Р°РїСЂРµР»СЏ - 2 РјР°СЏ 2000 РіРѕРґР°</Line>
+		<Line><Emphasize>Р Р°Р№РѕРЅ: </Emphasize>РљР°СЂРµР»СЊСЃРєРёР№ РїРµСЂРµС€РµРµРє</Line>
+		<Line><Emphasize>РњР°СЂС€СЂСѓС‚: </Emphasize>СЃС‚.РљСѓР·РЅРµС‡РЅРѕРµ - РѕР·.РќРµРёР·РІРµСЃС‚РЅРѕРµ(РґРѕ СЃРёС… РїРѕСЂ) - СЃС‚.РљСѓР·РЅРµС‡РЅРѕРµ</Line>
+		<Line><Emphasize>РЈС‡Р°СЃС‚РЅРёРєРё: </Emphasize>РЎРѕРµРІ, Р–РµРЅСЏ, РЎРµСЂРµРіР°, РџРѕС‚Р°РїС‹С‡, Р”Р°СЃРµРёС‡, Р§РµСЂРЅС‹Р№, РЎРѕСЃРµРґ</Line>
 		
 		<Paragraph>
-		<Line><Link Url="../../Album/May2000/index.xml">Фотоальбом</Link></Line>
-		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">Место похода на карте</Link></Line>
+		<Line><Link Url="../../Album/May2000/index.xml">Р¤РѕС‚РѕР°Р»СЊР±РѕРј</Link></Line>
+		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">РњРµСЃС‚Рѕ РїРѕС…РѕРґР° РЅР° РєР°СЂС‚Рµ</Link></Line>
 		</Paragraph>
 		
 		</Chapter></PageElement>

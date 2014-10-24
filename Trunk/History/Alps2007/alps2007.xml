@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Альпы 2007"></PageHead>
+	<PageHead Title="РђР»СЊРїС‹ 2007"></PageHead>
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Альпы 2007">
-		<Line><Emphasize>Продолжительность: </Emphasize>26 января -11 февраля 2007 года</Line>
-		<Line><Emphasize>Район: </Emphasize>Французские Альпы, Межев, Шамони, Монблан</Line>
-		<Line><Emphasize>Маршрут: </Emphasize>С-Петербург - Париж - Межев - Шамони - Париж - С-Петербург</Line>
-		<Line><Emphasize>Участники: </Emphasize>Я, Надя, Настя, Квадратик, Вася, Серега</Line>
+		<PageElement><Chapter Title="РђР»СЊРїС‹ 2007">
+		<Line><Emphasize>РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ: </Emphasize>26 СЏРЅРІР°СЂСЏ -11 С„РµРІСЂР°Р»СЏ 2007 РіРѕРґР°</Line>
+		<Line><Emphasize>Р Р°Р№РѕРЅ: </Emphasize>Р¤СЂР°РЅС†СѓР·СЃРєРёРµ РђР»СЊРїС‹, РњРµР¶РµРІ, РЁР°РјРѕРЅРё, РњРѕРЅР±Р»Р°РЅ</Line>
+		<Line><Emphasize>РњР°СЂС€СЂСѓС‚: </Emphasize>РЎ-РџРµС‚РµСЂР±СѓСЂРі - РџР°СЂРёР¶ - РњРµР¶РµРІ - РЁР°РјРѕРЅРё - РџР°СЂРёР¶ - РЎ-РџРµС‚РµСЂР±СѓСЂРі</Line>
+		<Line><Emphasize>РЈС‡Р°СЃС‚РЅРёРєРё: </Emphasize>РЇ, РќР°РґСЏ, РќР°СЃС‚СЏ, РљРІР°РґСЂР°С‚РёРє, Р’Р°СЃСЏ, РЎРµСЂРµРіР°</Line>
 		
 		<Paragraph>
-		<Line><Link Url="../../Album/Alps2007/index.xml">Фотоальбом</Link></Line>
-		<Line><Link Url="../../Tracks/2007/Alps2007/Alps2007.xml">GPS треки</Link></Line>
+		<Line><Link Url="../../Album/Alps2007/index.xml">Р¤РѕС‚РѕР°Р»СЊР±РѕРј</Link></Line>
+		<Line><Link Url="../../Tracks/2007/Alps2007/Alps2007.xml">GPS С‚СЂРµРєРё</Link></Line>
 		</Paragraph>
 		
 		</Chapter></PageElement>

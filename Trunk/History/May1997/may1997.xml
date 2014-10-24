@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Поход Май-1997"></PageHead>
+	<PageHead Title="РџРѕС…РѕРґ РњР°Р№-1997"></PageHead>
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Поход Май-1997">
-		<Line><Emphasize>Продолжительность: </Emphasize>1-4 мая 1997 года</Line>
-		<Line><Emphasize>Район: </Emphasize>Карельский перешеек</Line>
-		<Line><Emphasize>Маршрут: </Emphasize>Васкелово - Лемболово - оз.Лемболовское - оз.Силанде - Лемболово</Line>
-		<Line><Emphasize>Участники: </Emphasize>Соев, Женя, Серега, Потапыч, Дасеич, Ваня, Сосед</Line>
+		<PageElement><Chapter Title="РџРѕС…РѕРґ РњР°Р№-1997">
+		<Line><Emphasize>РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ: </Emphasize>1-4 РјР°СЏ 1997 РіРѕРґР°</Line>
+		<Line><Emphasize>Р Р°Р№РѕРЅ: </Emphasize>РљР°СЂРµР»СЊСЃРєРёР№ РїРµСЂРµС€РµРµРє</Line>
+		<Line><Emphasize>РњР°СЂС€СЂСѓС‚: </Emphasize>Р’Р°СЃРєРµР»РѕРІРѕ - Р›РµРјР±РѕР»РѕРІРѕ - РѕР·.Р›РµРјР±РѕР»РѕРІСЃРєРѕРµ - РѕР·.РЎРёР»Р°РЅРґРµ - Р›РµРјР±РѕР»РѕРІРѕ</Line>
+		<Line><Emphasize>РЈС‡Р°СЃС‚РЅРёРєРё: </Emphasize>РЎРѕРµРІ, Р–РµРЅСЏ, РЎРµСЂРµРіР°, РџРѕС‚Р°РїС‹С‡, Р”Р°СЃРµРёС‡, Р’Р°РЅСЏ, РЎРѕСЃРµРґ</Line>
 		
 		<Paragraph>
-		<Line>Дневник похода <Emphasize>Скоро</Emphasize></Line>
-		<Line><Link Url="../../Album/May1997/index.xml">Фотоальбом</Link></Line>
-		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">Место похода на карте</Link></Line>
+		<Line>Р”РЅРµРІРЅРёРє РїРѕС…РѕРґР° <Emphasize>РЎРєРѕСЂРѕ</Emphasize></Line>
+		<Line><Link Url="../../Album/May1997/index.xml">Р¤РѕС‚РѕР°Р»СЊР±РѕРј</Link></Line>
+		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">РњРµСЃС‚Рѕ РїРѕС…РѕРґР° РЅР° РєР°СЂС‚Рµ</Link></Line>
 		</Paragraph>
 		
 		</Chapter></PageElement>

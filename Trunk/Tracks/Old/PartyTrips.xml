@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 	
-	<PageHead Title="Походы Патрии Любителей 1995 - 2003 годов"></PageHead>
+	<PageHead Title="РџРѕС…РѕРґС‹ РџР°С‚СЂРёРё Р›СЋР±РёС‚РµР»РµР№ 1995 - 2003 РіРѕРґРѕРІ"></PageHead>
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Походы Патрии Любителей 1995 - 2003 годов"></Chapter></PageElement>
+		<PageElement><Chapter Title="РџРѕС…РѕРґС‹ РџР°С‚СЂРёРё Р›СЋР±РёС‚РµР»РµР№ 1995 - 2003 РіРѕРґРѕРІ"></Chapter></PageElement>
 	</PageBody>
 		
 	<GPSTrackFrame>

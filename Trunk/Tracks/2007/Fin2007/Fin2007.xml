@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 	
-	<PageHead Title="Велопоход в Финляндию"></PageHead>
+	<PageHead Title="Р’РµР»РѕРїРѕС…РѕРґ РІ Р¤РёРЅР»СЏРЅРґРёСЋ"></PageHead>
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Велопоход в Финляндию"></Chapter></PageElement>
+		<PageElement><Chapter Title="Р’РµР»РѕРїРѕС…РѕРґ РІ Р¤РёРЅР»СЏРЅРґРёСЋ"></Chapter></PageElement>
 	</PageBody>
 		
 	<GPSTrackFrame>

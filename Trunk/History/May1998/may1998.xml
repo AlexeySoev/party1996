@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Поход Май-1998"></PageHead>
+	<PageHead Title="РџРѕС…РѕРґ РњР°Р№-1998"></PageHead>
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Поход Май-1998">
-		<Line><Emphasize>Продолжительность: </Emphasize>1-6 мая 1998 года</Line>
-		<Line><Emphasize>Район: </Emphasize>Карельский перешеек</Line>
-		<Line><Emphasize>Маршрут: </Emphasize>пл.78 км - оз.Раздолинское - пл.78 км - ст.Лосево - оз.Суходольское - пос.Суходолье - ст.Лосево</Line>
-		<Line><Emphasize>Участники: </Emphasize>Соев, Женя, Серега, Потапыч, Дасеич, Ваня, Сосед, Черный, Нагиев, Таня</Line>
+		<PageElement><Chapter Title="РџРѕС…РѕРґ РњР°Р№-1998">
+		<Line><Emphasize>РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ: </Emphasize>1-6 РјР°СЏ 1998 РіРѕРґР°</Line>
+		<Line><Emphasize>Р Р°Р№РѕРЅ: </Emphasize>РљР°СЂРµР»СЊСЃРєРёР№ РїРµСЂРµС€РµРµРє</Line>
+		<Line><Emphasize>РњР°СЂС€СЂСѓС‚: </Emphasize>РїР».78 РєРј - РѕР·.Р Р°Р·РґРѕР»РёРЅСЃРєРѕРµ - РїР».78 РєРј - СЃС‚.Р›РѕСЃРµРІРѕ - РѕР·.РЎСѓС…РѕРґРѕР»СЊСЃРєРѕРµ - РїРѕСЃ.РЎСѓС…РѕРґРѕР»СЊРµ - СЃС‚.Р›РѕСЃРµРІРѕ</Line>
+		<Line><Emphasize>РЈС‡Р°СЃС‚РЅРёРєРё: </Emphasize>РЎРѕРµРІ, Р–РµРЅСЏ, РЎРµСЂРµРіР°, РџРѕС‚Р°РїС‹С‡, Р”Р°СЃРµРёС‡, Р’Р°РЅСЏ, РЎРѕСЃРµРґ, Р§РµСЂРЅС‹Р№, РќР°РіРёРµРІ, РўР°РЅСЏ</Line>
 		
 		<Paragraph>
-		<Line>Потапыч. Недокументированные возможности <Emphasize>Скоро</Emphasize></Line>
-		<Line>Афоризмы, записанные на пачке Chesterfield'а <Emphasize>Скоро</Emphasize></Line>
-		<Line>Дневник похода <Emphasize>Скоро</Emphasize></Line>
-		<Line><Link Url="../../Album/May1998/index.xml">Фотоальбом</Link></Line>
-		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">Место похода на карте</Link></Line>
+		<Line>РџРѕС‚Р°РїС‹С‡. РќРµРґРѕРєСѓРјРµРЅС‚РёСЂРѕРІР°РЅРЅС‹Рµ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё <Emphasize>РЎРєРѕСЂРѕ</Emphasize></Line>
+		<Line>РђС„РѕСЂРёР·РјС‹, Р·Р°РїРёСЃР°РЅРЅС‹Рµ РЅР° РїР°С‡РєРµ Chesterfield'Р° <Emphasize>РЎРєРѕСЂРѕ</Emphasize></Line>
+		<Line>Р”РЅРµРІРЅРёРє РїРѕС…РѕРґР° <Emphasize>РЎРєРѕСЂРѕ</Emphasize></Line>
+		<Line><Link Url="../../Album/May1998/index.xml">Р¤РѕС‚РѕР°Р»СЊР±РѕРј</Link></Line>
+		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">РњРµСЃС‚Рѕ РїРѕС…РѕРґР° РЅР° РєР°СЂС‚Рµ</Link></Line>
 		</Paragraph>
 		
 		</Chapter></PageElement>

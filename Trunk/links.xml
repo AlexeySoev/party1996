@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Линки"></PageHead>
+	<PageHead Title="Р›РёРЅРєРё"></PageHead>
 		
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
 		
-		<PageElement><Chapter Title="Линки">
-		<LinkWithDescription Url="http://niko.spb.ru" Target="more" Text="Niko HOMEPAGE">Сайт сочувствующего делу Партии Николаича</LinkWithDescription>
-		<LinkWithDescription Url="http://www.tks.ru/437x/" Target="more" Text="437x HOMEPAGE">Сайт студенческой группы 437x ЛЭТИ</LinkWithDescription>
+		<PageElement><Chapter Title="Р›РёРЅРєРё">
+		<LinkWithDescription Url="http://niko.spb.ru" Target="more" Text="Niko HOMEPAGE">РЎР°Р№С‚ СЃРѕС‡СѓРІСЃС‚РІСѓСЋС‰РµРіРѕ РґРµР»Сѓ РџР°СЂС‚РёРё РќРёРєРѕР»Р°РёС‡Р°</LinkWithDescription>
+		<LinkWithDescription Url="http://www.tks.ru/437x/" Target="more" Text="437x HOMEPAGE">РЎР°Р№С‚ СЃС‚СѓРґРµРЅС‡РµСЃРєРѕР№ РіСЂСѓРїРїС‹ 437x Р›Р­РўР</LinkWithDescription>
 		</Chapter></PageElement>
 		
 	</PageBody>

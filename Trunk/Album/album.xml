@@ -1,35 +1,35 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Альбом"></PageHead>
+	<PageHead Title="РђР»СЊР±РѕРј"></PageHead>
 		
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
 		
-		<PageElement><Chapter Title="Альбом">
+		<PageElement><Chapter Title="РђР»СЊР±РѕРј">
 		<Paragraph>
-			<Line><Link Url="May1997/index.xml">Май 1997</Link></Line>
-			<Line><Link Url="May1998/index.xml">Май 1998</Link></Line>
-			<Line><Link Url="May1999/index.xml">Май 1999</Link></Line>
-			<Line><Link Url="May2000/index.xml">Май 2000</Link></Line>
-			<Line><Link Url="May2001/index.xml">Май 2001</Link></Line>
-			<Line><Link Url="May2002/index.xml">Май 2002</Link></Line>
-			<Line><Link Url="May2003/index.xml">Май 2003</Link></Line>
-			<Line><Link Url="May2004/index.xml">Май 2004</Link></Line>
+			<Line><Link Url="May1997/index.xml">РњР°Р№ 1997</Link></Line>
+			<Line><Link Url="May1998/index.xml">РњР°Р№ 1998</Link></Line>
+			<Line><Link Url="May1999/index.xml">РњР°Р№ 1999</Link></Line>
+			<Line><Link Url="May2000/index.xml">РњР°Р№ 2000</Link></Line>
+			<Line><Link Url="May2001/index.xml">РњР°Р№ 2001</Link></Line>
+			<Line><Link Url="May2002/index.xml">РњР°Р№ 2002</Link></Line>
+			<Line><Link Url="May2003/index.xml">РњР°Р№ 2003</Link></Line>
+			<Line><Link Url="May2004/index.xml">РњР°Р№ 2004</Link></Line>
 		</Paragraph>
 		
 		<Paragraph>
-			<Line>Кавказ 2001 <Emphasize>Скоро</Emphasize></Line>
-			<Line><Link Url="Europe2002/Bike/index.xml">Европа 2002</Link>. Вело-часть путешествия</Line>
-			<Line><Link Url="Europe2002/Car/index.xml">Европа 2002</Link>. Авто-часть путешествия</Line>
-			<Line><Link Url="Karelia2003/index.xml">Карелия 2003</Link></Line>
-			<Line><Link Url="Siberia2004/index.xml">Сибирь 2004</Link></Line>
-			<Line><Link Url="Alps2005/index.xml">Альпы 2005</Link></Line>
-			<Line><Link Url="Alps2006/index.xml">Альпы 2006</Link></Line>
-			<Line><Link Url="Aland2006/index.xml">Аланды 2006</Link></Line>
-			<Line><Link Url="Alps2007/index.xml">Альпы 2007</Link></Line>
-			<Line><Link Url="Norway2007/index.xml">Норвегия 2007</Link></Line>
+			<Line>РљР°РІРєР°Р· 2001 <Emphasize>РЎРєРѕСЂРѕ</Emphasize></Line>
+			<Line><Link Url="Europe2002/Bike/index.xml">Р•РІСЂРѕРїР° 2002</Link>. Р’РµР»Рѕ-С‡Р°СЃС‚СЊ РїСѓС‚РµС€РµСЃС‚РІРёСЏ</Line>
+			<Line><Link Url="Europe2002/Car/index.xml">Р•РІСЂРѕРїР° 2002</Link>. РђРІС‚Рѕ-С‡Р°СЃС‚СЊ РїСѓС‚РµС€РµСЃС‚РІРёСЏ</Line>
+			<Line><Link Url="Karelia2003/index.xml">РљР°СЂРµР»РёСЏ 2003</Link></Line>
+			<Line><Link Url="Siberia2004/index.xml">РЎРёР±РёСЂСЊ 2004</Link></Line>
+			<Line><Link Url="Alps2005/index.xml">РђР»СЊРїС‹ 2005</Link></Line>
+			<Line><Link Url="Alps2006/index.xml">РђР»СЊРїС‹ 2006</Link></Line>
+			<Line><Link Url="Aland2006/index.xml">РђР»Р°РЅРґС‹ 2006</Link></Line>
+			<Line><Link Url="Alps2007/index.xml">РђР»СЊРїС‹ 2007</Link></Line>
+			<Line><Link Url="Norway2007/index.xml">РќРѕСЂРІРµРіРёСЏ 2007</Link></Line>
 		</Paragraph>
 		
 		</Chapter></PageElement>

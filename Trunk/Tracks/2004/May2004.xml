@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 	
-	<PageHead Title="Май 2004"></PageHead>
+	<PageHead Title="РњР°Р№ 2004"></PageHead>
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Май 2004"></Chapter></PageElement>
+		<PageElement><Chapter Title="РњР°Р№ 2004"></Chapter></PageElement>
 	</PageBody>
 		
 	<GPSTrackFrame>

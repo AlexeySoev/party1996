@@ -1,1 +1,0 @@
-del *.scc /S /F /A:H /A:A

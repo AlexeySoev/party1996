@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Персональное"></PageHead>
+	<PageHead Title="РџРµСЂСЃРѕРЅР°Р»СЊРЅРѕРµ"></PageHead>
 
 	<PageBody SnakeText="">
 		<PageElement>
@@ -10,8 +10,8 @@
 		</PageElement>
 
 		<PageElement>
-			<Chapter Title="Персональное">
-				<Link Url="Soev/Soev.xml">Алексей Соев</Link>
+			<Chapter Title="РџРµСЂСЃРѕРЅР°Р»СЊРЅРѕРµ">
+				<Link Url="Soev/Soev.xml">РђР»РµРєСЃРµР№ РЎРѕРµРІ</Link>
 			</Chapter>
 		</PageElement>
 	</PageBody>

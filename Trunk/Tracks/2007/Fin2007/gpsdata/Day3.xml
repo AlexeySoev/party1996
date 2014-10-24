@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1251"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <markers>
   <m tm="09:31:37 12/06/2007" al="115" lg="28.7263196" lt="61.2077353" />
   <m tm="09:36:12 12/06/2007" al="119" lg="28.7259975" lt="61.2080873" />
@@ -805,14 +805,14 @@
   <m tm="15:49:37 12/06/2007" al="2" lg="28.7515566" lt="60.7152536" />
   <m tm="15:50:00 12/06/2007" al="1" lg="28.7512758" lt="60.7152970" />
   <m tm="15:51:30 12/06/2007" al="8" lg="28.7513170" lt="60.7152223" />
-  <p lg="28.8509407" lt="61.1160277" text="Кафе в Светогорске" />
-  <p lg="28.9090608" lt="60.9698567" text="Стоянка у озера на шоссе" />
-  <p lg="28.6707166" lt="60.7730166" text="Тайник 'Пещеры в граните'" url="http://www.geocaching.su/?pn=101&amp;cid=1452" urlname="Страница тайника" />
-  <p lg="28.6305999" lt="60.7599999" text="Тайник 'Бетонный Циклоп'" url="http://www.geocaching.su/?pn=101&amp;cid=1499" urlname="Страница тайника" />
-  <p lg="28.2852000" lt="61.0847166" text="Тайник 'Gladdagh II'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=aae24a49-4f32-46de-8682-f4e973aec740" urlname="Страница тайника" />
-  <p lg="28.1839239" lt="61.0567595" text="Кафе 'Golden Rax'" />
-  <p lg="28.7719999" lt="61.1676666" text="Тайник 'Imatrankoski'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=c47997f1-c6be-4263-8e9d-81e0c900667f" urlname="Страница тайника" />
-  <p lg="28.7363525" lt="60.8317417" text="Один из шлюзов на Сайменском канале" />
-  <p lg="28.3047833" lt="61.0721666" text="Тайник 'Saimaa Canal'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=252c5e08-226b-42d2-abbd-e5f154b6ce49" urlname="Страница тайника" />
-  <p lg="28.7235666" lt="61.2133166" text="Тайник 'Thunder and Lightning'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=654afcaf-2e31-44ed-8c0f-0a5f2d43d9e6" urlname="Страница тайника" />
+  <p lg="28.8509407" lt="61.1160277" text="РљР°С„Рµ РІ РЎРІРµС‚РѕРіРѕСЂСЃРєРµ" />
+  <p lg="28.9090608" lt="60.9698567" text="РЎС‚РѕСЏРЅРєР° Сѓ РѕР·РµСЂР° РЅР° С€РѕСЃСЃРµ" />
+  <p lg="28.6707166" lt="60.7730166" text="РўР°Р№РЅРёРє 'РџРµС‰РµСЂС‹ РІ РіСЂР°РЅРёС‚Рµ'" url="http://www.geocaching.su/?pn=101&amp;cid=1452" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="28.6305999" lt="60.7599999" text="РўР°Р№РЅРёРє 'Р‘РµС‚РѕРЅРЅС‹Р№ Р¦РёРєР»РѕРї'" url="http://www.geocaching.su/?pn=101&amp;cid=1499" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="28.2852000" lt="61.0847166" text="РўР°Р№РЅРёРє 'Gladdagh II'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=aae24a49-4f32-46de-8682-f4e973aec740" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="28.1839239" lt="61.0567595" text="РљР°С„Рµ 'Golden Rax'" />
+  <p lg="28.7719999" lt="61.1676666" text="РўР°Р№РЅРёРє 'Imatrankoski'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=c47997f1-c6be-4263-8e9d-81e0c900667f" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="28.7363525" lt="60.8317417" text="РћРґРёРЅ РёР· С€Р»СЋР·РѕРІ РЅР° РЎР°Р№РјРµРЅСЃРєРѕРј РєР°РЅР°Р»Рµ" />
+  <p lg="28.3047833" lt="61.0721666" text="РўР°Р№РЅРёРє 'Saimaa Canal'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=252c5e08-226b-42d2-abbd-e5f154b6ce49" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="28.7235666" lt="61.2133166" text="РўР°Р№РЅРёРє 'Thunder and Lightning'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=654afcaf-2e31-44ed-8c0f-0a5f2d43d9e6" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
 </markers>

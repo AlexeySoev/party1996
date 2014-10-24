@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 	
-	<PageHead Title="Рахья - Волоярви - Кузьмолово"></PageHead>
+	<PageHead Title="Р Р°С…СЊСЏ - Р’РѕР»РѕСЏСЂРІРё - РљСѓР·СЊРјРѕР»РѕРІРѕ"></PageHead>
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Рахья - Волоярви - Кузьмолово"></Chapter></PageElement>
+		<PageElement><Chapter Title="Р Р°С…СЊСЏ - Р’РѕР»РѕСЏСЂРІРё - РљСѓР·СЊРјРѕР»РѕРІРѕ"></Chapter></PageElement>
 	</PageBody>
 		
 	<GPSTrackFrame>

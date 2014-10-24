@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1251"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <markers>
   <m tm="10:57:38 28/07/2007" al="924" lg="7.487615" lt="62.025832" />
   <m tm="11:02:44 28/07/2007" al="929" lg="7.487471" lt="62.025875" />
@@ -1079,56 +1079,56 @@
   <m tm="21:13:45 28/07/2007" al="531" lg="8.402122" lt="61.748560" />
   <m tm="21:25:11 28/07/2007" al="536" lg="8.402308" lt="61.748610" />
   <m tm="21:25:36 28/07/2007" al="534" lg="8.402483" lt="61.748614" />
-  <p lg="7.258142" lt="62.037400" text="Высота 1000 метров" />
-  <p lg="7.801867" lt="61.501817" text="Тайник 'AK#1 Turtagro'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=9eb08414-7d7f-4a09-9669-5512059033ff" urlname="Страница тайника" />
-  <p lg="7.612300" lt="61.493417" text="Тайник 'AK#7 End of Sognefjorden'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=86870810-9c10-4534-b047-408bdbcc0d03" urlname="Страница тайника" />
+  <p lg="7.258142" lt="62.037400" text="Р’С‹СЃРѕС‚Р° 1000 РјРµС‚СЂРѕРІ" />
+  <p lg="7.801867" lt="61.501817" text="РўР°Р№РЅРёРє 'AK#1 Turtagro'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=9eb08414-7d7f-4a09-9669-5512059033ff" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="7.612300" lt="61.493417" text="РўР°Р№РЅРёРє 'AK#7 End of Sognefjorden'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=86870810-9c10-4534-b047-408bdbcc0d03" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
   <p lg="7.686996" lt="62.558212" text="Andalsnes" />
-  <p lg="6.936941" lt="60.702031" text="Начало асфальта" />
+  <p lg="6.936941" lt="60.702031" text="РќР°С‡Р°Р»Рѕ Р°СЃС„Р°Р»СЊС‚Р°" />
   <p lg="5.335279" lt="60.383434" text="Bergen" />
-  <p lg="7.673829" lt="62.463588" text="Стоянка 01" />
-  <p lg="7.145667" lt="62.193971" text="Стоянка 02" />
-  <p lg="7.183148" lt="62.115466" text="Стоянка 03" />
-  <p lg="7.487616" lt="62.025833" text="Стоянка 04" />
-  <p lg="8.402604" lt="61.748650" text="Стоянка 05" />
-  <p lg="7.650085" lt="61.485721" text="Стоянка 06" />
-  <p lg="7.315398" lt="61.299852" text="Стоянка 07" />
-  <p lg="7.106508" lt="60.862009" text="Стоянка 08" />
-  <p lg="6.421223" lt="60.624326" text="Стоянка 09" />
-  <p lg="6.191328" lt="60.367986" text="Стоянка 10" />
-  <p lg="5.466732" lt="60.180914" text="Стоянка 11" />
-  <p lg="8.285567" lt="61.702683" text="Тайник 'Challenge # 19 - Boverdalen'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=fefb9615-edf4-4f6a-9e1a-b41f3b0b5a78" urlname="Страница тайника" />
-  <p lg="7.270717" lt="62.049033" text="Тайник 'Challenge #6 - Geiranger'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=6a9145ef-08e3-49eb-80ef-7e9dc2ae8ba0" urlname="Страница тайника" />
-  <p lg="7.426925" lt="61.386184" text="Водопад Feigumfossen" />
-  <p lg="6.431867" lt="60.429900" text="Тайник 'Fjord View Drive-in - ag#3'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=c53814f0-0223-45cc-ad74-6137c97133d8" urlname="Страница тайника" />
-  <p lg="7.119267" lt="60.866867" text="Тайник 'Flam'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=ffd0d0f5-5533-429c-b337-a0cc1ea423c3" urlname="Страница тайника" />
-  <p lg="7.111800" lt="60.863800" text="Тайник 'Фломсбана'" url="http://www.geocaching.su/?pn=101&amp;cid=817" urlname="Страница тайника" />
-  <p lg="7.469308" lt="62.330477" text="Водопад" />
+  <p lg="7.673829" lt="62.463588" text="РЎС‚РѕСЏРЅРєР° 01" />
+  <p lg="7.145667" lt="62.193971" text="РЎС‚РѕСЏРЅРєР° 02" />
+  <p lg="7.183148" lt="62.115466" text="РЎС‚РѕСЏРЅРєР° 03" />
+  <p lg="7.487616" lt="62.025833" text="РЎС‚РѕСЏРЅРєР° 04" />
+  <p lg="8.402604" lt="61.748650" text="РЎС‚РѕСЏРЅРєР° 05" />
+  <p lg="7.650085" lt="61.485721" text="РЎС‚РѕСЏРЅРєР° 06" />
+  <p lg="7.315398" lt="61.299852" text="РЎС‚РѕСЏРЅРєР° 07" />
+  <p lg="7.106508" lt="60.862009" text="РЎС‚РѕСЏРЅРєР° 08" />
+  <p lg="6.421223" lt="60.624326" text="РЎС‚РѕСЏРЅРєР° 09" />
+  <p lg="6.191328" lt="60.367986" text="РЎС‚РѕСЏРЅРєР° 10" />
+  <p lg="5.466732" lt="60.180914" text="РЎС‚РѕСЏРЅРєР° 11" />
+  <p lg="8.285567" lt="61.702683" text="РўР°Р№РЅРёРє 'Challenge # 19 - Boverdalen'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=fefb9615-edf4-4f6a-9e1a-b41f3b0b5a78" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="7.270717" lt="62.049033" text="РўР°Р№РЅРёРє 'Challenge #6 - Geiranger'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=6a9145ef-08e3-49eb-80ef-7e9dc2ae8ba0" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="7.426925" lt="61.386184" text="Р’РѕРґРѕРїР°Рґ Feigumfossen" />
+  <p lg="6.431867" lt="60.429900" text="РўР°Р№РЅРёРє 'Fjord View Drive-in - ag#3'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=c53814f0-0223-45cc-ad74-6137c97133d8" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="7.119267" lt="60.866867" text="РўР°Р№РЅРёРє 'Flam'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=ffd0d0f5-5533-429c-b337-a0cc1ea423c3" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="7.111800" lt="60.863800" text="РўР°Р№РЅРёРє 'Р¤Р»РѕРјСЃР±Р°РЅР°'" url="http://www.geocaching.su/?pn=101&amp;cid=817" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="7.469308" lt="62.330477" text="Р’РѕРґРѕРїР°Рґ" />
   <p lg="7.204027" lt="62.103438" text="Geiranger" />
-  <p lg="7.095767" lt="62.106583" text="Тайник 'Geiranger (five Sisters)'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=7ed1601b-0f7e-46e5-81ba-458631af5942" urlname="Страница тайника" />
-  <p lg="6.722017" lt="60.524300" text="Тайник 'Granvin Bygdatun'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=8858bb45-45b5-4c95-aa8b-b8de4a2c88a4" urlname="Страница тайника" />
+  <p lg="7.095767" lt="62.106583" text="РўР°Р№РЅРёРє 'Geiranger (five Sisters)'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=7ed1601b-0f7e-46e5-81ba-458631af5942" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="6.722017" lt="60.524300" text="РўР°Р№РЅРёРє 'Granvin Bygdatun'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=8858bb45-45b5-4c95-aa8b-b8de4a2c88a4" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
   <p lg="7.240325" lt="61.183947" text="Kaupanger" />
   <p lg="8.570023" lt="61.837921" text="Lom" />
   <p lg="5.369740" lt="60.228081" text="Nordvik" />
   <p lg="6.146164" lt="60.370388" text="Norheimsund" />
-  <p lg="7.621333" lt="61.484917" text="Тайник 'OK67 #1 Valburstein'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=1da9d9a4-eb01-403a-8f5a-c2855ebff0fa" urlname="Страница тайника" />
-  <p lg="7.872250" lt="61.548983" text="Тайник 'OK67 #3 Hervabu'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=51836b57-26b6-444b-aaa6-21a175523534" urlname="Страница тайника" />
-  <p lg="7.894050" lt="61.549650" text="Тайник 'OK67 #4 Head of Mime'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=85bc3c59-4007-4ab8-b4d8-85f567227648" urlname="Страница тайника" />
-  <p lg="7.235427" lt="62.077049" text="Старый Мост" />
-  <p lg="5.329467" lt="60.397033" text="Тайник 'Старый Город'" url="http://www.geocaching.su/?pn=101&amp;cid=810" urlname="Страница тайника" />
+  <p lg="7.621333" lt="61.484917" text="РўР°Р№РЅРёРє 'OK67 #1 Valburstein'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=1da9d9a4-eb01-403a-8f5a-c2855ebff0fa" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="7.872250" lt="61.548983" text="РўР°Р№РЅРёРє 'OK67 #3 Hervabu'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=51836b57-26b6-444b-aaa6-21a175523534" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="7.894050" lt="61.549650" text="РўР°Р№РЅРёРє 'OK67 #4 Head of Mime'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=85bc3c59-4007-4ab8-b4d8-85f567227648" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="7.235427" lt="62.077049" text="РЎС‚Р°СЂС‹Р№ РњРѕСЃС‚" />
+  <p lg="5.329467" lt="60.397033" text="РўР°Р№РЅРёРє 'РЎС‚Р°СЂС‹Р№ Р“РѕСЂРѕРґ'" url="http://www.geocaching.su/?pn=101&amp;cid=810" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
   <p lg="5.467930" lt="60.185852" text="Osoyro" />
-  <p lg="7.267449" lt="62.032401" text="Перевал Dalsnibba" />
-  <p lg="7.185019" lt="62.135328" text="Перевал Geiranger" />
-  <p lg="8.006429" lt="61.565867" text="Перевал Jotunenheimen" />
-  <p lg="7.657503" lt="62.432451" text="Перевал Troll" />
-  <p lg="8.402317" lt="61.748800" text="Тайник 'PPJ #41 Enden pa Visa'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=03dda2c4-31d7-43fd-ac60-2968ae436a2a" urlname="Страница тайника" />
-  <p lg="8.566333" lt="61.839567" text="Тайник 'PPJ #67 Under Lomseggje'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=64ff2171-cf02-4e67-9c9c-184bf0a28b4b" urlname="Страница тайника" />
-  <p lg="18.058600" lt="59.331055" text="ЖД Вокзал" />
-  <p lg="6.417050" lt="60.628533" text="Тайник 'Rallarvegen, The End - slm#7'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=fa196d27-caa7-46cf-ac1e-e998bf4306f6" urlname="Страница тайника" />
-  <p lg="6.551483" lt="60.668383" text="Тайник 'Rallarvegen, The Need for Speed - slm#6'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=604ebb10-733a-42c5-bcbe-90e505f16de6" urlname="Страница тайника" />
-  <p lg="6.711017" lt="60.669800" text="Тайник 'Skiple 1'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=23ecd8af-05fe-4566-adad-095386a49709" urlname="Страница тайника" />
+  <p lg="7.267449" lt="62.032401" text="РџРµСЂРµРІР°Р» Dalsnibba" />
+  <p lg="7.185019" lt="62.135328" text="РџРµСЂРµРІР°Р» Geiranger" />
+  <p lg="8.006429" lt="61.565867" text="РџРµСЂРµРІР°Р» Jotunenheimen" />
+  <p lg="7.657503" lt="62.432451" text="РџРµСЂРµРІР°Р» Troll" />
+  <p lg="8.402317" lt="61.748800" text="РўР°Р№РЅРёРє 'PPJ #41 Enden pa Visa'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=03dda2c4-31d7-43fd-ac60-2968ae436a2a" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="8.566333" lt="61.839567" text="РўР°Р№РЅРёРє 'PPJ #67 Under Lomseggje'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=64ff2171-cf02-4e67-9c9c-184bf0a28b4b" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="18.058600" lt="59.331055" text="Р–Р” Р’РѕРєР·Р°Р»" />
+  <p lg="6.417050" lt="60.628533" text="РўР°Р№РЅРёРє 'Rallarvegen, The End - slm#7'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=fa196d27-caa7-46cf-ac1e-e998bf4306f6" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="6.551483" lt="60.668383" text="РўР°Р№РЅРёРє 'Rallarvegen, The Need for Speed - slm#6'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=604ebb10-733a-42c5-bcbe-90e505f16de6" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="6.711017" lt="60.669800" text="РўР°Р№РЅРёРє 'Skiple 1'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=23ecd8af-05fe-4566-adad-095386a49709" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
   <p lg="7.096739" lt="61.229167" text="Sogndal" />
-  <p lg="6.053933" lt="60.362633" text="Тайник 'Tokagjelet'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=6f4b13cc-20c7-4098-b9b7-82166b7dac34" urlname="Страница тайника" />
-  <p lg="7.661100" lt="62.451217" text="Тайник 'Trollstigen'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=886e6d4b-21b4-43e1-ab04-17782a319b0c" urlname="Страница тайника" />
+  <p lg="6.053933" lt="60.362633" text="РўР°Р№РЅРёРє 'Tokagjelet'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=6f4b13cc-20c7-4098-b9b7-82166b7dac34" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="7.661100" lt="62.451217" text="РўР°Р№РЅРёРє 'Trollstigen'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=886e6d4b-21b4-43e1-ab04-17782a319b0c" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
   <p lg="7.008278" lt="60.724623" text="Uppsete" />
   <p lg="7.312742" lt="61.299429" text="Urnes" />
   <p lg="6.438589" lt="60.637321" text="Voss" />

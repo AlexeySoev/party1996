@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Поход Май-1999"></PageHead>
+	<PageHead Title="РџРѕС…РѕРґ РњР°Р№-1999"></PageHead>
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Поход Май-1999">
-		<Line><Emphasize>Продолжительность: </Emphasize>30 апреля - 7 мая 1999 года</Line>
-		<Line><Emphasize>Район: </Emphasize>Карельский перешеек</Line>
-		<Line><Emphasize>Маршрут: </Emphasize>ст.Синево - оз.Вуокса - о.Олений - пос.Хирвисаари - г.Приозерск - ст.Синево</Line>
-		<Line><Emphasize>Участники: </Emphasize>Соев, Женя, Серега, Потапыч, Ваня, Сосед, Черный</Line>
+		<PageElement><Chapter Title="РџРѕС…РѕРґ РњР°Р№-1999">
+		<Line><Emphasize>РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ: </Emphasize>30 Р°РїСЂРµР»СЏ - 7 РјР°СЏ 1999 РіРѕРґР°</Line>
+		<Line><Emphasize>Р Р°Р№РѕРЅ: </Emphasize>РљР°СЂРµР»СЊСЃРєРёР№ РїРµСЂРµС€РµРµРє</Line>
+		<Line><Emphasize>РњР°СЂС€СЂСѓС‚: </Emphasize>СЃС‚.РЎРёРЅРµРІРѕ - РѕР·.Р’СѓРѕРєСЃР° - Рѕ.РћР»РµРЅРёР№ - РїРѕСЃ.РҐРёСЂРІРёСЃР°Р°СЂРё - Рі.РџСЂРёРѕР·РµСЂСЃРє - СЃС‚.РЎРёРЅРµРІРѕ</Line>
+		<Line><Emphasize>РЈС‡Р°СЃС‚РЅРёРєРё: </Emphasize>РЎРѕРµРІ, Р–РµРЅСЏ, РЎРµСЂРµРіР°, РџРѕС‚Р°РїС‹С‡, Р’Р°РЅСЏ, РЎРѕСЃРµРґ, Р§РµСЂРЅС‹Р№</Line>
 		
 		<Paragraph>
-		<Line><Link Url="May99/Index.htm">Воспоминания участников</Link></Line>
-		<Line><Link Url="PotapSpeech.xml">Речь Потапыча</Link></Line>
-		<Line><Link Url="../../Album/May1999/index.xml">Фотоальбом</Link></Line>
-		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">Место похода на карте</Link></Line>
+		<Line><Link Url="May99/Index.htm">Р’РѕСЃРїРѕРјРёРЅР°РЅРёСЏ СѓС‡Р°СЃС‚РЅРёРєРѕРІ</Link></Line>
+		<Line><Link Url="PotapSpeech.xml">Р РµС‡СЊ РџРѕС‚Р°РїС‹С‡Р°</Link></Line>
+		<Line><Link Url="../../Album/May1999/index.xml">Р¤РѕС‚РѕР°Р»СЊР±РѕРј</Link></Line>
+		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">РњРµСЃС‚Рѕ РїРѕС…РѕРґР° РЅР° РєР°СЂС‚Рµ</Link></Line>
 		</Paragraph>
 		
 		</Chapter></PageElement>

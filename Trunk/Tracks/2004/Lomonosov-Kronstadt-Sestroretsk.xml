@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 	
-	<PageHead Title="Велопрогулка Ломоносов - Кронштадт - Сестрорецк"></PageHead>
+	<PageHead Title="Р’РµР»РѕРїСЂРѕРіСѓР»РєР° Р›РѕРјРѕРЅРѕСЃРѕРІ - РљСЂРѕРЅС€С‚Р°РґС‚ - РЎРµСЃС‚СЂРѕСЂРµС†Рє"></PageHead>
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Велопрогулка Ломоносов - Кронштадт - Сестрорецк"></Chapter></PageElement>
+		<PageElement><Chapter Title="Р’РµР»РѕРїСЂРѕРіСѓР»РєР° Р›РѕРјРѕРЅРѕСЃРѕРІ - РљСЂРѕРЅС€С‚Р°РґС‚ - РЎРµСЃС‚СЂРѕСЂРµС†Рє"></Chapter></PageElement>
 	</PageBody>
 		
 	<GPSTrackFrame>

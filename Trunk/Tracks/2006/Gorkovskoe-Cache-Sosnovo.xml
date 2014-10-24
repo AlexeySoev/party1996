@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 	
-	<PageHead Title="Велопробег Горьковское - Сосново"></PageHead>
+	<PageHead Title="Р’РµР»РѕРїСЂРѕР±РµРі Р“РѕСЂСЊРєРѕРІСЃРєРѕРµ - РЎРѕСЃРЅРѕРІРѕ"></PageHead>
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Велопробег Горьковское - Сосново"></Chapter></PageElement>
+		<PageElement><Chapter Title="Р’РµР»РѕРїСЂРѕР±РµРі Р“РѕСЂСЊРєРѕРІСЃРєРѕРµ - РЎРѕСЃРЅРѕРІРѕ"></Chapter></PageElement>
 	</PageBody>
 		
 	<GPSTrackFrame>

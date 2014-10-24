@@ -1,102 +1,102 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="GPS Треки"></PageHead>
+	<PageHead Title="GPS РўСЂРµРєРё"></PageHead>
 		
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
 		
-		<PageElement><Chapter Title="GPS Треки">
+		<PageElement><Chapter Title="GPS РўСЂРµРєРё">
 		
 		<Paragraph Title="1995 - 2001">
 			<TrackTable>
-				<TrackItem Name="Походы Партии Любителей 1995 - 2003 годов" PageUrl="Old/PartyTrips.xml" GoogleUrl="Old/gpsdata/google/PartyTrips.kmz">
-					<LinkToImage Url="../Photos/flags.jpg" H="600" V="800">фотография настенной карты с флажками (2003 год)</LinkToImage>
+				<TrackItem Name="РџРѕС…РѕРґС‹ РџР°СЂС‚РёРё Р›СЋР±РёС‚РµР»РµР№ 1995 - 2003 РіРѕРґРѕРІ" PageUrl="Old/PartyTrips.xml" GoogleUrl="Old/gpsdata/google/PartyTrips.kmz">
+					<LinkToImage Url="../Photos/flags.jpg" H="600" V="800">С„РѕС‚РѕРіСЂР°С„РёСЏ РЅР°СЃС‚РµРЅРЅРѕР№ РєР°СЂС‚С‹ СЃ С„Р»Р°Р¶РєР°РјРё (2003 РіРѕРґ)</LinkToImage>
 				</TrackItem>
-				<TrackItem Name="Пеший переход через Главный Кавказский Хребет 2001" PageUrl="2001/Caucasus2001.xml" GoogleUrl="2001/gpsdata/google/Caucasus2001.kmz"></TrackItem>
+				<TrackItem Name="РџРµС€РёР№ РїРµСЂРµС…РѕРґ С‡РµСЂРµР· Р“Р»Р°РІРЅС‹Р№ РљР°РІРєР°Р·СЃРєРёР№ РҐСЂРµР±РµС‚ 2001" PageUrl="2001/Caucasus2001.xml" GoogleUrl="2001/gpsdata/google/Caucasus2001.kmz"></TrackItem>
 			</TrackTable>
 		</Paragraph>
 		
 		<Paragraph Title="2002">
 			<TrackTable>
-				<TrackItem Name="Вело - авто путешествие по Европе" PageUrl="2002/Europe/Europe.xml" GoogleUrl="2002/Europe/gpsdata/google/Europe.kmz" />
+				<TrackItem Name="Р’РµР»Рѕ - Р°РІС‚Рѕ РїСѓС‚РµС€РµСЃС‚РІРёРµ РїРѕ Р•РІСЂРѕРїРµ" PageUrl="2002/Europe/Europe.xml" GoogleUrl="2002/Europe/gpsdata/google/Europe.kmz" />
 			</TrackTable>
 		</Paragraph>
 
 		<Paragraph Title="2003">
 			<TrackTable>
-				<TrackItem Name="Вело - путешествие по Карелии" PageUrl="2003/Karelia/Karelia.xml" GoogleUrl="2003/Karelia/gpsdata/google/Karelia2003.kmz" />
+				<TrackItem Name="Р’РµР»Рѕ - РїСѓС‚РµС€РµСЃС‚РІРёРµ РїРѕ РљР°СЂРµР»РёРё" PageUrl="2003/Karelia/Karelia.xml" GoogleUrl="2003/Karelia/gpsdata/google/Karelia2003.kmz" />
 			</TrackTable>
 		</Paragraph>
 		
 		<Paragraph Title="2004">
 			<TrackTable>
-				<TrackItem Name="Лыжный поход по Онеге (Маша и Ко)" PageUrl="2004/Onega.xml" GoogleUrl="2004/gpsdata/google/Onega2004.kmz" />
-				<TrackItem Name="Моя поездка в Сибирь и Саяны" PageUrl="2004/Siberia/Siberia.xml" GoogleUrl="2004/Siberia/gpsdata/google/Siberia2004.kmz" />
-				<TrackItem Name="Майский поход 2004 Партии Любителей" PageUrl="2004/May2004.xml" GoogleUrl="2004/gpsdata/google/May2004.kmz" />
-				<TrackItem Name="Велопрогулка Ломоносов - Кронштадт - Сестрорецк" PageUrl="2004/Lomonosov-Kronstadt-Sestroretsk.xml" GoogleUrl="2004/gpsdata/google/Lomonosov-Sestroretsk.kmz" />
-				<TrackItem Name="ВелоПитерское КроссКантри" PageUrl="2004/Crosscountry.xml" GoogleUrl="2004/gpsdata/google/Crosscountry.kmz" />
-				<TrackItem Name="Велопоход Выборг - Зеленогорск" PageUrl="2004/Viborg-Zelenogorsk.xml" GoogleUrl="2004/gpsdata/google/Viborg-Zelenogorsk.kmz" />
-				<TrackItem Name="Велопутешествие по Крыму (Серега и Таня)" PageUrl="2004/Crimea.xml" GoogleUrl="2004/gpsdata/google/Crimea2004.kmz" />
-				<TrackItem Name="Просвет - Рахья - Болото (Неудавшийся велопробег через Рахью)" PageUrl="2004/Prosvet-Rahia-Boloto.xml" GoogleUrl="2004/gpsdata/google/RahiaBikeTrip.kmz" />
+				<TrackItem Name="Р›С‹Р¶РЅС‹Р№ РїРѕС…РѕРґ РїРѕ РћРЅРµРіРµ (РњР°С€Р° Рё РљРѕ)" PageUrl="2004/Onega.xml" GoogleUrl="2004/gpsdata/google/Onega2004.kmz" />
+				<TrackItem Name="РњРѕСЏ РїРѕРµР·РґРєР° РІ РЎРёР±РёСЂСЊ Рё РЎР°СЏРЅС‹" PageUrl="2004/Siberia/Siberia.xml" GoogleUrl="2004/Siberia/gpsdata/google/Siberia2004.kmz" />
+				<TrackItem Name="РњР°Р№СЃРєРёР№ РїРѕС…РѕРґ 2004 РџР°СЂС‚РёРё Р›СЋР±РёС‚РµР»РµР№" PageUrl="2004/May2004.xml" GoogleUrl="2004/gpsdata/google/May2004.kmz" />
+				<TrackItem Name="Р’РµР»РѕРїСЂРѕРіСѓР»РєР° Р›РѕРјРѕРЅРѕСЃРѕРІ - РљСЂРѕРЅС€С‚Р°РґС‚ - РЎРµСЃС‚СЂРѕСЂРµС†Рє" PageUrl="2004/Lomonosov-Kronstadt-Sestroretsk.xml" GoogleUrl="2004/gpsdata/google/Lomonosov-Sestroretsk.kmz" />
+				<TrackItem Name="Р’РµР»РѕРџРёС‚РµСЂСЃРєРѕРµ РљСЂРѕСЃСЃРљР°РЅС‚СЂРё" PageUrl="2004/Crosscountry.xml" GoogleUrl="2004/gpsdata/google/Crosscountry.kmz" />
+				<TrackItem Name="Р’РµР»РѕРїРѕС…РѕРґ Р’С‹Р±РѕСЂРі - Р—РµР»РµРЅРѕРіРѕСЂСЃРє" PageUrl="2004/Viborg-Zelenogorsk.xml" GoogleUrl="2004/gpsdata/google/Viborg-Zelenogorsk.kmz" />
+				<TrackItem Name="Р’РµР»РѕРїСѓС‚РµС€РµСЃС‚РІРёРµ РїРѕ РљСЂС‹РјСѓ (РЎРµСЂРµРіР° Рё РўР°РЅСЏ)" PageUrl="2004/Crimea.xml" GoogleUrl="2004/gpsdata/google/Crimea2004.kmz" />
+				<TrackItem Name="РџСЂРѕСЃРІРµС‚ - Р Р°С…СЊСЏ - Р‘РѕР»РѕС‚Рѕ (РќРµСѓРґР°РІС€РёР№СЃСЏ РІРµР»РѕРїСЂРѕР±РµРі С‡РµСЂРµР· Р Р°С…СЊСЋ)" PageUrl="2004/Prosvet-Rahia-Boloto.xml" GoogleUrl="2004/gpsdata/google/RahiaBikeTrip.kmz" />
 			</TrackTable>
 		</Paragraph>
 		
 		<Paragraph Title="2005">
 			<TrackTable>
-				<TrackItem Name="Горнолыжная поездка во французские Альпы" PageUrl="2005/Alps2005/Alps2005.xml" GoogleUrl="2005/Alps2005/gpsdata/google/Alps2005.kmz" />
-				<TrackItem Name="Велосипедно - лодочный поход 9 Мая" PageUrl="2005/9May.xml" GoogleUrl="2005/gpsdata/google/9May2005.kmz" />
-				<TrackItem Name="Рахья - Волоярви - Кузьмолово (Удавшийся велопробег через Рахью)" PageUrl="2005/Rahia-Kuzmolovo.xml" GoogleUrl="2005/gpsdata/google/Rahia-Kuzmolovo.kmz" />
+				<TrackItem Name="Р“РѕСЂРЅРѕР»С‹Р¶РЅР°СЏ РїРѕРµР·РґРєР° РІРѕ С„СЂР°РЅС†СѓР·СЃРєРёРµ РђР»СЊРїС‹" PageUrl="2005/Alps2005/Alps2005.xml" GoogleUrl="2005/Alps2005/gpsdata/google/Alps2005.kmz" />
+				<TrackItem Name="Р’РµР»РѕСЃРёРїРµРґРЅРѕ - Р»РѕРґРѕС‡РЅС‹Р№ РїРѕС…РѕРґ 9 РњР°СЏ" PageUrl="2005/9May.xml" GoogleUrl="2005/gpsdata/google/9May2005.kmz" />
+				<TrackItem Name="Р Р°С…СЊСЏ - Р’РѕР»РѕСЏСЂРІРё - РљСѓР·СЊРјРѕР»РѕРІРѕ (РЈРґР°РІС€РёР№СЃСЏ РІРµР»РѕРїСЂРѕР±РµРі С‡РµСЂРµР· Р Р°С…СЊСЋ)" PageUrl="2005/Rahia-Kuzmolovo.xml" GoogleUrl="2005/gpsdata/google/Rahia-Kuzmolovo.kmz" />
 			</TrackTable>
 		</Paragraph>
 		
 		<Paragraph Title="2006">
 			<TrackTable>
-				<TrackItem Name="Лыжня в Кавголово 5 км" PageUrl="2006/KavgolovoPiste5km.xml" GoogleUrl="2006/gpsdata/google/KavgolovoPiste5km.kmz" />
-				<TrackItem Name="Лыжня в Лемболово 5 км" PageUrl="2006/LembolovoPiste5km.xml" GoogleUrl="2006/gpsdata/google/LembolovoPiste5km.kmz" />
-				<TrackItem Name="Лыжная прогулка Орехово - Дача" PageUrl="2006/Orehovo-DachaSkiTrip.xml" GoogleUrl="2006/gpsdata/google/Orehovo-Dacha.kmz" />
-				<TrackItem Name="Горнолыжная поездка во французские Альпы" PageUrl="2006/Alps2006/Alps2006.xml" GoogleUrl="2006/Alps2006/gpsdata/google/Alps2006.kmz" />
-				<TrackItem Name="Велопробег Горьковское - Сосново" PageUrl="2006/Gorkovskoe-Cache-Sosnovo.xml" GoogleUrl="2006/gpsdata/google/Gorkovskoe-Sosnovo.kmz">
-					<Link Url="http://www.geocaching.su/?pn=101&amp;cid=241" Target="more">страница тайника "Град обреченный"</Link>
+				<TrackItem Name="Р›С‹Р¶РЅСЏ РІ РљР°РІРіРѕР»РѕРІРѕ 5 РєРј" PageUrl="2006/KavgolovoPiste5km.xml" GoogleUrl="2006/gpsdata/google/KavgolovoPiste5km.kmz" />
+				<TrackItem Name="Р›С‹Р¶РЅСЏ РІ Р›РµРјР±РѕР»РѕРІРѕ 5 РєРј" PageUrl="2006/LembolovoPiste5km.xml" GoogleUrl="2006/gpsdata/google/LembolovoPiste5km.kmz" />
+				<TrackItem Name="Р›С‹Р¶РЅР°СЏ РїСЂРѕРіСѓР»РєР° РћСЂРµС…РѕРІРѕ - Р”Р°С‡Р°" PageUrl="2006/Orehovo-DachaSkiTrip.xml" GoogleUrl="2006/gpsdata/google/Orehovo-Dacha.kmz" />
+				<TrackItem Name="Р“РѕСЂРЅРѕР»С‹Р¶РЅР°СЏ РїРѕРµР·РґРєР° РІРѕ С„СЂР°РЅС†СѓР·СЃРєРёРµ РђР»СЊРїС‹" PageUrl="2006/Alps2006/Alps2006.xml" GoogleUrl="2006/Alps2006/gpsdata/google/Alps2006.kmz" />
+				<TrackItem Name="Р’РµР»РѕРїСЂРѕР±РµРі Р“РѕСЂСЊРєРѕРІСЃРєРѕРµ - РЎРѕСЃРЅРѕРІРѕ" PageUrl="2006/Gorkovskoe-Cache-Sosnovo.xml" GoogleUrl="2006/gpsdata/google/Gorkovskoe-Sosnovo.kmz">
+					<Link Url="http://www.geocaching.su/?pn=101&amp;cid=241" Target="more">СЃС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР° "Р“СЂР°Рґ РѕР±СЂРµС‡РµРЅРЅС‹Р№"</Link>
 				</TrackItem>
-				<TrackItem Name="Велопоход Питкяранта - Сортавала" PageUrl="2006/Pitkyaranta-Sortavala.xml" GoogleUrl="2006/gpsdata/google/Pitkyaranta-Sortavala.kmz">
-					<Link Url="2006/Pitkyaranta-Sortavala.Geocache.xml" Target="child">Найденые тайники</Link>
+				<TrackItem Name="Р’РµР»РѕРїРѕС…РѕРґ РџРёС‚РєСЏСЂР°РЅС‚Р° - РЎРѕСЂС‚Р°РІР°Р»Р°" PageUrl="2006/Pitkyaranta-Sortavala.xml" GoogleUrl="2006/gpsdata/google/Pitkyaranta-Sortavala.kmz">
+					<Link Url="2006/Pitkyaranta-Sortavala.Geocache.xml" Target="child">РќР°Р№РґРµРЅС‹Рµ С‚Р°Р№РЅРёРєРё</Link>
 				</TrackItem>
-				<TrackItem Name="Велопутешествие по Аландам" PageUrl="2006/Aland/Aland.xml" GoogleUrl="2006/Aland/gpsdata/google/Aland2006.kmz">
-					<Link Url="2006/Aland/Aland.Geocache.xml" Target="child">Найденые тайники</Link>
+				<TrackItem Name="Р’РµР»РѕРїСѓС‚РµС€РµСЃС‚РІРёРµ РїРѕ РђР»Р°РЅРґР°Рј" PageUrl="2006/Aland/Aland.xml" GoogleUrl="2006/Aland/gpsdata/google/Aland2006.kmz">
+					<Link Url="2006/Aland/Aland.Geocache.xml" Target="child">РќР°Р№РґРµРЅС‹Рµ С‚Р°Р№РЅРёРєРё</Link>
 				</TrackItem>
-				<TrackItem Name="Велопробег Каннельярви - Ермилово" PageUrl="2006/Kannelyarvi-Cache-Ermilovo.xml" GoogleUrl="2006/gpsdata/google/Kannelyarvi-Ermilovo.kmz">
-					<Link Url="http://www.geocaching.su/?pn=101&amp;cid=186" Target="more">страница тайника "Suomen kielen paiva"</Link>
+				<TrackItem Name="Р’РµР»РѕРїСЂРѕР±РµРі РљР°РЅРЅРµР»СЊСЏСЂРІРё - Р•СЂРјРёР»РѕРІРѕ" PageUrl="2006/Kannelyarvi-Cache-Ermilovo.xml" GoogleUrl="2006/gpsdata/google/Kannelyarvi-Ermilovo.kmz">
+					<Link Url="http://www.geocaching.su/?pn=101&amp;cid=186" Target="more">СЃС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР° "Suomen kielen paiva"</Link>
 				</TrackItem>
 			</TrackTable>
 		</Paragraph>
 		
 		<Paragraph Title="2007">
 			<TrackTable>
-				<TrackItem Name="Лыжня в Лемболово 10 км" PageUrl="2007/LembolovoPiste10km.xml" GoogleUrl="2007/gpsdata/google/LembolovoPiste10km.kmz" />
-				<TrackItem Name="Горнолыжная поездка во французские Альпы" PageUrl="2007/Alps2007/Alps2007.xml" GoogleUrl="2007/Alps2007/gpsdata/google/Alps2007.kmz">
-					<Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=5f016a77-8972-4643-b5f2-7fb23a0641fa" Target="more">страница тайника "Heart of Paris"</Link>
+				<TrackItem Name="Р›С‹Р¶РЅСЏ РІ Р›РµРјР±РѕР»РѕРІРѕ 10 РєРј" PageUrl="2007/LembolovoPiste10km.xml" GoogleUrl="2007/gpsdata/google/LembolovoPiste10km.kmz" />
+				<TrackItem Name="Р“РѕСЂРЅРѕР»С‹Р¶РЅР°СЏ РїРѕРµР·РґРєР° РІРѕ С„СЂР°РЅС†СѓР·СЃРєРёРµ РђР»СЊРїС‹" PageUrl="2007/Alps2007/Alps2007.xml" GoogleUrl="2007/Alps2007/gpsdata/google/Alps2007.kmz">
+					<Link Url="http://www.geocaching.com/seek/cache_details.aspx?guid=5f016a77-8972-4643-b5f2-7fb23a0641fa" Target="more">СЃС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР° "Heart of Paris"</Link>
 				</TrackItem>
-				<TrackItem Name="Велопробег Отрадное - Громово" PageUrl="2007/Otradnoe-Gromovo.xml" GoogleUrl="2007/gpsdata/google/Otradnoe-Gromovo.kmz">
-					<Link Url="http://www.geocaching.su/?pn=101&amp;cid=1100" Target="more">страница тайника "Батарея Каарнайоки"</Link>
+				<TrackItem Name="Р’РµР»РѕРїСЂРѕР±РµРі РћС‚СЂР°РґРЅРѕРµ - Р“СЂРѕРјРѕРІРѕ" PageUrl="2007/Otradnoe-Gromovo.xml" GoogleUrl="2007/gpsdata/google/Otradnoe-Gromovo.kmz">
+					<Link Url="http://www.geocaching.su/?pn=101&amp;cid=1100" Target="more">СЃС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР° "Р‘Р°С‚Р°СЂРµСЏ РљР°Р°СЂРЅР°Р№РѕРєРё"</Link>
 				</TrackItem>
-				<TrackItem Name="Велопробег Горьковское - Зеленогорск" PageUrl="2007/Gorkovskoe-Ino-Zelenogorsk.xml" GoogleUrl="2007/gpsdata/google/Gorkovskoe-Zelenogorsk.kmz">
-					<Link Url="2007/Gorkovskoe-Ino-Zelenogorsk.Geocache.xml" Target="child">Найденые тайники</Link>
+				<TrackItem Name="Р’РµР»РѕРїСЂРѕР±РµРі Р“РѕСЂСЊРєРѕРІСЃРєРѕРµ - Р—РµР»РµРЅРѕРіРѕСЂСЃРє" PageUrl="2007/Gorkovskoe-Ino-Zelenogorsk.xml" GoogleUrl="2007/gpsdata/google/Gorkovskoe-Zelenogorsk.kmz">
+					<Link Url="2007/Gorkovskoe-Ino-Zelenogorsk.Geocache.xml" Target="child">РќР°Р№РґРµРЅС‹Рµ С‚Р°Р№РЅРёРєРё</Link>
 				</TrackItem>
-				<TrackItem Name="Велопробег Сосново - Кирилловское" PageUrl="2007/Sosnovo-Kirillovskoe.xml" GoogleUrl="2007/gpsdata/google/Sosnovo-Kirillovskoe.kmz">
-					<Link Url="http://www.geocaching.su/?pn=101&amp;cid=521" Target="more">страница тайника "Финская Мельница"</Link>
+				<TrackItem Name="Р’РµР»РѕРїСЂРѕР±РµРі РЎРѕСЃРЅРѕРІРѕ - РљРёСЂРёР»Р»РѕРІСЃРєРѕРµ" PageUrl="2007/Sosnovo-Kirillovskoe.xml" GoogleUrl="2007/gpsdata/google/Sosnovo-Kirillovskoe.kmz">
+					<Link Url="http://www.geocaching.su/?pn=101&amp;cid=521" Target="more">СЃС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР° "Р¤РёРЅСЃРєР°СЏ РњРµР»СЊРЅРёС†Р°"</Link>
 				</TrackItem>
-				<TrackItem Name="Велопоход в Финляндию" PageUrl="2007/Fin2007/Fin2007.xml" GoogleUrl="2007/Fin2007/gpsdata/google/Fin2007.kmz">
-					<Link Url="2007/Fin2007/Fin2007.Geocache.xml" Target="child">Найденые тайники</Link>
+				<TrackItem Name="Р’РµР»РѕРїРѕС…РѕРґ РІ Р¤РёРЅР»СЏРЅРґРёСЋ" PageUrl="2007/Fin2007/Fin2007.xml" GoogleUrl="2007/Fin2007/gpsdata/google/Fin2007.kmz">
+					<Link Url="2007/Fin2007/Fin2007.Geocache.xml" Target="child">РќР°Р№РґРµРЅС‹Рµ С‚Р°Р№РЅРёРєРё</Link>
 				</TrackItem>
-				<TrackItem Name="Велопробег Войбокало - Кировск" PageUrl="2007/Voibokalo-Kirovsk.xml" GoogleUrl="2007/gpsdata/google/Voibokalo-Kirovsk.kmz">
-					<Link Url="http://www.geocaching.su/?pn=101&amp;cid=401" Target="more">страница тайника "Aрочный мост"</Link>
+				<TrackItem Name="Р’РµР»РѕРїСЂРѕР±РµРі Р’РѕР№Р±РѕРєР°Р»Рѕ - РљРёСЂРѕРІСЃРє" PageUrl="2007/Voibokalo-Kirovsk.xml" GoogleUrl="2007/gpsdata/google/Voibokalo-Kirovsk.kmz">
+					<Link Url="http://www.geocaching.su/?pn=101&amp;cid=401" Target="more">СЃС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР° "AСЂРѕС‡РЅС‹Р№ РјРѕСЃС‚"</Link>
 				</TrackItem>
-				<TrackItem Name="Велопутешествие по Норвегии" PageUrl="2007/Norway/Norway.xml" GoogleUrl="2007/Norway/gpsdata/google/Norway2007.kmz">
-					<Link Url="2007/Norway/Norway.Geocache.xml" Target="child">Найденые тайники</Link>
+				<TrackItem Name="Р’РµР»РѕРїСѓС‚РµС€РµСЃС‚РІРёРµ РїРѕ РќРѕСЂРІРµРіРёРё" PageUrl="2007/Norway/Norway.xml" GoogleUrl="2007/Norway/gpsdata/google/Norway2007.kmz">
+					<Link Url="2007/Norway/Norway.Geocache.xml" Target="child">РќР°Р№РґРµРЅС‹Рµ С‚Р°Р№РЅРёРєРё</Link>
 				</TrackItem>
-				<TrackItem Name="Велопробег Каннельярви - Гаврилово" PageUrl="2007/Kannelyarvi-Gavrilovo.xml" GoogleUrl="2007/gpsdata/google/Kannelyarvi-Gavrilovo.kmz"></TrackItem>
+				<TrackItem Name="Р’РµР»РѕРїСЂРѕР±РµРі РљР°РЅРЅРµР»СЊСЏСЂРІРё - Р“Р°РІСЂРёР»РѕРІРѕ" PageUrl="2007/Kannelyarvi-Gavrilovo.xml" GoogleUrl="2007/gpsdata/google/Kannelyarvi-Gavrilovo.kmz"></TrackItem>
 			</TrackTable>
 		</Paragraph>
 		

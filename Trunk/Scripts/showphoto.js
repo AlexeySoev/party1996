@@ -69,7 +69,7 @@ function transformXML(xml, xsl)
 ///////////////////////////////////////////////////////
 
 function showphoto(picname, xsltname, title) {
-	var xml = loadXML("<?xml version='1.0' encoding='windows-1251' ?><PageTemplate><PageHead/><PageBody><PageElement><MainMenu/></PageElement><PageElement><Photo Src='images/" + buildname(picname) + ".JPG' Title='" + title + "'/></PageElement></PageBody></PageTemplate>")
+	var xml = loadXML("<?xml version='1.0' encoding='UTF-8'?><PageTemplate><PageHead/><PageBody><PageElement><MainMenu/></PageElement><PageElement><Photo Src='images/" + buildname(picname) + ".JPG' Title='" + title + "'/></PageElement></PageBody></PageTemplate>")
 	var xsl = loadXMLfile(xsltname);
 	var html = transformXML(xml, xsl);
 	var picwin = window.open("", "TopFrame");
@@ -81,7 +81,7 @@ function makethumbs(count, xsltname, title) {
 
 	//alert("makethumbs()");
 
-	var xmltext = "<?xml version='1.0' encoding='windows-1251' ?><ThumbnailPage>"
+	var xmltext = "<?xml version='1.0' encoding='UTF-8'?><ThumbnailPage>"
 	for (i=1; i < count+1; i++)
 		xmltext = xmltext + "<Thumbnail Url='" + buildname(i) + "' Title='" + title + "' />";
 	xmltext = xmltext + "</ThumbnailPage>"

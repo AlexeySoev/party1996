@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 	
-	<PageHead Title="Выборг - Зеленогорск"></PageHead>
+	<PageHead Title="Р’С‹Р±РѕСЂРі - Р—РµР»РµРЅРѕРіРѕСЂСЃРє"></PageHead>
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Велопоход Выборг - Зеленогорск"></Chapter></PageElement>
+		<PageElement><Chapter Title="Р’РµР»РѕРїРѕС…РѕРґ Р’С‹Р±РѕСЂРі - Р—РµР»РµРЅРѕРіРѕСЂСЃРє"></Chapter></PageElement>
 	</PageBody>
 		
 	<GPSTrackFrame>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <markers>
   <m tm="13:30:00 31/07/2006" al="8" lg="22.252759" lt="60.453614" />
   <m tm="" al="4" lg="22.258068" lt="60.451825" />
@@ -500,21 +500,21 @@
   <m tm="" al="40" lg="22.257492" lt="60.451617" />
   <m tm="" al="51" lg="22.254504" lt="60.453836" />
   <m tm="18:27:05 11/08/2006" al="1" lg="22.267814" lt="60.457127" />
-  <p lg="19.961517" lt="60.319433" text="Тайник 'KnightHill'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=7fc50f43-bfe1-46b9-9923-fd606892757b" urlname="Страница тайника"/>
-  <p lg="19.541517" lt="60.219917" text="Тайник 'Postroad in Eckero'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=abf92d05-24cd-4327-9a47-43be78b50889" urlname="Страница тайника"/>
-  <p lg="19.899383" lt="60.108383" text="Тайник 'Aland'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=b6e74053-2f88-421e-8d7c-f4683bdd4993" urlname="Страница тайника" />
-  <p lg="20.353517" lt="60.247000" text="Тайник 'Windmill in Vardo'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=1e79d8a5-f847-4a94-b891-375a975f4d94" urlname="Страница тайника" />
-  <p lg="19.757245" lt="60.274501" text="Русская артиллерийская батарея" />
-  <p lg="20.235956" lt="60.212507" text="Русская крепость Bomarsund" />
-  <p lg="21.759805" lt="60.637164" text="Ночевка 1" />
-  <p lg="20.394683" lt="60.228035" text="Ночевка 2" />
-  <p lg="20.328691" lt="60.340331" text="Ночевка 3" />
-  <p lg="19.765972" lt="60.374201" text="Ночевка 4" />
-  <p lg="19.522990" lt="60.252743" text="Ночевка 5" />
-  <p lg="19.951060" lt="60.091520" text="Ночевка 6" />
-  <p lg="20.318462" lt="60.225433" text="Ночевка 7" />
-  <p lg="19.955642" lt="60.088560" text="Ночевка 8" />
-  <p lg="20.893034" lt="59.944488" text="Ночевка 11" />
-  <p lg="25.029524" lt="60.206123" text="Ночевка 12" />
-  <p lg="24.777991" lt="60.294243" text="Ночевка 13" />
+  <p lg="19.961517" lt="60.319433" text="РўР°Р№РЅРёРє 'KnightHill'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=7fc50f43-bfe1-46b9-9923-fd606892757b" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°"/>
+  <p lg="19.541517" lt="60.219917" text="РўР°Р№РЅРёРє 'Postroad in Eckero'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=abf92d05-24cd-4327-9a47-43be78b50889" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°"/>
+  <p lg="19.899383" lt="60.108383" text="РўР°Р№РЅРёРє 'Aland'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=b6e74053-2f88-421e-8d7c-f4683bdd4993" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="20.353517" lt="60.247000" text="РўР°Р№РЅРёРє 'Windmill in Vardo'" url="http://www.geocaching.com/seek/cache_details.aspx?guid=1e79d8a5-f847-4a94-b891-375a975f4d94" urlname="РЎС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР°" />
+  <p lg="19.757245" lt="60.274501" text="Р СѓСЃСЃРєР°СЏ Р°СЂС‚РёР»Р»РµСЂРёР№СЃРєР°СЏ Р±Р°С‚Р°СЂРµСЏ" />
+  <p lg="20.235956" lt="60.212507" text="Р СѓСЃСЃРєР°СЏ РєСЂРµРїРѕСЃС‚СЊ Bomarsund" />
+  <p lg="21.759805" lt="60.637164" text="РќРѕС‡РµРІРєР° 1" />
+  <p lg="20.394683" lt="60.228035" text="РќРѕС‡РµРІРєР° 2" />
+  <p lg="20.328691" lt="60.340331" text="РќРѕС‡РµРІРєР° 3" />
+  <p lg="19.765972" lt="60.374201" text="РќРѕС‡РµРІРєР° 4" />
+  <p lg="19.522990" lt="60.252743" text="РќРѕС‡РµРІРєР° 5" />
+  <p lg="19.951060" lt="60.091520" text="РќРѕС‡РµРІРєР° 6" />
+  <p lg="20.318462" lt="60.225433" text="РќРѕС‡РµРІРєР° 7" />
+  <p lg="19.955642" lt="60.088560" text="РќРѕС‡РµРІРєР° 8" />
+  <p lg="20.893034" lt="59.944488" text="РќРѕС‡РµРІРєР° 11" />
+  <p lg="25.029524" lt="60.206123" text="РќРѕС‡РµРІРєР° 12" />
+  <p lg="24.777991" lt="60.294243" text="РќРѕС‡РµРІРєР° 13" />
 </markers>

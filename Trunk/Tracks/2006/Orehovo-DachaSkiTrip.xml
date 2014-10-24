@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 	
-	<PageHead Title="Лыжная прогулка Орехово - Дача"></PageHead>
+	<PageHead Title="Р›С‹Р¶РЅР°СЏ РїСЂРѕРіСѓР»РєР° РћСЂРµС…РѕРІРѕ - Р”Р°С‡Р°"></PageHead>
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Лыжная прогулка Орехово - Дача"></Chapter></PageElement>
+		<PageElement><Chapter Title="Р›С‹Р¶РЅР°СЏ РїСЂРѕРіСѓР»РєР° РћСЂРµС…РѕРІРѕ - Р”Р°С‡Р°"></Chapter></PageElement>
 	</PageBody>
 		
 	<GPSTrackFrame>

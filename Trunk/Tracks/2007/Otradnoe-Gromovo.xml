@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 	
-	<PageHead Title="Велопробег Отрадное - Громово"></PageHead>
+	<PageHead Title="Р’РµР»РѕРїСЂРѕР±РµРі РћС‚СЂР°РґРЅРѕРµ - Р“СЂРѕРјРѕРІРѕ"></PageHead>
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Велопробег Отрадное - Громово"></Chapter></PageElement>
+		<PageElement><Chapter Title="Р’РµР»РѕРїСЂРѕР±РµРі РћС‚СЂР°РґРЅРѕРµ - Р“СЂРѕРјРѕРІРѕ"></Chapter></PageElement>
 	</PageBody>
 		
 	<GPSTrackFrame>

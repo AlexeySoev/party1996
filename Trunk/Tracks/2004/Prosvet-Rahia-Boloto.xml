@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
 	
-	<PageHead Title="Просвет - Рахья - Болото"></PageHead>
+	<PageHead Title="РџСЂРѕСЃРІРµС‚ - Р Р°С…СЊСЏ - Р‘РѕР»РѕС‚Рѕ"></PageHead>
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Просвет - Рахья - Болото"></Chapter></PageElement>
+		<PageElement><Chapter Title="РџСЂРѕСЃРІРµС‚ - Р Р°С…СЊСЏ - Р‘РѕР»РѕС‚Рѕ"></Chapter></PageElement>
 	</PageBody>
 		
 	<GPSTrackFrame>

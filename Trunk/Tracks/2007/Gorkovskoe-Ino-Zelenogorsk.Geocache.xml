@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Тайники, найденые в походе 'Велопробег Горьковское - Зеленогорск'"></PageHead>
+	<PageHead Title="РўР°Р№РЅРёРєРё, РЅР°Р№РґРµРЅС‹Рµ РІ РїРѕС…РѕРґРµ 'Р’РµР»РѕРїСЂРѕР±РµРі Р“РѕСЂСЊРєРѕРІСЃРєРѕРµ - Р—РµР»РµРЅРѕРіРѕСЂСЃРє'"></PageHead>
 	<PageBody SnakeText="">
 		<PageElement>
-			<Paragraph Title="Тайники, найденые в походе 'Велопробег Горьковское - Зеленогорск'">
-				<Line><Link Url="http://www.geocaching.su/?pn=101&amp;cid=1720" Target="more">страница тайника "Одинокая могила"</Link></Line>
-				<Line><Link Url="http://www.geocaching.su/?pn=101&amp;cid=288" Target="more">страница тайника "форт Ino"</Link></Line>
+			<Paragraph Title="РўР°Р№РЅРёРєРё, РЅР°Р№РґРµРЅС‹Рµ РІ РїРѕС…РѕРґРµ 'Р’РµР»РѕРїСЂРѕР±РµРі Р“РѕСЂСЊРєРѕРІСЃРєРѕРµ - Р—РµР»РµРЅРѕРіРѕСЂСЃРє'">
+				<Line><Link Url="http://www.geocaching.su/?pn=101&amp;cid=1720" Target="more">СЃС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР° "РћРґРёРЅРѕРєР°СЏ РјРѕРіРёР»Р°"</Link></Line>
+				<Line><Link Url="http://www.geocaching.su/?pn=101&amp;cid=288" Target="more">СЃС‚СЂР°РЅРёС†Р° С‚Р°Р№РЅРёРєР° "С„РѕСЂС‚ Ino"</Link></Line>
 			</Paragraph>
 		</PageElement>
 	</PageBody>
