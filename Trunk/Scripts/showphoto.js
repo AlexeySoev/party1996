@@ -2,23 +2,44 @@
 
 function loadXML(xml)
 {
-	if (document.implementation && document.implementation.createDocument)
-	{
-		var objDOMParser = new DOMParser();
-		return objDOMParser.parseFromString(xml, "text/xml");
-	}
-	else if (window.ActiveXObject)
+	//if (window.ActiveXObject)
+	if (window.ActiveXObject || "ActiveXObject" in window) // for IE 11 support
 	{
 		var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
 		xmlDoc.async=false;
 		xmlDoc.validateOnParse=false;
 		xmlDoc.loadXML(xml);
 		return xmlDoc;
+	} 
+	else if (document.implementation && document.implementation.createDocument)
+	{
+		var objDOMParser = new DOMParser();
+		return objDOMParser.parseFromString(xml, "text/xml");
 	}
 }
 
 function loadXMLfile(xml)
 {
+	//if (window.ActiveXObject)
+	if (window.ActiveXObject || "ActiveXObject" in window) // for IE 11 support
+	{
+		var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+		xmlDoc.async=false;
+		xmlDoc.validateOnParse=false;
+		xmlDoc.load(xml);
+		return xmlDoc;
+	} 
+	else 
+	{
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.open("GET", xml, false);
+		xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+		xmlhttp.overrideMimeType('text/xml');
+		xmlhttp.send("");
+		return xmlhttp.responseXML;
+	}
+
+	/*
 	if (document.implementation && document.implementation.createDocument)
 	{
 		var xmlDoc = document.implementation.createDocument("","",null);
@@ -35,34 +56,37 @@ function loadXMLfile(xml)
 		xmlDoc.load(xml);
 		return xmlDoc;
 	}
+	*/
 }
 
 function traceXML(xml)
 {
-	if (document.implementation && document.implementation.createDocument)
+	//if (window.ActiveXObject)
+	if (window.ActiveXObject || "ActiveXObject" in window) // for IE 11 support
+	{
+		alert(xml.xml)
+	}
+	else if (document.implementation && document.implementation.createDocument)
 	{
 		var oSerializer = new XMLSerializer();
 		alert(oSerializer.serializeToString(xml.documentElement, "text/xml"));
-	}
-	else if (window.ActiveXObject)
-	{
-		alert(xml.xml)
 	}
 }
 
 function transformXML(xml, xsl)
 {
-	if (document.implementation && document.implementation.createDocument)
+	//if (window.ActiveXObject)
+	if (window.ActiveXObject || "ActiveXObject" in window) // for IE 11 support
+	{
+		return xml.transformNode(xsl)
+	} 
+	else if (document.implementation && document.implementation.createDocument)
 	{
 		objXSLTProc = new XSLTProcessor();
 		objXSLTProc.importStylesheet(xsl);
 		var result = objXSLTProc.transformToDocument(xml);
 		var oSerializer = new XMLSerializer();
 		return oSerializer.serializeToString(result.documentElement, "text/xml");
-	}
-	else if (window.ActiveXObject)
-	{
-		return xml.transformNode(xsl)
 	}
 }
 
