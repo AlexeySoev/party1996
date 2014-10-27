@@ -1,9 +1,9 @@
 //////////// xml and xslt utils ////////////////////////
 
-function loadXML(xml)
+function loadXMLfromString(xml)
 {
-	//if (window.ActiveXObject)
-	if (window.ActiveXObject || "ActiveXObject" in window) // for IE 11 support
+	//if (window.ActiveXObject) // for IE support
+	if (window.ActiveXObject || "ActiveXObject" in window) // for IE 5-11 support
 	{
 		var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
 		xmlDoc.async=false;
@@ -18,10 +18,10 @@ function loadXML(xml)
 	}
 }
 
-function loadXMLfile(xml)
+function loadXMLfromURL(xml)
 {
-	//if (window.ActiveXObject)
-	if (window.ActiveXObject || "ActiveXObject" in window) // for IE 11 support
+	//if (window.ActiveXObject) // for IE support
+	if (window.ActiveXObject || "ActiveXObject" in window) // for IE 5-11 support
 	{
 		var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
 		xmlDoc.async=false;
@@ -31,6 +31,15 @@ function loadXMLfile(xml)
 	} 
 	else 
 	{
+		//doesn't work in Chrome, load method is undefined
+		/*
+		var xmlDoc = document.implementation.createDocument("","",null);
+		xmlDoc.async=false;
+		xmlDoc.validateOnParse=false;
+		xmlDoc.load(xml);
+		return xmlDoc;
+		*/
+	
 		var xmlhttp = new XMLHttpRequest();
 		xmlhttp.open("GET", xml, false);
 		xmlhttp.setRequestHeader('Content-Type', 'text/xml');
@@ -38,31 +47,12 @@ function loadXMLfile(xml)
 		xmlhttp.send("");
 		return xmlhttp.responseXML;
 	}
-
-	/*
-	if (document.implementation && document.implementation.createDocument)
-	{
-		var xmlDoc = document.implementation.createDocument("","",null);
-		xmlDoc.async=false;
-		xmlDoc.validateOnParse=false;
-		xmlDoc.load(xml);
-		return xmlDoc;
-	}
-	else if (window.ActiveXObject)
-	{
-		var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
-		xmlDoc.async=false;
-		xmlDoc.validateOnParse=false;
-		xmlDoc.load(xml);
-		return xmlDoc;
-	}
-	*/
 }
 
 function traceXML(xml)
 {
-	//if (window.ActiveXObject)
-	if (window.ActiveXObject || "ActiveXObject" in window) // for IE 11 support
+	//if (window.ActiveXObject) // for IE support
+	if (window.ActiveXObject || "ActiveXObject" in window) // for IE 5-11 support
 	{
 		alert(xml.xml)
 	}
@@ -75,8 +65,8 @@ function traceXML(xml)
 
 function transformXML(xml, xsl)
 {
-	//if (window.ActiveXObject)
-	if (window.ActiveXObject || "ActiveXObject" in window) // for IE 11 support
+	//if (window.ActiveXObject) // for IE support
+	if (window.ActiveXObject || "ActiveXObject" in window) // for IE 5-11 support
 	{
 		return xml.transformNode(xsl)
 	} 
@@ -90,11 +80,13 @@ function transformXML(xml, xsl)
 	}
 }
 
-///////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 function showphoto(picname, xsltname, title) {
-	var xml = loadXML("<?xml version='1.0' encoding='UTF-8'?><PageTemplate><PageHead/><PageBody><PageElement><MainMenu/></PageElement><PageElement><Photo Src='images/" + buildname(picname) + ".JPG' Title='" + title + "'/></PageElement></PageBody></PageTemplate>")
-	var xsl = loadXMLfile(xsltname);
+	var xml = loadXMLfromString("<?xml version='1.0' encoding='UTF-8'?><PageTemplate><PageHead/><PageBody><PageElement><MainMenu/></PageElement><PageElement><Photo Src='images/" + buildname(picname) + ".JPG' Title='" + title + "'/></PageElement></PageBody></PageTemplate>")
+	var xsl = loadXMLfromURL(xsltname);
 	var html = transformXML(xml, xsl);
 	var picwin = window.open("", "TopFrame");
 	picwin.document.write(html);
@@ -110,8 +102,8 @@ function makethumbs(count, xsltname, title) {
 		xmltext = xmltext + "<Thumbnail Url='" + buildname(i) + "' Title='" + title + "' />";
 	xmltext = xmltext + "</ThumbnailPage>"
 	
-	var xml = loadXML(xmltext);
-	var xsl = loadXMLfile(xsltname);
+	var xml = loadXMLfromString(xmltext);
+	var xsl = loadXMLfromURL(xsltname);
 	var html = transformXML(xml, xsl);
 	
 	var picwin = window.open("", "BottomFrame");	
