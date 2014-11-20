@@ -1,0 +1,12 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+<TITLE>
+Первый сайт Партии Любителей
+</TITLE>
+</HEAD>
+  <FRAMESET ROWS="70%,*">
+      <FRAME NAME="main" SRC="main.xml" SCROLLING=YES frameborder="0">
+      <FRAME NAME="news" SRC="news.html" SCROLLING=YES frameborder="0">
+  </FRAMESET>
+</HTML>

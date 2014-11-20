@@ -4,9 +4,28 @@
 <TITLE>
 Первый сайт Партии Любителей
 </TITLE>
+
+<style>
+body { margin: 0px; padding: 0px; width: 100%;}
+#main {
+width: 100%;
+height: 70%;
+}
+
+#news {
+width: 100%;
+height: 30%;
+}
+
+.frame {
+width: 100%;
+height: 100%;	
+}
+</style>
+
 </HEAD>
-  <FRAMESET ROWS="70%,*">
-      <FRAME NAME="main" SRC="main.xml" SCROLLING=YES frameborder="0">
-      <FRAME NAME="news" SRC="news.html" SCROLLING=YES frameborder="0">
-  </FRAMESET>
+<body>
+<div id="main"><IFRAME class="frame" name="main" SRC="main.xml" frameborder="0"></IFRAME></div>
+<div id="news"><IFRAME class="frame" name="news" SRC="news.html" frameborder="0"></IFRAME></div>
+</body>
 </HTML>
