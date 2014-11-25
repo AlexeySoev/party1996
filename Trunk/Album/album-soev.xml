@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Альбом Личный"></PageHead>
+		
+	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
+		
+		<PageElement><Chapter Title="Альбом Личный">
+
+		<Paragraph>
+			<Line><Link Url="Siberia2004/index.xml">Сибирь 2004</Link></Line>
+			<Line><Link Url="Alps2005/index.xml">Альпы 2005</Link></Line>
+			<Line><Link Url="Alps2006/index.xml">Альпы 2006</Link></Line>
+			<Line><Link Url="Aland2006/index.xml">Аланды 2006</Link></Line>
+			<Line><Link Url="Alps2007/index.xml">Альпы 2007</Link></Line>
+			<Line><Link Url="Norway2007/index.xml">Норвегия 2007</Link></Line>
+		</Paragraph>
+		
+		</Chapter></PageElement>
+		
+	</PageBody>
+</PageTemplate>

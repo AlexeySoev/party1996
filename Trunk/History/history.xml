@@ -73,29 +73,6 @@
 				</LinkWithDescription></ListItem>
 		</List>
 		</Paragraph>
-		
-		<Paragraph Title="Прочие темы">
-		<List>
-			<ListItem><LinkWithDescription Url="Siberia2004/siberia2004.xml" Text="Сибирь 2004">
-				Как я неожиданно для себя съездил на родину
-			</LinkWithDescription></ListItem>
-			<ListItem><LinkWithDescription Url="Alps2005/alps2005.xml" Text="Альпы 2005">
-				Это надо видеть... И мы это видели!!!
-			</LinkWithDescription></ListItem>
-			<ListItem><LinkWithDescription Url="Alps2006/alps2006.xml" Text="Альпы 2006">
-				Зажгли еще раз
-			</LinkWithDescription></ListItem>
-			<ListItem><LinkWithDescription Url="Alps2007/alps2007.xml" Text="Альпы 2007">
-				И еше
-			</LinkWithDescription></ListItem>
-			<ListItem><LinkWithDescription Url="Aland2006/aland2006.xml" Text="Аланды 2006">
-					Велопутешествие по Аландским островам
-			</LinkWithDescription></ListItem>
-			<ListItem><LinkWithDescription Url="Norway2007/norway2007.xml" Text="Норвегия 2007">
-					Велопутешествие по Норвегии
-			</LinkWithDescription></ListItem>
-		</List>
-		</Paragraph>
 
 		</Chapter></PageElement>
 		

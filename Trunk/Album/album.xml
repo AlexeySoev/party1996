@@ -8,7 +8,7 @@
 		<PageElement><MainMenu /></PageElement>
 		
 		<PageElement><Chapter Title="Альбом">
-		<Paragraph>
+		<Paragraph Title="Традиционные Майские Походы">
 			<Line><Link Url="May1997/index.xml">Май 1997</Link></Line>
 			<Line><Link Url="May1998/index.xml">Май 1998</Link></Line>
 			<Line><Link Url="May1999/index.xml">Май 1999</Link></Line>
@@ -19,17 +19,41 @@
 			<Line><Link Url="May2004/index.xml">Май 2004</Link></Line>
 		</Paragraph>
 		
-		<Paragraph>
+		<Paragraph Title="Грандиозные Супер-Путешествия">
 			<Line>Кавказ 2001 <Emphasize>Скоро</Emphasize></Line>
 			<Line><Link Url="Europe2002/Bike/index.xml">Европа 2002</Link>. Вело-часть путешествия</Line>
 			<Line><Link Url="Europe2002/Car/index.xml">Европа 2002</Link>. Авто-часть путешествия</Line>
 			<Line><Link Url="Karelia2003/index.xml">Карелия 2003</Link></Line>
-			<Line><Link Url="Siberia2004/index.xml">Сибирь 2004</Link></Line>
-			<Line><Link Url="Alps2005/index.xml">Альпы 2005</Link></Line>
-			<Line><Link Url="Alps2006/index.xml">Альпы 2006</Link></Line>
-			<Line><Link Url="Aland2006/index.xml">Аланды 2006</Link></Line>
-			<Line><Link Url="Alps2007/index.xml">Альпы 2007</Link></Line>
-			<Line><Link Url="Norway2007/index.xml">Норвегия 2007</Link></Line>
+		</Paragraph>
+		
+		<Paragraph Title="Мои дни рождения">
+			<Line>1995 <Emphasize>Скоро</Emphasize></Line>
+			<Line>1996 <Emphasize>Скоро</Emphasize></Line>
+			<Line>1997 <Emphasize>Скоро</Emphasize></Line>
+			<Line>1998 <Emphasize>Скоро</Emphasize></Line>
+			<Line>1999 <Emphasize>Скоро</Emphasize></Line>
+			<Line>2001 <Emphasize>Скоро</Emphasize></Line>
+		</Paragraph>
+		
+		<Paragraph Title="Дни рождения Николаича в Хельсинки">
+			<Line>2001 <Emphasize>Скоро</Emphasize></Line>
+			<Line>2004 <Emphasize>Скоро</Emphasize></Line>
+			<Line>2006 <Emphasize>Скоро</Emphasize></Line>
+			<Line>2008 <Emphasize>Скоро</Emphasize></Line>
+			<Line>2009 <Emphasize>Скоро</Emphasize></Line>
+			<Line>2010 <Emphasize>Скоро</Emphasize></Line>
+			<Line>2013 <Emphasize>Скоро</Emphasize></Line>
+		</Paragraph>
+		
+		<Paragraph Title="Дни рождения Жени">
+			<Line>2011 <Emphasize>Скоро</Emphasize></Line>
+			<Line>2013 <Emphasize>Скоро</Emphasize></Line>
+		</Paragraph>
+					
+		<Paragraph Title="Евровидение у Нагиева">
+			<Line>2010 <Emphasize>Скоро</Emphasize></Line>
+			<Line>2012 <Emphasize>Скоро</Emphasize></Line>
+			<Line>2014 <Emphasize>Скоро</Emphasize></Line>
 		</Paragraph>
 		
 		</Chapter></PageElement>

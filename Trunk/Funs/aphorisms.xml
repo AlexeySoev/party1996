@@ -2,12 +2,12 @@
 <?xml-stylesheet href="../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Афоризмы собственного изготовления"></PageHead>
+	<PageHead Title="Партийные ффоризмы собственного изготовления"></PageHead>
 		
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
 		
-		<PageElement><Chapter Title="Афоризмы собственного изготовления">
+		<PageElement><Chapter Title="Партийные афоризмы собственного изготовления">
 		<Paragraph>
 			Реальная тема – записывать слова и выражения,
 			которые стали крылатыми в узком кругу людей за недолгое время их тесного общения.
@@ -66,12 +66,6 @@
 			</ListItem>
 						
 			<ListItem>
-			<Paragraph Title="Гога">
-				<Line>Таращит</Line>
-			</Paragraph>
-			</ListItem>
-			
-			<ListItem>
 			<Paragraph Title="Велосипедная Карелия и ладожские ялы. 2003 год.">
 				<Line>Я новыя русский, уважаемый человек, могу себе позволить</Line>
 				<Line>Лег спать с чувством глубоко выполненного долга</Line>
@@ -117,122 +111,10 @@
 			</ListItem>
 						
 			<ListItem>
-			<Paragraph Title="Коля Антонов">
-				<Line>Ай ловлю</Line>
-			</Paragraph>
-			</ListItem>
-			
-			<ListItem>
 			<Paragraph Title="Поход Май-2004">
 				<Line>Места, нам неведомые</Line>
 				<Line>Может пригласим баб для смеху?</Line>
 				<Line>Это Тархун?</Line>
-			</Paragraph>
-			</ListItem>
-			
-			<ListItem>
-			<Paragraph Title="Сестры">
-				<Line>Мы в Москве!</Line>
-				<Line>Как мышь!</Line>
-				<Line>Не шланговаться!</Line>
-			</Paragraph>
-			</ListItem>
-
-			<ListItem>
-			<Paragraph Title="Настя">
-				<Line>Единственное достоинство Макса</Line>
-				<Line>Давайте встанем через одного!</Line>
-				<Line>Это мужской кот?</Line>
-				<Line>Мячик без ручек</Line>
-				<Line>Matthias, а где твой boyfriend?</Line>
-				<Line>Не крепко</Line>
-				<Line>Саласты и блоины</Line>
-				<Line>Обзираем окрестности</Line>
-				<Line>Согнутый баран</Line>
-				<Line>Одна неуверенная палка</Line>
-			</Paragraph>
-			</ListItem>
-			
-			<ListItem>
-			<Paragraph Title="Новый 2005 год">
-				<Line>Утром того же дня</Line>
-				<Line>Зачморен за незажигалово</Line>
-			</Paragraph>
-			</ListItem>
-			
-			<ListItem>
-			<Paragraph Title="Альпы 2005">
-				<Paragraph Title="Морзин">
-					<Line>СуперМорзин</Line>
-					<Line>Мадам Бу</Line>
-					<Line>Монстр.Fr</Line>
-					<Line>Регион катания</Line>
-					<Line>Я новый русский! Был...</Line>
-					<Line>Отец родной подарил</Line>
-					<Line>Вкус виски мне с детства напоминает отпуск...</Line>
-				</Paragraph>
-				<Paragraph Title="Альп Де Хуез">
-					<Line>Стойка косого спуска</Line>
-					<Line>С чувством глубокой ответственности</Line>
-					<Line>Штаны-самосбросы</Line>
-					<Line>Как понять, что это ущелье?</Line>
-					<Line>Землю жрут. Жалеют что на свет родились.</Line>
-					<Line>Моншьены</Line>
-					<Line>Шаромыжники</Line>
-					<Line>Думал что моншьены, а оказались шаромыжники</Line>
-					<Line>Друг мужской</Line>
-					<Line>Удаленный друг</Line>
-					<Line>Без ансамбля, без ансамбля, без ансамбля, БЕЗ!</Line>
-					<Line>А наш Дед Мороз в пограничных носках. Пьяный, как все!</Line>
-					<Line>Французская туалетная вода</Line>
-					<Line>Капля виски лошадь точит</Line>
-					<Line>Хочу!</Line>
-					<Line>Пока мы не отъехали...</Line>
-					<Line>Люда пока еще ничего плохого нам не сделала</Line>
-					<Line>–Врет! –Неееет!</Line>
-					<Line>–Я монстр! –Откуда знаешь? –Чувствую!</Line>
-					<Line>Может стакан хапнем?</Line>
-				</Paragraph>
-			</Paragraph>
-			</ListItem>
-			
-			<ListItem>
-			<Paragraph Title="Весна 2005">
-				<Line>Ну не лох ли?</Line>
-				<Line>Люблю людей, которые могут натворить!</Line>
-				<Line>Почему-то вот такие маленькие хрени и работают...</Line>
-				<Line>Сплошная красота</Line>
-				<Line>Один грузит – другой в стрессе. Потом меняются.</Line>
-				<Line>Дураков нет</Line>
-				<Line>Вхожу!</Line>
-				<Line>Возьмите лучше водочки! То, что вам знакомо!</Line>
-				<Line>Коллекционер хренов!</Line>
-				<Line>Щас мыши запоют!</Line>
-				<Line>Всхожу!</Line>
-			</Paragraph>
-			</ListItem>
-			
-			<ListItem>
-			<Paragraph Title="Альпы 2006">
-				<Line>Это кешью!</Line>
-				<Line>В чём мать родила, только наоборот</Line>
-				<Line>Всё что нажито необычным трудом</Line>
-				<Line>Сламафон тре бьен сильвупле</Line>
-				<Line>Простирнуть</Line>
-				<Line>Взматерился</Line>
-				<Line>Может быть мне еще гранд кафе о ле опороть?</Line>
-				<Line>Литрэ</Line>
-				<Line>Отморэ</Line>
-				<Line>Гусёк</Line>
-				<Line>Мармот безропотный</Line>
-				<Line>Шест прогибается, мужик летит!</Line>
-			</Paragraph>
-			</ListItem>
-			
-			<ListItem>
-			<Paragraph Title="Альпы 2007">
-				<Line>Мужиque</Line>
-				<Line>Бланшевать</Line>
 			</Paragraph>
 			</ListItem>
 			

@@ -13,6 +13,9 @@
 			<Chapter Title="Алексей Соев">
 				<Line><Link Url="Avia/Avia.xml">Авиамоделизм</Link></Line>
 				<Line><Link Url="Geocaching/Geocaching.xml">Геокэшинг</Link></Line>
+				<Line><Link Url="../../History/history-soev.xml">Мои путешествия</Link></Line>
+				<Line><Link Url="../../Album/album-soev.xml">Мои альбомы</Link></Line>
+				<Line><Link Url="../../Funs/aphorisms-soev.xml">Выраженьица</Link></Line>
 			</Chapter>
 		</PageElement>
 	</PageBody>
