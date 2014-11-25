@@ -333,8 +333,8 @@
 					Первый сайт Партии Любителей - Альбом - <xsl:value-of select="@Title"/>
 				</title>
 				<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+				<SCRIPT src="&ScriptsDir;/showphoto.js"></SCRIPT>
 			</head>
-			<SCRIPT src="&ScriptsDir;/showphoto.js"></SCRIPT>
 			<FRAMESET frameborder="no" border="0" rows="*,120">
 				<xsl:attribute name="onload">
 					makethumbs(
