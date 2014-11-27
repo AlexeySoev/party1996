@@ -25,6 +25,16 @@
 			<Line><Link Url="Europe2002/Car/index.xml">Европа 2002</Link>. Авто-часть путешествия</Line>
 			<Line><Link Url="Karelia2003/index.xml">Карелия 2003</Link></Line>
 		</Paragraph>
+			
+		<Paragraph Title="Дни рождения Николаича в Хельсинки">
+			<Line><Link Url="Niko2001/index.xml">ДР 2001</Link></Line>
+			<Line><Link Url="Niko2004/index.xml">ДР 2004</Link></Line>
+			<Line><Link Url="Niko2006/index.xml">ДР 2006</Link></Line>
+			<Line><Link Url="Niko2008/index.xml">ДР 2008</Link></Line>
+			<Line><Link Url="Niko2009/index.xml">ДР 2009</Link></Line>
+			<Line><Link Url="Niko2010/index.xml">ДР 2010</Link></Line>
+			<Line><Link Url="Niko2013/index.xml">ДР 2013</Link></Line>
+		</Paragraph>
 		
 		<Paragraph Title="Мои дни рождения">
 			<Line>1995 <Emphasize>Скоро</Emphasize></Line>
@@ -33,16 +43,6 @@
 			<Line>1998 <Emphasize>Скоро</Emphasize></Line>
 			<Line>1999 <Emphasize>Скоро</Emphasize></Line>
 			<Line>2001 <Emphasize>Скоро</Emphasize></Line>
-		</Paragraph>
-		
-		<Paragraph Title="Дни рождения Николаича в Хельсинки">
-			<Line>2001 <Emphasize>Скоро</Emphasize></Line>
-			<Line>2004 <Emphasize>Скоро</Emphasize></Line>
-			<Line>2006 <Emphasize>Скоро</Emphasize></Line>
-			<Line>2008 <Emphasize>Скоро</Emphasize></Line>
-			<Line>2009 <Emphasize>Скоро</Emphasize></Line>
-			<Line>2010 <Emphasize>Скоро</Emphasize></Line>
-			<Line>2013 <Emphasize>Скоро</Emphasize></Line>
 		</Paragraph>
 		
 		<Paragraph Title="Дни рождения Жени">
