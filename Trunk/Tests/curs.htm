@@ -31,8 +31,8 @@ for (i=0;i<=message.length-1;i++) {
 }
  
 function handlerMM(e){
- x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
- y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+ x = (document.layers) ? e.pageX : document.body.scrollLeft+e.clientX
+ y = (document.layers) ? e.pageY : document.body.scrollTop+e.clientY
  flag=1
 }
  

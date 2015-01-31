@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcQ9gkvF86w2Nz2nhOVyQ6h1ahMnD2hDA">
+    </script>
+	
+	<script type="text/javascript">
+    
+//    var map = new GMap(document.getElementById("map"));
+//    map.addControl(new GSmallMapControl());
+//    map.centerAndZoom(new GPoint(-122.1419, 37.4419), 4);
+	
+	function initialize() {
+        var mapOptions = {
+          center: { lat: 37.4419, lng: -122.1419},
+		   
+          zoom: 4
+        };
+        var map = new google.maps.Map(document.getElementById('map'),
+            mapOptions);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+	
+  </head>
+  
+  <body>
+	<div id="map" style="width: 500px; height: 400px"></div>
+  </body>
+</html>
