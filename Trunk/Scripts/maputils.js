@@ -1,3 +1,25 @@
+	function loadMapAPI()
+	{
+		var script = document.createElement("script");
+		
+		//v.2
+		script.setAttribute("src", "http://maps.google.com/maps?file=api&amp;v=2.88&amp;key=ABQIAAAA1cyBAHrOeSe9b0ZoaFAK3hT2yXp_ZAY8_ufC3CFXhHIE1vwkxSyZva3bCOrJkD906auWtIUk_qBZw&callback=mapAPILoaded");
+		//v.3
+		//script.setAttribute("src", "https://maps.googleapis.com/maps/api/js?key=AIzaSyDcQ9gkvF86w2Nz2nhOVyQ6h1ahMnD2hDA&callback=mapAPILoaded");
+
+		script.setAttribute("type", "text/javascript");
+		document.getElementsByTagName("head")[0].appendChild(script);
+	}
+
+	function mapAPILoaded()
+	{
+		//alert("API loaded!");
+	}
+
+	window.onload = loadMapAPI;
+	
+	///////////////////////////////////////////////////////////////////////////////////////
+
     var g_map;
 
 	//for analize
@@ -7,7 +29,7 @@
 	var g_trackTitle;
 	var g_isMapCenteredAndZoomed = true;
 	var g_trackZoomIndex = 1;
-	var g_trackCenterPoint = new GLatLng(0, 0);
+	var g_trackCenterPoint; // = new GLatLng(0, 0);
 	
 	//for simulation
 	var g_index=0;
@@ -17,7 +39,7 @@
 	var g_prevDateObj;
 	var g_prevPolyline;
 	var g_runningPoints = new Array();
-	var g_xmlPoints; // used in simulation to get altitude and time for the corresponing GLatLng point
+	var g_xmlPoints; // used in simulation to get altitude and time for the corresponding GLatLng point
 						
 	var	e_start = 1;
 	var	e_play = 2;

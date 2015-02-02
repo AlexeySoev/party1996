@@ -4,8 +4,6 @@
 <!ENTITY TestRoot1 "http://localhost/party1996">
 <!ENTITY TestRoot2 "http://party1996.narod.ru">
 <!ENTITY ScriptsDir "&Root;/Scripts">
-<!ENTITY GoogleScriptsPath "http://maps.google.com/maps?file=api&amp;v=2.88&amp;key=ABQIAAAA1cyBAHrOeSe9b0ZoaFAK3hT2yXp_ZAY8_ufC3CFXhHIE1NvwkxSyZva3bCOrJkD906auWtIUk_qBZw">
-<!ENTITY TestGoogleScriptsPath "http://maps.google.com/maps?file=api&amp;v=2.88&amp;key=ABQIAAAA1cyBAHrOeSe9b0ZoaFAK3hQ5KJAQZ1aEere3O5mYNzZjpvVp7RTej85BgqxjIIkYGag3FP5briAZLg">
 <!ENTITY PicsDir "&Root;/Pics">
 ]>
 
@@ -393,8 +391,7 @@
         
         
     <xsl:template match="GPSTrackFrame">
-			
-			<script src="&GoogleScriptsPath;" type="text/javascript"></script>
+		
 			<script src="&ScriptsDir;/maputils.js" type="text/javascript"></script>
 			    		
 			<div style="width:150px; float:left; margin-left:1%;">
@@ -582,7 +579,7 @@
 			</div>
 			
 			<div style="height:65%; width:50%; float:right; padding-right:2%; padding-left:2%; text-align:left;">
-				<div id="map" style="height:95%; width:100%; border:1px solid grey;">
+				<div id="map" style="height:500px; width:100%; border:1px solid grey;">
 				</div>
 				<br></br>
 				<div>
