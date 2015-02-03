@@ -10,32 +10,31 @@
 			<MainMenu />
 		</PageElement>
 		<PageElement>
-			<Chapter Title="Карелия 2003"></Chapter>
+			<Chapter Title="Карелия 2003">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Entiry Trip" TrackFile="gpsdata/EntiryTrip.gpx.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 1" TrackFile="gpsdata/Day01-27.07.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 2" TrackFile="gpsdata/Day02-28.07.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 3-1" TrackFile="gpsdata/Day031-29.07.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 3-2" TrackFile="gpsdata/Day032-29.07.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 3-3" TrackFile="gpsdata/Day033-29.07.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 4-1" TrackFile="gpsdata/Day041-30.07.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 4-2" TrackFile="gpsdata/Day042-30.07.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 4-3" TrackFile="gpsdata/Day043-30.07.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 5" TrackFile="gpsdata/Day05-31.07.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 6" TrackFile="gpsdata/Day06-01.08.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 7" TrackFile="gpsdata/Day07-02.08.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 8" TrackFile="gpsdata/Day08-03.08.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 9" TrackFile="gpsdata/Day09-04.08.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 10" TrackFile="gpsdata/Day10-05.08.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 11" TrackFile="gpsdata/Day11-06.08.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 12" TrackFile="gpsdata/Day12-07.08.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 13" TrackFile="gpsdata/Day13-08.08.2003.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 14" TrackFile="gpsdata/Day14-09.08.2003.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
 		</PageElement>
 	</PageBody>
-
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Entiry Trip" TrackFile="gpsdata/EntiryTrip.gpx.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 1" TrackFile="gpsdata/Day01-27.07.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 2" TrackFile="gpsdata/Day02-28.07.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 3-1" TrackFile="gpsdata/Day031-29.07.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 3-2" TrackFile="gpsdata/Day032-29.07.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 3-3" TrackFile="gpsdata/Day033-29.07.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 4-1" TrackFile="gpsdata/Day041-30.07.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 4-2" TrackFile="gpsdata/Day042-30.07.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 4-3" TrackFile="gpsdata/Day043-30.07.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 5" TrackFile="gpsdata/Day05-31.07.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 6" TrackFile="gpsdata/Day06-01.08.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 7" TrackFile="gpsdata/Day07-02.08.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 8" TrackFile="gpsdata/Day08-03.08.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 9" TrackFile="gpsdata/Day09-04.08.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 10" TrackFile="gpsdata/Day10-05.08.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 11" TrackFile="gpsdata/Day11-06.08.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 12" TrackFile="gpsdata/Day12-07.08.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 13" TrackFile="gpsdata/Day13-08.08.2003.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 14" TrackFile="gpsdata/Day14-09.08.2003.xml"></GPSTrackLink>
-
-	</GPSTrackFrame>
 
 </PageTemplate>
 

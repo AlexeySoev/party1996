@@ -10,13 +10,13 @@
 			<MainMenu />
 		</PageElement>
 		<PageElement>
-			<Chapter Title="Кавказ 2001"></Chapter>
+			<Chapter Title="Кавказ 2001">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Caucasus" TrackFile="gpsdata/Caucasus2001.gpx.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
 		</PageElement>
 	</PageBody>
-
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Caucasus" TrackFile="gpsdata/Caucasus2001.gpx.xml"></GPSTrackLink>
-	</GPSTrackFrame>
 
 </PageTemplate>
 
