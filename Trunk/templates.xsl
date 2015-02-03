@@ -367,15 +367,15 @@
 		<tr valign="top" align="left">
 			<td width="24px" align="left">
 				<xsl:if test="@GoogleUrl[.!='']">
-					<A href="{@GoogleUrl}">
+					<a href="{@GoogleUrl}">
 						<img src="&PicsDir;/earth_16_16.gif" border="0" />
-					</A>
+					</a>
 				</xsl:if>
 			</td>
 			<td width="400px" align="left">
-				<A href="{@PageUrl}">
+				<a href="{@PageUrl}">
 					<xsl:value-of select="@Name"/>
-				</A>
+				</a>
 			</td>
 			<td width="500px" align="left">
 				<xsl:apply-templates />
@@ -394,7 +394,7 @@
 		
 			<script src="&ScriptsDir;/maputils.js" type="text/javascript"></script>
 			    		
-			<div style="width:150px; float:left; margin-left:1%;">
+			<div style="width:150px; float:left;">
 			
 				<div style="height:30px" >
 					<FONT color="#000000" size="3"><STRONG>
@@ -406,7 +406,7 @@
 				<xsl:apply-templates />	
 			</div>
 					
-			<div style=" float:left; margin-left:1%;">
+			<div style="width:330px; float:left; margin-left:10px;">
 			
 				<div class="gpslabel" style="height:30px" >
 					<FONT color="#000000" size="3"><STRONG>
@@ -578,11 +578,11 @@
 				
 			</div>
 			
-			<div style="height:65%; width:50%; float:right; padding-right:2%; padding-left:2%; text-align:left;">
+			<div style="width:50%; float:right; margin-right:10px; margin-left:10px;">
 				<div id="map" style="height:500px; width:100%; border:1px solid grey;">
 				</div>
 				<br></br>
-				<div>
+				<div style="text-align:left;">
 					<input id="chkCenterAndZoomMap" type="checkbox" checked="checked" onclick="CenterAndZoomMap()">Центрировать и масштабировать карту при смене трека</input>
 					<br/>
 					<span style="text-align:left">(Рекомендуется отключить при просмотре последовательных треков)</span>
@@ -592,7 +592,7 @@
     </xsl:template>
         
     <xsl:template match="GPSTrackLink">
-			<div style="TEXT-INDENT:-10px; PADDING-LEFT: 10px">
+			<div style="text-indent:-10px; padding-left:10px">
 				<a href="javascript:renderMap('{@TrackFile}', '{@Title}')" style="text-decoration:underline">
 					<xsl:value-of select="@Title"/>
 				</a>

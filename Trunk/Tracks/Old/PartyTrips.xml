@@ -7,12 +7,14 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Походы Патрии Любителей 1995 - 2003 годов"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Походы Патрии Любителей 1995 - 2003 годов">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Camps" TrackFile="gpsdata/PartyTrips.gpx.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
-		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Camps" TrackFile="gpsdata/PartyTrips.gpx.xml"></GPSTrackLink>
-	</GPSTrackFrame>
 	
 </PageTemplate>
 
