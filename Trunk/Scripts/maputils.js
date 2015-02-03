@@ -66,9 +66,10 @@
 			if (g_map == null)
 			{
 				g_map = new GMap2(document.getElementById("map"));	
-				g_map.addControl(new GSmallMapControl());
-				g_map.addControl(new GMapTypeControl());
-				g_map.addControl(new GScaleControl());
+				// not supported by v2 any more
+				//g_map.addControl(new GSmallMapControl());
+				//g_map.addControl(new GMapTypeControl());
+				//g_map.addControl(new GScaleControl());
 			}
 			g_map.clearOverlays();
 						
