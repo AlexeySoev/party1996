@@ -4,7 +4,7 @@
 <!ENTITY TestRoot1 "http://localhost/party1996">
 <!ENTITY TestRoot2 "http://party1996.narod.ru">
 <!ENTITY ScriptsDir "&Root;/Scripts">
-<!ENTITY PicsDir "&Root;/Pics">
+<!ENTITY PicsDir "&Root;/Images">
 ]>
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
