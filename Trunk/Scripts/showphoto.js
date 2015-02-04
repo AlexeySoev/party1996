@@ -84,8 +84,16 @@ function transformXML(xml, xsl)
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-function showphoto(picname, xsltname, title) {
-	var xml = loadXMLfromString("<?xml version='1.0' encoding='UTF-8'?><PageTemplate><PageHead/><PageBody><PageElement><MainMenu/></PageElement><PageElement><Photo Src='images/" + buildname(picname) + ".JPG' Title='" + title + "'/></PageElement></PageBody></PageTemplate>")
+function showphoto(photonumber, count, xsltname, title)
+{
+	var prev = photonumber <= 1 ? count : photonumber-1; 
+	var next = photonumber < count ? photonumber+1 : 1;
+	
+	var xmltext = "<?xml version='1.0' encoding='UTF-8'?><PageTemplate><PageHead/><PageBody><PageElement><MainMenu/></PageElement><PageElement>";
+	xmltext = xmltext + "<Photo Src='images/" + buildname(photonumber) + ".JPG' Prev='" + prev + "' Next='" + next + "' Count='" + count + "' Title='" + title + "'/>";
+	xmltext = xmltext + "</PageElement></PageBody></PageTemplate>";
+	
+	var xml = loadXMLfromString(xmltext);
 	var xsl = loadXMLfromURL(xsltname);
 	var html = transformXML(xml, xsl);
 	var picwin = window.open("", "TopFrame");
@@ -93,27 +101,34 @@ function showphoto(picname, xsltname, title) {
 	picwin.document.close();
 }
 
-function makethumbs(count, xsltname, title) {
-
+function makethumbs(count, xsltname, title)
+{
 	//alert("makethumbs()");
 
 	var xmltext = "<?xml version='1.0' encoding='UTF-8'?><ThumbnailPage>"
-	for (i=1; i < count+1; i++)
-		xmltext = xmltext + "<Thumbnail Url='" + buildname(i) + "' Title='" + title + "' />";
+	for (i=1; i <= count; i++)
+	{
+		xmltext = xmltext + "<Thumbnail";
+		xmltext = xmltext + " Count='" + count + "'";
+		xmltext = xmltext + " PhotoNumber='" + i + "'";
+		xmltext = xmltext + " FormattedPhotoNumber='" + buildname(i) + "'";
+		xmltext = xmltext + " Title='" + title + "'";
+		xmltext = xmltext + " />";
+	}
 	xmltext = xmltext + "</ThumbnailPage>"
 	
 	var xml = loadXMLfromString(xmltext);
 	var xsl = loadXMLfromURL(xsltname);
 	var html = transformXML(xml, xsl);
-	
 	var picwin = window.open("", "BottomFrame");	
 	picwin.document.write(html);
 	picwin.document.close();
 
-	showphoto(1, xsltname, title);
+	showphoto(1, count, xsltname, title);
 }
 
-function buildname(name) {
+function buildname(name)
+{
 	var len = name.toString(10).length;
 	if (len == 2)
 		name = "0" + name;

@@ -231,36 +231,31 @@
 		</tr>
 		</table>
 	</xsl:template>
+
 	
-	<xsl:template match="Counter">
-			<p align="center"><a href="http://narod.yandex.ru" target="_top"><img src="http://narod.yandex.ru/images/u_templ/narod.gif" border="0" /></a></p>
-			<xsl:apply-templates />
-	</xsl:template>
-	
-			
 	<!-- *** Photo Album support -->
 		
 	
 	<xsl:template match="Photo">
+		<script src="&ScriptsDir;/showphoto.js"></script>
 		<div align="center">
 			<table border="0" cellpadding="2" cellspacing="2" width="100%">
 				<tr>
-					<td width="30%" align="left" valign="top">
+					<td style="width:150px;" align="left" valign="top">
 						<P><FONT color="#003399" size="5"><STRONG><xsl:value-of select="@Title"/></STRONG></FONT></P>
 					</td>
-					
-					<td>
+					<td align="center">
 						<div align="center">
 							<table border="2" cellpadding="2" cellspacing="2">
 								<tr>
-									<td width="30"></td>
-									<td rowspan="4" align="center"><img src="{@Src}" border="0"/></td>
-									<td width="30"></td>
+									<td style="width:50px;" onclick="javascript:showphoto({@Prev}, {@Count}, '&Root;/templates.xsl', '{@Title}')" onmouseover="this.style.backgroundColor = '#ccccff';" onmouseout="this.style.backgroundColor = 'inherit';"></td>
+									<td align="center"><img src="{@Src}" border="0" onclick="javascript:showphoto({@Next}, {@Count}, '&Root;/templates.xsl', '{@Title}')"/></td>
+									<td style="width:50px;" onclick="javascript:showphoto({@Next}, {@Count}, '&Root;/templates.xsl', '{@Title}')" onmouseover="this.style.backgroundColor = '#ccccff';" onmouseout="this.style.backgroundColor = 'inherit';"></td>
 								</tr>
 							</table>
 						</div>
 					</td>
-					<td width="30%"></td>
+					<td style="width:150px;"></td>
 				</tr>
 			</table>
 		</div>
@@ -270,37 +265,41 @@
 	
 	<xsl:template match="Thumbnail">
 		<td align="center">
-		<a href="javascript:%20showphoto('{@Url}', '&Root;/templates.xsl', '{@Title}')"><img src="thumbnails/{@Url}.JPG" border="0" HEIGHT="60"/></a>
+		<a href="javascript:showphoto({@PhotoNumber}, {@Count}, '&Root;/templates.xsl', '{@Title}')"><img src="thumbnails/{@FormattedPhotoNumber}.JPG" border="0" height="60"/></a>
 		</td>
 		<xsl:apply-templates />	
 	</xsl:template>
+	
+	<!-- not used - BEGIN -->
 	
 	<xsl:template name="ThumbnailFunction">
 		<xsl:param name="Url"/>
 		<td align="center">
-		<a href="javascript:%20showphoto('{$Url}', '&Root;/templates.xsl')"><img src="thumbnails/{$Url}.JPG" border="0" HEIGHT="75"/></a>
+		<a href="javascript:showphoto('{$Url}', '&Root;/templates.xsl')"><img src="thumbnails/{$Url}.JPG" border="0" height="75"/></a>
 		</td>
 		<xsl:apply-templates />	
 	</xsl:template>
 	
-	<xsl:template name="for">
+	<xsl:template name="For">
 		<xsl:param name="i" select="0"/>
 		<xsl:param name="n"/>
 		<xsl:if test="$i &lt; $n">
 			<xsl:call-template name="ThumbnailFunction">
 				<xsl:with-param name="Url" select="$i + 1"/>
 			</xsl:call-template>
-			<xsl:call-template name="for">
+			<xsl:call-template name="For">
 				<xsl:with-param name="i" select="$i + 1"/>
 				<xsl:with-param name="n" select="$n"/>
 			</xsl:call-template>
 		</xsl:if>
 	</xsl:template>
+	
+	<!-- not used - END -->
 
     <xsl:template match="ThumbnailPage">
 	    <html>
 			<head><meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" /></head>
-			<SCRIPT src="&ScriptsDir;/showphoto.js">error_preventing_string_for_FireFox3.0</SCRIPT>
+			<script src="&ScriptsDir;/showphoto.js">error_preventing_string_for_FireFox3.0</script>
 			<body background="&PicsDir;/background.jpg">
 			<div align="center">
 			<table border="0" cellpadding="6" cellspacing="0">
@@ -308,7 +307,7 @@
 					
 					<xsl:choose>
 						<xsl:when test="@Auto[.='true']">
-					 		<xsl:call-template name="for">
+					 		<xsl:call-template name="For">
 								<xsl:with-param name="n" select="@Count"/>
 							</xsl:call-template>
 						</xsl:when>
@@ -331,7 +330,7 @@
 					Первый сайт Партии Любителей - Альбом - <xsl:value-of select="@Title"/>
 				</title>
 				<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
-				<SCRIPT src="&ScriptsDir;/showphoto.js"></SCRIPT>
+				<script src="&ScriptsDir;/showphoto.js"></script>
 			</head>
 			<FRAMESET frameborder="no" border="0" rows="*,120">
 				<xsl:attribute name="onload">
