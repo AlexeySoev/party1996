@@ -7,12 +7,14 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Лыжня в Лемболово 5 км"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Лыжня в Лемболово 5 км">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Lembolovo piste 5 km" TrackFile="gpsdata/Lembolovopiste5km.trk.txt.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
 		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Lembolovo piste 5 km" TrackFile="gpsdata/Lembolovopiste5km.trk.txt.xml"></GPSTrackLink>
-	</GPSTrackFrame>
-	
 </PageTemplate>
 

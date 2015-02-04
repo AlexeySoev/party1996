@@ -7,12 +7,14 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Велосипедно - лодочный поход 9 Мая"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Велосипедно - лодочный поход 9 Мая">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="9 May" TrackFile="gpsdata/9May.trk.txt.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
-		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="9 May" TrackFile="gpsdata/9May.trk.txt.xml"></GPSTrackLink>
-	</GPSTrackFrame>
 	
 </PageTemplate>
 

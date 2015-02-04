@@ -7,13 +7,15 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Велопоход Питкяранта - Сортавала"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Велопоход Питкяранта - Сортавала">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Pitkyaranta - Sortavala" TrackFile="gpsdata/Pitkyaranta-Sortavala.gpx.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
 		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Pitkyaranta - Sortavala" TrackFile="gpsdata/Pitkyaranta-Sortavala.gpx.xml"></GPSTrackLink>
-	</GPSTrackFrame>
-	
 </PageTemplate>
 
 

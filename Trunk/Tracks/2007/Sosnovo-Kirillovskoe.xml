@@ -7,13 +7,15 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Велопробег Сосново - Кирилловское"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Велопробег Сосново - Кирилловское">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Sosnovo - Kirillovskoe" TrackFile="gpsdata/Sosnovo-Kirillovskoe.gpx.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
 		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Sosnovo - Kirillovskoe" TrackFile="gpsdata/Sosnovo-Kirillovskoe.gpx.xml"></GPSTrackLink>
-	</GPSTrackFrame>
-	
 </PageTemplate>
 
 

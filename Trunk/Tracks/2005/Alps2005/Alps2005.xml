@@ -7,26 +7,28 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Альпы 2005"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Альпы 2005">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Flight Piter - Geneve" TrackFile="gpsdata/Piter-Geneve.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Bus Geneve - Morzine" TrackFile="gpsdata/Geneve-Morzine.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Morzine Day 1" TrackFile="gpsdata/Morzine1.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Morzine Day 2" TrackFile="gpsdata/Morzine2.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Morzine Day 3" TrackFile="gpsdata/Morzine3.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Morzine Day 4" TrackFile="gpsdata/Morzine4.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Morzine Day 5" TrackFile="gpsdata/Morzine5.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Morzine Day 6" TrackFile="gpsdata/Morzine6.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Bus Morzine - AlpdHuez" TrackFile="gpsdata/Morzine-AlpdHuez.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="AlpdHuez Day 1" TrackFile="gpsdata/AlpdHuez1.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="AlpdHuez Day 2" TrackFile="gpsdata/AlpdHuez2.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="AlpdHuez Day 3" TrackFile="gpsdata/AlpdHuez3.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="AlpdHuez Day 4" TrackFile="gpsdata/AlpdHuez4.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="AlpdHuez Day 5" TrackFile="gpsdata/AlpdHuez5.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="AlpdHuez Day 6" TrackFile="gpsdata/AlpdHuez6.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Flight Geneve - Piter" TrackFile="gpsdata/Geneve-Piter.trk.txt.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
 		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Flight Piter - Geneve" TrackFile="gpsdata/Piter-Geneve.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Bus Geneve - Morzine" TrackFile="gpsdata/Geneve-Morzine.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Morzine Day 1" TrackFile="gpsdata/Morzine1.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Morzine Day 2" TrackFile="gpsdata/Morzine2.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Morzine Day 3" TrackFile="gpsdata/Morzine3.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Morzine Day 4" TrackFile="gpsdata/Morzine4.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Morzine Day 5" TrackFile="gpsdata/Morzine5.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Morzine Day 6" TrackFile="gpsdata/Morzine6.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Bus Morzine - AlpdHuez" TrackFile="gpsdata/Morzine-AlpdHuez.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="AlpdHuez Day 1" TrackFile="gpsdata/AlpdHuez1.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="AlpdHuez Day 2" TrackFile="gpsdata/AlpdHuez2.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="AlpdHuez Day 3" TrackFile="gpsdata/AlpdHuez3.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="AlpdHuez Day 4" TrackFile="gpsdata/AlpdHuez4.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="AlpdHuez Day 5" TrackFile="gpsdata/AlpdHuez5.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="AlpdHuez Day 6" TrackFile="gpsdata/AlpdHuez6.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Flight Geneve - Piter" TrackFile="gpsdata/Geneve-Piter.trk.txt.xml"></GPSTrackLink>
-	</GPSTrackFrame>
-	
 </PageTemplate>

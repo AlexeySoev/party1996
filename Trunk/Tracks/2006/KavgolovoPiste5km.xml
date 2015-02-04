@@ -7,12 +7,14 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Лыжня в Кавголово 5 км"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Лыжня в Кавголово 5 км">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Kavgolovo piste 5 km" TrackFile="gpsdata/Kavgolovopiste5km.trk.txt.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
-		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Kavgolovo piste 5 km" TrackFile="gpsdata/Kavgolovopiste5km.trk.txt.xml"></GPSTrackLink>
-	</GPSTrackFrame>
 	
 </PageTemplate>
 

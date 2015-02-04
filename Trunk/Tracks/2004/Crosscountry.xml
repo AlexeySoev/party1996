@@ -7,12 +7,14 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="ВелоПитерское КроссКантри"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="ВелоПитерское КроссКантри">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="CrossCountry" TrackFile="gpsdata/Crosscountry.trk.txt.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
-		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="CrossCountry" TrackFile="gpsdata/Crosscountry.trk.txt.xml"></GPSTrackLink>
-	</GPSTrackFrame>
 	
 </PageTemplate>
 

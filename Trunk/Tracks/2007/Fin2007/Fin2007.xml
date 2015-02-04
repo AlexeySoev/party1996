@@ -7,15 +7,17 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Велопоход в Финляндию"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Велопоход в Финляндию">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Day 1" TrackFile="gpsdata/Day1.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 2" TrackFile="gpsdata/Day2.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 3" TrackFile="gpsdata/Day3.xml"></GPSTrackLink>
+					<GPSTrackLink Title="All Days" TrackFile="gpsdata/All.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
-		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Day 1" TrackFile="gpsdata/Day1.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 2" TrackFile="gpsdata/Day2.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 3" TrackFile="gpsdata/Day3.xml"></GPSTrackLink>
-		<GPSTrackLink Title="All Days" TrackFile="gpsdata/All.xml"></GPSTrackLink>
-	</GPSTrackFrame>
 	
 </PageTemplate>
 

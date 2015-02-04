@@ -7,11 +7,13 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Май 2004"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Май 2004">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="May 2004" TrackFile="gpsdata/May2004.gpx.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
 		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="May 2004" TrackFile="gpsdata/May2004.gpx.xml"></GPSTrackLink>
-	</GPSTrackFrame>
-	
 </PageTemplate>

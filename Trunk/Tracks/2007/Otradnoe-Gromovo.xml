@@ -7,13 +7,15 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Велопробег Отрадное - Громово"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Велопробег Отрадное - Громово">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Otradnoe - Gromovo" TrackFile="gpsdata/Otradnoe-Gromovo.gpx.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
 		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Otradnoe - Gromovo" TrackFile="gpsdata/Otradnoe-Gromovo.gpx.xml"></GPSTrackLink>
-	</GPSTrackFrame>
-	
 </PageTemplate>
 
 

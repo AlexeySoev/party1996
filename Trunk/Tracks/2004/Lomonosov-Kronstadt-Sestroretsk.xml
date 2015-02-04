@@ -7,11 +7,13 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Велопрогулка Ломоносов - Кронштадт - Сестрорецк"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Велопрогулка Ломоносов - Кронштадт - Сестрорецк">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Lomonosov - Kronshtadt - Sestrotetsk" TrackFile="gpsdata/Lomonosov-Kronstadt-Sestroretsk.trk.txt.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
 		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Lomonosov - Kronshtadt - Sestrotetsk" TrackFile="gpsdata/Lomonosov-Kronstadt-Sestroretsk.trk.txt.xml"></GPSTrackLink>
-	</GPSTrackFrame>
-	
 </PageTemplate>

@@ -7,12 +7,14 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Лыжная прогулка Орехово - Дача"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Лыжная прогулка Орехово - Дача">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Orehovo - Dacha Ski Trip" TrackFile="gpsdata/Orehovo-Dachaskitrip.trk.txt.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
 		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Orehovo - Dacha Ski Trip" TrackFile="gpsdata/Orehovo-Dachaskitrip.trk.txt.xml"></GPSTrackLink>
-	</GPSTrackFrame>
-	
 </PageTemplate>
 

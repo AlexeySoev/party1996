@@ -7,16 +7,20 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Сибирь 2004"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Сибирь 2004">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Flight Moscow - Abakan" TrackFile="gpsdata/Moscow-Abakan.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Ergaki" TrackFile="gpsdata/Ergaki.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Gladenkaya" TrackFile="gpsdata/Gladenkaya.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Park" TrackFile="gpsdata/Park.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Flight Abakan - Moscow" TrackFile="gpsdata/Abakan-Moscow.trk.txt.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
 		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Flight Moscow - Abakan" TrackFile="gpsdata/Moscow-Abakan.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Ergaki" TrackFile="gpsdata/Ergaki.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Gladenkaya" TrackFile="gpsdata/Gladenkaya.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Park" TrackFile="gpsdata/Park.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Flight Abakan - Moscow" TrackFile="gpsdata/Abakan-Moscow.trk.txt.xml"></GPSTrackLink>
-	</GPSTrackFrame>
+	
 	
 </PageTemplate>
 

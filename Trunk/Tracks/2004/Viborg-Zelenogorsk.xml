@@ -7,11 +7,13 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Велопоход Выборг - Зеленогорск"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Велопоход Выборг - Зеленогорск">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Viborg - Zelenogorsk" TrackFile="gpsdata/Viborg-Zelenogorsk.trk.txt.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
-		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Viborg - Zelenogorsk" TrackFile="gpsdata/Viborg-Zelenogorsk.trk.txt.xml"></GPSTrackLink>
-	</GPSTrackFrame>
 	
 </PageTemplate>

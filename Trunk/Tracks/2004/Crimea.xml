@@ -7,12 +7,14 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Крым 2004"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Крым 2004">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Crimea 2004" TrackFile="gpsdata/Crimea.trk.txt.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
-		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Crimea 2004" TrackFile="gpsdata/Crimea.trk.txt.xml"></GPSTrackLink>
-	</GPSTrackFrame>
 	
 </PageTemplate>
 

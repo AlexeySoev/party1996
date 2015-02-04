@@ -7,12 +7,14 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Просвет - Рахья - Болото"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Просвет - Рахья - Болото">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Prosvet - Rahia - Boloto" TrackFile="gpsdata/Prosvet-Rahia-Boloto.trk.txt.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
 		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Prosvet - Rahia - Boloto" TrackFile="gpsdata/Prosvet-Rahia-Boloto.trk.txt.xml"></GPSTrackLink>
-	</GPSTrackFrame>
-	
 </PageTemplate>
 

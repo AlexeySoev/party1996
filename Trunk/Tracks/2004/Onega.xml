@@ -7,12 +7,14 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Онега 2004"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Онега 2004">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Onega 2004" TrackFile="gpsdata/Onega.trk.txt.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
 		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Onega 2004" TrackFile="gpsdata/Onega.trk.txt.xml"></GPSTrackLink>
-	</GPSTrackFrame>
-	
 </PageTemplate>
 

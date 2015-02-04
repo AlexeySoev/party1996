@@ -7,13 +7,15 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Велопробег Горьковское - Зеленогорск"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Велопробег Горьковское - Зеленогорск">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Gorkovskoe - Ino - Zelenogorck" TrackFile="gpsdata/Gorkovskoe-Ino-Zelenogorsk.gpx.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
 		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Gorkovskoe - Ino - Zelenogorck" TrackFile="gpsdata/Gorkovskoe-Ino-Zelenogorsk.gpx.xml"></GPSTrackLink>
-	</GPSTrackFrame>
-	
 </PageTemplate>
 
 

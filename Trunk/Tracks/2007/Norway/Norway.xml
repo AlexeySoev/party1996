@@ -6,39 +6,36 @@
 	<PageHead Title="Норвегия 2007"></PageHead>
 
 	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
 		<PageElement>
-			<MainMenu />
-		</PageElement>
-		<PageElement>
-			<Chapter Title="Норвегия 2007"></Chapter>
+			<Chapter Title="Норвегия 2007">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Helsinki" TrackFile="gpsdata/01-Helsinki.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Stockholm" TrackFile="gpsdata/02-Stockholm.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Oslo" TrackFile="gpsdata/03-Oslo.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Andalsnes - Flam" TrackFile="gpsdata/04-Andalsnes-Flam.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Uppsete - Bergen" TrackFile="gpsdata/05-Uppsete-Bergen.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Flight Bergen-Petersburg" TrackFile="gpsdata/06-FlightBergen-Petersburg.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 1" TrackFile="gpsdata/Day01.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 2" TrackFile="gpsdata/Day02.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 3" TrackFile="gpsdata/Day03-1.Bike.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 3. Boat" TrackFile="gpsdata/Day03-2.Boat.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 4" TrackFile="gpsdata/Day04.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 5" TrackFile="gpsdata/Day05.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 6" TrackFile="gpsdata/Day06.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 7" TrackFile="gpsdata/Day07.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 8" TrackFile="gpsdata/Day08-1.Way.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 8. Ferry" TrackFile="gpsdata/Day08-2.Ferry.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 8. Flam" TrackFile="gpsdata/Day08-3.Flam.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 9. Flam" TrackFile="gpsdata/Day09-1.Flam.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 9" TrackFile="gpsdata/Day09-2.Way.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 10" TrackFile="gpsdata/Day10.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 11" TrackFile="gpsdata/Day11.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 12" TrackFile="gpsdata/Day12.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
 		</PageElement>
 	</PageBody>
-
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Helsinki" TrackFile="gpsdata/01-Helsinki.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Stockholm" TrackFile="gpsdata/02-Stockholm.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Oslo" TrackFile="gpsdata/03-Oslo.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Andalsnes - Flam" TrackFile="gpsdata/04-Andalsnes-Flam.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Uppsete - Bergen" TrackFile="gpsdata/05-Uppsete-Bergen.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Flight Bergen-Petersburg" TrackFile="gpsdata/06-FlightBergen-Petersburg.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 1" TrackFile="gpsdata/Day01.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 2" TrackFile="gpsdata/Day02.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 3" TrackFile="gpsdata/Day03-1.Bike.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 3. Boat" TrackFile="gpsdata/Day03-2.Boat.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 4" TrackFile="gpsdata/Day04.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 5" TrackFile="gpsdata/Day05.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 6" TrackFile="gpsdata/Day06.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 7" TrackFile="gpsdata/Day07.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 8" TrackFile="gpsdata/Day08-1.Way.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 8. Ferry" TrackFile="gpsdata/Day08-2.Ferry.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 8. Flam" TrackFile="gpsdata/Day08-3.Flam.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 9. Flam" TrackFile="gpsdata/Day09-1.Flam.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 9" TrackFile="gpsdata/Day09-2.Way.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 10" TrackFile="gpsdata/Day10.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 11" TrackFile="gpsdata/Day11.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 12" TrackFile="gpsdata/Day12.xml"></GPSTrackLink>
-		
-	</GPSTrackFrame>
 
 </PageTemplate>
 

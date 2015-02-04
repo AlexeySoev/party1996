@@ -7,27 +7,29 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Альпы 2006"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Альпы 2006">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Flight Moscow - Grenoble" TrackFile="gpsdata/Moscow-Grenoble.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Bus Grenoble - Meribel" TrackFile="gpsdata/Grenoble-Meribel.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 1" TrackFile="gpsdata/Day1.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 2" TrackFile="gpsdata/Day2.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 3" TrackFile="gpsdata/Day3.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 4" TrackFile="gpsdata/Day4.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 5" TrackFile="gpsdata/Day5.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 6" TrackFile="gpsdata/Day6.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 7" TrackFile="gpsdata/Day7.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 8" TrackFile="gpsdata/Day8.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 9" TrackFile="gpsdata/Day9.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 10" TrackFile="gpsdata/Day10.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 11" TrackFile="gpsdata/Day11.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 12" TrackFile="gpsdata/Day12.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Day 13" TrackFile="gpsdata/Day13.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Bus Meribel - Grenoble" TrackFile="gpsdata/Meribel-Grenoble.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Flight Grenoble - Moscow" TrackFile="gpsdata/Grenoble-Moscow.trk.txt.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
-		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Flight Moscow - Grenoble" TrackFile="gpsdata/Moscow-Grenoble.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Bus Grenoble - Meribel" TrackFile="gpsdata/Grenoble-Meribel.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 1" TrackFile="gpsdata/Day1.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 2" TrackFile="gpsdata/Day2.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 3" TrackFile="gpsdata/Day3.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 4" TrackFile="gpsdata/Day4.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 5" TrackFile="gpsdata/Day5.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 6" TrackFile="gpsdata/Day6.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 7" TrackFile="gpsdata/Day7.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 8" TrackFile="gpsdata/Day8.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 9" TrackFile="gpsdata/Day9.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 10" TrackFile="gpsdata/Day10.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 11" TrackFile="gpsdata/Day11.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 12" TrackFile="gpsdata/Day12.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Day 13" TrackFile="gpsdata/Day13.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Bus Meribel - Grenoble" TrackFile="gpsdata/Meribel-Grenoble.trk.txt.xml"></GPSTrackLink>
-		<GPSTrackLink Title="Flight Grenoble - Moscow" TrackFile="gpsdata/Grenoble-Moscow.trk.txt.xml"></GPSTrackLink>
-	</GPSTrackFrame>
 	
 </PageTemplate>

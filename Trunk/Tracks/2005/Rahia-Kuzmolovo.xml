@@ -7,13 +7,15 @@
 	
 	<PageBody SnakeText="">
 		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Рахья - Волоярви - Кузьмолово"></Chapter></PageElement>
+		<PageElement>
+			<Chapter Title="Рахья - Волоярви - Кузьмолово">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Rahia - Volojarvi - Kuzmolovo" TrackFile="gpsdata/Rahia-Kuzmolovo.trk.txt.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
+		</PageElement>
 	</PageBody>
 		
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Rahia - Volojarvi - Kuzmolovo" TrackFile="gpsdata/Rahia-Kuzmolovo.trk.txt.xml"></GPSTrackLink>
-	</GPSTrackFrame>
-	
 </PageTemplate>
 
 

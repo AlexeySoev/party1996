@@ -6,17 +6,15 @@
 	<PageHead Title="Велопробег Войбокало - Кировск"></PageHead>
 
 	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
 		<PageElement>
-			<MainMenu />
-		</PageElement>
-		<PageElement>
-			<Chapter Title="Велопробег Войбокало - Кировск"></Chapter>
+			<Chapter Title="Велопробег Войбокало - Кировск">
+				<GPSTrackFrame>
+					<GPSTrackLink Title="Voibokalo - Kirovsk" TrackFile="gpsdata/Voibokalo-Kirovsk.gpx.xml"></GPSTrackLink>
+				</GPSTrackFrame>
+			</Chapter>
 		</PageElement>
 	</PageBody>
-
-	<GPSTrackFrame>
-		<GPSTrackLink Title="Voibokalo - Kirovsk" TrackFile="gpsdata/Voibokalo-Kirovsk.gpx.xml"></GPSTrackLink>
-	</GPSTrackFrame>
 
 </PageTemplate>
 
