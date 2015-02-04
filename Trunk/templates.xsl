@@ -248,9 +248,9 @@
 						<div align="center">
 							<table border="2" cellpadding="2" cellspacing="2">
 								<tr>
-									<td style="width:50px;" onclick="javascript:showphoto({@Prev}, {@Count}, '&Root;/templates.xsl', '{@Title}')" onmouseover="this.style.backgroundColor = '#ccccff';" onmouseout="this.style.backgroundColor = 'inherit';"></td>
+									<td style="width:50px;" onclick="javascript:showphoto({@Prev}, {@Count}, '&Root;/templates.xsl', '{@Title}')" onmouseover="this.style.backgroundColor = '#eeeeff';" onmouseout="this.style.backgroundColor = 'inherit';"></td>
 									<td align="center"><img src="{@Src}" border="0" onclick="javascript:showphoto({@Next}, {@Count}, '&Root;/templates.xsl', '{@Title}')"/></td>
-									<td style="width:50px;" onclick="javascript:showphoto({@Next}, {@Count}, '&Root;/templates.xsl', '{@Title}')" onmouseover="this.style.backgroundColor = '#ccccff';" onmouseout="this.style.backgroundColor = 'inherit';"></td>
+									<td style="width:50px;" onclick="javascript:showphoto({@Next}, {@Count}, '&Root;/templates.xsl', '{@Title}')" onmouseover="this.style.backgroundColor = '#eeeeff';" onmouseout="this.style.backgroundColor = 'inherit';"></td>
 								</tr>
 							</table>
 						</div>

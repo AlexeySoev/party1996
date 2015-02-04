@@ -28,9 +28,9 @@
 
     var g_map;
 
-	//for analize
-	var g_trackPoints; 	// array of GLatLng objects - result of analyzing track file
-	var g_trackMarkers; // array of GMarker objects - result of analyzing track file
+	//for analyse
+	var g_trackPoints; 	// array of GLatLng objects - result of analysing track file
+	var g_trackMarkers; // array of GMarker objects - result of analysing track file
 	
 	var g_trackTitle;
 	var g_isMapCenteredAndZoomed = true;
@@ -44,7 +44,7 @@
 	var g_trackStartTime;
 	var g_prevDateObj;
 	var g_prevPolyline;
-	var g_runningPoints = new Array();
+	var g_runningPoints = new Array(); // array of points used in "snake" when simulation
 	var g_xmlPoints; // used in simulation to get altitude and time for the corresponding GLatLng point
 						
 	var	e_start = 1;
@@ -284,8 +284,9 @@
 					g_map.panTo(a_point);
 			}
 
-            // Limit "snake" length by 1/20 of the map width or by 100 points, but not less than 5
 			g_runningPoints.push(a_point);
+			
+			// Limit "snake" length by 1/20 of the map width or by 100 points, but not less than 5 points
 			if(g_runningPoints.length > 5)
 			{
 				var a_allMapDistance = g_map.getBounds().getSouthWest().distanceFrom(g_map.getBounds().getNorthEast());
@@ -336,6 +337,7 @@
 		SetButtonsState(e_play);
 		drawTrack();
 		g_index=0;
+		g_runningPoints = new Array();
 		drawNextPoint();
 	}
 		
