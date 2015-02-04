@@ -418,7 +418,7 @@
 												
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Начало движения:*
+							Начало движения:
 						</div>
 						<div id="trackStartTime">
 							<span style="text-align:right; margin-left:10px"></span>
@@ -427,7 +427,7 @@
 					
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Oкончание движения:*
+							Oкончание движения:
 						</div>
 						<div id="trackFinishTime">
 							<span style="text-align:right; margin-left:10px"></span>
@@ -465,7 +465,7 @@
 					
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Максимальная скорость:**
+							Максимальная скорость:
 						</div>
 						<div>
 							<span style="text-align:right" id="trackMaxSpeed"><B>0.0</B></span>
@@ -508,20 +508,17 @@
 				<br/>
 				<br/>
 				
-				<div id="divModulation" style="background-color:#eeeeee; background-image: none; border:1px solid grey; padding:5px; visibility:hidden;">
+				<div id="divModulation" style="background-color:#eeeeee; background-image:none; border:1px solid grey; padding:5px; visibility:hidden;">
 				
-					<div style="background-color:#dddddd; padding:5px">
+					<div style="background-color:#dddddd; margin-bottom:5px; padding:5px">
 						<span><a href="javascript:simulateTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="simulateBtn">Старт</a></span>
 						<span><a href="javascript:pauseTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="pauseBtn">Пауза</a></span>
 						<span><a href="javascript:resumeTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="resumeBtn">Продолжить</a></span>
 						<span><a href="javascript:stopTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="stopBtn">Стоп</a></span>
 					</div>
-					
-					<br/>
-					
 					<div class="gpslabel">
 						<div style="float:left" class="gpsvalue">
-							Время:*
+							Время:
 						</div>
 						<div id="time" />
 					</div>
@@ -565,14 +562,11 @@
 				
 				<div class="gpslabel" style="padding:5px;">
 					<FONT size="2">
-						<span style="text-align:left; color:gray">* Время по Гринвичу.</span>
+						<span style="text-align:left; color:gray">Время по Гринвичу (UTC)</span>
 						<br/>
 						<span style="text-align:left; color:gray">Париж, Стокгольм +1 (+2), Хельсинки +2 (+3),</span>
 						<br/>
 						<span style="text-align:left; color:gray">Москва,Петербург +3 (+4), Красноярск,Абакан +7 (+8)</span>
-						<br/>
-						<br/>
-						<span style="text-align:left; color:gray">** Может глючить по страшному :)</span>
 					</FONT>
 				</div>
 				
@@ -592,7 +586,7 @@
     </xsl:template>
         
     <xsl:template match="GPSTrackLink">
-			<div style="text-indent:-10px; padding-left:10px">
+			<div id="GPSTrackLink" style="text-indent:-10px; padding-left:10px">
 				<a href="javascript:renderMap('{@TrackFile}', '{@Title}')" style="text-decoration:underline">
 					<xsl:value-of select="@Title"/>
 				</a>

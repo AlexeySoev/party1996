@@ -13,7 +13,13 @@
 
 	function mapAPILoaded()
 	{
+		//the method itself IS necessary to get async load of Google Map API
 		//alert("API loaded!");
+		
+		//but this is not necessary to get Google Map API working
+		//it's for loading the first track in the list
+		if (document.getElementById("GPSTrackLink"))
+			document.getElementById("GPSTrackLink").children[0].click();
 	}
 
 	window.onload = loadMapAPI;
@@ -189,7 +195,9 @@
 		var a_trackFinishTimeObj = ParseTimeString(a_trackFinishTime);
 							
 		a_trackTimeEnroute = new Number(a_trackFinishTimeObj - a_trackStartTimeObj);
-		a_trackAverageSpeed = a_trackDistance/(a_trackTimeEnroute/3600);
+		
+		if (a_trackDistance != 0 && a_trackTimeEnroute != 0)
+			a_trackAverageSpeed = a_trackDistance/(a_trackTimeEnroute/3600);
 							
 		ShowTrackInfo(Math.round(a_trackDistance)/1000, a_trackStartTime, a_trackFinishTime, GetTimeIntervalString(a_trackStartTimeObj, a_trackFinishTimeObj), Math.round(a_trackMaxSpeed*100)/100, Math.round(a_trackAverageSpeed*100)/100, a_trackMinAltitude, a_trackMaxAltitude, Math.round(a_trackMaxAltitude-a_trackMinAltitude) );						
 		
@@ -253,7 +261,7 @@
 	function drawTrack()
 	{
 	    g_map.clearOverlays();
-		g_map.addOverlay(new GPolyline(g_trackPoints, "#ff0000", 3, 1));
+		g_map.addOverlay(new GPolyline(g_trackPoints, "#ff4500", 3, 1));
 		for (var i = 0; i < g_trackMarkers.length ; i++)
 			g_map.addOverlay(g_trackMarkers[i]);
 	}
@@ -268,37 +276,53 @@
 			var a_dateObj = ParseTimeString(a_time);
 			var a_point = g_trackPoints[g_index];
 			
-			// Recenter maps every 10 points
-			if (g_index%10==0 & g_isMapCenteredAndZoomed)
-			    g_map.panTo(a_point);
+			// Re-center map 
+			if (g_isMapCenteredAndZoomed)
+			{
+				// only if "snake" go outside of the map
+				if (!g_map.getBounds().containsLatLng(a_point))
+					g_map.panTo(a_point);
+			}
 
-            // Show only 10 points as the "snake"
+            // Limit "snake" length by 1/20 of the map width or by 100 points, but not less than 5
 			g_runningPoints.push(a_point);
-			if (g_runningPoints.length > 10)
-			    g_runningPoints.shift();
+			if(g_runningPoints.length > 5)
+			{
+				var a_allMapDistance = g_map.getBounds().getSouthWest().distanceFrom(g_map.getBounds().getNorthEast());
+				var a_snakeDistance = a_point.distanceFrom(g_runningPoints[0]);
+				while (a_snakeDistance !=0 && a_allMapDistance/a_snakeDistance < 20 || g_runningPoints.length > 100)
+				{
+					g_runningPoints.shift();
+					a_snakeDistance = a_point.distanceFrom(g_runningPoints[0]);
+				}
+			}
 			
  			if (g_index != 0)
  			{
  				if (g_prevPolyline != null)
  				    g_map.removeOverlay(g_prevPolyline);
 
- 				g_prevPolyline = new GPolyline(g_runningPoints, "#0000ff", 3, 1)
+ 				g_prevPolyline = new GPolyline(g_runningPoints, "#4682b4", 6, 1)
  				g_map.addOverlay(g_prevPolyline);
  				
  				var a_prevPoint = g_trackPoints[g_index - 1];
 				var a_legDistance = a_point.distanceFrom(a_prevPoint);
 	 			g_trackDistanceTotal = g_trackDistanceTotal + a_legDistance;
-	 			var a_currentSpeed = a_legDistance/((a_dateObj - g_prevDateObj)/3600)
+				
+				var a_currentSpeed = 0;
+				if (a_legDistance != 0 && (a_dateObj - g_prevDateObj) != 0)
+					a_currentSpeed = a_legDistance/((a_dateObj - g_prevDateObj)/3600);
+			 
 				ShowSimulateInfo(a_time, GetTimeIntervalString(g_trackStartTime, a_dateObj), Math.round(g_trackDistanceTotal)/1000, Math.round(a_currentSpeed), Math.round(a_alt));
 			}
 			else
 			{
-				g_trackDistanceTotal = 0
-				g_trackStartTime = a_dateObj
+				g_trackDistanceTotal = 0;
+				g_trackStartTime = a_dateObj;
 			}
 			
 			g_prevDateObj = a_dateObj;
-			g_timerID = window.setTimeout(drawNextPoint,50);
+			g_timerID = window.setTimeout(drawNextPoint, 60);
  			g_index++;
 		}
 		else
@@ -365,36 +389,35 @@
 		
 	function ShowTrackInfo(p_trackDistance, p_trackStartTime, p_trackFinishTime, p_trackTimeEnroute, p_trackMaxSpeed, p_trackAverageSpeed, p_trackMinAltitude, p_trackMaxAltitude, p_trackDeltaAltitude)
 	{
-		document.getElementById('trackDistance').innerHTML = "<b>"+p_trackDistance+"</b>";
-		document.getElementById('trackStartTime').innerHTML = "<b>"+p_trackStartTime+"</b>";
-		document.getElementById('trackFinishTime').innerHTML = "<b>"+p_trackFinishTime+"</b>";
-		document.getElementById('trackTimeEnroute').innerHTML = "<b>"+p_trackTimeEnroute+"</b>";
-		
-		document.getElementById('trackMaxSpeed').innerHTML = "<b>"+p_trackMaxSpeed+"</b>";
-		document.getElementById('trackAverageSpeed').innerHTML = "<b>"+p_trackAverageSpeed+"</b>";
-		
-		document.getElementById('trackMinAltitude').innerHTML = "<b>"+p_trackMinAltitude+"</b>";
-		document.getElementById('trackMaxAltitude').innerHTML = "<b>"+p_trackMaxAltitude+"</b>";
-		document.getElementById('trackDeltaAltitude').innerHTML = "<b>"+p_trackDeltaAltitude+"</b>";
+		document.getElementById('trackDistance').innerHTML = "<b>"+fix(p_trackDistance)+"</b>";
+		document.getElementById('trackStartTime').innerHTML = "<b>"+fix(p_trackStartTime)+"</b>";
+		document.getElementById('trackFinishTime').innerHTML = "<b>"+fix(p_trackFinishTime)+"</b>";
+		document.getElementById('trackTimeEnroute').innerHTML = "<b>"+fix(p_trackTimeEnroute)+"</b>";
+		document.getElementById('trackMaxSpeed').innerHTML = "<b>"+fix(p_trackMaxSpeed)+"</b>";
+		document.getElementById('trackAverageSpeed').innerHTML = "<b>"+fix(p_trackAverageSpeed)+"</b>";
+		document.getElementById('trackMinAltitude').innerHTML = "<b>"+fix(p_trackMinAltitude)+"</b>";
+		document.getElementById('trackMaxAltitude').innerHTML = "<b>"+fix(p_trackMaxAltitude)+"</b>";
+		document.getElementById('trackDeltaAltitude').innerHTML = "<b>"+fix(p_trackDeltaAltitude)+"</b>";
 	}
 		
 	function ShowSimulateInfo(p_time, p_timeEnroute, p_distance, p_speed, p_elevation)
 	{
 		document.getElementById('divModulation').style.visibility = "visible";
-		document.getElementById('time').innerHTML = "<b>"+p_time+"</b>";
-		document.getElementById('timeEnroute').innerHTML = "<b>"+p_timeEnroute+"</b>";
-	 	document.getElementById('distance').innerHTML = "<b>"+p_distance+"</b>";
-	 	document.getElementById('speed').innerHTML = "<b>"+p_speed+"</b>";
-	 	document.getElementById('elevation').innerHTML = "<b>"+p_elevation+"</b>";
+		document.getElementById('time').innerHTML = "<b>"+fix(p_time)+"</b>";
+		document.getElementById('timeEnroute').innerHTML = "<b>"+fix(p_timeEnroute)+"</b>";
+	 	document.getElementById('distance').innerHTML = "<b>"+fix(p_distance)+"</b>";
+	 	document.getElementById('speed').innerHTML = "<b>"+fix(p_speed)+"</b>";
+	 	document.getElementById('elevation').innerHTML = "<b>"+fix(p_elevation)+"</b>";
 	}	
 			
 	function HideSimulateInfo()
 	{
 		document.getElementById('divModulation').style.visibility = 'hidden';
-		document.getElementById('simulateBtn').style.visibility = 'hidden'
-		document.getElementById('pauseBtn').style.visibility = 'hidden'
-		document.getElementById('resumeBtn').style.visibility = 'hidden'
-		document.getElementById('stopBtn').style.visibility = 'hidden'
+		// is this hiding really useful?
+		//document.getElementById('simulateBtn').style.visibility = 'hidden'
+		//document.getElementById('pauseBtn').style.visibility = 'hidden'
+		//document.getElementById('resumeBtn').style.visibility = 'hidden'
+		//document.getElementById('stopBtn').style.visibility = 'hidden'
 	}
 			
 	function ParseTimeString(p_time)
@@ -459,6 +482,12 @@
 		return document.getElementById('chkCenterAndZoomMap').checked
 	}
 	
+	function fix(str)
+	{
+		return str.toString().length == 0 ? "-" : str;
+	}
+	
+	/*
 	function toggle(nr)
 	{
 		if (document.layers){
@@ -474,3 +503,4 @@
 		document.getElementById(nr).style.visibility = vista;
 		}
 	}
+	*/
