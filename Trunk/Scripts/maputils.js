@@ -33,28 +33,29 @@
 	var g_trackMarkers; // array of GMarker objects - result of analysing track file
 	
 	var g_trackTitle;
-	var g_isMapCenteredAndZoomed = true;
 	var g_trackZoomIndex = 1;
-	var g_trackCenterPoint; // = new GLatLng(0, 0);
+	var g_trackCenterPoint;
+	
+	var g_isMapCenteredAndZoomed = true;
 	
 	//for simulation
-	var g_index=0;
-	var g_timerID=0;
-	var g_trackDistanceTotal=0;
+	var g_index = 0;
+	var g_timerID = 0;
+	var g_trackDistanceTotal = 0;
 	var g_trackStartTime;
 	var g_prevDateObj;
-	var g_prevPolyline;
-	var g_runningPoints = new Array(); // array of points used in "snake" when simulation
+	var g_snakePolyline;
+	var g_snakePoints; // array of points used in "snake" when simulation
 	var g_xmlPoints; // used in simulation to get altitude and time for the corresponding GLatLng point
 						
 	var	e_start = 1;
 	var	e_play = 2;
 	var	e_pause = 3;
 	
-	// Set constants
-	var g_msecondsPerMinute = 1000 * 60;
-	var	g_msecondsPerHour = g_msecondsPerMinute * 60;
-	//var g_msecondsPerDay = g_msecondsPerHour * 24;
+	//constants
+	var gc_msPerMin = 1000 * 60;
+	var	gc_msPerHour = gc_msPerMin * 60;
+	//var gc_msPerDay = gc_msPerHour * 24;
 			
 	function renderMap(p_trackFile, p_title)
 	{
@@ -101,21 +102,20 @@
 
     function ProcessFile(p_xmlDoc)
     {
+		document.getElementById('trackName').innerHTML = "<i>...analyzing</i>";
+		
         g_xmlPoints = p_xmlDoc.documentElement.getElementsByTagName("m");
-        var xmlMarkers = p_xmlDoc.documentElement.getElementsByTagName("p");
-
-        document.getElementById('trackName').innerHTML = "<i>...analazing</i>";
+        var a_xmlMarkers = p_xmlDoc.documentElement.getElementsByTagName("p");
 
         g_trackPoints = analyzeTrack(g_xmlPoints);
-        g_trackMarkers = parseMarkers(xmlMarkers);
+        g_trackMarkers = parseMarkers(a_xmlMarkers);
 
         var a_bounds = getBounds(g_trackPoints, g_trackMarkers);
         g_trackZoomIndex = g_map.getBoundsZoomLevel(a_bounds);
         g_trackCenterPoint = a_bounds.getCenter();
         if (g_isMapCenteredAndZoomed)
             g_map.setCenter(g_trackCenterPoint, g_trackZoomIndex, G_HYBRID_MAP);
-
-        ShowSimulateInfo("", "", "0.0", "0", "0");
+        
         SetButtonsState(e_start);
 
         document.getElementById('trackName').innerHTML = "<b>" + g_trackTitle + "</b>";
@@ -284,27 +284,27 @@
 					g_map.panTo(a_point);
 			}
 
-			g_runningPoints.push(a_point);
+			g_snakePoints.push(a_point);
 			
 			// Limit "snake" length by 1/20 of the map width or by 100 points, but not less than 5 points
-			if(g_runningPoints.length > 5)
+			if(g_snakePoints.length > 5)
 			{
 				var a_allMapDistance = g_map.getBounds().getSouthWest().distanceFrom(g_map.getBounds().getNorthEast());
-				var a_snakeDistance = a_point.distanceFrom(g_runningPoints[0]);
-				while (a_snakeDistance !=0 && a_allMapDistance/a_snakeDistance < 20 || g_runningPoints.length > 100)
+				var a_snakeDistance = a_point.distanceFrom(g_snakePoints[0]);
+				while (a_snakeDistance !=0 && a_allMapDistance/a_snakeDistance < 20 || g_snakePoints.length > 100)
 				{
-					g_runningPoints.shift();
-					a_snakeDistance = a_point.distanceFrom(g_runningPoints[0]);
+					g_snakePoints.shift();
+					a_snakeDistance = a_point.distanceFrom(g_snakePoints[0]);
 				}
 			}
 			
  			if (g_index != 0)
  			{
- 				if (g_prevPolyline != null)
- 				    g_map.removeOverlay(g_prevPolyline);
+ 				if (g_snakePolyline != null)
+ 				    g_map.removeOverlay(g_snakePolyline);
 
- 				g_prevPolyline = new GPolyline(g_runningPoints, "#4682b4", 6, 1)
- 				g_map.addOverlay(g_prevPolyline);
+ 				g_snakePolyline = new GPolyline(g_snakePoints, "#4682b4", 6, 1)
+ 				g_map.addOverlay(g_snakePolyline);
  				
  				var a_prevPoint = g_trackPoints[g_index - 1];
 				var a_legDistance = a_point.distanceFrom(a_prevPoint);
@@ -335,9 +335,8 @@
 	function simulateTrack()
 	{
 		SetButtonsState(e_play);
-		drawTrack();
 		g_index=0;
-		g_runningPoints = new Array();
+		g_snakePoints = new Array();
 		drawNextPoint();
 	}
 		
@@ -357,8 +356,9 @@
 	{
 		window.clearTimeout(g_timerID);
 		SetButtonsState(e_start);
-		drawTrack();
-		ShowSimulateInfo("", "", "0.0", "0", "0");
+		
+		if (g_snakePolyline != null)
+ 		    g_map.removeOverlay(g_snakePolyline);
 		
 		if (g_isMapCenteredAndZoomed)
 			g_map.setCenter(g_trackCenterPoint, g_trackZoomIndex, G_HYBRID_MAP);
@@ -373,6 +373,7 @@
 			document.getElementById('pauseBtn').style.visibility = 'hidden'
 			document.getElementById('resumeBtn').style.visibility = 'hidden'
 			document.getElementById('stopBtn').style.visibility = 'hidden'
+			ShowSimulateInfo("", "", "0.0", "0", "0");
 			break;
 		case e_play:
 			document.getElementById('simulateBtn').style.visibility = 'hidden'
@@ -443,16 +444,16 @@
 		
 		// Calculate how many days the interval contains, then subtract that
 		// many days from the interval to come up with a remainder.
-		//a_days = Math.floor( a_interval / g_msecondsPerDay );
-		//a_interval -= (a_days * g_msecondsPerDay );
+		//a_days = Math.floor( a_interval / gc_msPerDay );
+		//a_interval -= (a_days * gc_msPerDay );
 
 		// Repeat the previous calculation on the remainder using hours,
 		// then subtract the hours from the remainder.
-		a_hours = Math.floor( a_interval / g_msecondsPerHour );
-		a_interval -= (a_hours * g_msecondsPerHour );
+		a_hours = Math.floor( a_interval / gc_msPerHour );
+		a_interval -= (a_hours * gc_msPerHour );
 
-		a_minutes = Math.floor( a_interval / g_msecondsPerMinute );
-		a_interval -= (a_minutes * g_msecondsPerMinute );
+		a_minutes = Math.floor( a_interval / gc_msPerMin );
+		a_interval -= (a_minutes * gc_msPerMin );
 
 		a_seconds = Math.floor( a_interval / 1000 );
 		
