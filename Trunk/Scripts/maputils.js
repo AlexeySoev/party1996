@@ -43,9 +43,8 @@
 	var g_timerID = 0;
 	var g_trackDistanceTotal = 0;
 	var g_trackStartTime;
-	var g_prevDateObj;
+	//var g_prevDateObj;
 	var g_snakePolyline;
-	var g_snakePoints; // array of points used in "snake" when simulation
 	var g_xmlPoints; // used in simulation to get altitude and time for the corresponding GLatLng point
 						
 	var	e_start = 1;
@@ -283,36 +282,48 @@
 				if (!g_map.getBounds().containsLatLng(a_point))
 					g_map.panTo(a_point);
 			}
-
-			g_snakePoints.push(a_point);
 			
-			// Limit "snake" length by 1/20 of the map width or by 100 points, but not less than 5 points
-			if(g_snakePoints.length > 5)
+			if (g_snakePolyline == null)
 			{
-				var a_allMapDistance = g_map.getBounds().getSouthWest().distanceFrom(g_map.getBounds().getNorthEast());
-				var a_snakeDistance = a_point.distanceFrom(g_snakePoints[0]);
-				while (a_snakeDistance !=0 && a_allMapDistance/a_snakeDistance < 20 || g_snakePoints.length > 100)
-				{
-					g_snakePoints.shift();
-					a_snakeDistance = a_point.distanceFrom(g_snakePoints[0]);
-				}
+				var a_array = [];
+				a_array.push(a_point);
+				g_snakePolyline = new GPolyline(a_array, "#4682b4", 7, 1)
+				g_map.addOverlay(g_snakePolyline);
 			}
 			
- 			if (g_index != 0)
+ 			if (g_index > 0)
  			{
- 				if (g_snakePolyline != null)
- 				    g_map.removeOverlay(g_snakePolyline);
+ 				g_snakePolyline.insertVertex(g_snakePolyline.getVertexCount(), a_point); 
 
- 				g_snakePolyline = new GPolyline(g_snakePoints, "#4682b4", 6, 1)
- 				g_map.addOverlay(g_snakePolyline);
+				var a_snakeDistance = g_snakePolyline.getLength();
+				// Limit "snake" length by 1/20 of the map width or by 100 points, but not less than 5 points
+				if(g_snakePolyline.getVertexCount() > 5)
+				{
+					var a_allMapDistance = g_map.getBounds().getSouthWest().distanceFrom(g_map.getBounds().getNorthEast());
+					while (a_snakeDistance !=0 && a_allMapDistance/a_snakeDistance < 20 || g_snakePolyline.getVertexCount() > 100)
+					{
+						g_snakePolyline.deleteVertex(0);
+						a_snakeDistance = g_snakePolyline.getLength();
+					}
+				}
  				
  				var a_prevPoint = g_trackPoints[g_index - 1];
 				var a_legDistance = a_point.distanceFrom(a_prevPoint);
 	 			g_trackDistanceTotal = g_trackDistanceTotal + a_legDistance;
 				
 				var a_currentSpeed = 0;
+				//current speed is changing very fast and it's not convenient to see this
+				//so show average speed of the snake instead
+				/*
 				if (a_legDistance != 0 && (a_dateObj - g_prevDateObj) != 0)
 					a_currentSpeed = a_legDistance/((a_dateObj - g_prevDateObj)/3600);
+				*/
+				var a_firstPointInSnake = g_xmlPoints[g_index+1 - g_snakePolyline.getVertexCount()];
+				var a_timeOfFirstPointInSnake = a_firstPointInSnake.getAttribute("tm");
+				var a_dateObjOfFirstPointInSnake = ParseTimeString(a_timeOfFirstPointInSnake);
+				
+				if (a_snakeDistance != 0 && (a_dateObj - a_dateObjOfFirstPointInSnake) != 0)
+					a_currentSpeed = a_snakeDistance/((a_dateObj - a_dateObjOfFirstPointInSnake)/3600);
 			 
 				ShowSimulateInfo(a_time, GetTimeIntervalString(g_trackStartTime, a_dateObj), Math.round(g_trackDistanceTotal)/1000, Math.round(a_currentSpeed), Math.round(a_alt));
 			}
@@ -322,21 +333,27 @@
 				g_trackStartTime = a_dateObj;
 			}
 			
-			g_prevDateObj = a_dateObj;
-			g_timerID = window.setTimeout(drawNextPoint, 60);
- 			g_index++;
+			//g_prevDateObj = a_dateObj;
+			g_timerID = window.setTimeout(drawNextPoint, 50);
+			g_index++;
 		}
 		else
 		{
+			window.clearTimeout(g_timerID);
 			SetButtonsState(e_start);
 		}
 	}
 	
-	function simulateTrack()
+	function playTrack()
 	{
-		SetButtonsState(e_play);
 		g_index=0;
-		g_snakePoints = new Array();
+		if (g_snakePolyline != null)
+		{
+			g_map.removeOverlay(g_snakePolyline);
+			g_snakePolyline = null;
+		}
+		
+		SetButtonsState(e_play);
 		drawNextPoint();
 	}
 		
@@ -358,7 +375,10 @@
 		SetButtonsState(e_start);
 		
 		if (g_snakePolyline != null)
- 		    g_map.removeOverlay(g_snakePolyline);
+		{
+			g_map.removeOverlay(g_snakePolyline);
+			g_snakePolyline = null;
+		}
 		
 		if (g_isMapCenteredAndZoomed)
 			g_map.setCenter(g_trackCenterPoint, g_trackZoomIndex, G_HYBRID_MAP);

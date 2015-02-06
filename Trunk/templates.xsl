@@ -510,7 +510,7 @@
 				<div id="divModulation" style="background-color:#eeeeee; background-image:none; border:1px solid grey; padding:5px; visibility:hidden;">
 				
 					<div style="background-color:#dddddd; margin-bottom:5px; padding:5px">
-						<span><a href="javascript:simulateTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="simulateBtn">Старт</a></span>
+						<span><a href="javascript:playTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="simulateBtn">Старт</a></span>
 						<span><a href="javascript:pauseTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="pauseBtn">Пауза</a></span>
 						<span><a href="javascript:resumeTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="resumeBtn">Продолжить</a></span>
 						<span><a href="javascript:stopTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="stopBtn">Стоп</a></span>
