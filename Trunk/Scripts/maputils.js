@@ -31,6 +31,8 @@
 	//for analyse
 	var g_trackPoints; 	// array of GLatLng objects - result of analysing track file
 	var g_trackMarkers; // array of GMarker objects - result of analysing track file
+	var g_pointTimes; // array of g_trackPoints's times - used in simulation
+	var g_pointAlts; // array of g_trackPoints's altitudes - used in simulation
 	
 	var g_trackTitle;
 	var g_trackZoomIndex = 1;
@@ -45,8 +47,7 @@
 	var g_trackStartTime;
 	//var g_prevDateObj;
 	var g_snakePolyline;
-	var g_xmlPoints; // used in simulation to get altitude and time for the corresponding GLatLng point
-						
+					
 	var	e_start = 1;
 	var	e_play = 2;
 	var	e_pause = 3;
@@ -103,10 +104,10 @@
     {
 		document.getElementById('trackName').innerHTML = "<i>...analyzing</i>";
 		
-        g_xmlPoints = p_xmlDoc.documentElement.getElementsByTagName("m");
+        var a_xmlPoints = p_xmlDoc.documentElement.getElementsByTagName("m");
         var a_xmlMarkers = p_xmlDoc.documentElement.getElementsByTagName("p");
 
-        g_trackPoints = analyzeTrack(g_xmlPoints);
+        analyzeTrack(a_xmlPoints);
         g_trackMarkers = parseMarkers(a_xmlMarkers);
 
         var a_bounds = getBounds(g_trackPoints, g_trackMarkers);
@@ -133,7 +134,9 @@
 		var a_trackMaxSpeed = new Number(0);
 		var a_trackAverageSpeed = new Number(0);
 				
-		var a_trackPoints = new Array();
+		g_trackPoints = new Array();
+		g_pointTimes = new Array();
+		g_pointAlts = new Array();
 			
 		if (p_points.length == 0)
 		{
@@ -163,7 +166,9 @@
 				a_time = a_point.getAttribute("tm");
 													
 				var a_gpoint = new GLatLng(a_lat, a_lng);
-				a_trackPoints.push(a_gpoint);
+				g_trackPoints.push(a_gpoint);
+				g_pointTimes.push(a_time);
+				g_pointAlts.push(a_alt);
 				
 				a_dateObj = ParseTimeString(a_time);
 				
@@ -199,8 +204,6 @@
 			a_trackAverageSpeed = a_trackDistance/(a_trackTimeEnroute/3600);
 							
 		ShowTrackInfo(Math.round(a_trackDistance)/1000, a_trackStartTime, a_trackFinishTime, GetTimeIntervalString(a_trackStartTimeObj, a_trackFinishTimeObj), Math.round(a_trackMaxSpeed*100)/100, Math.round(a_trackAverageSpeed*100)/100, a_trackMinAltitude, a_trackMaxAltitude, Math.round(a_trackMaxAltitude-a_trackMinAltitude) );						
-		
-        return a_trackPoints;
     }
 
     function parseMarkers(p_markers) {
@@ -267,11 +270,10 @@
 		
 	function drawNextPoint()
 	{
-		if (g_index < g_xmlPoints.length)
+		if (g_index < g_trackPoints.length)
 		{
-			var a_data = g_xmlPoints[g_index];
-			var a_alt = a_data.getAttribute("al");
-			var a_time = a_data.getAttribute("tm");
+			var a_alt = g_pointAlts[g_index];
+			var a_time = g_pointTimes[g_index];
 			var a_dateObj = ParseTimeString(a_time);
 			var a_point = g_trackPoints[g_index];
 			
@@ -318,8 +320,8 @@
 				if (a_legDistance != 0 && (a_dateObj - g_prevDateObj) != 0)
 					a_currentSpeed = a_legDistance/((a_dateObj - g_prevDateObj)/3600);
 				*/
-				var a_firstPointInSnake = g_xmlPoints[g_index+1 - g_snakePolyline.getVertexCount()];
-				var a_timeOfFirstPointInSnake = a_firstPointInSnake.getAttribute("tm");
+
+				var a_timeOfFirstPointInSnake = g_pointTimes[g_index+1 - g_snakePolyline.getVertexCount()];
 				var a_dateObjOfFirstPointInSnake = ParseTimeString(a_timeOfFirstPointInSnake);
 				
 				if (a_snakeDistance != 0 && (a_dateObj - a_dateObjOfFirstPointInSnake) != 0)
