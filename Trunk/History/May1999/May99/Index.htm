@@ -1,13 +1,60 @@
-<HTML>
-<HEAD>
-<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
-<TITLE>Майский  поход 1999 года.</TITLE>
-</HEAD>
-  <FRAMESET ROWS="10%,*">
-      <FRAME NAME="fr3" SRC="par3.htm" SCROLLING=NO NORESIZE BORDER=1>
-    <FRAMESET COLS="20%,*">
-      <FRAME NAME="fr1" SRC="par0.htm" SCROLLING=NO>
-      <FRAME NAME="fr2" SRC="par1.htm" >
-    </FRAMESET>
-  </FRAMESET>
-</HTML>
+<html>
+<head>
+
+<script language=JavaScript src="../../../Scripts/prepare.js"></script>
+
+<style>
+#frames{
+  width: 100%;
+  height: 90%;
+  display: table;
+  table-layout: fixed;
+}
+#row{
+  display: table-row;
+}
+#row div{
+  display: table-cell;
+}
+
+#title {
+width: 100%;
+height: 10%;
+}
+
+#members {
+width: 20%;
+height: 100%;
+}
+
+#stories {
+width: 80%;
+height: 100%;
+}
+
+.frame {
+width: 100%;
+height: 100%;	
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="title">
+	<IFRAME name="title" class="frame" SRC="par3.htm" frameborder="1"></IFRAME>
+</div>
+<div id="frames">
+	<div id="row">
+		<div id="members">
+			<IFRAME name="members" class="frame" SRC="par0.htm" frameborder="1"></IFRAME>
+		</div>
+		<div id="stories">
+			<IFRAME name="stories" class="frame" SRC="par1.htm" frameborder="1"></IFRAME>
+		</div>
+  </div>
+</div>
+
+</body>
+</html>

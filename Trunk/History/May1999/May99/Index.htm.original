@@ -1,0 +1,13 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+<TITLE>Майский  поход 1999 года.</TITLE>
+</HEAD>
+  <FRAMESET ROWS="10%,*">
+      <FRAME NAME="fr3" SRC="par3.htm" SCROLLING=NO NORESIZE BORDER=1>
+    <FRAMESET COLS="20%,*">
+      <FRAME NAME="fr1" SRC="par0.htm" SCROLLING=NO>
+      <FRAME NAME="fr2" SRC="par1.htm" >
+    </FRAMESET>
+  </FRAMESET>
+</HTML>
