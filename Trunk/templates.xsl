@@ -275,7 +275,7 @@
 	<xsl:template name="ThumbnailFunction">
 		<xsl:param name="Url"/>
 		<td align="center">
-		<a href="javascript:showphoto('{$Url}', '&Root;/templates.xsl')"><img src="thumbnails/{$Url}.JPG" border="0" height="75"/></a>
+		<a href="javascript:showphoto('{$Url}', '&Root;/templates.xsl')"><img src="thumbnails/{$Url}.JPG" border="0" height="60"/></a>
 		</td>
 		<xsl:apply-templates />	
 	</xsl:template>
