@@ -392,7 +392,7 @@
     <xsl:template match="GPSTrackFrame">
 		
 			<script src="&ScriptsDir;/maputils.js" type="text/javascript"></script>
-			    		
+    		
 			<div style="width:150px; float:left;">
 			
 				<div style="height:30px" >
@@ -576,8 +576,7 @@
 				</div>
 				<br></br>
 				<div style="text-align:left;">
-					<input id="chkCenterAndZoomMap" type="checkbox" checked="checked" onclick="CenterAndZoomMap()">Центрировать и масштабировать карту при смене трека</input>
-					<br/>
+					<div><input id="chkCenterAndZoomMap" type="checkbox" checked="checked" onclick="CenterAndZoomMap()"></input>Центрировать и масштабировать карту при смене трека</div>
 					<span style="text-align:left">(Рекомендуется отключить при просмотре последовательных треков)</span>
 				</div>
 			</div>

@@ -2,10 +2,8 @@
 	{
 		var script = document.createElement("script");
 		
-		//v.2
-		script.setAttribute("src", "http://maps.google.com/maps?file=api&amp;v=2.88&amp;key=ABQIAAAA1cyBAHrOeSe9b0ZoaFAK3hT2yXp_ZAY8_ufC3CFXhHIE1vwkxSyZva3bCOrJkD906auWtIUk_qBZw&callback=mapAPILoaded");
 		//v.3
-		//script.setAttribute("src", "https://maps.googleapis.com/maps/api/js?key=AIzaSyDcQ9gkvF86w2Nz2nhOVyQ6h1ahMnD2hDA&callback=mapAPILoaded");
+		script.setAttribute("src", "https://maps.googleapis.com/maps/api/js?key=AIzaSyDcQ9gkvF86w2Nz2nhOVyQ6h1ahMnD2hDA&libraries=geometry&callback=mapAPILoaded");
 
 		script.setAttribute("type", "text/javascript");
 		document.getElementsByTagName("head")[0].appendChild(script);
@@ -16,7 +14,7 @@
 		//the method itself IS necessary to get async load of Google Map API
 		//alert("API loaded!");
 		
-		//but this is not necessary to get Google Map API working
+		//but any logic inside is not necessary to get Google Map API working
 		//it's for loading the first track in the list
 		if (document.getElementById("GPSTrackLink"))
 			document.getElementById("GPSTrackLink").children[0].click();
@@ -29,8 +27,8 @@
     var g_map;
 
 	//for analyse
-	var g_trackPoints; 	// array of GLatLng objects - result of analysing track file
-	var g_trackMarkers; // array of GMarker objects - result of analysing track file
+	var g_trackPoints; 	// array of google.maps.LatLng objects - result of analysing track file
+	var g_trackMarkers; // array of google.maps.Marker objects - result of analysing track file
 	var g_pointTimes; // array of g_trackPoints's times - used in simulation
 	var g_pointAlts; // array of g_trackPoints's altitudes - used in simulation
 	
@@ -38,7 +36,7 @@
 	var g_trackZoomIndex = 1;
 	var g_trackCenterPoint;
 	
-	var g_isMapCenteredAndZoomed = true;
+	var g_isMapCenterAndZoomRequired = true;
 	
 	//for simulation
 	var g_index = 0;
@@ -47,6 +45,7 @@
 	var g_trackStartTime;
 	//var g_prevDateObj;
 	var g_snakePolyline;
+	var g_trackPolyline;
 					
 	var	e_start = 1;
 	var	e_play = 2;
@@ -59,36 +58,57 @@
 			
 	function renderMap(p_trackFile, p_title)
 	{
-		if (GBrowserIsCompatible()) {
+		document.getElementById('trackName').innerHTML = "<i>...initializing</i>";
 		
-			document.getElementById('trackName').innerHTML = "<i>...initializing</i>";
-			
-			g_trackTitle = p_title;
-			g_isMapCenteredAndZoomed = GetCenterAndZoomCheckBoxState();
-						
-			ShowTrackInfo("0.0","","","","0.0","0.0","0","0","0");
-			HideSimulateInfo();
-									
-			window.clearTimeout(g_timerID);
-			if (g_map == null)
-			{
-				g_map = new GMap2(document.getElementById("map"));	
-				// not supported by v2 any more
-				//g_map.addControl(new GSmallMapControl());
-				//g_map.addControl(new GMapTypeControl());
-				//g_map.addControl(new GScaleControl());
-			}
-			g_map.clearOverlays();
-						
-			loadFile(p_trackFile);
+		g_trackTitle = p_title;
+		g_isMapCenterAndZoomRequired = GetCenterAndZoomCheckBoxState();
+					
+		ShowTrackInfo("0.0","","","","0.0","0.0","0","0","0");
+		HideSimulateInfo();
+								
+		window.clearTimeout(g_timerID);
+		if (g_map == null)
+		{
+			g_map = new google.maps.Map(document.getElementById("map"), 
+				 {
+					mapTypeId: google.maps.MapTypeId.HYBRID,
+					scaleControl: true,
+					zoomControl: true,
+					rotateControl: false,
+					panControl: false
+                });	
+				
+			// add OSM
+			var mapTypeIds = [];
+            for(var type in google.maps.MapTypeId) {
+                mapTypeIds.push(google.maps.MapTypeId[type]);
+            }
+            mapTypeIds.push("OSM");
+				
+			g_map.mapTypes.set("OSM", new google.maps.ImageMapType({
+                getTileUrl: function(coord, zoom) {
+                    return "http://tile.openstreetmap.org/" + zoom + "/" + coord.x + "/" + coord.y + ".png";
+                },
+                tileSize: new google.maps.Size(256, 256),
+                name: "OpenStreetMap",
+                maxZoom: 18
+            }));
+		
+			g_map.setOptions({
+				 mapTypeControlOptions: {
+					mapTypeIds: mapTypeIds,
+		        }
+			});
 		}
+				
+		loadFile(p_trackFile);
 	}
         
     function loadFile(p_trackFile)
     {
 		document.getElementById('trackName').innerHTML = "<i>...loading</i>";
 				
-		var a_request = GXmlHttp.create();
+		var a_request = new XMLHttpRequest();
 		a_request.open("GET", p_trackFile, true);
 		a_request.onreadystatechange = function() {
 		    if (a_request.readyState == 4) {
@@ -110,11 +130,15 @@
         analyzeTrack(a_xmlPoints);
         g_trackMarkers = parseMarkers(a_xmlMarkers);
 
-        var a_bounds = getBounds(g_trackPoints, g_trackMarkers);
-        g_trackZoomIndex = g_map.getBoundsZoomLevel(a_bounds);
-        g_trackCenterPoint = a_bounds.getCenter();
-        if (g_isMapCenteredAndZoomed)
-            g_map.setCenter(g_trackCenterPoint, g_trackZoomIndex, G_HYBRID_MAP);
+        var a_bounds = calculateBounds(g_trackPoints, g_trackMarkers);
+		g_trackCenterPoint = a_bounds.getCenter();
+        
+        if (g_isMapCenterAndZoomRequired)
+		{
+            g_map.setCenter(g_trackCenterPoint);
+			g_map.fitBounds(a_bounds);
+			g_trackZoomIndex = g_map.getZoom();
+		}
         
         SetButtonsState(e_start);
 
@@ -165,7 +189,7 @@
 				a_alt = new Number(a_point.getAttribute("al"));
 				a_time = a_point.getAttribute("tm");
 													
-				var a_gpoint = new GLatLng(a_lat, a_lng);
+				var a_gpoint = new google.maps.LatLng(a_lat, a_lng);
 				g_trackPoints.push(a_gpoint);
 				g_pointTimes.push(a_time);
 				g_pointAlts.push(a_alt);
@@ -179,7 +203,7 @@
 							
 				if (a_index != 0)
  				{
-					var a_legDistance = a_gpoint.distanceFrom(a_prevPoint);
+					var a_legDistance = google.maps.geometry.spherical.computeDistanceBetween(a_gpoint, a_prevPoint);
 					a_trackDistance += a_legDistance;
 					var interval = a_dateObj - a_prevDateObj
 					if (interval > 0)
@@ -206,7 +230,8 @@
 		ShowTrackInfo(Math.round(a_trackDistance)/1000, a_trackStartTime, a_trackFinishTime, GetTimeIntervalString(a_trackStartTimeObj, a_trackFinishTimeObj), Math.round(a_trackMaxSpeed*100)/100, Math.round(a_trackAverageSpeed*100)/100, a_trackMinAltitude, a_trackMaxAltitude, Math.round(a_trackMaxAltitude-a_trackMinAltitude) );						
     }
 
-    function parseMarkers(p_markers) {
+    function parseMarkers(p_markers)
+	{
         var a_markers = new Array();
         for (var a_index = 0; a_index < p_markers.length; a_index++) {
             var a_marker = p_markers[a_index];
@@ -215,23 +240,15 @@
             a_text = a_marker.getAttribute("text");
             a_url = a_marker.getAttribute("url");
             a_urlname = a_marker.getAttribute("urlname");
-            a_markers.push(createMarker(new GLatLng(a_lat, a_lng), a_text, a_url, a_urlname));
+            a_markers.push(createMarker(new google.maps.LatLng(a_lat, a_lng), a_text, a_url, a_urlname));
         }
         return a_markers;
     }
 
-    function createMarker(point, text, url, urlname) {
-        /*
-        var icon = new GIcon();
-        icon.image = "http://labs.google.com/ridefinder/images/mm_20_orange.png";
-        icon.shadow = "http://labs.google.com/ridefinder/images/mm_20_shadow.png";
-        icon.iconSize = new GSize(12, 20);
-        icon.shadowSize = new GSize(22, 20);
-        icon.iconAnchor = new GPoint(6, 20);
-        icon.infoWindowAnchor = new GPoint(5, 1);*/
-
-        //var marker = new GMarker(point, icon);
-
+    function createMarker(point, text, url, urlname)
+	{
+		var marker = new google.maps.Marker( { position: point } );
+		
         var message = text;
         if (url != null) {
             if (urlname != null)
@@ -239,19 +256,25 @@
             else
                 message = message + "<br><a target='_blank' href='" + url + "'>" + url + "</a>"
         }
-
-        var marker = new GMarker(point);
-        GEvent.addListener(marker, "click", function()
-        { marker.openInfoWindowHtml(message); });
+		
+		var infoWindow = new google.maps.InfoWindow();
+        
+        google.maps.event.addListener(marker, "click", function()
+			{
+				infoWindow.setContent(message);
+				infoWindow.open(g_map, marker);
+			} );
+			
         return marker;
     }
 
-    function getBounds(p_gpoints, p_gmarkers) {
-        var a_trackBounds = new GLatLngBounds();
+	// calculate map bounds to fit all trek points and markers
+    function calculateBounds(p_gpoints, p_gmarkers) {
+        var a_trackBounds = new google.maps.LatLngBounds();
 
         if (p_gpoints.length == 0) {
             for (var a_index = 0; a_index < p_gmarkers.length; a_index++)
-                a_trackBounds.extend(p_gmarkers[a_index].getPoint());
+                a_trackBounds.extend(p_gmarkers[a_index].getPosition());
         }
         else {
             for (var a_index = 0; a_index < p_gpoints.length; a_index++)
@@ -262,11 +285,21 @@
 	
 	function drawTrack()
 	{
-	    g_map.clearOverlays();
-		g_map.addOverlay(new GPolyline(g_trackPoints, "#ff4500", 3, 1));
+		if (g_trackPolyline == null)
+		{
+			g_trackPolyline = new google.maps.Polyline();
+			g_trackPolyline.setMap(g_map);
+		}
+		
+		g_trackPolyline.setOptions( { path: g_trackPoints, strokeColor: "#ff4500", strokeWeight: 3 } );
+
 		for (var i = 0; i < g_trackMarkers.length ; i++)
-			g_map.addOverlay(g_trackMarkers[i]);
+			g_trackMarkers[i].setMap(g_map);
 	}
+		
+	////////////////////////////////////////////////////////////////////////////////////
+	//simulate
+	////////////////////////////////////////////////////////////////////////////////////
 		
 	function drawNextPoint()
 	{
@@ -277,51 +310,49 @@
 			var a_dateObj = ParseTimeString(a_time);
 			var a_point = g_trackPoints[g_index];
 			
-			// Re-center map 
-			if (g_isMapCenteredAndZoomed)
+			// Re-center map if requested
+			if (g_isMapCenterAndZoomRequired)
 			{
 				// only if "snake" go outside of the map
-				if (!g_map.getBounds().containsLatLng(a_point))
+				if (!g_map.getBounds().contains(a_point))
 					g_map.panTo(a_point);
 			}
 			
 			if (g_snakePolyline == null)
 			{
-				var a_array = [];
-				a_array.push(a_point);
-				g_snakePolyline = new GPolyline(a_array, "#4682b4", 7, 1)
-				g_map.addOverlay(g_snakePolyline);
+				g_snakePolyline = new google.maps.Polyline( { path: [a_point], strokeColor: "#4682b4", strokeWeight: 7 } )
+				g_snakePolyline.setMap(g_map);
 			}
 			
  			if (g_index > 0)
  			{
- 				g_snakePolyline.insertVertex(g_snakePolyline.getVertexCount(), a_point); 
-
-				var a_snakeDistance = g_snakePolyline.getLength();
+ 				g_snakePolyline.getPath().push(a_point); 
+				
+				var a_snakeDistance = google.maps.geometry.spherical.computeLength(g_snakePolyline.getPath());
 				// Limit "snake" length by 1/20 of the map width or by 100 points, but not less than 5 points
-				if(g_snakePolyline.getVertexCount() > 5)
+				if(g_snakePolyline.getPath().getLength() > 5)
 				{
-					var a_allMapDistance = g_map.getBounds().getSouthWest().distanceFrom(g_map.getBounds().getNorthEast());
-					while (a_snakeDistance !=0 && a_allMapDistance/a_snakeDistance < 20 || g_snakePolyline.getVertexCount() > 100)
+					var a_allMapDistance = google.maps.geometry.spherical.computeDistanceBetween(g_map.getBounds().getSouthWest(), g_map.getBounds().getNorthEast());
+					while (a_snakeDistance !=0 && a_allMapDistance/a_snakeDistance < 20 || g_snakePolyline.getPath().getLength() > 100)
 					{
-						g_snakePolyline.deleteVertex(0);
-						a_snakeDistance = g_snakePolyline.getLength();
+						g_snakePolyline.getPath().removeAt(0);
+						a_snakeDistance = google.maps.geometry.spherical.computeLength(g_snakePolyline.getPath());
 					}
 				}
  				
  				var a_prevPoint = g_trackPoints[g_index - 1];
-				var a_legDistance = a_point.distanceFrom(a_prevPoint);
+				var a_legDistance = google.maps.geometry.spherical.computeDistanceBetween(a_point, a_prevPoint);
 	 			g_trackDistanceTotal = g_trackDistanceTotal + a_legDistance;
 				
+				//instant speed is changing very fast and it's not convenient to see this
+				//so show average speed of the snake instead of instant speed
 				var a_currentSpeed = 0;
-				//current speed is changing very fast and it's not convenient to see this
-				//so show average speed of the snake instead
 				/*
 				if (a_legDistance != 0 && (a_dateObj - g_prevDateObj) != 0)
 					a_currentSpeed = a_legDistance/((a_dateObj - g_prevDateObj)/3600);
 				*/
 
-				var a_timeOfFirstPointInSnake = g_pointTimes[g_index+1 - g_snakePolyline.getVertexCount()];
+				var a_timeOfFirstPointInSnake = g_pointTimes[g_index+1 - g_snakePolyline.getPath().getLength()];
 				var a_dateObjOfFirstPointInSnake = ParseTimeString(a_timeOfFirstPointInSnake);
 				
 				if (a_snakeDistance != 0 && (a_dateObj - a_dateObjOfFirstPointInSnake) != 0)
@@ -348,11 +379,10 @@
 	
 	function playTrack()
 	{
-		g_index=0;
+		g_index = 0;
 		if (g_snakePolyline != null)
 		{
-			g_map.removeOverlay(g_snakePolyline);
-			g_snakePolyline = null;
+			g_snakePolyline.getPath().clear();
 		}
 		
 		SetButtonsState(e_play);
@@ -378,12 +408,14 @@
 		
 		if (g_snakePolyline != null)
 		{
-			g_map.removeOverlay(g_snakePolyline);
-			g_snakePolyline = null;
+			g_snakePolyline.getPath().clear();
 		}
 		
-		if (g_isMapCenteredAndZoomed)
-			g_map.setCenter(g_trackCenterPoint, g_trackZoomIndex, G_HYBRID_MAP);
+		if (g_isMapCenterAndZoomRequired)
+		{
+			g_map.setCenter(g_trackCenterPoint);
+			g_map.setZoom(g_trackZoomIndex);
+		}
 	}
 			
 	function SetButtonsState(p_state)
@@ -444,7 +476,28 @@
 		//document.getElementById('resumeBtn').style.visibility = 'hidden'
 		//document.getElementById('stopBtn').style.visibility = 'hidden'
 	}
-			
+	
+	function GetCenterAndZoomCheckBoxState()
+	{
+		return document.getElementById('chkCenterAndZoomMap').checked
+	}
+	
+	function CenterAndZoomMap()
+	{
+		if (g_isMapCenterAndZoomRequired)
+			g_isMapCenterAndZoomRequired = false;
+		else
+		{
+			g_map.setCenter(g_trackCenterPoint);
+			g_map.setZoom(g_trackZoomIndex);
+			g_isMapCenterAndZoomRequired = true;
+		}
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////
+	//helpers
+	////////////////////////////////////////////////////////////////////////////////////
+		
 	function ParseTimeString(p_time)
 	{
 		//doesn't work
@@ -491,26 +544,12 @@
 		return a_hours + ":" + a_minutes + ":" + a_seconds;
 	}
 	
-	function CenterAndZoomMap()
-	{
-		if (g_isMapCenteredAndZoomed)
-			g_isMapCenteredAndZoomed = false;
-		else
-		{
-			g_map.setCenter(g_trackCenterPoint, g_trackZoomIndex, G_HYBRID_MAP);
-			g_isMapCenteredAndZoomed = true;
-		}
-	}
-	
-	function GetCenterAndZoomCheckBoxState()
-	{
-		return document.getElementById('chkCenterAndZoomMap').checked
-	}
-	
 	function fix(str)
 	{
 		return str.toString().length == 0 ? "-" : str;
 	}
+	
+	////////////////////////////////////////////////////////////////////////////////////
 	
 	/*
 	function toggle(nr)
