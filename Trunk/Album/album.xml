@@ -37,7 +37,7 @@
 		</Paragraph>
 		
 		<Paragraph Title="Мои дни рождения">
-			<Line>1995 <Emphasize>Скоро</Emphasize></Line>
+			<Line><Link Url="March1995/index.xml">ДР 1995</Link></Line>
 			<Line>1996 <Emphasize>Скоро</Emphasize></Line>
 			<Line>1997 <Emphasize>Скоро</Emphasize></Line>
 			<Line>1998 <Emphasize>Скоро</Emphasize></Line>
