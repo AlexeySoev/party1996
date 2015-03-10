@@ -27,18 +27,18 @@
 		</Paragraph>
 			
 		<Paragraph Title="Дни рождения Николаича в Хельсинки">
-			<Line><Link Url="Niko2001/index.xml">ДР 2001</Link></Line>
-			<Line><Link Url="Niko2004/index.xml">ДР 2004</Link></Line>
-			<Line><Link Url="Niko2006/index.xml">ДР 2006</Link></Line>
-			<Line><Link Url="Niko2008/index.xml">ДР 2008</Link></Line>
-			<Line><Link Url="Niko2009/index.xml">ДР 2009</Link></Line>
-			<Line><Link Url="Niko2010/index.xml">ДР 2010</Link></Line>
-			<Line><Link Url="Niko2013/index.xml">ДР 2013</Link></Line>
+			<Line><Link Url="Niko2001/index.xml">ДР Николаича 2001</Link></Line>
+			<Line><Link Url="Niko2004/index.xml">ДР Николаича 2004</Link></Line>
+			<Line><Link Url="Niko2006/index.xml">ДР Николаича 2006</Link></Line>
+			<Line><Link Url="Niko2008/index.xml">ДР Николаича 2008</Link></Line>
+			<Line><Link Url="Niko2009/index.xml">ДР Николаича 2009</Link></Line>
+			<Line><Link Url="Niko2010/index.xml">ДР Николаича 2010</Link></Line>
+			<Line><Link Url="Niko2013/index.xml">ДР Николаича 2013</Link></Line>
 		</Paragraph>
 		
 		<Paragraph Title="Мои дни рождения">
-			<Line><Link Url="March1995/index.xml">ДР 1995</Link></Line>
-			<Line>1996 <Emphasize>Скоро</Emphasize></Line>
+			<Line><Link Url="March1995/index.xml">Мой ДР 1995</Link></Line>
+			<Line><Link Url="March1996/index.xml">Мой ДР 1996</Link></Line>
 			<Line>1997 <Emphasize>Скоро</Emphasize></Line>
 			<Line>1998 <Emphasize>Скоро</Emphasize></Line>
 			<Line>1999 <Emphasize>Скоро</Emphasize></Line>
