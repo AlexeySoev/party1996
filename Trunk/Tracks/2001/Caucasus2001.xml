@@ -12,7 +12,13 @@
 		<PageElement>
 			<Chapter Title="Кавказ 2001">
 				<GPSTrackFrame>
-					<GPSTrackLink Title="Caucasus" TrackFile="gpsdata/Caucasus2001.gpx.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Весь путь" TrackFile="gpsdata/Alltrip.xml"></GPSTrackLink>
+					<GPSTrackLink Title="День 1" TrackFile="gpsdata/Day1.xml"></GPSTrackLink>
+					<GPSTrackLink Title="День 2" TrackFile="gpsdata/Day2.xml"></GPSTrackLink>
+					<GPSTrackLink Title="День 3" TrackFile="gpsdata/Day3.xml"></GPSTrackLink>
+					<GPSTrackLink Title="День 4" TrackFile="gpsdata/Day4.xml"></GPSTrackLink>
+					<GPSTrackLink Title="День 5" TrackFile="gpsdata/Day5.xml"></GPSTrackLink>
+					<GPSTrackLink Title="День 6" TrackFile="gpsdata/Day6.xml"></GPSTrackLink>
 				</GPSTrackFrame>
 			</Chapter>
 		</PageElement>
