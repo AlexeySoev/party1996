@@ -79,7 +79,7 @@ namespace GPSTrackConverter
 				if (File.Exists(filename))
 					throw new Exception("Output file already exists!");
 
-				using (StreamWriter sw = new StreamWriter(ReplaceIncorectSymbols(filename), false, Encoding.Default))
+				using (StreamWriter sw = new StreamWriter(ReplaceIncorectSymbols(filename), false, Encoding.UTF8))
                     element.Value.Save(sw);
 			}
 		}

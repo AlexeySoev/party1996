@@ -12,7 +12,7 @@ namespace GPSTrackConverter
         public void BeginBlock(string blockName)
         {
             m_currentBlock = new XmlDocument();
-            m_currentBlock.CreateXmlDeclaration("1.0", "windows-1251", "");
+            m_currentBlock.CreateXmlDeclaration("1.0", "UTF-8", "");
             m_data.Add(blockName, m_currentBlock);
             XmlElement a_root = m_currentBlock.CreateElement("markers");
             m_currentBlock.AppendChild(a_root);
@@ -23,7 +23,7 @@ namespace GPSTrackConverter
             return m_data;
         }
 
-        public void AddTrackPoint(DateTime time, decimal lat, decimal lng, int alt)
+        public void AddTrackPoint(DateTime time, decimal lat, decimal lon, int alt)
         {
             XmlElement a_element = m_currentBlock.CreateElement("m");
             m_currentBlock.DocumentElement.AppendChild(a_element);
@@ -32,16 +32,25 @@ namespace GPSTrackConverter
             else
                 a_element.SetAttribute("tm", "");
             a_element.SetAttribute("al", alt.ToString());
-            a_element.SetAttribute("lg", Convert.ToString(lng, Utils.ms_formatProviderEn));
-            a_element.SetAttribute("lt", Convert.ToString(lat, Utils.ms_formatProviderEn));
+            
+            // this produce a lot of digits after coma which is unwanted
+            //a_element.SetAttribute("lg", Convert.ToString(lon, Utils.ms_formatProviderEn));
+            //a_element.SetAttribute("lt", Convert.ToString(lat, Utils.ms_formatProviderEn));
+            //replace by following
+            a_element.SetAttribute("lg", String.Format(Utils.ms_formatProviderEn, "{0:0.00000}", lon));
+            a_element.SetAttribute("lt", String.Format(Utils.ms_formatProviderEn, "{0:0.00000}", lat));
         }
 
         public void AddWayPoint(string name, decimal lat, decimal lon, int alt, string link)
         {
             XmlElement a_element = m_currentBlock.CreateElement("p");
             m_currentBlock.DocumentElement.AppendChild(a_element);
-            a_element.SetAttribute("lg", Convert.ToString(lon, Utils.ms_formatProviderEn));
-            a_element.SetAttribute("lt", Convert.ToString(lat, Utils.ms_formatProviderEn));
+            // this produce a lot of digits after coma which is unwanted
+            //a_element.SetAttribute("lg", Convert.ToString(lon, Utils.ms_formatProviderEn));
+            //a_element.SetAttribute("lt", Convert.ToString(lat, Utils.ms_formatProviderEn));
+            //replace by following
+            a_element.SetAttribute("lg", String.Format(Utils.ms_formatProviderEn, "{0:0.00000}", lon));
+            a_element.SetAttribute("lt", String.Format(Utils.ms_formatProviderEn, "{0:0.00000}", lat));
             a_element.SetAttribute("text", name);
             if (!string.IsNullOrEmpty(link))
             {
