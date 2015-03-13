@@ -77,7 +77,7 @@
 		<td><a href="&Root;/History/history.xml" target="_top">Фрагменты нашей истории</a></td>
 		<td><a href="&Root;/Members/members.xml" target="_top">Наша гордость</a></td>
 		<td><a href="&Root;/Album/album.xml" target="_top">Альбом</a></td>
-		<td><a href="&Root;/Tracks/Tracks.xml" target="_top">GPS Треки</a></td>
+		<td><a href="&Root;/Tracks/tracks.xml" target="_top">GPS Треки</a></td>
 		<td><a href="&Root;/Funs/funs.xml" target="_top">Приколись</a></td>
 		<td><a href="&Root;/Personal/Personal.xml" target="_top">Персональное</a></td>
 		<td><a href="&Root;/links.xml" target="_top">Линки</a></td>

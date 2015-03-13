@@ -10,19 +10,25 @@
 		<PageElement>
 			<Chapter Title="Европа 2002">
 				<GPSTrackFrame>
-					<GPSTrackLink Title="Day 1" TrackFile="gpsdata/01.trk.txt.xml"></GPSTrackLink>
-					<GPSTrackLink Title="Day 2" TrackFile="gpsdata/02.trk.txt.xml"></GPSTrackLink>
-					<GPSTrackLink Title="Day 3" TrackFile="gpsdata/03.trk.txt.xml"></GPSTrackLink>
-					<GPSTrackLink Title="Day 4" TrackFile="gpsdata/04.trk.txt.xml"></GPSTrackLink>
-					<GPSTrackLink Title="Day 5" TrackFile="gpsdata/05.trk.txt.xml"></GPSTrackLink>
-					<GPSTrackLink Title="Day 6" TrackFile="gpsdata/06.trk.txt.xml"></GPSTrackLink>
-					<GPSTrackLink Title="Day 7" TrackFile="gpsdata/07.trk.txt.xml"></GPSTrackLink>
-					<GPSTrackLink Title="Day 8" TrackFile="gpsdata/08.trk.txt.xml"></GPSTrackLink>
-					<GPSTrackLink Title="Day 9" TrackFile="gpsdata/09.trk.txt.xml"></GPSTrackLink>
-					<GPSTrackLink Title="Day 10" TrackFile="gpsdata/10.trk.txt.xml"></GPSTrackLink>
-					<GPSTrackLink Title="Day 11" TrackFile="gpsdata/11.trk.txt.xml"></GPSTrackLink>
-					<GPSTrackLink Title="Day 12" TrackFile="gpsdata/12.trk.txt.xml"></GPSTrackLink>
-					<GPSTrackLink Title="Day 13" TrackFile="gpsdata/13.trk.txt.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Весь вeлопробег" TrackFile="gpsdata/Allbiketrip.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Весь автопробег" TrackFile="gpsdata/Allcartrip.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Вело День 1" TrackFile="gpsdata/Day01.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Вело День 2" TrackFile="gpsdata/Day02.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Вело День 3" TrackFile="gpsdata/Day03.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Вело День 4" TrackFile="gpsdata/Day04.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Вело День 5" TrackFile="gpsdata/Day05.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Вело День 6" TrackFile="gpsdata/Day06.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Вело День 7" TrackFile="gpsdata/Day07.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Вело День 8" TrackFile="gpsdata/Day08.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Вело День 9" TrackFile="gpsdata/Day09.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Вело День 10" TrackFile="gpsdata/Day10.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Вело День 11" TrackFile="gpsdata/Day11.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Авто День 13" TrackFile="gpsdata/Day13.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Авто День 15" TrackFile="gpsdata/Day15.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Авто День 16" TrackFile="gpsdata/Day16.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Авто День 17" TrackFile="gpsdata/Day17.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Авто День 18" TrackFile="gpsdata/Day18.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Авто День 19" TrackFile="gpsdata/Day19.xml"></GPSTrackLink>
 				</GPSTrackFrame>
 			</Chapter>
 		</PageElement>
