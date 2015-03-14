@@ -62,6 +62,7 @@
 		
 		<Paragraph Title="Грандиозные Супер-Путешествия">
 			<List>
+				<ListItem><Line>Сочи 1996 <Emphasize>Скоро</Emphasize></Line><Line></Line></ListItem>
 				<ListItem><LinkWithDescription Url="Caucasus2001/caucasus2001.xml" Text="Кавказ 2001">
 					Пеший переход через Главный Кавказский Хребет
 				</LinkWithDescription></ListItem>

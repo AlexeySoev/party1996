@@ -8,12 +8,17 @@
 		<PageElement><MainMenu /></PageElement>
 		
 		<PageElement><Chapter Title="GPS Треки">
-		
-		<Paragraph Title="1995 - 2001">
+
+		<Paragraph Title="Ранее">
 			<TrackTable>
 				<TrackItem Name="Походы Партии Любителей 1995 - 2003 годов" PageUrl="Old/PartyTrips.xml" GoogleUrl="Old/gpsdata/google/PartyTrips.kmz">
 					<LinkToImage Url="../Photos/flags.jpg" H="600" V="800">фотография настенной карты с флажками (2003 год)</LinkToImage>
 				</TrackItem>
+			</TrackTable>
+		</Paragraph>
+		
+		<Paragraph Title="2001">
+			<TrackTable>
 				<TrackItem Name="Пеший переход через Кавказ 2001" PageUrl="2001/Caucasus2001.xml" GoogleUrl="2001/gpsdata/google/Caucasus2001.kmz"></TrackItem>
 			</TrackTable>
 		</Paragraph>
@@ -32,7 +37,7 @@
 		
 		<Paragraph Title="2004">
 			<TrackTable>
-				<TrackItem Name="Майский поход Партии Любителей 2004" PageUrl="2004/May2004.xml" GoogleUrl="2004/gpsdata/google/May2004.kmz" />
+				<TrackItem Name="Майский поход Партии Любителей 2004" PageUrl="2004/May2004/May2004.xml" GoogleUrl="2004/May2004/gpsdata/google/May2004.kmz" />
 			</TrackTable>
 		</Paragraph>
 		

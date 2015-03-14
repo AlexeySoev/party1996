@@ -1,31 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+<?xml-stylesheet href="../../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-
-	<PageHead Title="Кавказ 2001"></PageHead>
-
+	
+	<PageHead Title="Май 2004"></PageHead>
+	
 	<PageBody SnakeText="">
+		<PageElement><MainMenu /></PageElement>
 		<PageElement>
-			<MainMenu />
-		</PageElement>
-		<PageElement>
-			<Chapter Title="Кавказ 2001">
+			<Chapter Title="Май 2004">
 				<GPSTrackFrame>
-					<GPSTrackLink Title="Весь маршрут" TrackFile="gpsdata/Alltrip.xml"></GPSTrackLink>
+					<GPSTrackLink Title="Весь маршрут" TrackFile="gpsdata/Alldays.xml"></GPSTrackLink>
 					<GPSTrackLink Title="День 1" TrackFile="gpsdata/Day1.xml"></GPSTrackLink>
 					<GPSTrackLink Title="День 2" TrackFile="gpsdata/Day2.xml"></GPSTrackLink>
 					<GPSTrackLink Title="День 3" TrackFile="gpsdata/Day3.xml"></GPSTrackLink>
 					<GPSTrackLink Title="День 4" TrackFile="gpsdata/Day4.xml"></GPSTrackLink>
-					<GPSTrackLink Title="День 5" TrackFile="gpsdata/Day5.xml"></GPSTrackLink>
-					<GPSTrackLink Title="День 6" TrackFile="gpsdata/Day6.xml"></GPSTrackLink>
 				</GPSTrackFrame>
 			</Chapter>
 		</PageElement>
 	</PageBody>
-
+		
 </PageTemplate>
-
-
-
-
