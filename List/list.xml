@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="list.xsl" type="text/xsl"?>
+
+<PageTemplate>
+	<PageHead Title="Наши походы"></PageHead>
+		
+	<PageBody>
+		
+		<PageElement><Chapter Title="Наши походы">
+		
+		<Paragraph Title="2001">
+			<EventTable>
+				<EventItem 
+					Title="Поход 1" 
+					Desc="Это был удивительный поход. Ничего прежде я не испытывал" 
+					Pic="Covers\2001-may.jpg" 
+					AlbumLocal="D:\\Photos" 
+					AlbumURL="http://mail.ru" 
+					TrackLocal="D:\\Tracks" 
+					TrackURL="http://gpsies.com" />
+					
+				<EventItem 
+					Title="Поход 2" 
+					Desc="Это был удивительный поход 2. Прежде я испытывал только в Походе 1" 
+					Pic="2001/Poh2.jpg" 
+					AlbumLocal="D:\\Photos" 
+					AlbumURL="mail.ru" 
+					TrackLocal="D:\\Tracks" 
+					TrackURL="gpsies.com" />
+			</EventTable>
+		</Paragraph>
+		
+		<Paragraph Title="2002">
+			<EventTable>
+				<EventItem 
+					Title="Поход 3" 
+					Desc="Это был удивительный поход. Ничего прежде я не испытывал" 
+					Pic="2002/Poh1.jpg" 
+					AlbumLocal="D:\\Photos" 
+					AlbumURL="mail.ru" 
+					TrackLocal="D:\\Tracks" 
+					TrackURL="gpsies.com" />
+					
+				<EventItem 
+					Title="Поход 4" 
+					Desc="Это был удивительный поход 2. Прежде я испытывал только в Походе 1" 
+					Pic="2002/Poh2.jpg" 
+					AlbumLocal="D:\\Photos" 
+					AlbumURL="mail.ru" 
+					TrackLocal="D:\\Tracks" 
+					TrackURL="gpsies.com" />
+			</EventTable>
+		</Paragraph>
+		
+		</Chapter></PageElement>
+		
+	</PageBody>
+</PageTemplate>
