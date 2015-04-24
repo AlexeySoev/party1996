@@ -1,0 +1,38 @@
+﻿v\:* {
+    behavior:url(#default#VML);
+}
+.spanstyle {
+    COLOR: #ff0000; FONT-FAMILY: Verdana; FONT-SIZE: 10pt; FONT-WEIGHT: bold; POSITION: absolute; TOP: -50px; VISIBILITY: visible
+}
+.gpslabel {
+    width:330px
+}
+.gpsvalue {
+    width:190px
+}
+
+.font-name {
+	color: #000000;
+	font-size: 24pt;
+	font-weight: bold;
+}
+.font-title {
+	color: #000000;
+	font-size: x-large;
+	font-weight: bold;
+}
+.font-chapter {
+	color: #003399;
+	font-size: x-large;
+	font-weight: bold;
+}
+.font-paragraph {
+	color: #000000;
+	font-size: medium;
+	font-weight: bold;
+}
+.font-epigraph {
+	color: #ff0000;
+	font-size: medium;
+	font-weight: bold;
+}		

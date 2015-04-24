@@ -18,33 +18,9 @@
 
 	<xsl:template match="PageHead">
 		<head>
-			<title>
-                Первый сайт Партии Любителей - <xsl:value-of select="@Title"/>
-			</title>
-
-			<STYLE>.spanstyle {
-				COLOR: #ff0000; FONT-FAMILY: Verdana; FONT-SIZE: 10pt; FONT-WEIGHT: bold; POSITION: absolute; TOP: -50px; VISIBILITY: visible
-			}
-			</STYLE>
-			
-			<style type="text/css">
-				v\:* {
-					behavior:url(#default#VML);
-				}
-			</style>
-			
-			<STYLE>.gpslabel {
-				width:330px
-			}
-			</STYLE>
-			
-			<STYLE>.gpsvalue {
-				width:190px
-			}
-			</STYLE>
-		
+			<title>Первый сайт Партии Любителей - <xsl:value-of select="@Title"/></title>
+			<link href="&Root;/styles.css" rel="stylesheet" />
 		</head>
-		
 		<xsl:apply-templates />
 	</xsl:template>
 
@@ -58,29 +34,25 @@
 	
 	<xsl:template match="PageElement">
 		<tr><td>
-			<xsl:apply-templates />
+		<xsl:apply-templates />
 		</td></tr>
 	</xsl:template>
 	
 	<xsl:template match="MainMenu">
 		<table width="100%" border="0" cellspacing="2" cellpadding="5" align="center">
 		<tr>
-			<td colspan="9">
-				<font color="Black" style="font-size: 24pt">
-				<b>Первый сайт Партии Любителей</b>
-				</font>
-			</td>
+			<td colspan="9"><span class="font-name">Первый сайт Партии Любителей</span></td>
 		</tr>
 		<tr bgcolor="#ccffff" align="center">
-		<td><a href="&Root;/index.html" target="_top">На главную</a></td>
-		<td><a href="http://party1996.narod.ru/gb" target="_top">Гостевая книга</a></td>
-		<td><a href="&Root;/History/history.xml" target="_top">Фрагменты нашей истории</a></td>
-		<td><a href="&Root;/Members/members.xml" target="_top">Наша гордость</a></td>
-		<td><a href="&Root;/Album/album.xml" target="_top">Альбом</a></td>
-		<td><a href="&Root;/Tracks/tracks.xml" target="_top">GPS Треки</a></td>
-		<td><a href="&Root;/Funs/funs.xml" target="_top">Приколись</a></td>
-		<td><a href="&Root;/Personal/Personal.xml" target="_top">Персональное</a></td>
-		<td><a href="&Root;/links.xml" target="_top">Линки</a></td>
+			<td><a href="&Root;/index.html" target="_top">На главную</a></td>
+			<td><a href="http://party1996.narod.ru/gb" target="_top">Гостевая книга</a></td>
+			<td><a href="&Root;/History/history.xml" target="_top">Фрагменты нашей истории</a></td>
+			<td><a href="&Root;/Members/members.xml" target="_top">Наша гордость</a></td>
+			<td><a href="&Root;/Album/album.xml" target="_top">Альбом</a></td>
+			<td><a href="&Root;/Tracks/tracks.xml" target="_top">GPS Треки</a></td>
+			<td><a href="&Root;/Funs/funs.xml" target="_top">Приколись</a></td>
+			<td><a href="&Root;/Personal/Personal.xml" target="_top">Персональное</a></td>
+			<td><a href="&Root;/links.xml" target="_top">Линки</a></td>
 		</tr>
 		</table>
 		<br />
@@ -89,26 +61,26 @@
 	
 	<xsl:template match="Title">
 		<xsl:if test="@Epigraph">
-				<P align="right"><FONT color="#ff0000" size="3"><STRONG><xsl:value-of select="@Epigraph"/></STRONG></FONT></P>
-			</xsl:if>
-		<P align="center"><FONT color="#000000" size="5"><STRONG><xsl:value-of select="@Text"/></STRONG></FONT></P>
+			<P align="right" class="font-epigraph"><xsl:value-of select="@Epigraph"/></P>
+		</xsl:if>
+		<P align="center" class="font-title"><xsl:value-of select="@Text"/></P>
 		<xsl:apply-templates />
 	</xsl:template>
 
 	<xsl:template match="Chapter">
 		<xsl:if test="@Epigraph">
-				<P align="right"><FONT color="#ff0000" size="3"><STRONG><xsl:value-of select="@Epigraph"/></STRONG></FONT></P>
-			</xsl:if>
-		<P align="justify"><FONT color="#003399" size="5"><STRONG><xsl:value-of select="@Title"/></STRONG></FONT></P>
+			<P align="right" class="font-epigraph"><xsl:value-of select="@Epigraph"/></P>
+		</xsl:if>
+		<P align="justify" class="font-chapter"><xsl:value-of select="@Title"/></P>
 		<xsl:apply-templates />
-		<P align="justify"><FONT color="#003399" size="5"><STRONG>
+		<P>
 		<BR />
 		<BR />
-		</STRONG></FONT></P>
+		</P>
 	</xsl:template>
 		
 	<xsl:template match="Paragraph">
-	    <P align="justify"><FONT color="#000000" size="3"><STRONG><xsl:value-of select="@Title"/></STRONG></FONT></P>
+	    <P align="justify" class="font-paragraph"><xsl:value-of select="@Title"/></P>
 	    <P align="justify">
 		<xsl:apply-templates />
 		</P>
@@ -159,35 +131,35 @@
 	
 	<xsl:template match="Link">
 		<xsl:if test="not(@Target[.='child'])">
-			<A href="{@Url}">
+			<a href="{@Url}">
 				<xsl:if test="@Target[.='more']">
 					<xsl:attribute name="target">more</xsl:attribute>
 				</xsl:if>
 				<xsl:apply-templates />
-			</A>
+			</a>
 		</xsl:if>
 		<xsl:if test="@Target[.='child']">
-			<SCRIPT language="JavaScript" src="&ScriptsDir;/showwindow.js"></SCRIPT>
-			<A href="javascript:%20showwindow('{@Url}', '{@Name}')">
+			<script language="JavaScript" src="&ScriptsDir;/showwindow.js"></script>
+			<a href="javascript:%20showwindow('{@Url}', '{@Name}')">
 				<xsl:apply-templates />
-			</A>
+			</a>
 		</xsl:if>
 	</xsl:template>
 	
 	<xsl:template match="LinkWithDescription">
 		<xsl:if test="not(@Target[.='child'])">
-			<A href="{@Url}">
+			<a href="{@Url}">
 				<xsl:if test="@Target[.='more']">
 					<xsl:attribute name="target">more</xsl:attribute>
 				</xsl:if>
 				<xsl:value-of select="@Text"/>
-			</A>
+			</a>
 		</xsl:if>
 		<xsl:if test="@Target[.='child']">
-			<SCRIPT language="JavaScript" src="&ScriptsDir;/showwindow.js"></SCRIPT>
-			<A href="javascript:%20showwindow('{@Url}', '{@Name}')">
+			<script language="JavaScript" src="&ScriptsDir;/showwindow.js"></script>
+			<a href="javascript:%20showwindow('{@Url}', '{@Name}')">
 				<xsl:value-of select="@Text"/>
-			</A>
+			</a>
 		</xsl:if>
 		<BR /> 
 		<xsl:apply-templates />
@@ -196,10 +168,10 @@
 	</xsl:template>
 	
 	<xsl:template match="LinkToImage">
-		<SCRIPT language="JavaScript" src="&ScriptsDir;/showpic.js"></SCRIPT>
-		<A href="javascript:%20showpic('{@Url}','{@H}','{@V}')">
+		<script language="JavaScript" src="&ScriptsDir;/showpic.js"></script>
+		<a href="javascript:%20showpic('{@Url}','{@H}','{@V}')">
 		<xsl:apply-templates />
-		</A>
+		</a>
 	</xsl:template>
 		
 	<xsl:template match="Image">
@@ -207,7 +179,7 @@
 		<tr>
 		<td width="1">
 		<center>
-		<IMG SRC="{@Src}" border="0" HSPACE="0" VSPACE="0">
+		<img src="{@Src}" border="0" HSPACE="0" VSPACE="0">
 		
 		<!--
 		<xsl:call-template name="LinkResolver"> 
@@ -222,7 +194,7 @@
 		<xsl:if test="@V">
 				<xsl:attribute name="WIDTH"><xsl:value-of select="@V"/></xsl:attribute>
 		</xsl:if>
-		</IMG>
+		</img>
 		</center>
 		</td>
 		<td valign="top" align="left">
@@ -242,7 +214,7 @@
 			<table border="0" cellpadding="2" cellspacing="2" width="100%">
 				<tr>
 					<td style="width:150px;" align="left" valign="top">
-						<P><FONT color="#003399" size="5"><STRONG><xsl:value-of select="@Title"/></STRONG></FONT></P>
+						<p class="font-chapter"><xsl:value-of select="@Title"/></p>
 					</td>
 					<td align="center">
 						<div align="center">
@@ -395,22 +367,18 @@
     		
 			<div style="width:150px; float:left;">
 			
-				<div style="height:30px" >
-					<FONT color="#000000" size="3"><STRONG>
-						<span style="text-align:left">Список треков</span>
-					</STRONG></FONT>
+				<div style="height:30px" class="font-paragraph">
+					<span style="text-align:left">Список треков</span>
 				</div>			    		
-			
 			
 				<xsl:apply-templates />	
 			</div>
 					
 			<div style="width:330px; float:left; margin-left:10px;">
 			
-				<div class="gpslabel" style="height:30px" >
-					<FONT color="#000000" size="3"><STRONG>
-						<span style="text-align:left">Трек: </span></STRONG></FONT>
-						<span style="text-align:left" id="trackName"></span>
+				<div class="gpslabel" style="height:30px">
+					<span style="text-align:left" class="font-paragraph">Трек: </span>
+					<span style="text-align:left" id="trackName"></span>
 				</div>
 				
 				<div style="padding:5px;">
