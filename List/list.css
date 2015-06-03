@@ -1,0 +1,25 @@
+.chapter-title {
+	color: #003399;
+	font-size: x-large;
+	font-weight: bold;
+}
+.paragraph-title {
+	color: #000000;
+	font-size: medium;
+	font-weight: bold;
+}
+
+img {
+	-moz-transition: all 0.2s ease-in; 
+	-webkit-transition: all 0.2s ease-in; 
+	-o-transition: all 0.2s ease-in; 
+	transition: all 0.2s ease-in;
+	
+}
+img:hover {
+	-moz-transform:scale(2) translateX(100px); 
+	-webkit-transform:scale(2) translateX(100px);
+	-o-transform:scale(2) translateX(100px);
+	-ms-transform:scale(2) translateX(100px);
+	transform:scale(2) translateX(100px);
+}
