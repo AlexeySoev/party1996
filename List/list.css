@@ -17,9 +17,9 @@ img {
 	
 }
 img:hover {
-	-moz-transform:scale(2) translateX(100px); 
-	-webkit-transform:scale(2) translateX(100px);
-	-o-transform:scale(2) translateX(100px);
-	-ms-transform:scale(2) translateX(100px);
-	transform:scale(2) translateX(100px);
+	-moz-transform:scale(1.5) translateX(50px); 
+	-webkit-transform:scale(1.5) translateX(50px);
+	-o-transform:scale(1.5) translateX(50px);
+	-ms-transform:scale(1.5) translateX(50px);
+	transform:scale(1.5) translateX(50px);
 }
