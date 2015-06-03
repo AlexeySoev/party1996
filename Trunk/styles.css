@@ -4,6 +4,7 @@
 .spanstyle {
     COLOR: #ff0000; FONT-FAMILY: Verdana; FONT-SIZE: 10pt; FONT-WEIGHT: bold; POSITION: absolute; TOP: -50px; VISIBILITY: visible
 }
+
 .gpslabel {
     width:330px
 }
@@ -11,27 +12,27 @@
     width:190px
 }
 
-.font-name {
+.site-title {
 	color: #000000;
 	font-size: 24pt;
 	font-weight: bold;
 }
-.font-title {
+.title {
 	color: #000000;
 	font-size: x-large;
 	font-weight: bold;
 }
-.font-chapter {
+.chapter-title {
 	color: #003399;
 	font-size: x-large;
 	font-weight: bold;
 }
-.font-paragraph {
+.paragraph-title {
 	color: #000000;
 	font-size: medium;
 	font-weight: bold;
 }
-.font-epigraph {
+.epigraph {
 	color: #ff0000;
 	font-size: medium;
 	font-weight: bold;

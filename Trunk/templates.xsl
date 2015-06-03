@@ -40,47 +40,44 @@
 	
 	<xsl:template match="MainMenu">
 		<table width="100%" border="0" cellspacing="2" cellpadding="5" align="center">
-		<tr>
-			<td colspan="9"><span class="font-name">Первый сайт Партии Любителей</span></td>
-		</tr>
-		<tr bgcolor="#ccffff" align="center">
-			<td><a href="&Root;/index.html" target="_top">На главную</a></td>
-			<td><a href="http://party1996.narod.ru/gb" target="_top">Гостевая книга</a></td>
-			<td><a href="&Root;/History/history.xml" target="_top">Фрагменты нашей истории</a></td>
-			<td><a href="&Root;/Members/members.xml" target="_top">Наша гордость</a></td>
-			<td><a href="&Root;/Album/album.xml" target="_top">Альбом</a></td>
-			<td><a href="&Root;/Tracks/tracks.xml" target="_top">GPS Треки</a></td>
-			<td><a href="&Root;/Funs/funs.xml" target="_top">Приколись</a></td>
-			<td><a href="&Root;/Personal/Personal.xml" target="_top">Персональное</a></td>
-			<td><a href="&Root;/links.xml" target="_top">Линки</a></td>
-		</tr>
+			<tr>
+				<td colspan="9"><span class="site-title">Первый сайт Партии Любителей</span></td>
+			</tr>
+			<tr bgcolor="#ccffff" align="center">
+				<td><a href="&Root;/index.html" target="_top">На главную</a></td>
+				<td><a href="http://party1996.narod.ru/gb" target="_top">Гостевая книга</a></td>
+				<td><a href="&Root;/History/history.xml" target="_top">Фрагменты нашей истории</a></td>
+				<td><a href="&Root;/Members/members.xml" target="_top">Наша гордость</a></td>
+				<td><a href="&Root;/Album/album.xml" target="_top">Альбом</a></td>
+				<td><a href="&Root;/Tracks/tracks.xml" target="_top">GPS Треки</a></td>
+				<td><a href="&Root;/Funs/funs.xml" target="_top">Приколись</a></td>
+				<td><a href="&Root;/Personal/Personal.xml" target="_top">Персональное</a></td>
+				<td><a href="&Root;/links.xml" target="_top">Линки</a></td>
+			</tr>
 		</table>
-		<br />
+		<br/>
 		<xsl:apply-templates />
 	</xsl:template>
 	
 	<xsl:template match="Title">
 		<xsl:if test="@Epigraph">
-			<P align="right" class="font-epigraph"><xsl:value-of select="@Epigraph"/></P>
+			<P align="right" class="epigraph"><xsl:value-of select="@Epigraph"/></P>
 		</xsl:if>
-		<P align="center" class="font-title"><xsl:value-of select="@Text"/></P>
+		<P align="center" class="title"><xsl:value-of select="@Text"/></P>
 		<xsl:apply-templates />
 	</xsl:template>
 
 	<xsl:template match="Chapter">
 		<xsl:if test="@Epigraph">
-			<P align="right" class="font-epigraph"><xsl:value-of select="@Epigraph"/></P>
+			<p align="right" class="epigraph"><xsl:value-of select="@Epigraph"/></p>
 		</xsl:if>
-		<P align="justify" class="font-chapter"><xsl:value-of select="@Title"/></P>
+		<p align="left" class="chapter-title"><xsl:value-of select="@Title"/></p>
 		<xsl:apply-templates />
-		<P>
-		<BR />
-		<BR />
-		</P>
+		<p><br/><br/></p>
 	</xsl:template>
 		
 	<xsl:template match="Paragraph">
-	    <P align="justify" class="font-paragraph"><xsl:value-of select="@Title"/></P>
+	    <P align="left" class="paragraph-title"><xsl:value-of select="@Title"/></P>
 	    <P align="justify">
 		<xsl:apply-templates />
 		</P>
@@ -94,7 +91,7 @@
 	
 	<xsl:template match="Line">
 		<xsl:apply-templates />
-		<BR /> 
+		<br/> 
 	</xsl:template>
 
 	<xsl:template match="List">
@@ -214,7 +211,7 @@
 			<table border="0" cellpadding="2" cellspacing="2" width="100%">
 				<tr>
 					<td style="width:150px;" align="left" valign="top">
-						<p class="font-chapter"><xsl:value-of select="@Title"/></p>
+						<p class="chapter-title"><xsl:value-of select="@Title"/></p>
 					</td>
 					<td align="center">
 						<div align="center">
@@ -367,7 +364,7 @@
     		
 			<div style="width:150px; float:left;">
 			
-				<div style="height:30px" class="font-paragraph">
+				<div style="height:30px" class="paragraph-title">
 					<span style="text-align:left">Список треков</span>
 				</div>			    		
 			
@@ -377,7 +374,7 @@
 			<div style="width:330px; float:left; margin-left:10px;">
 			
 				<div class="gpslabel" style="height:30px">
-					<span style="text-align:left" class="font-paragraph">Трек: </span>
+					<span style="text-align:left" class="paragraph-title">Трек: </span>
 					<span style="text-align:left" id="trackName"></span>
 				</div>
 				
