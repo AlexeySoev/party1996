@@ -35,42 +35,43 @@
 		
 	<xsl:template match="Chapter">
 		<p align="left" class="chapter-title"><xsl:value-of select="@Title"/></p>
-		<xsl:apply-templates />
-		<p><br/><br/></p>
+		<div class="chapter">
+			<xsl:apply-templates />
+		</div>
 	</xsl:template>
 		
 	<xsl:template match="Paragraph">
 	    <p align="left" class="paragraph-title"><xsl:value-of select="@Title"/></p>
-	    <p align="justify">
-		<xsl:apply-templates />
-		</p>
+	    <div class="paragraph">
+			<xsl:apply-templates />
+		</div>
 	</xsl:template>
 
 	<xsl:template match="EventTable">
 		<div class="events-table">
-		<xsl:apply-templates />
+			<xsl:apply-templates />
 		</div>
 	</xsl:template>
 	
 	<xsl:template match="EventItem">
 		<div class="event-row">
 			<div class="event-image">
-				<img src="{@Pic}" border="1" height="240" width="auto"/>
+				<img src="{@Pic}"/>
 			</div>
 			<div class="event-description">
 				<div>
-					<p class="event-title"><xsl:value-of select="@Title"/></p>
-					<p class="event-dates"><xsl:value-of select="@Desc1"/></p>
-					<p class="event-members"><xsl:value-of select="@Desc2"/></p>
-					<p class="event-text"><xsl:value-of select="@Desc3"/></p>
+					<div class="event-title"><xsl:value-of select="@Title"/></div>
+					<div class="event-dates"><xsl:value-of select="@Date"/></div>
+					<div class="event-text1"><xsl:value-of select="@Desc1"/></div>
+					<div class="event-text2"><xsl:value-of select="@Desc2"/></div>
 				</div>
 			</div>
 			<div class="event-links">
 				<div>
-					<p><a href="{@AlbumLocal}">Фотографии на компьютере</a></p>
-					<p><a href="{@AlbumWeb}">Фотографии в интернете</a></p>
-					<p><a href="{@TreckLocal}">Трек на компьютере</a></p>
-					<p><a href="{@TrackWeb}">Трек в интернете</a></p>
+					<p><a href="{@AlbumLocal}" target="_blank">Фотографии на компьютере</a></p>
+					<p><a href="{@AlbumWeb}" target="_blank">Фотографии в интернете</a></p>
+					<p><a href="{@TreckLocal}" target="_blank">Трек на компьютере</a></p>
+					<p><a href="{@TrackWeb}" target="_blank">Трек в интернете</a></p>
 				</div>
 			</div>
 		</div>
