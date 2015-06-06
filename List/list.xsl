@@ -19,9 +19,11 @@
 
 	<xsl:template match="PageBody">
 		<body>
-			<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
-				<xsl:apply-templates />
-			</table>
+			<div class="page">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+					<xsl:apply-templates />
+				</table>
+			</div>
 		</body>
 	</xsl:template>
 	
@@ -38,47 +40,40 @@
 	</xsl:template>
 		
 	<xsl:template match="Paragraph">
-	    <P align="left" class="paragraph-title"><xsl:value-of select="@Title"/></P>
-	    <P align="justify">
+	    <p align="left" class="paragraph-title"><xsl:value-of select="@Title"/></p>
+	    <p align="justify">
 		<xsl:apply-templates />
-		</P>
+		</p>
 	</xsl:template>
 
 	<xsl:template match="EventTable">
-		<table width="100%" cellspacing="0" border="1" style="table-layout:fixed;">
-			<xsl:apply-templates />
-		</table>
+		<div class="events-table">
+		<xsl:apply-templates />
+		</div>
 	</xsl:template>
-
+	
 	<xsl:template match="EventItem">
-		<tr valign="top" align="left">
-			<td width="360" height="240">
+		<div class="event-row">
+			<div class="event-image">
 				<img src="{@Pic}" border="1" height="240" width="auto"/>
-			</td>
-			<td>
-				<b><xsl:value-of select="@Title"/></b>
-				<br/>
-				<p><xsl:value-of select="@Desc1"/></p>
-				<p><xsl:value-of select="@Desc2"/></p>
-				<p><xsl:value-of select="@Desc3"/></p>
-			</td>
-			<td width="200">
-				<br/>
-				<br/>
-				<a href="{@AlbumLocal}">Фотографии на компьютере</a>
-				<br/>
-				<br/>
-				<a href="{@AlbumWeb}">Фотографии в интернете</a>
-			</td>
-			<td width="200">
-				<br/>
-				<br/>
-				<a href="{@TreckLocal}">Трек на компьютере</a>
-				<br/>
-				<br/>
-				<a href="{@TrackWeb}">Трек в интернете</a>
-			</td>
-		</tr>
+			</div>
+			<div class="event-description">
+				<div>
+					<p class="event-title"><xsl:value-of select="@Title"/></p>
+					<p class="event-dates"><xsl:value-of select="@Desc1"/></p>
+					<p class="event-members"><xsl:value-of select="@Desc2"/></p>
+					<p class="event-text"><xsl:value-of select="@Desc3"/></p>
+				</div>
+			</div>
+			<div class="event-links">
+				<div>
+					<p><a href="{@AlbumLocal}">Фотографии на компьютере</a></p>
+					<p><a href="{@AlbumWeb}">Фотографии в интернете</a></p>
+					<p><a href="{@TreckLocal}">Трек на компьютере</a></p>
+					<p><a href="{@TrackWeb}">Трек в интернете</a></p>
+				</div>
+			</div>
+		</div>
 		<xsl:apply-templates />
 	</xsl:template>
    				

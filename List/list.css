@@ -1,3 +1,7 @@
+.page {
+	margin: 0px 20px;
+}
+
 .chapter-title {
 	color: #003399;
 	font-size: x-large;
@@ -9,17 +13,71 @@
 	font-weight: bold;
 }
 
+.events-table {
+	
+}
+
+.event-row {
+	position: relative;
+	background-color: #eee;
+	margin: 10px 0px;
+	padding: 10px 0px;
+	height: 240px;
+	
+}
+
+.event-row > div {
+	position: absolute;
+	/*border: 1px solid red;*/
+}
+
+.event-image {
+	width: 340px;
+	left:10px;
+}
+
+.event-description {
+	left: 360px;
+	right: 265px;
+}
+
+.event-links {
+	width: 250px;
+	right: 10px;
+}
+
+.event-description  > div,
+.event-links  > div {
+	margin: 0px 2px;
+	background-color: #ddd; 
+	padding: 10px;
+}
+
+.event-links  > div {
+	height: 220px;
+}
+
+
+.event-links p{
+	margin: 20px 0px;
+}
+
 img {
-	-moz-transition: all 0.2s ease-in; 
-	-webkit-transition: all 0.2s ease-in; 
-	-o-transition: all 0.2s ease-in; 
-	transition: all 0.2s ease-in;
+	-moz-transition: all 0.1s ease-in; 
+	-webkit-transition: all 0.1s ease-in; 
+	-o-transition: all 0.1s ease-in; 
+	transition: all 0.1s ease-in;
 	
 }
 img:hover {
-	-moz-transform:scale(1.5) translateX(50px); 
-	-webkit-transform:scale(1.5) translateX(50px);
-	-o-transform:scale(1.5) translateX(50px);
-	-ms-transform:scale(1.5) translateX(50px);
-	transform:scale(1.5) translateX(50px);
+	-moz-transform:scale(1.7) translateX(50px); 
+	-webkit-transform:scale(1.7) translateX(50px);
+	-o-transform:scale(1.7) translateX(50px);
+	-ms-transform:scale(1.7) translateX(50px);
+	transform:scale(1.7) translateX(50px);
+	z-index: 999;
+}
+
+.event-image:hover {
+	z-index: 999;
 }

@@ -37,7 +37,7 @@
 							Desc1="Это был удивительный поход! Ничего похожего прежде я не испытывал." 
 							Desc2="Участовали все от мала до велика." 
 							Desc3="Никто не пострадал" 
-							Pic="2002/Poh1.jpg" 
+							Pic="Covers\2005-may.jpg"  
 							AlbumLocal="D:\\Photos" 
 							AlbumWeb="mail.ru" 
 							TrackLocal="D:\\Tracks" 
@@ -46,7 +46,7 @@
 						<EventItem 
 							Title="Поход 4" 
 							Desc1="Это был удивительный поход 2! Прежде я испытывал подобное только в Походе 1." 
-							Pic="2002/Poh2.jpg" 
+							Pic="Covers\2006-may.jpg"  
 							AlbumLocal="D:\\Photos" 
 							AlbumURL="mail.ru" 
 							TrackLocal="D:\\Tracks" 
