@@ -61,9 +61,9 @@
 	
 	<xsl:template match="Title">
 		<xsl:if test="@Epigraph">
-			<P align="right" class="epigraph"><xsl:value-of select="@Epigraph"/></P>
+			<p align="right" class="epigraph"><xsl:value-of select="@Epigraph"/></p>
 		</xsl:if>
-		<P align="center" class="title"><xsl:value-of select="@Text"/></P>
+		<p align="center" class="title"><xsl:value-of select="@Text"/></p>
 		<xsl:apply-templates />
 	</xsl:template>
 
@@ -77,16 +77,16 @@
 	</xsl:template>
 		
 	<xsl:template match="Paragraph">
-	    <P align="left" class="paragraph-title"><xsl:value-of select="@Title"/></P>
-	    <P align="justify">
+	    <p align="left" class="paragraph-title"><xsl:value-of select="@Title"/></p>
+	    <p align="justify">
 		<xsl:apply-templates />
-		</P>
+		</p>
 	</xsl:template>
 	
 	<xsl:template match="Emphasize">
-		<FONT size="+1"><I><B>
+		<font size="+1"><i><b>
 		<xsl:apply-templates />
-		</B></I></FONT>
+		</b></i></font>
 	</xsl:template>
 	
 	<xsl:template match="Line">
@@ -95,15 +95,15 @@
 	</xsl:template>
 
 	<xsl:template match="List">
-		<UL>
+		<ul>
 			<xsl:apply-templates />
-		</UL>
+		</ul>
 	</xsl:template>
 
 	<xsl:template match="ListItem">
-		<LI>
+		<li>
 			<xsl:apply-templates />
-		</LI>
+		</li>
 	</xsl:template>
 
 	<!--
@@ -361,188 +361,151 @@
     <xsl:template match="GPSTrackFrame">
 		
 			<script src="&ScriptsDir;/maputils.js" type="text/javascript"></script>
-    		
-			<div style="width:150px; float:left;">
 			
-				<div style="height:30px" class="paragraph-title">
-					<span style="text-align:left">Список треков</span>
+			<div class="track-list">
+				<div class="paragraph-title">
+					<span>Список треков</span>
 				</div>			    		
 			
 				<xsl:apply-templates />	
 			</div>
-					
-			<div style="width:330px; float:left; margin-left:10px;">
 			
-				<div class="gpslabel" style="height:30px">
-					<span style="text-align:left" class="paragraph-title">Трек: </span>
-					<span style="text-align:left" id="trackName"></span>
+			<div class="track-details">
+			
+				<div class="paragraph-title gpslabel">
+					<span>Трек: </span>
+					<span id="trackName"></span>
 				</div>
 				
-				<div style="padding:5px;">
-												
-					<div class="gpslabel">
-						<div style="float:left" class="gpsvalue">
-							Начало движения:
-						</div>
-						<div id="trackStartTime">
-							<span style="text-align:right; margin-left:10px"></span>
-						</div>
+				<div class="gpslabel">
+																
+					<div class="gpsvalue">
+						Начало движения:
 					</div>
-					
-					<div class="gpslabel">
-						<div style="float:left" class="gpsvalue">
-							Oкончание движения:
-						</div>
-						<div id="trackFinishTime">
-							<span style="text-align:right; margin-left:10px"></span>
-						</div>
-					</div>
-					
-					<div class="gpslabel">
-						<div style="float:left" class="gpsvalue">
-							Время в пути:
-						</div>
-						<div id="trackTimeEnroute">
-							<span style="text-align:right; margin-left:10px"></span>
-						</div>
-					</div>
-									
-					<div class="gpslabel">
-						<div style="float:left" class="gpsvalue">
-							Общая дистанция:
-						</div>
-						<div>
-							<span style="text-align:right" id="trackDistance"><B>0.0</B></span>
-							<span style="text-align:right; margin-left:10px"><B>км</B></span>
-						</div>
-					</div>
-									
-					<div class="gpslabel">
-						<div style="float:left" class="gpsvalue">
-							Средняя скорость:
-						</div>
-						<div>
-							<span style="text-align:right" id="trackAverageSpeed"><B>0.0</B></span>
-							<span style="text-align:right; margin-left:10px"><B>км/ч</B></span>
-						</div>
-					</div>
-					
-					<div class="gpslabel">
-						<div style="float:left" class="gpsvalue">
-							Максимальная скорость:
-						</div>
-						<div>
-							<span style="text-align:right" id="trackMaxSpeed"><B>0.0</B></span>
-							<span style="text-align:right; margin-left:10px"><B>км/ч</B></span>
-						</div>
-					</div>
-								
-					<div class="gpslabel">
-						<div style="float:left" class="gpsvalue">
-							Минимальная высота:
-						</div>
-						<div>
-							<span style="text-align:left" id="trackMinAltitude"><B>0</B></span>
-							<span style="text-align:left; margin-left:10px"><B>м</B></span>
-						</div>
-					</div>
-					
-					<div class="gpslabel">
-						<div style="float:left" class="gpsvalue">
-							Максимальная высота:
-						</div>
-						<div>
-							<span style="text-align:left" id="trackMaxAltitude"><B>0</B></span>
-							<span style="text-align:left; margin-left:10px"><B>м</B></span>
-						</div>
+					<div id="trackStartTime">
+						<span style="text-align:right; margin-left:10px"></span>
 					</div>
 				
-					<div class="gpslabel">
-						<div style="float:left" class="gpsvalue">
-							Перепад высоты:
-						</div>
-						<div>
-							<span style="text-align:left" id="trackDeltaAltitude"><B>0</B></span>
-							<span style="text-align:left; margin-left:10px"><B>м</B></span>
-						</div>
+					<div class="gpsvalue">
+						Oкончание движения:
+					</div>
+					<div id="trackFinishTime">
+						<span style="text-align:right; margin-left:10px"></span>
 					</div>
 				
-				</div>
+					<div class="gpsvalue">
+						Время в пути:
+					</div>
+					<div id="trackTimeEnroute">
+						<span style="text-align:right; margin-left:10px"></span>
+					</div>
 				
-				<br/>
-				<br/>
+					<div class="gpsvalue">
+						Общая дистанция:
+					</div>
+					<div>
+						<span style="text-align:right" id="trackDistance"><B>0.0</B></span>
+						<span style="text-align:right; margin-left:10px"><B>км</B></span>
+					</div>
 				
-				<div id="divModulation" style="background-color:#eeeeee; background-image:none; border:1px solid grey; padding:5px; visibility:hidden;">
+					<div class="gpsvalue">
+						Средняя скорость:
+					</div>
+					<div>
+						<span style="text-align:right" id="trackAverageSpeed"><B>0.0</B></span>
+						<span style="text-align:right; margin-left:10px"><B>км/ч</B></span>
+					</div>
 				
-					<div style="background-color:#dddddd; margin-bottom:5px; padding:5px">
-						<span><a href="javascript:playTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="simulateBtn">Старт</a></span>
-						<span><a href="javascript:pauseTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="pauseBtn">Пауза</a></span>
-						<span><a href="javascript:resumeTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="resumeBtn">Продолжить</a></span>
-						<span><a href="javascript:stopTrack()" style="text-decoration:underline; visibility:hidden; padding:3px" id="stopBtn">Стоп</a></span>
+					<div class="gpsvalue">
+						Максимальная скорость:
+					</div>
+					<div>
+						<span style="text-align:right" id="trackMaxSpeed"><B>0.0</B></span>
+						<span style="text-align:right; margin-left:10px"><B>км/ч</B></span>
+					</div>
+				
+					<div class="gpsvalue">
+						Минимальная высота:
+					</div>
+					<div>
+						<span style="text-align:left" id="trackMinAltitude"><B>0</B></span>
+						<span style="text-align:left; margin-left:10px"><B>м</B></span>
+					</div>
+				
+					<div class="gpsvalue">
+						Максимальная высота:
+					</div>
+					<div>
+						<span style="text-align:left" id="trackMaxAltitude"><B>0</B></span>
+						<span style="text-align:left; margin-left:10px"><B>м</B></span>
+					</div>
+				
+					<div class="gpsvalue">
+						Перепад высоты:
+					</div>
+					<div>
+						<span style="text-align:left" id="trackDeltaAltitude"><B>0</B></span>
+						<span style="text-align:left; margin-left:10px"><B>м</B></span>
+					</div>
+					</div>
+				
+				<div id="divModulation" class="modulation">
+					<div class="modulation-buttons">
+						<span id="simulateBtn" class="button" onclick="playTrack()">Старт</span>
+						<span id="stopBtn" class="button" onclick="stopTrack()">Стоп</span>
+						<span id="pauseBtn" class="button" onclick="pauseTrack()">Пауза</span>
+						<span id="resumeBtn" class="button" onclick="resumeTrack()">Продолжить</span>
 					</div>
 					<div class="gpslabel">
-						<div style="float:left" class="gpsvalue">
+						<div class="gpsvalue">
 							Время:
 						</div>
 						<div id="time" />
-					</div>
-					<div class="gpslabel">
-						<div style="float:left" class="gpsvalue">
+					
+						<div class="gpsvalue">
 							Время в пути:
 						</div>
 						<div id="timeEnroute" />
-					</div>
-					<div class="gpslabel">
-						<div style="float:left" class="gpsvalue">
+					
+						<div class="gpsvalue">
 							Дистанция:
 						</div>
 						<div>
-							<span style="text-align:left" id="distance"><B>0.0</B></span>
-							<span style="text-align:left; margin-left:10px"><B>км</B></span>
+							<span id="distance"><B>0.0</B></span>
+							<span style="margin-left:10px"><B>км</B></span>
 						</div>
-					</div>
-					<div class="gpslabel">
-						<div style="float:left" class="gpsvalue">
+					
+						<div class="gpsvalue">
 							Скорость:
 						</div>
 						<div>
-							<span style="text-align:left" id="speed"><B>0</B></span>
-							<span style="text-align:left; margin-left:10px"><B>км/ч</B></span>
+							<span id="speed"><B>0</B></span>
+							<span style="margin-left:10px"><B>км/ч</B></span>
 						</div>
-					</div>
-					<div class="gpslabel">
-						<div style="float:left" class="gpsvalue">
+					
+						<div class="gpsvalue">
 							Высота:
 						</div>
 						<div>
-							<span style="text-align:left" id="elevation"><B>0</B></span>
-							<span style="text-align:left; margin-left:10px"><B>м</B></span>
+							<span id="elevation"><B>0</B></span>
+							<span style="margin-left:10px"><B>м</B></span>
 						</div>
 					</div>
-				
 				</div>
 				
-				<br/>
-				
-				<div class="gpslabel" style="padding:5px;">
-					<FONT size="2">
-						<span style="text-align:left; color:gray">Время по Гринвичу (UTC)</span>
-						<br/>
-						<span style="text-align:left; color:gray">Париж, Стокгольм +1 (+2), Хельсинки +2 (+3),</span>
-						<br/>
-						<span style="text-align:left; color:gray">Москва,Петербург +3 (+4), Красноярск,Абакан +7 (+8)</span>
-					</FONT>
+				<div class="comments">
+					<div>Время по Гринвичу (UTC)</div>
+					<div>Париж, Стокгольм +1 (+2), Хельсинки +2 (+3),</div>
+					<div>Москва,Петербург +3 (+4), Красноярск,Абакан +7 (+8)</div>
 				</div>
 				
 			</div>
 			
-			<div style="width:50%; float:right; margin-right:10px; margin-left:10px;">
-				<div id="map" style="height:500px; width:100%; border:1px solid grey;">
-				</div>
-				<br></br>
-				<div style="text-align:left;">
+			<div class="right-pane">
+				<div id="map" class="map" />
+				<div>
 					<div><input id="chkCenterAndZoomMap" type="checkbox" checked="checked" onclick="CenterAndZoomMap()"></input>Центрировать и масштабировать карту при смене трека</div>
-					<span style="text-align:left">(Рекомендуется отключить при просмотре последовательных треков)</span>
+					<span>(Рекомендуется отключить при просмотре последовательных треков)</span>
 				</div>
 			</div>
 		

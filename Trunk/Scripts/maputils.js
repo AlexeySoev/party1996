@@ -19,8 +19,23 @@
 		if (document.getElementById("GPSTrackLink"))
 			document.getElementById("GPSTrackLink").children[0].click();
 	}
+	
+	function resizeMap()
+	{
+		var GAP_ABOVE_BELOW_MAP = 250;
+		var MAP_MIN_SIZE = 370;
+		var bodyheight = document.body.clientHeight;
+		document.getElementById("map").style.height = bodyheight > GAP_ABOVE_BELOW_MAP + MAP_MIN_SIZE ? bodyheight - GAP_ABOVE_BELOW_MAP : MAP_MIN_SIZE;
+	}
 
-	window.onload = loadMapAPI;
+	window.onload = function(event) { 
+		loadMapAPI();
+		resizeMap();
+	}
+	
+	window.onresize = function(event) {
+		resizeMap();
+	};
 	
 	///////////////////////////////////////////////////////////////////////////////////////
 
@@ -423,23 +438,23 @@
 		switch (p_state)
 		{
 		case e_start:
-			document.getElementById('simulateBtn').style.visibility = 'visible'
-			document.getElementById('pauseBtn').style.visibility = 'hidden'
-			document.getElementById('resumeBtn').style.visibility = 'hidden'
-			document.getElementById('stopBtn').style.visibility = 'hidden'
+			document.getElementById('simulateBtn').style.display = 'inline-block'
+			document.getElementById('pauseBtn').style.display = 'none'
+			document.getElementById('resumeBtn').style.display = 'none'
+			document.getElementById('stopBtn').style.display = 'none'
 			ShowSimulateInfo("", "", "0.0", "0", "0");
 			break;
 		case e_play:
-			document.getElementById('simulateBtn').style.visibility = 'hidden'
-			document.getElementById('pauseBtn').style.visibility = 'visible'
-			document.getElementById('resumeBtn').style.visibility = 'hidden'
-			document.getElementById('stopBtn').style.visibility = 'visible'
+			document.getElementById('simulateBtn').style.display = 'none'
+			document.getElementById('pauseBtn').style.display = 'inline-block'
+			document.getElementById('resumeBtn').style.display = 'none'
+			document.getElementById('stopBtn').style.display = 'inline-block'
 			break;
 		case e_pause:
-			document.getElementById('simulateBtn').style.visibility = 'hidden'
-			document.getElementById('pauseBtn').style.visibility = 'hidden'
-			document.getElementById('resumeBtn').style.visibility = 'visible'
-			document.getElementById('stopBtn').style.visibility = 'visible'
+			document.getElementById('simulateBtn').style.display = 'none'
+			document.getElementById('pauseBtn').style.display = 'none'
+			document.getElementById('resumeBtn').style.display = 'inline-block'
+			document.getElementById('stopBtn').style.display = 'inline-block'
 			break;
 		}
 	}
@@ -459,7 +474,7 @@
 		
 	function ShowSimulateInfo(p_time, p_timeEnroute, p_distance, p_speed, p_elevation)
 	{
-		document.getElementById('divModulation').style.visibility = "visible";
+		document.getElementById('divModulation').style.display = "block";
 		document.getElementById('time').innerHTML = "<b>"+fix(p_time)+"</b>";
 		document.getElementById('timeEnroute').innerHTML = "<b>"+fix(p_timeEnroute)+"</b>";
 	 	document.getElementById('distance').innerHTML = "<b>"+fix(p_distance)+"</b>";
@@ -469,12 +484,7 @@
 			
 	function HideSimulateInfo()
 	{
-		document.getElementById('divModulation').style.visibility = 'hidden';
-		// is this hiding really useful?
-		//document.getElementById('simulateBtn').style.visibility = 'hidden'
-		//document.getElementById('pauseBtn').style.visibility = 'hidden'
-		//document.getElementById('resumeBtn').style.visibility = 'hidden'
-		//document.getElementById('stopBtn').style.visibility = 'hidden'
+		document.getElementById('divModulation').style.display = 'none';
 	}
 	
 	function GetCenterAndZoomCheckBoxState()
