@@ -23,7 +23,7 @@
 	function resizeMap()
 	{
 		var GAP_ABOVE_BELOW_MAP = 250;
-		var MAP_MIN_SIZE = 370;
+		var MAP_MIN_SIZE = 410;
 		var bodyheight = document.body.clientHeight;
 		document.getElementById("map").style.height = bodyheight > GAP_ABOVE_BELOW_MAP + MAP_MIN_SIZE ? bodyheight - GAP_ABOVE_BELOW_MAP : MAP_MIN_SIZE;
 	}
