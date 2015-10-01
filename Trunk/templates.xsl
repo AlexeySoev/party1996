@@ -61,37 +61,37 @@
 	
 	<xsl:template match="Title">
 		<xsl:if test="@Epigraph">
-			<p align="right" class="epigraph"><xsl:value-of select="@Epigraph"/></p>
+			<p class="epigraph"><xsl:value-of select="@Epigraph"/></p>
 		</xsl:if>
-		<p align="center" class="title"><xsl:value-of select="@Text"/></p>
+		<p class="title"><xsl:value-of select="@Text"/></p>
 		<xsl:apply-templates />
 	</xsl:template>
 
 	<xsl:template match="Chapter">
 		<xsl:if test="@Epigraph">
-			<p align="right" class="epigraph"><xsl:value-of select="@Epigraph"/></p>
+			<p class="epigraph"><xsl:value-of select="@Epigraph"/></p>
 		</xsl:if>
-		<p align="left" class="chapter-title"><xsl:value-of select="@Title"/></p>
+		<p class="chapter-title"><xsl:value-of select="@Title"/></p>
 		<xsl:apply-templates />
-		<p><br/><br/></p>
 	</xsl:template>
 		
 	<xsl:template match="Paragraph">
-	    <p align="left" class="paragraph-title"><xsl:value-of select="@Title"/></p>
+	    <p class="paragraph-title"><xsl:value-of select="@Title"/></p>
 	    <p align="justify">
-		<xsl:apply-templates />
+            <xsl:apply-templates />
 		</p>
 	</xsl:template>
 	
 	<xsl:template match="Emphasize">
 		<font size="+1"><i><b>
-		<xsl:apply-templates />
+            <xsl:apply-templates />
 		</b></i></font>
 	</xsl:template>
 	
 	<xsl:template match="Line">
-		<xsl:apply-templates />
-		<br/> 
+        <div>
+            <xsl:apply-templates />
+        </div>
 	</xsl:template>
 
 	<xsl:template match="List">

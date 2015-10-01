@@ -14,21 +14,25 @@
 	color: #000000;
 	font-size: x-large;
 	font-weight: bold;
+    text-align: center;
 }
 .chapter-title {
 	color: #003399;
 	font-size: x-large;
 	font-weight: bold;
+    text-align: left;
 }
 .paragraph-title {
 	color: #000000;
 	font-size: medium;
 	font-weight: bold;
+    text-align: left;
 }
 .epigraph {
 	color: #ff0000;
 	font-size: medium;
 	font-weight: bold;
+    text-align: right;
 }
 
 /* gps track page */

@@ -22,10 +22,11 @@
 	
 	function resizeMap()
 	{
-		var GAP_ABOVE_BELOW_MAP = 250;
+		var GAP_ABOVE_BELOW_MAP = 280;
 		var MAP_MIN_SIZE = 410;
-		var bodyheight = document.body.clientHeight;
-		document.getElementById("map").style.height = bodyheight > GAP_ABOVE_BELOW_MAP + MAP_MIN_SIZE ? bodyheight - GAP_ABOVE_BELOW_MAP : MAP_MIN_SIZE;
+        var bodyheight = isNaN(window.innerHeight) ? window.clientHeight : window.innerHeight;
+        var newMapHeight = bodyheight > GAP_ABOVE_BELOW_MAP + MAP_MIN_SIZE ? bodyheight - GAP_ABOVE_BELOW_MAP : MAP_MIN_SIZE;
+        document.getElementById("map").style.height = newMapHeight + "px";
 	}
 
 	window.onload = function(event) { 
