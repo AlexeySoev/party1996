@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Styles/list.xsl" type="text/xsl"?>
+
+<PageTemplate>
+    <PageHead Title="Наши походы"></PageHead>
+    <PageBody>
+        <PageElement>
+            <Chapter Title="Наши походы">
+                <Paragraph Title="2005">
+                    <EventTable>
+                        <EventItem 
+                            Title="9-е мая 2005" 
+                            Date="Май 2005 года" 
+                            Desc1="Маршрут: Луга-Оредеж" 
+                            Desc2="Участвовали Настя, Коля, Леха, Надька и Катька. Также участвовал Настин папа. Леха и Настя вернулись на резиновой лодке." 
+                            Pic="Коллажи\2005\May2005.jpg" 
+                            AlbumLocal="D:\Фотографии\!Основные" 
+                            AlbumWeb="http://mail.ru" 
+                            TrackLocal="D:\\Tracks"
+                            TrackWeb="http://gpsies.com" />
+                        
+                            
+                        <EventItem 
+                            Title="Кузнечное-Выборг"
+                            Date="Июнь 2005 года" 
+                            Desc1="Кузнечное-Выборг"
+                            Desc2="Участвовали Настя, Коля, Надька и Леха. Встретили Аркадия." 
+                            Pic="Коллажи\2005\Кузнечное-Выборг.jpg" 
+                            AlbumLocal="D:\\Photos" 
+                            AlbumWeb="mail.ru" 
+                            TrackLocal="D:\\Tracks" 
+                            TrackWeb="gpsies.com" />
+                    </EventTable>
+                </Paragraph>
+                
+                <Paragraph Title="2002">
+                    <EventTable>
+                        <EventItem 
+                            Title="Поход 3" 
+                            Date="Лето 2012 года" 
+                            Desc1="" 
+                            Desc2="МАРШРУТ ПРОПУЩЕН. Это был удивительный поход! Ничего похожего прежде я не испытывал. Никто не пострадал.Участовали все от мала до велика." 
+                            Pic="Коллажи\2005\Горьковское.jpg"  
+                            AlbumLocal="D:\\Photos" 
+                            AlbumWeb="mail.ru" 
+                            TrackLocal="D:\\Tracks" 
+                            TrackWeb="gpsies.com" />
+                            
+                        <EventItem 
+                            Title="Поход 4" 
+                            Date="Лето 2013 года" 
+                            Desc1="ОПИСАНИЕ ПРОПУЩЕНО"
+                            Desc2="" 
+                            Pic="Covers\2010.jpg"  
+                            AlbumLocal="D:\\Photos" 
+                            AlbumURL="mail.ru" 
+                            TrackLocal="D:\\Tracks" 
+                            TrackURL="gpsies.com" />
+                            
+                        <EventItem 
+                            Title="Поход 5"
+                            Date="Лето 2008 года" 
+                            Desc1="Повторение маршрута"
+                            Desc2="Это был удивительный поход 2! Прежде я испытывал подобное только в Походе 1. Участовали всё те же." 
+                            Pic="Covers\1977-may.jpg" 
+                            AlbumLocal="D:\\Photos" 
+                            AlbumWeb="mail.ru" 
+                            TrackLocal="D:\\Tracks" 
+                            TrackWeb="gpsies.com" />
+                    </EventTable>
+                </Paragraph>
+            </Chapter>
+        </PageElement>
+    </PageBody>
+</PageTemplate>
