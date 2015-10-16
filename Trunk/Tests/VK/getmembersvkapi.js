@@ -32,14 +32,15 @@ function getAlbum2(albumId, rootElement, cb) {
         url: "http://api.vkontakte.ru/method/getPhotos",
         data: {
             album_id: albumId,
-            owner_id: 1413115,
+            owner_id: 1413115/*,
             rev: 0,
-            v: 5.37
+            v: 5.37*/
         },
         dataType: 'jsonp',
         async: true
     }).success(function (data) {
-            cb(rootElement, data.response.items);
+            //cb(rootElement, data.response.items);
+            cb(rootElement, data.response);
     })
     .error(function (xhr, status, error) {
         console.log(err.Message);
@@ -51,8 +52,9 @@ function createAlbum(rootElement, data) {
     for (i = 0; i < d.length; i++)
     {
         var element = '<div id="div'+ i +'" class="element" >';
+        element += '<div class="photo"><img src="' + d[i].src_xbig + '" /></div>';
         element += '<div class="description">' + d[i].text + '</div>';
-        element += '<div class="photo"><img src="' + d[i].photo_807 + '" /></div>';
+        //element += '<div class="photo"><img src="' + d[i].photo_807 + '" /></div>';
         element += '</div>';
         rootElement.append(element);
         /*

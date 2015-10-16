@@ -318,11 +318,9 @@
     
     
     <xsl:template match="VKAlbum">
-        <script src="http://vk.com/js/api/openapi.js"></script>
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <!--<script src="http://vk.com/js/api/openapi.js"></script>-->
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
         <script src="&ScriptsDir;/vk.js"></script>
-        <script src="&ScriptsDir;/vk.js"></script>
-        <link href="&Root;/vk.css" rel="stylesheet" />
         
         <script type="text/javascript">
             $(function(){ 
