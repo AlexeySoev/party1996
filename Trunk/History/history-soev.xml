@@ -29,6 +29,9 @@
 			<ListItem><LinkWithDescription Url="Norway2007/norway2007.xml" Text="Норвегия 2007">
 				Велопутешествие по Норвегии
 			</LinkWithDescription></ListItem>
+			<ListItem><LinkWithDescription Url="Alps2015/alps2015.xml" Text="Альпы 2015">
+				Поход в Альпах 2015
+			</LinkWithDescription></ListItem>
 		</List>
 		</Paragraph>
 

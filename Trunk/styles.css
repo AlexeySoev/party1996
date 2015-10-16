@@ -98,3 +98,14 @@
 	border: 1px solid grey;
 	margin-bottom: 20px;
 }
+
+#VKAlbum .element {
+    margin-top: 30px;
+}
+#VKAlbum .photo {
+    margin-top:10px;
+}
+#VKAlbum .description {
+    width:807px;
+    text-indent: 10px;
+}

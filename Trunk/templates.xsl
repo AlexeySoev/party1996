@@ -136,7 +136,7 @@
 			</a>
 		</xsl:if>
 		<xsl:if test="@Target[.='child']">
-			<script language="JavaScript" src="&ScriptsDir;/showwindow.js"></script>
+			<script src="&ScriptsDir;/showwindow.js"></script>
 			<a href="javascript:%20showwindow('{@Url}', '{@Name}')">
 				<xsl:apply-templates />
 			</a>
@@ -153,7 +153,7 @@
 			</a>
 		</xsl:if>
 		<xsl:if test="@Target[.='child']">
-			<script language="JavaScript" src="&ScriptsDir;/showwindow.js"></script>
+			<script src="&ScriptsDir;/showwindow.js"></script>
 			<a href="javascript:%20showwindow('{@Url}', '{@Name}')">
 				<xsl:value-of select="@Text"/>
 			</a>
@@ -165,7 +165,7 @@
 	</xsl:template>
 	
 	<xsl:template match="LinkToImage">
-		<script language="JavaScript" src="&ScriptsDir;/showpic.js"></script>
+		<script src="&ScriptsDir;/showpic.js"></script>
 		<a href="javascript:%20showpic('{@Url}','{@H}','{@V}')">
 		<xsl:apply-templates />
 		</a>
@@ -315,6 +315,27 @@
 		</html>
 		<xsl:apply-templates />	
     </xsl:template>
+    
+    
+    <xsl:template match="VKAlbum">
+        <script src="http://vk.com/js/api/openapi.js"></script>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="&ScriptsDir;/vk.js"></script>
+        <script src="&ScriptsDir;/vk.js"></script>
+        <link href="&Root;/vk.css" rel="stylesheet" />
+        
+        <script type="text/javascript">
+            $(function(){ 
+                var albumID = <xsl:value-of select="@Id"/>; 
+                getAlbum(albumID);
+            });
+        </script>
+        
+		<div id="VKAlbum">
+		</div>
+		
+		<xsl:apply-templates />
+	</xsl:template>
     
     
     <!-- *** End of Photo Album support -->
