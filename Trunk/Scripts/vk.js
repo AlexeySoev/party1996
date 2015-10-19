@@ -1,51 +1,12 @@
-/*
-function getAlbum(album_id) {
-    
-    VK.api('photos.get',{ owner_id: 1413115, album_id: album_id, rev: 0, v: 5.37}, function(data) {
-        if (data.response) {
-            // data.response is object
-            var d = data.response.items;
-            for (i = 0; i < d.length; i++)
-            {
-                var element = '<div id="div'+ i +'" class="element" >';
-                element += '<div class="description">' + d[i].text + '</div>';
-                element += '<div class="photo"><img src="' + d[i].photo_807 + '" /></div>';
-                element += '</div>';
-                $('#VKAlbum').append(element);
-            }
-        }
-    }); 
-}
- 
-$(function() { 
-        VK.init({
-            apiId: 5108181 // VK app ID
-        });
-    }
-);
-*/
-
 function getAlbum(albumId) {
-    getAlbumAJAX(albumId, $('#VKAlbum'), createAlbum);
+    getAlbumDescription(albumId, $('#VKAlbum'), createAlbumDescriptionMarkup);
+    getAlbumPhotos(albumId, $('#VKAlbum'), createAlbumMarkup);
 }
 
-
-
-function getAlbumAPI(albumId, rootElement, cb) {
-    
-    VK.api('photos.get',{ owner_id: 1413115, album_id: album_id, rev: 0, v: 5.37}, function(data) {
-        if (data.response) {
-            // data.response is object
-            var d = data.response.items;
-            cb(d, rootElement);
-        }
-    }); 
-}
-
-function getAlbumAJAX(albumId, rootElement, cb) {
+function getAlbumPhotos(albumId, rootElement, cb) {
     
     $.ajax( {
-        url: "http://api.vkontakte.ru/method/getPhotos",
+        url: "http://api.vk.com/method/getPhotos",
         data: {
             album_id: albumId,
             owner_id: 1413115/*,
@@ -63,21 +24,50 @@ function getAlbumAJAX(albumId, rootElement, cb) {
     });
 }
 
-function createAlbum(rootElement, data) {
+function getAlbumDescription(albumId, rootElement, cb) {
+    
+    $.ajax( {
+        url: "http://api.vk.com/method/photos.getAlbums",
+        data: {
+            album_ids: albumId,
+            owner_id: 1413115/*,
+            rev: 0,
+            v: 5.37*/
+        },
+        dataType: 'jsonp',
+        async: true
+    }).success(function (data) {
+        //cb(rootElement, data.response.items);
+        cb(rootElement, data.response);
+    })
+    .error(function (xhr, status, error) {
+        console.log(err.Message);
+    });
+}
+
+function createAlbumMarkup(rootElement, data) {
     var d = data;
     for (i = 0; i < d.length; i++)
     {
         var element = '<div id="div'+ i +'" class="element" >';
-        element += '<div class="description">' + d[i].text + '</div>';
+         
+        var desc = d[i].text;
+        /*
+        var delimiter = "<br><br>";
+        if (i==0 && d[i].text.indexOf(delimiter) != -1) {
+            desc = d[i].text.substr(d[i].text.indexOf(delimiter) + delimiter.length);
+        }
+        */
+        element += '<div class="description">' + desc + '</div>';
+        
         //element += '<div class="photo"><img src="' + d[i].photo_807 + '" /></div>';
         element += '<div class="photo"><img src="' + d[i].src_xbig + '" /></div>';
         element += '</div>';
         rootElement.append(element);
-        /*
-        VK.api('photos.getComments', {owner_id: 1413115, pid: d[i].pid}, function(data) {
-            if (data.response) {
-                var a = data.response;
-            } });
-        */
     }
+}
+
+function createAlbumDescriptionMarkup(rootElement, data) {
+    rootElement.append('<div class="album-title">' + data[0].title + '</div>');
+    rootElement.append('<div class="album-description">' + data[0].description + '</div>');
 }
