@@ -2,18 +2,16 @@
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Альпы 2015"></PageHead>
+    <PageHead Title="Альпы 2015"></PageHead>
 
-	<PageBody SnakeText="">
-		<PageElement>
-			<MainMenu />
-		</PageElement>
+    <PageBody>
+        <PageElement><MainMenu/></PageElement>
 
-		<PageElement>
-			<Chapter Title="Альпы 2015">
+        <PageElement>
+            <Chapter Title="">
                 <VKAlbum Id="221998000" />
-			</Chapter>
-		</PageElement>
+            </Chapter>
+        </PageElement>
 
-	</PageBody>
+    </PageBody>
 </PageTemplate>

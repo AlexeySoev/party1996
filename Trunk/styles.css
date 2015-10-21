@@ -1,32 +1,97 @@
-﻿v\:* {
+﻿/* legacy styles TODO */
+
+v\:* {
     behavior:url(#default#VML);
 }
 .spanstyle {
     COLOR: #ff0000; FONT-FAMILY: Verdana; FONT-SIZE: 10pt; FONT-WEIGHT: bold; POSITION: absolute; TOP: -50px; VISIBILITY: visible
 }
 
+/* my own styles */
+
+/* colors set
+
+#006b8f - темно голубой
+#0086B3 - голубой
+#00A3D9 - светло голубой
+#7A9199 - серый
+#09C - синий
+
+*/
+
+#main {
+    text-align: center;
+}
+
+.page-element {
+    display: inline-block;
+    width: 95%;
+    min-width: 600px;
+    max-width: 1250px;
+    text-align: left;
+}
+
+.page-element:nth-child(2) {
+    //background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+/*
+@media all and (min-width: 807px) {
+.page-element:nth-child(2) {
+    width: 807px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+}
+
+@media all and (min-width: 1024px) {
+.page-element:nth-child(2) {
+    width: 1000px;
+}
+}
+
+@media all and (min-width: 1280px) {
+.page-element:nth-child(2) {
+    width: 1250px;
+}
+}
+*/
+
+.menu-item {
+    background-color: #eeffff;
+    text-align: center;
+}
+
+.menu-item td:hover {
+    background-color: #ccffff;
+}
+
+.menu-item td:hover a {
+    color: #006b8f;
+}
+
+a {
+    color: #00A3D9;
+}
+
+a:hover {
+    color: #006b8f;
+}
+
 .site-title {
     color: #000000;
     font-size: 24pt;
     font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 .title {
     color: #000000;
     font-size: x-large;
     font-weight: bold;
     text-align: center;
-}
-.chapter-title {
-    color: #003399;
-    font-size: x-large;
-    font-weight: bold;
-    text-align: left;
-}
-.paragraph-title {
-    color: #000000;
-    font-size: medium;
-    font-weight: bold;
-    text-align: left;
 }
 .epigraph {
     color: #ff0000;
@@ -35,7 +100,34 @@
     text-align: right;
 }
 
-/* gps track page */
+.chapter-wrapper {
+    padding: 15px;
+}
+.chapter-title {
+    color: #006b8f;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px
+}
+.chapter-content {
+    text-align: left;
+}
+
+.paragraph-title {
+    color: #000000;
+    font-size: medium;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.paragraph-content {
+    text-align: justify;
+    //text-indent: 20px;
+}
+
+/* GPS track page */
 
 .track-list .paragraph-title,
 .track-details .paragraph-title {
@@ -100,14 +192,22 @@
 }
 
 
+/*VK album*/
+
 #VKAlbum {
     font: 15px/1.4 ProximaNovaRegular,Helvetica,sans-serif;
+    display: inline-block;
+}
+
+#VKAlbum div {
+    display: inline-block;
     width:807px;
 }
 
 #VKAlbum .album-title{
     font-size: 26px;
     color: #00A3D9;
+    text-align: left;
 }
 
 #VKAlbum .album-description{

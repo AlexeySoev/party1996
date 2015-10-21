@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE MyPage [
-<!ENTITY Root "file://localhost/D:/!Party/Trunk">
+<!ENTITY Root "file://localhost/D:/!Party1996/Trunk">
 <!ENTITY TestRoot1 "http://localhost/party1996">
 <!ENTITY TestRoot2 "http://party1996.narod.ru">
 <!ENTITY ScriptsDir "&Root;/Scripts">
@@ -26,29 +26,26 @@
 
 	<xsl:template match="PageBody">
 		<body background="&PicsDir;/background.jpg">
-		<table width="98%" border="0" cellpadding="0" cellspacing="0" align="center">
-		<xsl:apply-templates />
-		</table>
+		<div id="main">
+            <xsl:apply-templates />
+		</div>
 		</body>
 	</xsl:template>
 	
 	<xsl:template match="PageElement">
-		<tr><td>
-		<xsl:apply-templates />
-		</td></tr>
+		<div class="page-element">
+            <xsl:apply-templates />
+		</div>
 	</xsl:template>
 	
 	<xsl:template match="MainMenu">
+        <div class="site-title">Первый сайт Партии Любителей</div>
 		<table width="100%" border="0" cellspacing="2" cellpadding="5" align="center">
-			<tr>
-				<td colspan="9"><span class="site-title">Первый сайт Партии Любителей</span></td>
-			</tr>
-			<tr bgcolor="#ccffff" align="center">
+			<tr class="menu-item">
 				<td><a href="&Root;/index.html" target="_top">На главную</a></td>
-				<td><a href="http://party1996.narod.ru/gb" target="_top">Гостевая книга</a></td>
-				<td><a href="&Root;/History/history.xml" target="_top">Фрагменты нашей истории</a></td>
+				<td><a href="&Root;/History/history.xml" target="_top">Наша история</a></td>
 				<td><a href="&Root;/Members/members.xml" target="_top">Наша гордость</a></td>
-				<td><a href="&Root;/Album/album.xml" target="_top">Альбом</a></td>
+				<td><a href="&Root;/Album/album.xml" target="_top">Альбомы</a></td>
 				<td><a href="&Root;/Tracks/tracks.xml" target="_top">GPS Треки</a></td>
 				<td><a href="&Root;/Funs/funs.xml" target="_top">Приколись</a></td>
 				<td><a href="&Root;/Personal/Personal.xml" target="_top">Персональное</a></td>
@@ -63,23 +60,29 @@
 		<xsl:if test="@Epigraph">
 			<p class="epigraph"><xsl:value-of select="@Epigraph"/></p>
 		</xsl:if>
-		<p class="title"><xsl:value-of select="@Text"/></p>
+		<div class="title"><xsl:value-of select="@Text"/></div>
 		<xsl:apply-templates />
 	</xsl:template>
 
 	<xsl:template match="Chapter">
-		<xsl:if test="@Epigraph">
-			<p class="epigraph"><xsl:value-of select="@Epigraph"/></p>
-		</xsl:if>
-		<p class="chapter-title"><xsl:value-of select="@Title"/></p>
-		<xsl:apply-templates />
+        <div class="chapter-wrapper">
+            <xsl:if test="@Epigraph">
+                <p class="epigraph"><xsl:value-of select="@Epigraph"/></p>
+            </xsl:if>
+            <div class="chapter-title"><xsl:value-of select="@Title"/></div>
+            <div class="chapter-content">
+                <xsl:apply-templates />
+            </div>
+        </div>
 	</xsl:template>
 		
 	<xsl:template match="Paragraph">
-	    <p class="paragraph-title"><xsl:value-of select="@Title"/></p>
-	    <p align="justify">
-            <xsl:apply-templates />
-		</p>
+        <div class="paragraph-wrapper">
+            <div class="paragraph-title"><xsl:value-of select="@Title"/></div>
+            <div class="paragraph-content">
+                <xsl:apply-templates />
+            </div>
+        </div>
 	</xsl:template>
 	
 	<xsl:template match="Emphasize">
@@ -207,7 +210,7 @@
 	
 	<xsl:template match="Photo">
 		<script src="&ScriptsDir;/showphoto.js"></script>
-		<div align="center">
+		<div class="chapter-wrapper" align="center">
 			<table border="0" cellpadding="2" cellspacing="2" width="100%">
 				<tr>
 					<td style="width:150px;" align="left" valign="top">
@@ -215,11 +218,11 @@
 					</td>
 					<td align="center">
 						<div align="center">
-							<table border="2" cellpadding="2" cellspacing="2">
+							<table border="1" cellpadding="0" cellspacing="0">
 								<tr>
-									<td style="width:50px;" onclick="javascript:showphoto({@Prev}, {@Count}, '&Root;/templates.xsl', '{@Title}')" onmouseover="this.style.backgroundColor = '#eeeeff';" onmouseout="this.style.backgroundColor = 'inherit';"></td>
+									<td style="width:50px;" onclick="javascript:showphoto({@Prev}, {@Count}, '&Root;/templates.xsl', '{@Title}')" onmouseover="this.style.backgroundColor = '#eeffff';" onmouseout="this.style.backgroundColor = 'inherit';"></td>
 									<td align="center"><img src="{@Src}" border="0" onclick="javascript:showphoto({@Next}, {@Count}, '&Root;/templates.xsl', '{@Title}')"/></td>
-									<td style="width:50px;" onclick="javascript:showphoto({@Next}, {@Count}, '&Root;/templates.xsl', '{@Title}')" onmouseover="this.style.backgroundColor = '#eeeeff';" onmouseout="this.style.backgroundColor = 'inherit';"></td>
+									<td style="width:50px;" onclick="javascript:showphoto({@Next}, {@Count}, '&Root;/templates.xsl', '{@Title}')" onmouseover="this.style.backgroundColor = '#eeffff';" onmouseout="this.style.backgroundColor = 'inherit';"></td>
 								</tr>
 							</table>
 						</div>

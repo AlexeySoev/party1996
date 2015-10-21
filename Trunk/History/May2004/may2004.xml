@@ -2,20 +2,20 @@
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Поход Май-2004"></PageHead>
-	<PageBody SnakeText="">
-		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Поход Май-2004">
-		<Line><Emphasize>Продолжительность: </Emphasize>30 апреля - 5 мая 2004 года</Line>
-		<Line><Emphasize>Район: </Emphasize>Псковская область</Line>
-		<Line><Emphasize>Маршрут: </Emphasize>С-Петербург - г.Остров - р.Великая - г.Псков - С-Петербург</Line>
-		<Line><Emphasize>Участники: </Emphasize>Соев, Женя, Серега, Потапыч, Черный, Сосед</Line>
-		
-		<Paragraph>
-		<Line><Link Url="../../Album/May2004/index.xml">Фотоальбом</Link></Line>
-		<Line><Link Url="../../Tracks/2004/May2004.xml">GPS трек</Link></Line>
-		</Paragraph>
-		
-		</Chapter></PageElement>
-	</PageBody>
+    <PageHead Title="Поход Май-2004"></PageHead>
+    <PageBody SnakeText="">
+        <PageElement><MainMenu /></PageElement>
+        <PageElement><Chapter Title="Поход Май-2004">
+        <Line><Emphasize>Продолжительность: </Emphasize>30 апреля - 5 мая 2004 года</Line>
+        <Line><Emphasize>Район: </Emphasize>Псковская область</Line>
+        <Line><Emphasize>Маршрут: </Emphasize>С-Петербург - г.Остров - р.Великая - г.Псков - С-Петербург</Line>
+        <Line><Emphasize>Участники: </Emphasize>Соев, Женя, Серега, Потапыч, Черный, Сосед</Line>
+        
+        <Paragraph>
+        <Line><Link Url="../../Album/May2004/index.xml">Фотоальбом</Link></Line>
+        <Line><Link Url="../../Tracks/2004/May2004/May2004.xml">GPS трек</Link></Line>
+        </Paragraph>
+        
+        </Chapter></PageElement>
+    </PageBody>
 </PageTemplate>

@@ -4,10 +4,8 @@
 <PageTemplate>
     <PageHead Title="Альпы 2010"></PageHead>
 
-    <PageBody SnakeText="">
-        <PageElement>
-            <MainMenu />
-        </PageElement>
+    <PageBody>
+        <PageElement><MainMenu/></PageElement>
 
         <PageElement>
             <Chapter Title="">
