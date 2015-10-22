@@ -43,8 +43,8 @@
 		<table width="100%" border="0" cellspacing="2" cellpadding="5" align="center">
 			<tr class="menu-item">
 				<td><a href="&Root;/index.html" target="_top">На главную</a></td>
-				<td><a href="&Root;/History/history.xml" target="_top">Наша история</a></td>
 				<td><a href="&Root;/Members/members.xml" target="_top">Наша гордость</a></td>
+				<td><a href="&Root;/History/history.xml" target="_top">Наша история</a></td>
 				<td><a href="&Root;/Album/album.xml" target="_top">Альбомы</a></td>
 				<td><a href="&Root;/Tracks/tracks.xml" target="_top">GPS Треки</a></td>
 				<td><a href="&Root;/Funs/funs.xml" target="_top">Приколись</a></td>
@@ -58,7 +58,7 @@
 	
 	<xsl:template match="Title">
 		<xsl:if test="@Epigraph">
-			<p class="epigraph"><xsl:value-of select="@Epigraph"/></p>
+			<div class="epigraph"><xsl:value-of select="@Epigraph"/></div>
 		</xsl:if>
 		<div class="title"><xsl:value-of select="@Text"/></div>
 		<xsl:apply-templates />
@@ -67,9 +67,11 @@
 	<xsl:template match="Chapter">
         <div class="chapter-wrapper">
             <xsl:if test="@Epigraph">
-                <p class="epigraph"><xsl:value-of select="@Epigraph"/></p>
+                <div class="epigraph"><xsl:value-of select="@Epigraph"/></div>
             </xsl:if>
-            <div class="chapter-title"><xsl:value-of select="@Title"/></div>
+            <xsl:if test="@Title">
+                <div class="chapter-title"><xsl:value-of select="@Title"/></div>
+            </xsl:if>
             <div class="chapter-content">
                 <xsl:apply-templates />
             </div>
@@ -78,8 +80,21 @@
 		
 	<xsl:template match="Paragraph">
         <div class="paragraph-wrapper">
-            <div class="paragraph-title"><xsl:value-of select="@Title"/></div>
+            <xsl:if test="@Title">
+                 <div class="paragraph-title"><xsl:value-of select="@Title"/></div>
+            </xsl:if>
             <div class="paragraph-content">
+                <xsl:apply-templates />
+            </div>
+        </div>
+	</xsl:template>
+    
+    <xsl:template match="Block">
+        <div class="block-wrapper">
+            <xsl:if test="@Title">
+                 <div class="block-title"><xsl:value-of select="@Title"/></div>
+            </xsl:if>
+            <div class="block-content">
                 <xsl:apply-templates />
             </div>
         </div>
@@ -92,7 +107,7 @@
 	</xsl:template>
 	
 	<xsl:template match="Line">
-        <div>
+        <div class="line-content">
             <xsl:apply-templates />
         </div>
 	</xsl:template>
@@ -161,46 +176,43 @@
 				<xsl:value-of select="@Text"/>
 			</a>
 		</xsl:if>
-		<BR /> 
-		<xsl:apply-templates />
-		<BR /> 
-		<BR /> 
+        <div>
+            <xsl:apply-templates />
+        </div>
 	</xsl:template>
 	
 	<xsl:template match="LinkToImage">
 		<script src="&ScriptsDir;/showpic.js"></script>
 		<a href="javascript:%20showpic('{@Url}','{@H}','{@V}')">
-		<xsl:apply-templates />
+            <xsl:apply-templates />
 		</a>
 	</xsl:template>
 		
 	<xsl:template match="Image">
 		<table border="0" width="100%" cellspacing="3" cellpadding="3" align="center">
-		<tr>
-		<td width="1">
-		<center>
-		<img src="{@Src}" border="0" HSPACE="0" VSPACE="0">
-		
-		<!--
-		<xsl:call-template name="LinkResolver"> 
-			<xsl:with-param name="RelativeSrc" select="@RelativeSrc" />
-			<xsl:with-param name="Src" select="@Src" />
-		</xsl:call-template>
-		-->
-										
-		<xsl:if test="@H">
-				<xsl:attribute name="HEIGHT"><xsl:value-of select="@H"/></xsl:attribute>
-		</xsl:if>
-		<xsl:if test="@V">
-				<xsl:attribute name="WIDTH"><xsl:value-of select="@V"/></xsl:attribute>
-		</xsl:if>
-		</img>
-		</center>
-		</td>
-		<td valign="top" align="left">
-		<xsl:apply-templates />
-		</td>
-		</tr>
+            <tr>
+                <td width="1" valign="top">
+                    <img src="{@Src}" border="0" HSPACE="0" VSPACE="0">
+    
+                        <!--
+                        <xsl:call-template name="LinkResolver"> 
+                            <xsl:with-param name="RelativeSrc" select="@RelativeSrc" />
+                            <xsl:with-param name="Src" select="@Src" />
+                        </xsl:call-template>
+                        -->
+                                        
+                        <xsl:if test="@H">
+                                <xsl:attribute name="HEIGHT"><xsl:value-of select="@H"/></xsl:attribute>
+                        </xsl:if>
+                        <xsl:if test="@V">
+                                <xsl:attribute name="WIDTH"><xsl:value-of select="@V"/></xsl:attribute>
+                        </xsl:if>
+                    </img>
+                </td>
+                <td valign="top" align="left">
+                    <xsl:apply-templates />
+                </td>
+            </tr>
 		</table>
 	</xsl:template>
 

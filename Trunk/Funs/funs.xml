@@ -4,33 +4,26 @@
 <PageTemplate>
     <PageHead Title="Приколись"></PageHead>
         
-    <PageBody SnakeText="">
+    <PageBody>
         <PageElement><MainMenu /></PageElement>
         
         <PageElement><Chapter Title="Приколись">
-        <List>
-            <ListItem>
-            <Paragraph Title="Левак">
+            <Paragraph Title="Чужое">
                 <LinkWithDescription Url="trouble.xml" Text="Банный трабл">Рассказ одного идиота, посетившего баню</LinkWithDescription>
                 <LinkWithDescription Url="butter.xml" Text="Масло">Рассказ о проблемах брэндирования</LinkWithDescription>
                 <LinkWithDescription Url="../Files/metadoll_mj6.swf" Target="child" Text="Метадолл">По многочисленным просьбам посетителей</LinkWithDescription>
             </Paragraph>
-            </ListItem>
-            
-            <ListItem>
             <Paragraph Title="Наше">
-                <Paragraph><LinkToImage Url="../Photos/Telega.jpg" H="600" V="800">Телега</LinkToImage></Paragraph>
-                <Paragraph><LinkToImage Url="../Photos/ObchN8.jpg" H="640" V="600">Общ. №8</LinkToImage></Paragraph>
-                <Paragraph><LinkToImage Url="../Photos/Foto.jpg" H="800" V="547">Пляж</LinkToImage></Paragraph>
-                <Paragraph><LinkToImage Url="../Photos/Serega.jpg" H="440" V="600">Серега</LinkToImage></Paragraph>
-                <Paragraph><LinkToImage Url="../Photos/Camp.jpg" H="800" V="600">Пикник на обочине</LinkToImage></Paragraph>
-                <Paragraph>В этой комнате не пьют <Emphasize>Скоро</Emphasize></Paragraph>
-                <Paragraph>Креативы <Emphasize>Скоро</Emphasize></Paragraph>
-                <Paragraph>Пивные Пробки <Emphasize>Скоро</Emphasize></Paragraph>
+                <Line><LinkToImage Url="../Photos/Telega.jpg" H="600" V="800">Телега</LinkToImage></Line>
+                <Line><LinkToImage Url="../Photos/ObchN8.jpg" H="640" V="600">Общ. №8</LinkToImage></Line>
+                <Line><LinkToImage Url="../Photos/Foto.jpg" H="800" V="547">Пляж</LinkToImage></Line>
+                <Line><LinkToImage Url="../Photos/Serega.jpg" H="440" V="600">Серега</LinkToImage></Line>
+                <Line><LinkToImage Url="../Photos/Camp.jpg" H="800" V="600">Пикник на обочине</LinkToImage></Line>
+                <Line>В этой комнате не пьют <Emphasize>Скоро</Emphasize></Line>
+                <Line>Креативы <Emphasize>Скоро</Emphasize></Line>
+                <Line>Пивные Пробки <Emphasize>Скоро</Emphasize></Line>
                 <LinkWithDescription Url="aphorisms.xml" Text="Афоризмы">Партийные афоризмы собственного изготовления</LinkWithDescription>
             </Paragraph>
-            </ListItem>
-        </List>
         </Chapter></PageElement>
         
     </PageBody>
