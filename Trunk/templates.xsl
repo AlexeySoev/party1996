@@ -81,7 +81,7 @@
 	<xsl:template match="Paragraph">
         <div class="paragraph-wrapper">
             <xsl:if test="@Title">
-                 <div class="paragraph-title"><xsl:value-of select="@Title"/></div>
+                <div class="paragraph-title"><xsl:value-of select="@Title"/></div>
             </xsl:if>
             <div class="paragraph-content">
                 <xsl:apply-templates />
@@ -92,10 +92,15 @@
     <xsl:template match="Block">
         <div class="block-wrapper">
             <xsl:if test="@Title">
-                 <div class="block-title"><xsl:value-of select="@Title"/></div>
+                <div class="block-title"><xsl:value-of select="@Title"/></div>
             </xsl:if>
             <div class="block-content">
-                <xsl:apply-templates />
+                <div>
+                    <xsl:if test="@Title">
+                        <xsl:attribute name="class">left-margin</xsl:attribute>
+                    </xsl:if>
+                    <xsl:apply-templates />
+                </div>
             </div>
         </div>
 	</xsl:template>

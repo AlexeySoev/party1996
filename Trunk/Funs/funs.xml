@@ -8,12 +8,12 @@
         <PageElement><MainMenu /></PageElement>
         
         <PageElement><Chapter Title="Приколись">
-            <Paragraph Title="Чужое">
+            <Block Title="Чужое">
                 <LinkWithDescription Url="trouble.xml" Text="Банный трабл">Рассказ одного идиота, посетившего баню</LinkWithDescription>
                 <LinkWithDescription Url="butter.xml" Text="Масло">Рассказ о проблемах брэндирования</LinkWithDescription>
                 <LinkWithDescription Url="../Files/metadoll_mj6.swf" Target="child" Text="Метадолл">По многочисленным просьбам посетителей</LinkWithDescription>
-            </Paragraph>
-            <Paragraph Title="Наше">
+            </Block>
+            <Block Title="Наше">
                 <Line><LinkToImage Url="../Photos/Telega.jpg" H="600" V="800">Телега</LinkToImage></Line>
                 <Line><LinkToImage Url="../Photos/ObchN8.jpg" H="640" V="600">Общ. №8</LinkToImage></Line>
                 <Line><LinkToImage Url="../Photos/Foto.jpg" H="800" V="547">Пляж</LinkToImage></Line>
@@ -23,7 +23,7 @@
                 <Line>Креативы <Emphasize>Скоро</Emphasize></Line>
                 <Line>Пивные Пробки <Emphasize>Скоро</Emphasize></Line>
                 <LinkWithDescription Url="aphorisms.xml" Text="Афоризмы">Партийные афоризмы собственного изготовления</LinkWithDescription>
-            </Paragraph>
+            </Block>
         </Chapter></PageElement>
         
     </PageBody>
