@@ -95,20 +95,20 @@
                     <List>
                         <ListItem>
                             Радиоаппаратура Futaba 6EX (
-                            <LinkToImage Url="Futaba6EX.jpg" H="250" V="265">передатчик</LinkToImage> и
-                            <LinkToImage Url="FutabaReceiver.jpg" H="200" V="169">приемник</LinkToImage>) -
+                            <LinkToImage Url="Futaba6EX.jpg" Title="передатчик" Group="Avia"/> и
+                            <LinkToImage Url="FutabaReceiver.jpg" Title="приемник" Group="Avia"/>) -
                             <Link Url="http://2.4gigahertz.com/systems/futk6900.html" Target="more">страница производителя</Link>
                         </ListItem>
 
                         <ListItem>
                             Собственно, сам «планер»,
-                            <LinkToImage Url="CalmatoSport.jpg" H="701" V="467">Kyosho Calmato Sport 40</LinkToImage>, набор "дров" для сборки -
+                            <LinkToImage Url="CalmatoSport.jpg" Title="Kyosho Calmato Sport 40" Group="Avia"/>, набор "дров" для сборки -
                             <Link Url="http://www.kyosho.com/eng/products/rc/detail.html?product_id=100307" Target="more">страница производителя</Link>
                         </ListItem>
 
                         <ListItem>
                             Авиамодельный двигатель ДВС
-                            <LinkToImage Url="OS46AXEngine.jpg" H="300" V="238">O.S. Max 46 AX</LinkToImage> -
+                            <LinkToImage Url="OS46AXEngine.jpg" Title="O.S. Max 46 AX" Group="Avia"/> -
                             <Link Url="http://www.osengines.com/engines/osmg0547.html" Target="more">страница производителя</Link>
                         </ListItem>
 
@@ -128,7 +128,7 @@
                     <ListItem>
                         <Emphasize>Ноябрь 2007</Emphasize>.
                         <Paragraph  Title="Посылка из Китая">
-                            Достал набор <LinkToImage Url="1.FromBox.jpg" H="800" V="600">"дров"</LinkToImage> из коробки. Красиво. Китайцы всё таки молодцы - полдела уже сделано. :)
+                            Достал <LinkToImage Url="1.FromBox.jpg" Title='набор "дров"' Group="Avia"/> из коробки. Красиво. Китайцы всё таки молодцы - полдела уже сделано. :)
                         </Paragraph>
                     </ListItem>
                     <ListItem>
@@ -137,7 +137,7 @@
                             <Line>
                                 Долгими зимними вечерами в течение полутора месяцев мне было чем заняться.
                                 Подборка недостающей мелочевки, сборка "планера", установка и настройка электроники, установка и обкатка двигателя, изготовление лыж, балансировка.
-                                И вот, наконец, <LinkToImage Url="2.ReadyToFly.jpg" H="800" V="600">результат!</LinkToImage>
+                                И вот, наконец, <LinkToImage Url="2.ReadyToFly.jpg" Title="результат!" Group="Avia"/>
                             </Line>
                             <Line>Следующим пунктом вероятнее всего будут снова "дрова"... :) Посмотрим.</Line>
                         </Paragraph>
@@ -145,37 +145,38 @@
                     <ListItem>
                         <Emphasize>Январь 2008</Emphasize>
                         <Paragraph Title="Первый полет">
-                            Свершилось! Несмотря на неблагоприятную погоду - взлетное поле <LinkToImage Url="3.FlyingField.jpg" H="800" V="600">замерзло</LinkToImage> буквально в последний день каникул - первый полет <LinkToImage Url="4.BeforeFlight.jpg" H="800" V="600">состоялся</LinkToImage>, и весьма успешно!
-                            Удалось не только <LinkToImage Url="5.TakeOff.jpg" H="800" V="600">поднять</LinkToImage> аппарат в воздух, но и, чудом избежав столкновения с землей, посадить самолет без повреждений, несмотря на дрожь в коленях. <LinkToImage Url="6.Victory.jpg" H="600" V="800">Это победа!</LinkToImage>
+                            Свершилось! Несмотря на неблагоприятную погоду - <LinkToImage Url="3.FlyingField.jpg" Title="взлетное поле замерзло" Group="Avia"/> буквально в последний день каникул - <LinkToImage Url="4.BeforeFlight.jpg" Title="первый полет состоялся" Group="Avia"/>, и весьма успешно!
+                            Удалось не только <LinkToImage Url="5.TakeOff.jpg" Title="поднять аппарат в воздух" Group="Avia"/> , но и, чудом избежав столкновения с землей, посадить самолет без повреждений, несмотря на дрожь в коленях. <LinkToImage Url="6.Victory.jpg" Title="Это победа!" Group="Avia"/>
                         </Paragraph>
                     </ListItem>
                     <ListItem>
                         <Emphasize>Февраль 2008</Emphasize>
                         <Paragraph Title="Второй полет">
-                            В почти весенний солнечный день удалось вдоволь <LinkToImage Url="7.ForestLake.jpg" H="800" V="600">полетать</LinkToImage> со льда лесного озера.
-                            Пригодились изготовленые <LinkToImage Url="8.Ski.jpg" H="600" V="800">лыжи.</LinkToImage>
-                            Появилась уверенность в маневрах. <LinkToImage Url="9.Landing.jpg" H="800" V="600">Серия</LinkToImage> взлетов и посадок.
-                            <LinkToImage Url="10.Rolling.jpg" H="800" V="600">Бочка!</LinkToImage> Мастерство растет!
+                            В почти весенний солнечный день удалось вдоволь <LinkToImage Url="7.ForestLake.jpg" Title="полетать со льда" Group="Avia"/> лесного озера.
+                            Пригодились изготовленые <LinkToImage Url="8.Ski.jpg" Title="лыжи." Group="Avia"/>
+                            Появилась уверенность в маневрах. 
+                            <LinkToImage Url="9.Landing.jpg" Title="Серия взлетов и посадок." Group="Avia"/>
+                            <LinkToImage Url="10.Rolling.jpg" Title="Бочка!" Group="Avia"/> Мастерство растет!
                         </Paragraph>
                     </ListItem>
                     <ListItem>
                         <Emphasize>Май 2008</Emphasize>
                         <Paragraph Title="Третий полет">
-                            С группой единомышленников летал на загородном <LinkToImage Url="11.TwoPlanes.jpg" H="600" V="800">аэродроме.</LinkToImage> Несколько удачных посадок на узкую полосу-дорогу.
-                            И... отказ бортовой аппаратуры на очередном взлете. Неуправляемое снижение, <LinkToImage Url="12.Crash.jpg" H="600" V="800">удар</LinkToImage> о землю на полном газу.
-                            <LinkToImage Url="13.CrashDetails.jpg" H="600" V="800">Результаты</LinkToImage> неутешительны. Но самолет восстановлению подлежит. Будем чинить. И предстоит расследование причин аварии.
+                            С группой единомышленников летал <LinkToImage Url="11.TwoPlanes.jpg" Title="на загородном аэродроме." Group="Avia"/> Несколько удачных посадок на узкую полосу-дорогу.
+                            И... отказ бортовой аппаратуры на очередном взлете. Неуправляемое снижение, <LinkToImage Url="12.Crash.jpg" Title="удар о землю" Group="Avia"/> на полном газу.
+                            <LinkToImage Url="13.CrashDetails.jpg" Title="Результаты неутешительны." Group="Avia"/> Но самолет восстановлению подлежит. Будем чинить. И предстоит расследование причин аварии.
                         </Paragraph>
                     </ListItem>
                     <ListItem>
                         <Emphasize>Август 2008</Emphasize>
                         <Paragraph Title="Ремонт идет">
-                            Не так уж и легко оказалось починить модель. <LinkToImage Url="14.Elements.jpg" H="800" V="600">Работы</LinkToImage> много, а материалов и инструментов, и главное свободного времени - не очень.
+                            Не так уж и легко оказалось починить модель. <LinkToImage Url="14.Elements.jpg" Title="Работы много" Group="Avia"/> , а материалов и инструментов, и главное свободного времени - не очень.
                         </Paragraph>
                     </ListItem>
                     <ListItem>
                         <Emphasize>Январь 2009</Emphasize>
                         <Paragraph Title="Ремонт закончен. Четвёртый полет">
-                            И вот через полгода наконец удалось всё закончить, попутно  подчерпнув массу информации в сети. Зимний <LinkToImage Url="15.4thflight.jpg" H="800" V="600">вылет</LinkToImage> прошел успешно! 
+                            И вот через полгода наконец удалось всё закончить, попутно  подчерпнув массу информации в сети. <LinkToImage Url="15.4thflight.jpg" Title="Зимний вылет" Group="Avia"/> прошел успешно! 
                         </Paragraph>
                     </ListItem>
                     <ListItem>

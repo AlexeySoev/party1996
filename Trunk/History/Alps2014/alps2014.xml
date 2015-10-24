@@ -2,13 +2,13 @@
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-    <PageHead Title="Альпы 2015"></PageHead>
+    <PageHead Title="Альпы 2014"></PageHead>
 
     <PageBody>
         <PageElement><MainMenu/></PageElement>
 
         <PageElement>
-            <VKAlbum Id="221998000" />
+            <VKAlbum Id="190358590" />
         </PageElement>
 
     </PageBody>

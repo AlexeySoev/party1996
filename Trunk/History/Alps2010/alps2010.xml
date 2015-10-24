@@ -8,9 +8,7 @@
         <PageElement><MainMenu/></PageElement>
 
         <PageElement>
-            <Chapter Title="">
-                <VKAlbum Id="116682150" />
-            </Chapter>
+            <VKAlbum Id="116682150" />
         </PageElement>
 
     </PageBody>

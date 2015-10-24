@@ -9,20 +9,20 @@
         
         <PageElement><Chapter Title="Приколись">
             <Block Title="Чужое">
-                <LinkWithDescription Url="trouble.xml" Text="Банный трабл">Рассказ одного идиота, посетившего баню</LinkWithDescription>
-                <LinkWithDescription Url="butter.xml" Text="Масло">Рассказ о проблемах брэндирования</LinkWithDescription>
-                <LinkWithDescription Url="../Files/metadoll_mj6.swf" Target="child" Text="Метадолл">По многочисленным просьбам посетителей</LinkWithDescription>
+                <LinkNText Url="trouble.xml" Title="Банный трабл">Рассказ одного идиота, посетившего баню</LinkNText>
+                <LinkNText Url="butter.xml" Title="Масло">Рассказ о проблемах брэндирования</LinkNText>
+                <LinkNText Url="../Files/metadoll_mj6.swf" Target="child" Title="Метадолл">По многочисленным просьбам посетителей</LinkNText>
             </Block>
             <Block Title="Наше">
-                <Line><LinkToImage Url="../Photos/Telega.jpg" H="600" V="800">Телега</LinkToImage></Line>
-                <Line><LinkToImage Url="../Photos/ObchN8.jpg" H="640" V="600">Общ. №8</LinkToImage></Line>
-                <Line><LinkToImage Url="../Photos/Foto.jpg" H="800" V="547">Пляж</LinkToImage></Line>
-                <Line><LinkToImage Url="../Photos/Serega.jpg" H="440" V="600">Серега</LinkToImage></Line>
-                <Line><LinkToImage Url="../Photos/Camp.jpg" H="800" V="600">Пикник на обочине</LinkToImage></Line>
+                <Line><LinkToImage Url="../Photos/Telega.jpg" Title="Телега" Group="Fun"/></Line>
+                <Line><LinkToImage Url="../Photos/ObchN8.jpg" Title="Общ. №8" Group="Fun"/></Line>
+                <Line><LinkToImage Url="../Photos/Foto.jpg" Title="Пляж" Group="Fun"/></Line>
+                <Line><LinkToImage Url="../Photos/Serega.jpg" Title="Серега" Group="Fun"/></Line>
+                <Line><LinkToImage Url="../Photos/Camp.jpg" Title="Пикник на обочине" Group="Fun"/></Line>
                 <Line>В этой комнате не пьют <Emphasize>Скоро</Emphasize></Line>
                 <Line>Креативы <Emphasize>Скоро</Emphasize></Line>
                 <Line>Пивные Пробки <Emphasize>Скоро</Emphasize></Line>
-                <LinkWithDescription Url="aphorisms.xml" Text="Афоризмы">Партийные афоризмы собственного изготовления</LinkWithDescription>
+                <LinkNText Url="aphorisms.xml" Title="Афоризмы">Партийные афоризмы собственного изготовления</LinkNText>
             </Block>
         </Chapter></PageElement>
         

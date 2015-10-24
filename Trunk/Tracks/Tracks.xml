@@ -2,47 +2,47 @@
 <?xml-stylesheet href="../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="GPS Треки"></PageHead>
-		
-	<PageBody SnakeText="">
-		<PageElement><MainMenu /></PageElement>
-		
-		<PageElement><Chapter Title="GPS Треки">
+    <PageHead Title="GPS Треки"></PageHead>
+        
+    <PageBody SnakeText="">
+        <PageElement><MainMenu /></PageElement>
+        
+        <PageElement><Chapter Title="GPS Треки">
 
-		<Paragraph Title="Ранее">
-			<TrackTable>
-				<TrackItem Name="Походы Партии Любителей 1995 - 2003 годов" PageUrl="Old/PartyTrips.xml" GoogleUrl="Old/gpsdata/google/PartyTrips.kmz">
-					<LinkToImage Url="../Photos/flags.jpg" H="600" V="800">фотография настенной карты с флажками (2003 год)</LinkToImage>
-				</TrackItem>
-			</TrackTable>
-		</Paragraph>
-		
-		<Paragraph Title="2001">
-			<TrackTable>
-				<TrackItem Name="Пеший переход через Кавказ 2001" PageUrl="2001/Caucasus2001.xml" GoogleUrl="2001/gpsdata/google/Caucasus2001.kmz"></TrackItem>
-			</TrackTable>
-		</Paragraph>
-		
-		<Paragraph Title="2002">
-			<TrackTable>
-				<TrackItem Name="Вело-авто путешествие по Европе 2002" PageUrl="2002/Europe/Europe.xml" GoogleUrl="2002/Europe/gpsdata/google/Europe2002.kmz" />
-			</TrackTable>
-		</Paragraph>
+        <Paragraph Title="Ранее">
+            <TrackTable>
+                <TrackItem Name="Походы Партии Любителей 1995 - 2003 годов" PageUrl="Old/PartyTrips.xml" GoogleUrl="Old/gpsdata/google/PartyTrips.kmz">
+                    <LinkToImage Url="../Photos/flags.jpg" Title="Фотография настенной карты с флажками (2003 год)"/>
+                </TrackItem>
+            </TrackTable>
+        </Paragraph>
+        
+        <Paragraph Title="2001">
+            <TrackTable>
+                <TrackItem Name="Пеший переход через Кавказ 2001" PageUrl="2001/Caucasus2001.xml" GoogleUrl="2001/gpsdata/google/Caucasus2001.kmz"></TrackItem>
+            </TrackTable>
+        </Paragraph>
+        
+        <Paragraph Title="2002">
+            <TrackTable>
+                <TrackItem Name="Вело-авто путешествие по Европе 2002" PageUrl="2002/Europe/Europe.xml" GoogleUrl="2002/Europe/gpsdata/google/Europe2002.kmz" />
+            </TrackTable>
+        </Paragraph>
 
-		<Paragraph Title="2003">
-			<TrackTable>
-				<TrackItem Name="Велопутешествие по Карелии 2003" PageUrl="2003/Karelia/Karelia.xml" GoogleUrl="2003/Karelia/gpsdata/google/Karelia2003.kmz" />
-			</TrackTable>
-		</Paragraph>
-		
-		<Paragraph Title="2004">
-			<TrackTable>
-				<TrackItem Name="Майский поход Партии Любителей 2004" PageUrl="2004/May2004/May2004.xml" GoogleUrl="2004/May2004/gpsdata/google/May2004.kmz" />
-			</TrackTable>
-		</Paragraph>
-		
-		
-		</Chapter></PageElement>
-		
-	</PageBody>
+        <Paragraph Title="2003">
+            <TrackTable>
+                <TrackItem Name="Велопутешествие по Карелии 2003" PageUrl="2003/Karelia/Karelia.xml" GoogleUrl="2003/Karelia/gpsdata/google/Karelia2003.kmz" />
+            </TrackTable>
+        </Paragraph>
+        
+        <Paragraph Title="2004">
+            <TrackTable>
+                <TrackItem Name="Майский поход Партии Любителей 2004" PageUrl="2004/May2004/May2004.xml" GoogleUrl="2004/May2004/gpsdata/google/May2004.kmz" />
+            </TrackTable>
+        </Paragraph>
+        
+        
+        </Chapter></PageElement>
+        
+    </PageBody>
 </PageTemplate>

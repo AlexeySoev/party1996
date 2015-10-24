@@ -10,68 +10,68 @@
         <PageElement><Chapter Title="Наша история" Epigraph="Много чего было, всего уже и не вспомнишь...">
         <Paragraph Title="Конференции Партии Любителей">
         <List>
-            <ListItem><LinkWithDescription Url="Conference1997/agenda1997.xml" Text="I Партийная Конференция">
+            <ListItem><LinkNText Url="Conference1997/agenda1997.xml" Title="I Партийная Конференция">
                 Первая Партийная Конференция Партии Любителей (24 апреля 1997 года)
-            </LinkWithDescription></ListItem>
+            </LinkNText></ListItem>
             
-            <ListItem><LinkWithDescription Url="Conference1998/agenda1998.xml" Text="II Партийная Конференция">
+            <ListItem><LinkNText Url="Conference1998/agenda1998.xml" Title="II Партийная Конференция">
                 Вторая Партийная Конференция Партии Любителей (26 апреля 1998 года)
-            </LinkWithDescription></ListItem>
+            </LinkNText></ListItem>
             
-            <ListItem><LinkWithDescription Url="Conference1999/agenda1999.xml" Text="III Партийная Конференция">
+            <ListItem><LinkNText Url="Conference1999/agenda1999.xml" Title="III Партийная Конференция">
                 Третья Партийная Конференция Партии Любителей (26 апреля 1999 года)
-            </LinkWithDescription></ListItem>
+            </LinkNText></ListItem>
             
-            <ListItem><LinkWithDescription Url="Conference2003/agenda2003.xml" Text="Очередная Партийная Конференция">
+            <ListItem><LinkNText Url="Conference2003/agenda2003.xml" Title="Очередная Партийная Конференция">
                 Очередная Партийная Конференция Партии Любителей (19 апреля 2003 года)
-            </LinkWithDescription></ListItem>
+            </LinkNText></ListItem>
         </List>
         </Paragraph>
         
         <Paragraph Title="Традиционные Майские Походы">
         <List>
-            <ListItem><LinkWithDescription Url="May1996/may1996.xml" Text="Поход Май-96">
+            <ListItem><LinkNText Url="May1996/may1996.xml" Title="Поход Май-96">
                 Кавголово
-            </LinkWithDescription></ListItem>
-            <ListItem><LinkWithDescription Url="May1997/may1997.xml" Text="Поход Май-97">
+            </LinkNText></ListItem>
+            <ListItem><LinkNText Url="May1997/may1997.xml" Title="Поход Май-97">
                 Васкелово - Лемболово
-            </LinkWithDescription></ListItem>
-            <ListItem><LinkWithDescription Url="May1998/may1998.xml" Text="Поход Май-98">
+            </LinkNText></ListItem>
+            <ListItem><LinkNText Url="May1998/may1998.xml" Title="Поход Май-98">
                 78 км. - Лосево
-            </LinkWithDescription></ListItem>
-            <ListItem><LinkWithDescription Url="May1999/may1999.xml" Text="Поход Май-99">
+            </LinkNText></ListItem>
+            <ListItem><LinkNText Url="May1999/may1999.xml" Title="Поход Май-99">
                 Вуокса. Олений остров
-            </LinkWithDescription></ListItem>
-            <ListItem><LinkWithDescription Url="May2000/may2000.xml" Text="Поход Май-2000">
+            </LinkNText></ListItem>
+            <ListItem><LinkNText Url="May2000/may2000.xml" Title="Поход Май-2000">
                 Кузнечное
-            </LinkWithDescription></ListItem>
-            <ListItem><LinkWithDescription Url="May2001/may2001.xml" Text="Поход Май-2001">
+            </LinkNText></ListItem>
+            <ListItem><LinkNText Url="May2001/may2001.xml" Title="Поход Май-2001">
                 Карелия. г.Сортавала. о.Риеккалансаари
-            </LinkWithDescription></ListItem>
-            <ListItem><LinkWithDescription Url="May2002/may2002.xml" Text="Поход Май-2002">
+            </LinkNText></ListItem>
+            <ListItem><LinkNText Url="May2002/may2002.xml" Title="Поход Май-2002">
                 Карелия. Ладога. п-ов.Кулханиеми
-            </LinkWithDescription></ListItem>
-            <ListItem><LinkWithDescription Url="May2003/may2003.xml" Text="Поход Май-2003">
+            </LinkNText></ListItem>
+            <ListItem><LinkNText Url="May2003/may2003.xml" Title="Поход Май-2003">
                 Псковщина. устье р.Великая
-            </LinkWithDescription></ListItem>
-            <ListItem><LinkWithDescription Url="May2004/may2004.xml" Text="Поход Май-2004">
+            </LinkNText></ListItem>
+            <ListItem><LinkNText Url="May2004/may2004.xml" Title="Поход Май-2004">
                 Псковщина. г.Остров - р.Великая - г.Псков
-            </LinkWithDescription></ListItem>
+            </LinkNText></ListItem>
         </List>
         </Paragraph>
         
         <Paragraph Title="Грандиозные Супер-Путешествия">
             <List>
                 <ListItem><Line>Сочи 1996 <Emphasize>Скоро</Emphasize></Line><Line></Line></ListItem>
-                <ListItem><LinkWithDescription Url="Caucasus2001/caucasus2001.xml" Text="Кавказ 2001">
+                <ListItem><LinkNText Url="Caucasus2001/caucasus2001.xml" Title="Кавказ 2001">
                     Пеший переход через Главный Кавказский Хребет
-                </LinkWithDescription></ListItem>
-                <ListItem><LinkWithDescription Url="Europe2002/europe2002.xml" Text="Европа 2002">
+                </LinkNText></ListItem>
+                <ListItem><LinkNText Url="Europe2002/europe2002.xml" Title="Европа 2002">
                     Путешествие на велосипедах и автомобилях через всю Европу
-                </LinkWithDescription></ListItem>
-                <ListItem><LinkWithDescription Url="Karelia2003/karelia2003.xml" Text="Карелия 2003">
+                </LinkNText></ListItem>
+                <ListItem><LinkNText Url="Karelia2003/karelia2003.xml" Title="Карелия 2003">
                     Двухнедельная прогулка на велосипедах по дикой и не очень Карелии
-                </LinkWithDescription></ListItem>
+                </LinkNText></ListItem>
         </List>
         </Paragraph>
 
