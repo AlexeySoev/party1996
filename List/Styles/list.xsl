@@ -75,8 +75,8 @@
                     <xsl:if test="@AlbumWeb">
                         <p><a href="{@AlbumWeb}" target="_blank">Фотографии в интернете</a></p>
                     </xsl:if>
-                    <xsl:if test="@TreckLocal">
-                        <p><a href="{@TreckLocal}" target="_blank">Трек на компьютере</a></p>
+                    <xsl:if test="@TrackLocal">
+                        <p><a href="{@TrackLocal}" target="_blank">Трек на компьютере</a></p>
                     </xsl:if>
                     <xsl:if test="@TrackWeb">
                         <p><a href="{@TrackWeb}" target="_blank">Трек в интернете</a></p>
