@@ -114,6 +114,10 @@ img:hover {
     transform:scale(1.7) translateX(50px);
 }
 
+.event-image {
+    z-index: 998;
+}
+
 .event-image:hover {
     z-index: 999;
 }
