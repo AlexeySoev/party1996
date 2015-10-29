@@ -44,19 +44,20 @@
     
     <xsl:template match="MainMenu">
         <div class="site-title">Первый сайт Партии Любителей</div>
-        <table width="100%" border="0" cellspacing="2" cellpadding="5" align="center">
-            <tr class="menu-item">
-                <td><a href="&Root;/index.html" target="_top">На главную</a></td>
-                <td><a href="&Root;/Members/members.xml" target="_top">Наша гордость</a></td>
-                <td><a href="&Root;/History/history.xml" target="_top">Наша история</a></td>
-                <td><a href="&Root;/Album/album.xml" target="_top">Альбомы</a></td>
-                <td><a href="&Root;/Tracks/tracks.xml" target="_top">GPS Треки</a></td>
-                <td><a href="&Root;/Funs/funs.xml" target="_top">Приколись</a></td>
-                <td><a href="&Root;/Personal/Personal.xml" target="_top">Персональное</a></td>
-                <td><a href="&Root;/links.xml" target="_top">Линки</a></td>
-            </tr>
-        </table>
-        <br/>
+        <div class="site-menu">
+            <table width="100%" border="0" cellspacing="2" cellpadding="5" align="center">
+                <tr class="menu-item">
+                    <td><a href="&Root;/index.html" target="_top">На главную</a></td>
+                    <td><a href="&Root;/Members/members.xml" target="_top">Наша гордость</a></td>
+                    <td><a href="&Root;/History/history.xml" target="_top">Наша история</a></td>
+                    <td><a href="&Root;/Album/album.xml" target="_top">Альбомы</a></td>
+                    <td><a href="&Root;/Tracks/tracks.xml" target="_top">GPS Треки</a></td>
+                    <td><a href="&Root;/Funs/funs.xml" target="_top">Приколись</a></td>
+                    <td><a href="&Root;/Personal/Personal.xml" target="_top">Персональное</a></td>
+                    <td><a href="&Root;/links.xml" target="_top">Линки</a></td>
+                </tr>
+            </table>
+        </div>
         <xsl:apply-templates />
     </xsl:template>
     

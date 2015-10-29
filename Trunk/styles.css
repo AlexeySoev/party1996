@@ -62,6 +62,10 @@ v\:* {
 }
 */
 
+.site-menu {
+    margin-bottom: 5px;
+}
+
 .menu-item {
     background-color: #eeffff;
     text-align: center;
