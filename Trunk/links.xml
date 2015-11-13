@@ -2,15 +2,16 @@
 <?xml-stylesheet href="templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Линки"></PageHead>
-		
-	<PageBody SnakeText="">
-		<PageElement><MainMenu /></PageElement>
-		
-		<PageElement><Chapter Title="Линки">
-		<LinkWithDescription Url="http://niko.spb.ru" Target="more" Text="Niko HOMEPAGE">Сайт сочувствующего делу Партии Николаича</LinkWithDescription>
-		<LinkWithDescription Url="http://www.tks.ru/437x/" Target="more" Text="437x HOMEPAGE">Сайт студенческой группы 437x ЛЭТИ</LinkWithDescription>
-		</Chapter></PageElement>
-		
-	</PageBody>
+    <PageHead Title="Линки"></PageHead>
+        
+    <PageBody SnakeText="">
+        <PageElement><MainMenu /></PageElement>
+        
+        <PageElement><Chapter Title="Линки">
+        <LinkNText Url="http://party1996.narod.ru/gb" Title="Гостевая книга">Гостевая книга сайта Партии Любителей</LinkNText>
+        <LinkNText Url="http://niko.spb.ru" Target="more" Title="Niko HOMEPAGE">Сайт сочувствующего делу Партии Николаича</LinkNText>
+        <LinkNText Url="http://www.tks.ru/437x/" Target="more" Title="437x HOMEPAGE">Сайт студенческой группы 437x ЛЭТИ</LinkNText>
+        </Chapter></PageElement>
+        
+    </PageBody>
 </PageTemplate>

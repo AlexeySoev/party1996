@@ -2,22 +2,22 @@
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Поход Май-2002"></PageHead>
-	<PageBody SnakeText="">
-		<PageElement><MainMenu /></PageElement>
-		<PageElement><Chapter Title="Поход Май-2002">
-		<Line><Emphasize>Продолжительность: </Emphasize>1-5 мая 2002 года</Line>
-		<Line><Emphasize>Район: </Emphasize>Карелия, северная Ладога</Line>
-		<Line><Emphasize>Маршрут: </Emphasize>С-Петербург - г.Питкяранта - дер.Сумериа - п-ов.Кулхониеми - п-ов.Хунукка - пос.Импилахти - пос.Ляскеля - г.Сортавала - С-Петербург</Line>
-		<Line><Emphasize>Участники: </Emphasize>Соев, Женя, Серега, Сосед, Нагиев</Line>
-		
-		<Paragraph>
-		<Line><Link Url="../../Album/May2002/index.xml">Фотоальбом</Link></Line>
-		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">Место похода на карте Google</Link></Line>
-		<Line><LinkToImage Url="Pics/map.jpg" H="640" V="640">Район нашего похода</LinkToImage> на карте южной Карелии.</Line>
-		<Line><LinkToImage Url="Pics/way.jpg" H="640" V="480">Наш путь.</LinkToImage> Красная линия - путь, желтые квадраты - стоянки(ночевки). В сетке 4 километра.</Line>
-		</Paragraph>
-		
-		</Chapter></PageElement>
-	</PageBody>
+    <PageHead Title="Поход Май-2002"></PageHead>
+    <PageBody>
+        <PageElement><MainMenu /></PageElement>
+        <PageElement><Chapter Title="Поход Май-2002">
+        <Line><Emphasize>Продолжительность: </Emphasize>1-5 мая 2002 года</Line>
+        <Line><Emphasize>Район: </Emphasize>Карелия, северная Ладога</Line>
+        <Line><Emphasize>Маршрут: </Emphasize>С-Петербург - г.Питкяранта - дер.Сумериа - п-ов.Кулхониеми - п-ов.Хунукка - пос.Импилахти - пос.Ляскеля - г.Сортавала - С-Петербург</Line>
+        <Line><Emphasize>Участники: </Emphasize>Соев, Женя, Серега, Сосед, Нагиев</Line>
+        
+        <Paragraph>
+        <Line><Link Url="../../Album/May2002/index.xml">Фотоальбом</Link></Line>
+        <Line><Link Url="../../Tracks/Old/PartyTrips.xml">Место похода на карте Google</Link></Line>
+        <Line><LinkToImage Url="Pics/map.jpg" Title="Район нашего похода" Group="may2002"/> на карте южной Карелии.</Line>
+        <Line><LinkToImage Url="Pics/way.jpg" Title="Наш путь." Group="may2002"/> Красная линия - путь, желтые квадраты - стоянки(ночевки). В сетке 4 километра.</Line>
+        </Paragraph>
+        
+        </Chapter></PageElement>
+    </PageBody>
 </PageTemplate>

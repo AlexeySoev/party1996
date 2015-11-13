@@ -2,36 +2,29 @@
 <?xml-stylesheet href="../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Приколись"></PageHead>
-		
-	<PageBody SnakeText="">
-		<PageElement><MainMenu /></PageElement>
-		
-		<PageElement><Chapter Title="Приколись">
-		<List>
-			<ListItem>
-			<Paragraph Title="Левак">
-				<LinkWithDescription Url="trouble.xml" Text="Банный трабл">Рассказ одного идиота, посетившего баню</LinkWithDescription>
-				<LinkWithDescription Url="butter.xml" Text="Масло">Рассказ о проблемах брэндирования</LinkWithDescription>
-				<LinkWithDescription Url="../Files/metadoll_mj6.swf" Target="child" Text="Метадолл">По многочисленным просьбам посетителей</LinkWithDescription>
-			</Paragraph>
-			</ListItem>
-			
-			<ListItem>
-			<Paragraph Title="Наше">
-				<Paragraph><LinkToImage Url="../Photos/Telega.jpg" H="600" V="800">Телега</LinkToImage></Paragraph>
-				<Paragraph><LinkToImage Url="../Photos/ObchN8.jpg" H="640" V="600">Общ. №8</LinkToImage></Paragraph>
-				<Paragraph><LinkToImage Url="../Photos/Foto.jpg" H="800" V="547">Пляж</LinkToImage></Paragraph>
-				<Paragraph><LinkToImage Url="../Photos/Serega.jpg" H="440" V="600">Серега</LinkToImage></Paragraph>
-				<Paragraph><LinkToImage Url="../Photos/Camp.jpg" H="800" V="600">Пикник на обочине</LinkToImage></Paragraph>
-				<Paragraph>В этой комнате не пьют <Emphasize>Скоро</Emphasize></Paragraph>
-				<Paragraph>Креативы <Emphasize>Скоро</Emphasize></Paragraph>
-				<Paragraph>Пивные Пробки <Emphasize>Скоро</Emphasize></Paragraph>
-				<Link Url="aphorisms.xml">Партийные афоризмы собственного изготовления</Link>
-			</Paragraph>
-			</ListItem>
-		</List>
-		</Chapter></PageElement>
-		
-	</PageBody>
+    <PageHead Title="Приколись"></PageHead>
+        
+    <PageBody>
+        <PageElement><MainMenu /></PageElement>
+        
+        <PageElement><Chapter Title="Приколись">
+            <Block Title="Чужое">
+                <LinkNText Url="trouble.xml" Title="Банный трабл">Рассказ одного идиота, посетившего баню</LinkNText>
+                <LinkNText Url="butter.xml" Title="Масло">Рассказ о проблемах брэндирования</LinkNText>
+                <LinkNText Url="../Files/metadoll_mj6.swf" Target="child" Title="Метадолл">По многочисленным просьбам посетителей</LinkNText>
+            </Block>
+            <Block Title="Наше">
+                <Line><LinkToImage Url="../Photos/Telega.jpg" Title="Телега" Group="Fun"/></Line>
+                <Line><LinkToImage Url="../Photos/ObchN8.jpg" Title="Общ. №8" Group="Fun"/></Line>
+                <Line><LinkToImage Url="../Photos/Foto.jpg" Title="Пляж" Group="Fun"/></Line>
+                <Line><LinkToImage Url="../Photos/Serega.jpg" Title="Серега" Group="Fun"/></Line>
+                <Line><LinkToImage Url="../Photos/Camp.jpg" Title="Пикник на обочине" Group="Fun"/></Line>
+                <Line>В этой комнате не пьют <Emphasize>Скоро</Emphasize></Line>
+                <Line>Креативы <Emphasize>Скоро</Emphasize></Line>
+                <Line>Пивные Пробки <Emphasize>Скоро</Emphasize></Line>
+                <LinkNText Url="aphorisms.xml" Title="Афоризмы">Партийные афоризмы собственного изготовления</LinkNText>
+            </Block>
+        </Chapter></PageElement>
+        
+    </PageBody>
 </PageTemplate>

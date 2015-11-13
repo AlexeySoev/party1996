@@ -2,124 +2,90 @@
 <?xml-stylesheet href="../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Партийные ффоризмы собственного изготовления"></PageHead>
-		
-	<PageBody SnakeText="">
-		<PageElement><MainMenu /></PageElement>
-		
-		<PageElement><Chapter Title="Партийные афоризмы собственного изготовления">
-		<Paragraph>
-			Реальная тема – записывать слова и выражения,
-			которые стали крылатыми в узком кругу людей за недолгое время их тесного общения.
-			И уже больше не надо вести длинных дневников, писать мемуаров,
-			составлять отчетов – одного взгляда на эти нелепые фразы достаточно,
-			чтобы восстановить в памяти те незабываемые моменты, которые, как кирпичики,
-			в общем-то и составляют нашу жизнь.
-		</Paragraph>
-		<List>
-			
-			<ListItem>
-			<Paragraph Title="Chesterfield">
-				<Line><Emphasize>Скоро</Emphasize></Line>
-			</Paragraph>
-			</ListItem>
-		
-			<ListItem>
-			<Paragraph Title="Сосед. Фильмы. 199x год.">
-				<Line>Поставить на счетчик-2</Line>
-				<Line>В постели с компьютером</Line>
-				<Line>Приказано выпить</Line>
-				<Line>Смерть на пороге универмага</Line>
-			</Paragraph>
-			</ListItem>
-			
-			<ListItem>
-			<Paragraph Title="Потапыч. Литература. 2000 год.">
-				<Line>Потапыч для чайников</Line>
-				<Line>Потапыч для профессионалов</Line>
-				<Line>Потапыч изнутри</Line>
-				<Line>Потапыч за 24 часа</Line>
-				<Line>Потапыч в подлиннике</Line>
-				<Line>Потапыч. Недокументированные возможности</Line>
-				<Line>Потапыч. Мастера раскрывают секреты</Line>
-				<Line>Потапыч. Курс молодого бойца</Line>
-			</Paragraph>
-			</ListItem>
-			
-			<ListItem>
-			<Paragraph Title="Женя">
-				<Line>Блядце</Line>
-				<Line>Корешка</Line>
-			</Paragraph>
-			</ListItem>
-			
-			<ListItem>
-			<Paragraph Title="Потапыч">
-				<Line>"Обычный" кореш</Line>
-			</Paragraph>
-			</ListItem>
-	
-			<ListItem>
-			<Paragraph Title="Черный">
-				<Line>Мягкоговорящий</Line>
-			</Paragraph>
-			</ListItem>
-						
-			<ListItem>
-			<Paragraph Title="Велосипедная Карелия и ладожские ялы. 2003 год.">
-				<Line>Я новыя русский, уважаемый человек, могу себе позволить</Line>
-				<Line>Лег спать с чувством глубоко выполненного долга</Line>
-				<Line>Ужас, летящий на крыльях НОЧЬЮ!</Line>
-				<Line>У нас есть специалисты...</Line>
-				<Line>Плотная фишка</Line>
-				<Line>Назавтракать</Line>
-				<Line>Отсместить</Line>
-				<Line>Своевременная дегустация</Line>
-				<Line>Тройной эффект:</Line>
-				<List>
-					<ListItem>прет</ListItem>
-					<ListItem>колбасит</ListItem>
-					<ListItem>вставляет</ListItem>
-					<ListItem>плющит</ListItem>
-					<ListItem>штырит</ListItem>
-					<ListItem>вшторивает</ListItem>
-					<ListItem>долбит</ListItem>
-					<ListItem>накрывает</ListItem>
-				</List>
-			</Paragraph>
-			</ListItem>
-		
-			<ListItem>
-			<Paragraph Title="Новый 2004 год">
-				<Line>Допинывай уже!</Line>
-				<Line>Без штатива</Line>
-				<Line>Не микрофонь!</Line>
-				<Line>Девушка, да?</Line>
-			</Paragraph>
-			</ListItem>
-			
-			<ListItem>
-			<Paragraph Title="Егор">
-				<Line>Ты узнаешь, ты узнаешь, ты узнаешь ЕГО!</Line>
-			</Paragraph>
-			</ListItem>
-			
-			<ListItem>
-			<Paragraph Title="Серега">
-				<Line>Сколько времени опять?</Line>
-			</Paragraph>
-			</ListItem>
-						
-			<ListItem>
-			<Paragraph Title="Поход Май-2004">
-				<Line>Места, нам неведомые</Line>
-				<Line>Может пригласим баб для смеху?</Line>
-				<Line>Это Тархун?</Line>
-			</Paragraph>
-			</ListItem>
-			
-		</List>
-		</Chapter></PageElement>
-		
-	</PageBody>
+    <PageHead Title="Партийные aфоризмы собственного изготовления"></PageHead>
+        
+    <PageBody SnakeText="">
+        <PageElement><MainMenu /></PageElement>
+        
+        <PageElement><Chapter Title="Партийные афоризмы собственного изготовления">
+        <Paragraph>
+            Реальная тема – записывать слова и выражения,
+            которые стали крылатыми в узком кругу людей за недолгое время их тесного общения.
+            И уже больше не надо вести длинных дневников, писать мемуаров,
+            составлять отчетов – одного взгляда на эти нелепые фразы достаточно,
+            чтобы восстановить в памяти те незабываемые моменты, которые, как кирпичики,
+            в общем-то и составляют нашу жизнь.
+        </Paragraph>
+
+        <Block Title="Chesterfield">
+            <Line><Emphasize>Скоро</Emphasize></Line>
+        </Block>
+        <Block Title="Сосед. Фильмы. 199x год.">
+            <Line>Поставить на счетчик-2</Line>
+            <Line>В постели с компьютером</Line>
+            <Line>Приказано выпить</Line>
+            <Line>Смерть на пороге универмага</Line>
+        </Block>
+        <Block Title="Потапыч. Литература. 2000 год.">
+            <Line>Потапыч для чайников</Line>
+            <Line>Потапыч для профессионалов</Line>
+            <Line>Потапыч изнутри</Line>
+            <Line>Потапыч за 24 часа</Line>
+            <Line>Потапыч в подлиннике</Line>
+            <Line>Потапыч. Недокументированные возможности</Line>
+            <Line>Потапыч. Мастера раскрывают секреты</Line>
+            <Line>Потапыч. Курс молодого бойца</Line>
+        </Block>
+        <Block Title="Женя">
+            <Line>Блядце</Line>
+            <Line>Корешка</Line>
+        </Block>
+        <Block Title="Потапыч">
+            <Line>"Обычный" кореш</Line>
+        </Block>
+        <Block Title="Черный">
+            <Line>Мягкоговорящий</Line>
+        </Block>
+        <Block Title="Велосипедная Карелия и ладожские ялы. 2003 год.">
+            <Line>Я новыя русский, уважаемый человек, могу себе позволить</Line>
+            <Line>Лег спать с чувством глубоко выполненного долга</Line>
+            <Line>Ужас, летящий на крыльях НОЧЬЮ!</Line>
+            <Line>У нас есть специалисты...</Line>
+            <Line>Плотная фишка</Line>
+            <Line>Назавтракать</Line>
+            <Line>Отсместить</Line>
+            <Line>Своевременная дегустация</Line>
+            <Line>Тройной эффект:</Line>
+            <List>
+                <ListItem>прет</ListItem>
+                <ListItem>колбасит</ListItem>
+                <ListItem>вставляет</ListItem>
+                <ListItem>плющит</ListItem>
+                <ListItem>штырит</ListItem>
+                <ListItem>вшторивает</ListItem>
+                <ListItem>долбит</ListItem>
+                <ListItem>накрывает</ListItem>
+            </List>
+        </Block>
+        <Block Title="Новый 2004 год">
+            <Line>Допинывай уже!</Line>
+            <Line>Без штатива</Line>
+            <Line>Не микрофонь!</Line>
+            <Line>Девушка, да?</Line>
+        </Block>
+        <Block Title="Егор">
+            <Line>Ты узнаешь, ты узнаешь, ты узнаешь ЕГО!</Line>
+        </Block>
+        <Block Title="Серега">
+            <Line>Сколько времени опять?</Line>
+        </Block>
+        <Block Title="Поход Май-2004">
+            <Line>Места, нам неведомые</Line>
+            <Line>Может пригласим баб для смеху?</Line>
+            <Line>Это Тархун?</Line>
+        </Block>
+
+        </Chapter></PageElement>
+        
+    </PageBody>
 </PageTemplate>

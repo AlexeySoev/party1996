@@ -56,7 +56,8 @@
     <xsl:template match="EventItem">
         <div class="event-row">
             <div class="event-image">
-                <img src="{@Pic}"/>
+                <!--<img src="{@Pic}" alt="{@Pic}"/>-->
+                <xsl:text disable-output-escaping="yes">&lt;img src=</xsl:text>"<xsl:value-of select="@Pic"/>"<xsl:text disable-output-escaping="yes">/&gt;</xsl:text>
             </div>
             <div class="event-description">
                 <div>
@@ -68,10 +69,18 @@
             </div>
             <div class="event-links">
                 <div>
-                    <p><a href="{@AlbumLocal}" target="_blank">Фотографии на компьютере</a></p>
-                    <p><a href="{@AlbumWeb}" target="_blank">Фотографии в интернете</a></p>
-                    <p><a href="{@TreckLocal}" target="_blank">Трек на компьютере</a></p>
-                    <p><a href="{@TrackWeb}" target="_blank">Трек в интернете</a></p>
+                    <xsl:if test="@AlbumLocal">
+                        <p><a href="{@AlbumLocal}" target="_blank">Фотографии на компьютере</a></p>
+                    </xsl:if>
+                    <xsl:if test="@AlbumWeb">
+                        <p><a href="{@AlbumWeb}" target="_blank">Фотографии в интернете</a></p>
+                    </xsl:if>
+                    <xsl:if test="@TrackLocal">
+                        <p><a href="{@TrackLocal}" target="_blank">Трек на компьютере</a></p>
+                    </xsl:if>
+                    <xsl:if test="@TrackWeb">
+                        <p><a href="{@TrackWeb}" target="_blank">Трек в интернете</a></p>
+                    </xsl:if>
                 </div>
             </div>
         </div>

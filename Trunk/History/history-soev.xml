@@ -2,40 +2,47 @@
 <?xml-stylesheet href="../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Интересные события в моей жизни"></PageHead>
-		
-	<PageBody SnakeText="">
-		<PageElement><MainMenu /></PageElement>
-		
-		<PageElement><Chapter Title="Интересные события в моей жизни" Epigraph="Дороги трудны, но хуже без дорог...">
-		
-		<Paragraph Title="Путешествия">
-		<List>
-			<ListItem><LinkWithDescription Url="Siberia2004/siberia2004.xml" Text="Сибирь 2004">
-				Как я неожиданно для себя съездил на родину
-			</LinkWithDescription></ListItem>
-			<ListItem><LinkWithDescription Url="Alps2005/alps2005.xml" Text="Альпы 2005">
-				Это надо видеть... И мы это видели!!!
-			</LinkWithDescription></ListItem>
-			<ListItem><LinkWithDescription Url="Alps2006/alps2006.xml" Text="Альпы 2006">
-				Зажгли еще раз
-			</LinkWithDescription></ListItem>
-			<ListItem><LinkWithDescription Url="Alps2007/alps2007.xml" Text="Альпы 2007">
-				И еше
-			</LinkWithDescription></ListItem>
-			<ListItem><LinkWithDescription Url="Aland2006/aland2006.xml" Text="Аланды 2006">
-				Велопутешествие по Аландским островам
-			</LinkWithDescription></ListItem>
-			<ListItem><LinkWithDescription Url="Norway2007/norway2007.xml" Text="Норвегия 2007">
-				Велопутешествие по Норвегии
-			</LinkWithDescription></ListItem>
-			<ListItem><LinkWithDescription Url="Alps2015/alps2015.xml" Text="Альпы 2015">
-				Поход в Альпах 2015
-			</LinkWithDescription></ListItem>
-		</List>
-		</Paragraph>
+    <PageHead Title="Интересные события в моей жизни"></PageHead>
+        
+    <PageBody SnakeText="">
+        <PageElement><MainMenu /></PageElement>
+        
+        <PageElement><Chapter Title="Интересные события в моей жизни" Epigraph="Дороги трудны, но хуже без дорог...">
+        
+        <Block Title="Путешествия">
+            <LinkNText Url="Siberia2004/siberia2004.xml" Title="Сибирь 2004">
+                Как я неожиданно для себя съездил на родину
+            </LinkNText>
+            <LinkNText Url="Alps2005/alps2005.xml" Title="Альпы 2005">
+                Это надо видеть... И мы это видели!!!
+            </LinkNText>
+            <LinkNText Url="Alps2006/alps2006.xml" Title="Альпы 2006">
+                Зажгли еще раз
+            </LinkNText>
+            <LinkNText Url="Alps2007/alps2007.xml" Title="Альпы 2007">
+                И еше
+            </LinkNText>
+            <LinkNText Url="Aland2006/aland2006.xml" Title="Аланды 2006">
+                Велопутешествие по Аландским островам
+            </LinkNText>
+            <LinkNText Url="Norway2007/norway2007.xml" Title="Норвегия 2007">
+                Велопутешествие по Норвегии
+            </LinkNText>
+            <LinkNText Url="Alps2010/alps2010.xml" Title="Альпы 2010">
+                Летняя поездка по Альпам 2010
+            </LinkNText>
+            <LinkNText Url="Alps2011/alps2011.xml" Title="Альпы 2011">
+                Зимние Альпы 2011
+            </LinkNText>
+            <LinkNText Url="Alps2014/alps2014.xml" Title="Альпы 2014">
+                Зимние Альпы 2014
+            </LinkNText>
+            <LinkNText Url="Alps2015/alps2015.xml" Title="Альпы 2015">
+                Летий поход в Альпах 2015
+            </LinkNText>
+        </Block>
 
-		</Chapter></PageElement>
-		
-	</PageBody>
+        </Chapter></PageElement>
+        
+    </PageBody>
 </PageTemplate>

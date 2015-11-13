@@ -1,102 +1,293 @@
-﻿v\:* {
+﻿/* legacy styles TODO */
+
+v\:* {
     behavior:url(#default#VML);
 }
 .spanstyle {
     COLOR: #ff0000; FONT-FAMILY: Verdana; FONT-SIZE: 10pt; FONT-WEIGHT: bold; POSITION: absolute; TOP: -50px; VISIBILITY: visible
 }
 
-.site-title {
-	color: #000000;
-	font-size: 24pt;
-	font-weight: bold;
+/* my own styles */
+
+/* colors set
+
+гамма жж
+#006b8f - темно голубой (затемнено мной на 20%)
+#0086B3 - голубой
+#00A3D9 - светло голубой
+#00C0FF - наисветлейший голубой (осетлено мной до максимума)
+#242F33 - почти черный (для шрифта); 
+#7A9199 - серый (не применяется?)
+
+#ccffff - очень светлый голубой (для меню)
+#eeffff - наисветлейший голубой (для меню)
+*/
+
+#main,
+#news {
+    text-align: center;
+    font-family: ProximaNovaRegular,Helvetica,sans-serif;
+    line-height: 1.4;
+    color: #242F33;
+    font-size: 15px;
 }
-.title {
-	color: #000000;
-	font-size: x-large;
-	font-weight: bold;
+
+.page-element {
+    display: inline-block;
+    width: 95%;
+    min-width: 600px;
+    max-width: 1250px;
+    text-align: left;
+}
+
+/*
+@media all and (min-width: 807px) {
+.page-element {
+    width: 807px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+}
+
+@media all and (min-width: 1024px) {
+.page-element {
+    width: 1000px;
+}
+}
+
+@media all and (min-width: 1280px) {
+.page-element {
+    width: 1250px;
+}
+}
+*/
+
+.site-menu {
+    margin-bottom: 5px;
+}
+
+.menu-item {
+    background-color: #eeffff;
     text-align: center;
 }
-.chapter-title {
-	color: #003399;
-	font-size: x-large;
-	font-weight: bold;
-    text-align: left;
+
+.menu-item td:hover {
+    background-color: #ccffff;
 }
-.paragraph-title {
-	color: #000000;
-	font-size: medium;
-	font-weight: bold;
-    text-align: left;
+
+.menu-item td:hover a {
+    color: #006b8f;
 }
+
+.menu-item a {
+    text-decoration: none;
+}
+
+a {
+    color: #00A3D9;
+}
+
+a:hover {
+    color: #006b8f;
+}
+
+.site-title {
+    font-size: 30px;
+    //font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.news-title {
+    font-size: 24px;
+    //font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.news-subtitle {
+    color: #006b8f;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px
+}
+
 .epigraph {
-	color: #ff0000;
-	font-size: medium;
-	font-weight: bold;
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: bold;
     text-align: right;
 }
 
-/* gps track page */
+.emphasize {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.chapter-wrapper {
+    padding: 15px;
+}
+.chapter-title {
+    color: #006b8f;
+    font-size: 26px;
+    //font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px
+}
+.chapter-content {
+    text-align: left;
+}
+
+.chapter-wrapper,
+.paragraph-wrapper,
+.block-wrapper,
+.line-content {
+    color: #242F33;
+    font: 15px/1.4 ProximaNovaRegular,Helvetica,sans-serif;
+}
+
+.paragraph-wrapper,
+.block-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.paragraph-title,
+.block-title {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.paragraph-content,
+.line-content {
+    text-align: justify;
+}
+
+.paragraph-content {
+    text-indent: 20px;
+}
+
+.paragraph-content * {
+    text-indent: 0px;
+}
+
+.block-content {
+    text-align: left;
+}
+
+.block-content .left-margin {
+    margin-left: 20px;
+}
+
+.link-with-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* GPS track page */
 
 .track-list .paragraph-title,
 .track-details .paragraph-title {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .track-list {
-	float: left;
-	width: 150px;
+    float: left;
+    width: 150px;
 }
 
 .track-details {
-	float: left;
-	width: 330px;
-	margin-left: 10px;
+    float: left;
+    width: 330px;
+    margin-left: 10px;
 }
 
-.gpslabel {
+.gps-column {
     width:330px
 }
-.gpsvalue {
+.gps-label {
     width: 180px;
-	float: left;
+    float: left;
+}
+
+.modulation .gps-label {
+    width: 165px;
 }
 
 .modulation {
-	background-color: #eeeeee;
-	border: 1px solid grey;
-	padding :5px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+    background-color: #eeeeee;
+    border: 1px solid grey;
+    padding :5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .modulation-buttons {
-	background-color: #dddddd;
-	margin-bottom: 5px
+    background-color: #dddddd;
+    margin-bottom: 5px
 }
 
 .button {
-	background-color:#bbbbbb;
-	padding: 5px;
-	width: 135px;
-	margin: 7px;
-	text-align: center;
+    background-color:#bbbbbb;
+    padding: 5px;
+    width: 135px;
+    margin: 7px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color:#aaaaaa;
 }
 
 .comments {
-	text-align: left;
-	color: gray;
-	font-size: small;
+    text-align: left;
+    color: gray;
+    font-size: 14px;
 }
 
 .right-pane {
-	margin-left:510px;
+    margin-left:510px;
 }
 
 .map {
-	width: 100%;
-	height: 410px;
-	border: 1px solid grey;
-	margin-bottom: 20px;
+    width: 100%;
+    height: 410px;
+    border: 1px solid grey;
+    margin-bottom: 20px;
+}
+
+
+/*VK album*/
+
+#VKAlbum {
+    font: 15px/1.4 ProximaNovaRegular,Helvetica,sans-serif;
+    color: #242F33;
+    display: inline-block;
+}
+
+#VKAlbum div {
+    display: inline-block;
+    width:807px;
+}
+
+#VKAlbum .album-title{
+    font-size: 26px;
+    color: #006b8f;
+    text-align: left;
+}
+
+#VKAlbum .album-description{
+    font-style: italic;
+    text-align: justify;
 }
 
 #VKAlbum .element {
@@ -106,6 +297,6 @@
     margin-top:10px;
 }
 #VKAlbum .description {
-    width:807px;
     text-indent: 10px;
+    text-align: justify;
 }

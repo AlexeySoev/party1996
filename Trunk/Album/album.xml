@@ -2,6 +2,7 @@
 <?xml-stylesheet href="../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
+<<<<<<< HEAD
 	<PageHead Title="Альбом"></PageHead>
 		
 	<PageBody SnakeText="">
@@ -61,4 +62,59 @@
 		</Chapter></PageElement>
 		
 	</PageBody>
+=======
+    <PageHead Title="Альбомы"></PageHead>
+        
+    <PageBody SnakeText="">
+        <PageElement><MainMenu /></PageElement>
+        
+        <PageElement><Chapter Title="Альбомы">
+        <Block Title="Традиционные Майские Походы">
+            <Line><Link Url="May1997/index.xml">Май 1997</Link></Line>
+            <Line><Link Url="May1998/index.xml">Май 1998</Link></Line>
+            <Line><Link Url="May1999/index.xml">Май 1999</Link></Line>
+            <Line><Link Url="May2000/index.xml">Май 2000</Link></Line>
+            <Line><Link Url="May2001/index.xml">Май 2001</Link></Line>
+            <Line><Link Url="May2002/index.xml">Май 2002</Link></Line>
+            <Line><Link Url="May2003/index.xml">Май 2003</Link></Line>
+            <Line><Link Url="May2004/index.xml">Май 2004</Link></Line>
+        </Block>
+        <Block Title="Грандиозные Супер-Путешествия">
+            <Line>Сочи 1996 <Emphasize>Скоро</Emphasize></Line>
+            <Line>Кавказ 2001 <Emphasize>Скоро</Emphasize></Line>
+            <Line><Link Url="Europe2002/Bike/index.xml">Европа 2002</Link> Вело-часть путешествия</Line>
+            <Line><Link Url="Europe2002/Car/index.xml">Европа 2002</Link> Авто-часть путешествия</Line>
+            <Line><Link Url="Karelia2003/index.xml">Карелия 2003</Link></Line>
+        </Block>
+        <Block Title="Дни рождения Николаича в Хельсинки">
+            <Line><Link Url="Niko2001/index.xml">ДР Николаича 2001</Link></Line>
+            <Line><Link Url="Niko2004/index.xml">ДР Николаича 2004</Link></Line>
+            <Line><Link Url="Niko2006/index.xml">ДР Николаича 2006</Link></Line>
+            <Line><Link Url="Niko2008/index.xml">ДР Николаича 2008</Link></Line>
+            <Line><Link Url="Niko2009/index.xml">ДР Николаича 2009</Link></Line>
+            <Line><Link Url="Niko2010/index.xml">ДР Николаича 2010</Link></Line>
+            <Line><Link Url="Niko2013/index.xml">ДР Николаича 2013</Link></Line>
+        </Block>
+        <Block Title="Мои дни рождения">
+            <Line><Link Url="March1995/index.xml">Мой ДР 1995</Link></Line>
+            <Line><Link Url="March1996/index.xml">Мой ДР 1996</Link></Line>
+            <Line>1997 <Emphasize>Скоро</Emphasize></Line>
+            <Line>1998 <Emphasize>Скоро</Emphasize></Line>
+            <Line>1999 <Emphasize>Скоро</Emphasize></Line>
+            <Line>2001 <Emphasize>Скоро</Emphasize></Line>
+        </Block>
+        <Block Title="Дни рождения Жени">
+            <Line><Link Url="Jon2011/index.xml">ДР Жени 2011</Link></Line>
+            <Line><Link Url="Jon2013/index.xml">ДР Жени 2013</Link></Line>
+        </Block>
+        <Block Title="Евровидение у Нагиева">
+            <Line>2010 <Emphasize>Скоро</Emphasize></Line>
+            <Line>2012 <Emphasize>Скоро</Emphasize></Line>
+            <Line>2014 <Emphasize>Скоро</Emphasize></Line>
+        </Block>
+        
+        </Chapter></PageElement>
+        
+    </PageBody>
+>>>>>>> e0c8d9e4985a672e41c634a9d4215a8a3c83891f
 </PageTemplate>
