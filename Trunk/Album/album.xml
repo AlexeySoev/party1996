@@ -46,6 +46,7 @@
         <Block Title="Дни рождения Жени">
             <Line><Link Url="Jon2011/index.xml">ДР Жени 2011</Link></Line>
             <Line><Link Url="Jon2013/index.xml">ДР Жени 2013</Link></Line>
+            <Line><Link Url="Jon2015/index.xml">ДР Жени 2015</Link></Line>
         </Block>
         <Block Title="Евровидение у Нагиева">
             <Line>2010 <Emphasize>Скоро</Emphasize></Line>
