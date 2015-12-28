@@ -37,9 +37,13 @@
             <LinkNText Url="Alps2014/alps2014.xml" Title="Альпы 2014">
                 Зимние Альпы 2014
             </LinkNText>
-            <LinkNText Url="Alps2015/alps2015.xml" Title="Альпы 2015">
-                Летий поход в Альпах 2015
+            <LinkNText Url="Alps2015/alps2015-1.xml" Title="Альпы 2015 - Часть 1">
+                Летний поход в Альпах 2015 - Часть 1
             </LinkNText>
+            <LinkNText Url="Alps2015/alps2015-2.xml" Title="Альпы 2015 - Часть 2">
+                Летний поход в Альпах 2015 - Часть 2
+            </LinkNText>
+
         </Block>
 
         </Chapter></PageElement>

@@ -2,7 +2,7 @@
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-    <PageHead Title="Альпы 2015"></PageHead>
+    <PageHead Title="Альпы 2015 - Часть 1"></PageHead>
 
     <PageBody>
         <PageElement><MainMenu/></PageElement>
