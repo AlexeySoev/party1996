@@ -25,6 +25,15 @@
             <Line><Link Url="Europe2002/Car/index.xml">Европа 2002</Link> Авто-часть путешествия</Line>
             <Line><Link Url="Karelia2003/index.xml">Карелия 2003</Link></Line>
         </Block>
+        <Block Title="Мои дни рождения">
+            <Line><Link Url="March1995/index.xml">Мой ДР 1995</Link></Line>
+            <Line><Link Url="March1996/index.xml">Мой ДР 1996</Link></Line>
+            <Line><Link Url="March1997/index.xml">Мой ДР 1997</Link></Line>
+            <Line><Link Url="March1998/index.xml">Мой ДР 1998</Link></Line>
+            <Line><Link Url="March1999/index.xml">Мой ДР 1999</Link></Line>
+            <Line><Link Url="March2001/index.xml">Мой ДР 2001</Link></Line>
+            <Line><Link Url="March2016/index.xml">Мой ДР 2016</Link></Line>
+        </Block>
         <Block Title="Дни рождения Николаича в Хельсинки">
             <Line><Link Url="Niko2001/index.xml">ДР Николаича 2001</Link></Line>
             <Line><Link Url="Niko2004/index.xml">ДР Николаича 2004</Link></Line>
@@ -35,15 +44,9 @@
             <Line><Link Url="Niko2013/index.xml">ДР Николаича 2013</Link></Line>
             <Line><Link Url="Niko2014/index.xml">ДР Николаича 2014</Link></Line>
         </Block>
-        <Block Title="Мои дни рождения">
-            <Line><Link Url="March1995/index.xml">Мой ДР 1995</Link></Line>
-            <Line><Link Url="March1996/index.xml">Мой ДР 1996</Link></Line>
-            <Line>1997 <Emphasize>Скоро</Emphasize></Line>
-            <Line>1998 <Emphasize>Скоро</Emphasize></Line>
-            <Line>1999 <Emphasize>Скоро</Emphasize></Line>
-            <Line>2001 <Emphasize>Скоро</Emphasize></Line>
-        </Block>
         <Block Title="Дни рождения Жени">
+            <Line>ДР Жени 1998 <Emphasize>Скоро</Emphasize></Line>
+            <Line>ДР Жени 1999 <Emphasize>Скоро</Emphasize></Line>
             <Line><Link Url="Jon2011/index.xml">ДР Жени 2011</Link></Line>
             <Line><Link Url="Jon2013/index.xml">ДР Жени 2013</Link></Line>
             <Line><Link Url="Jon2015/index.xml">ДР Жени 2015</Link></Line>
