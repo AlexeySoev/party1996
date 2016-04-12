@@ -252,15 +252,17 @@
                         <p class="chapter-title"><xsl:value-of select="@Title"/></p>
                     </td>
                     <td align="center">
-                        <div align="center">
-                            <table border="1" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td style="width:50px;" onclick="javascript:showphoto({@Prev}, {@Count}, '&Root;/templates.xsl', '{@Title}')" onmouseover="this.style.backgroundColor = 'rgba(0,0,0,0.1)';" onmouseout="this.style.backgroundColor = 'inherit';"></td>
-                                    <td align="center"><img src="{@Src}" border="0" onclick="javascript:showphoto({@Next}, {@Count}, '&Root;/templates.xsl', '{@Title}')"/></td>
-                                    <td style="width:50px;" onclick="javascript:showphoto({@Next}, {@Count}, '&Root;/templates.xsl', '{@Title}')" onmouseover="this.style.backgroundColor = 'rgba(0,0,0,0.1)';" onmouseout="this.style.backgroundColor = 'inherit';"></td>
-                                </tr>
-                            </table>
-                        </div>
+                        <table border="1" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="center">
+                                    <div class="photo-div">
+                                        <img src="{@Src}" border="0" onclick="javascript:showphoto({@Next}, {@Count}, '&Root;/templates.xsl', '{@Title}')"/>
+                                        <div class="photo-button-prev" onclick="javascript:showphoto({@Prev}, {@Count}, '&Root;/templates.xsl', '{@Title}')"></div>
+                                        <div class="photo-button-next" onclick="javascript:showphoto({@Next}, {@Count}, '&Root;/templates.xsl', '{@Title}')"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </td>
                     <td style="width:150px;"></td>
                 </tr>

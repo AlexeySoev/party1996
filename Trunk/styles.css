@@ -193,6 +193,29 @@ a:hover {
     margin-bottom: 5px;
 }
 
+/* Album */
+
+.photo-div {
+    position: relative;
+}
+
+.photo-button-prev,
+.photo-button-next {
+    position: absolute;
+    height: 100%;
+    width: 100px;
+}
+
+.photo-button-prev {left: 0px; top: 0px;}
+.photo-button-next {right: 0px; top: 0px;}
+
+.photo-button-prev:hover,
+.photo-button-next:hover {
+    box-shadow: inset 0 0 100px 0 rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+
 /* GPS track page */
 
 .track-list .paragraph-title,
