@@ -14,15 +14,23 @@
                 <LinkNText Url="../Files/metadoll_mj6.swf" Target="child" Title="Метадолл">По многочисленным просьбам посетителей</LinkNText>
             </Block>
             <Block Title="Наше">
-                <Line><LinkToImage Url="../Photos/Telega.jpg" Title="Телега" Group="Fun"/></Line>
-                <Line><LinkToImage Url="../Photos/ObchN8.jpg" Title="Общ. №8" Group="Fun"/></Line>
-                <Line><LinkToImage Url="../Photos/Foto.jpg" Title="Пляж" Group="Fun"/></Line>
-                <Line><LinkToImage Url="../Photos/Serega.jpg" Title="Серега" Group="Fun"/></Line>
-                <Line><LinkToImage Url="../Photos/Camp.jpg" Title="Пикник на обочине" Group="Fun"/></Line>
-                <Line>В этой комнате не пьют <Emphasize>Скоро</Emphasize></Line>
-                <Line>Креативы <Emphasize>Скоро</Emphasize></Line>
-                <Line>Пивные Пробки <Emphasize>Скоро</Emphasize></Line>
                 <LinkNText Url="aphorisms.xml" Title="Афоризмы">Партийные афоризмы собственного изготовления</LinkNText>
+                <Line>Креативы <Emphasize>Скоро</Emphasize></Line>
+            </Block>
+            <Block Title="Галереи">
+                <Line>Партийные атрибуты <Emphasize>Скоро</Emphasize></Line>
+                
+                <Line><LinkToImage Url="../Photos/Telega.jpg" Title="Телега" GroupSingle="Документы Партии" Main="1"/></Line>
+                
+                <Line>Плакаты <Emphasize>Скоро</Emphasize></Line>
+                
+                <Line><LinkToImage Url="../Photos/ObchN8.jpg" Title="Общ. №8" GroupSingle="Коллажи" Main="1"/></Line>
+                <Line><LinkToImage Url="../Photos/Foto.jpg" Title="Пляж" GroupSingle="Коллажи"/></Line>
+                <Line><LinkToImage Url="../Photos/Serega.jpg" Title="Серега" GroupSingle="Коллажи"/></Line>
+                <Line><LinkToImage Url="../Photos/Camp.jpg" Title="Пикник на обочине" GroupSingle="Коллажи"/></Line>
+                
+                <Line>Партийный склад-музей <Emphasize>Скоро</Emphasize></Line>
+                <Line>Пивные пробки <Emphasize>Скоро</Emphasize></Line>
             </Block>
         </Chapter></PageElement>
         

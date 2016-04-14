@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE MyPage [
-<!ENTITY Root "file://localhost/D:/!Party1996/Trunk">
+<!ENTITY Root "file://localhost/D:/Леха/!Party/party1996/Trunk">
+<!ENTITY OfficeRoot "file://localhost/D:/!Party1996/Trunk">
 <!ENTITY TestRoot1 "http://localhost/party1996">
 <!ENTITY TestRoot2 "http://party1996.narod.ru">
 <!ENTITY ScriptsDir "&Root;/Scripts">
@@ -198,15 +199,24 @@
         <a href="javascript:%20showpic('{@Url}','{@H}','{@V}')">OLD</a>-->
        
         <a href="{@Url}" data-lightbox="{@Url}" data-title="{@Title}">
+            <xsl:if test="@Group">
+                <xsl:attribute name="data-lightbox"><xsl:value-of select="@Group"/></xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@GroupSingle">
+                <xsl:attribute name="data-lightbox"><xsl:value-of select="@GroupSingle"/></xsl:attribute>
+                <xsl:if test="not(@Main)">
+                    <xsl:attribute name="hidden"></xsl:attribute>
+                </xsl:if>
+            </xsl:if>
+           
             <xsl:choose>
-                <xsl:when test="@Group">
-                    <xsl:attribute name="data-lightbox"><xsl:value-of select="@Group"/></xsl:attribute>
+                <xsl:when test="@GroupSingle">
+                    <xsl:value-of select="@GroupSingle"/>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:attribute name="data-lightbox"><xsl:value-of select="@Title"/></xsl:attribute>
+                    <xsl:value-of select="@Title"/>
                 </xsl:otherwise>
             </xsl:choose>
-            <xsl:value-of select="@Title"/>
         </a>
         <xsl:apply-templates />
     </xsl:template>
