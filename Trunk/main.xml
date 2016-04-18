@@ -7,7 +7,7 @@
     <PageBody SnakeText="">
         <PageElement><MainMenu /></PageElement>
         
-        <PageElement><Image Src="Images/emblema.jpg">
+        <PageElement><Image Src="Images/emblema_20years.jpg">
         <Chapter Title="Обращение">
         <Paragraph><Emphasize>Привет, соратники, друзья, товарищи и даже те, кто случайно попал сюда!</Emphasize></Paragraph>
         <Paragraph><Emphasize>

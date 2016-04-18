@@ -59,8 +59,15 @@
 		
 		</Chapter>
 		
-		<Line>Протокол заседания <Emphasize>Скоро</Emphasize></Line>
-		<Line>Материалы конференции <Emphasize>Скоро</Emphasize></Line>
+		<Paragraph Title="Материалы конференции">
+            <Line><LinkToImage Url="Data/Photos/01.JPG" Title="III Партийная Конференция" GroupSingle="Фоторепортаж" Main="1"/></Line>
+            <Line><LinkToImage Url="Data/Photos/02.JPG" Title="III Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            <Line><LinkToImage Url="Data/Photos/03.JPG" Title="III Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            <Line><LinkToImage Url="Data/Photos/04.JPG" Title="III Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            
+            <Line>Протокол заседания <Emphasize>Скоро</Emphasize></Line>
+            <Line>Аудиозапись выступлений <Emphasize>Скоро</Emphasize></Line>
+        </Paragraph>
 		
 		</PageElement>
 		

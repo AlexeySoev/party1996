@@ -51,14 +51,33 @@
 			</List>
 			</Paragraph>
 			
-			
-			
 			<Paragraph Title="22:30 Торжественное закрытие" />
 		
 		</Chapter>
-		
-		<Line>Протокол заседания <Emphasize>Скоро</Emphasize></Line>
-		<Line>Материалы конференции <Emphasize>Скоро</Emphasize></Line>
+        
+        <Paragraph Title="Материалы конференции">
+            <Line><LinkToImage Url="Data/Photos/01.JPG" Title="II Партийная Конференция" GroupSingle="Фоторепортаж" Main="1"/></Line>
+            <Line><LinkToImage Url="Data/Photos/02.JPG" Title="II Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            <Line><LinkToImage Url="Data/Photos/03.JPG" Title="II Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            <Line><LinkToImage Url="Data/Photos/04.JPG" Title="II Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            <Line><LinkToImage Url="Data/Photos/05.JPG" Title="II Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            <Line><LinkToImage Url="Data/Photos/06.JPG" Title="II Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            <Line><LinkToImage Url="Data/Photos/07.JPG" Title="II Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            <Line><LinkToImage Url="Data/Photos/08.JPG" Title="II Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            <Line><LinkToImage Url="Data/Photos/09.JPG" Title="II Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            <Line><LinkToImage Url="Data/Photos/10.JPG" Title="II Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            <Line><LinkToImage Url="Data/Photos/11.JPG" Title="II Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            <Line><LinkToImage Url="Data/Photos/12.JPG" Title="II Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            <Line><LinkToImage Url="Data/Photos/13.JPG" Title="II Партийная Конференция" GroupSingle="Фоторепортаж" /></Line>
+            
+            <Line>Протокол заседания <Emphasize>Скоро</Emphasize></Line>
+            <Line>Аудиозапись выступлений <Emphasize>Скоро</Emphasize></Line>
+            
+            <Line><LinkToImage Url="Data/WhyDrink/01.JPG" Title="Материалы доклада 'Зачем люди пьют'." GroupSingle="Материалы доклада 'Зачем люди пьют'" Main="1"/>  Докладчик Соев А.Г.</Line>
+            <Line><LinkToImage Url="Data/WhyDrink/02.JPG" Title="Материалы доклада 'Зачем люди пьют'." GroupSingle="Материалы доклада 'Зачем люди пьют'"/></Line>
+            <Line><LinkToImage Url="Data/WhyDrink/03.JPG" Title="Материалы доклада 'Зачем люди пьют'." GroupSingle="Материалы доклада 'Зачем люди пьют'"/></Line>
+        
+        </Paragraph>
 				
 		</PageElement>
 		

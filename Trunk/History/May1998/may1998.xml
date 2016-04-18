@@ -12,12 +12,27 @@
 		<Line><Emphasize>Участники: </Emphasize>Соев, Женя, Серега, Потапыч, Дасеич, Ваня, Сосед, Черный, Нагиев, Таня</Line>
 		
 		<Paragraph>
-		<Line>Потапыч. Недокументированные возможности <Emphasize>Скоро</Emphasize></Line>
-		<Line>Афоризмы, записанные на пачке Chesterfield'а <Emphasize>Скоро</Emphasize></Line>
-		<Line>Дневник похода <Emphasize>Скоро</Emphasize></Line>
+        
+        <Line><LinkToImage Url="../../Photos/Documents/May98List.JPG" Title="Информационно-опросный лист"/></Line>
+        
+        <Line><LinkToImage Url="Diary/02.JPG" Title="Потапыч. Недокументированные возможности."/></Line>
+        <Line><LinkToImage Url="Diary/03.JPG" Title="Афоризмы, записанные на пачке Chesterfield'а"/></Line>
+        
+        <Line><LinkToImage Url="Diary/01.JPG" Title="Дневник похода" GroupSingle="Дневник похода" Main="1"/></Line>
+        <Line><LinkToImage Url="Diary/02.JPG" Title="Дневник похода" GroupSingle="Дневник похода"/></Line>
+        <Line><LinkToImage Url="Diary/03.JPG" Title="Дневник похода" GroupSingle="Дневник похода"/></Line>
+        <Line><LinkToImage Url="Diary/04.JPG" Title="Дневник похода" GroupSingle="Дневник похода"/></Line>
+        <Line><LinkToImage Url="Diary/05.JPG" Title="Дневник похода" GroupSingle="Дневник похода"/></Line>
+        <Line><LinkToImage Url="Diary/06.JPG" Title="Дневник похода" GroupSingle="Дневник похода"/></Line>
+        <Line><LinkToImage Url="Diary/07.JPG" Title="Дневник похода" GroupSingle="Дневник похода"/></Line>
+        <Line><LinkToImage Url="Diary/08.JPG" Title="Дневник похода" GroupSingle="Дневник похода"/></Line>
+        <Line><LinkToImage Url="Diary/09.JPG" Title="Дневник похода" GroupSingle="Дневник похода"/></Line>
+        <Line><LinkToImage Url="Diary/10.JPG" Title="Дневник похода" GroupSingle="Дневник похода"/></Line>
+        		
 		<Line><Link Url="../../Album/May1998/index.xml">Фотоальбом</Link></Line>
 		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">Место похода на карте</Link></Line>
-		</Paragraph>
+		
+        </Paragraph>
 		
 		</Chapter></PageElement>
 	</PageBody>

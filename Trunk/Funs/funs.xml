@@ -57,7 +57,19 @@
                 <Line><LinkToImage Url="../Photos/Collages/Egor.JPG" Title="У Егора" GroupSingle="Коллажи"/></Line>
                 <Line><LinkToImage Url="../Photos/Collages/AfterWar.JPG" Title="После Войны" GroupSingle="Коллажи"/></Line>
                 
-                <Line>Партийный склад-музей <Emphasize>Скоро</Emphasize></Line>
+                <Line><LinkToImage Url="../Photos/Stuff/Alltogether-2.JPG" Title="Коллективное творчество активистов Партии" GroupSingle="Партийный музей" Main="1"/></Line>
+                <Line><LinkToImage Url="../Photos/Stuff/Alltogether-1.JPG" Title="Коллективное творчество активистов Партии" GroupSingle="Партийный музей"/></Line>
+                <Line><LinkToImage Url="../Photos/Stuff/Me-1.JPG" Title="Алексей Соев в майском походе, бюст. Пластилин, банка, крышка. Автор Евгений Крылов." GroupSingle="Партийный музей"/></Line>
+                <Line><LinkToImage Url="../Photos/Stuff/Me-2.JPG" Title="Алексей Соев в майском походе, бюст. Пластилин, банка, крышка. Автор Евгений Крылов." GroupSingle="Партийный музей"/></Line>
+                <Line><LinkToImage Url="../Photos/Stuff/Bobr.JPG" Title="Бобр. Пластилин, банка, крышка. Автор Сергей Лукаянов." GroupSingle="Партийный музей"/></Line>
+                <Line><LinkToImage Url="../Photos/Stuff/Mousewoman.JPG" Title="Женщина-мышь. Пластилин, банка, крышка. Автор Иван Лотенков." GroupSingle="Партийный музей"/></Line>
+                <Line><LinkToImage Url="../Photos/Stuff/SmallStuff.JPG" Title="Пробка от фляги с коньяком и другие." GroupSingle="Партийный музей"/></Line>
+                <Line><LinkToImage Url="../Photos/Stuff/Music-1.JPG" Title="Музыка" GroupSingle="Партийный музей"/></Line>
+                <Line><LinkToImage Url="../Photos/Stuff/Music-2.JPG" Title="Музыка" GroupSingle="Партийный музей"/></Line>
+                <Line><LinkToImage Url="../Photos/Stuff/Radios.JPG" Title="Рации" GroupSingle="Партийный музей"/></Line>
+                <Line><LinkToImage Url="../Photos/Stuff/Camera.JPG" Title="Фотоаппарат" GroupSingle="Партийный музей"/></Line>
+                <Line><LinkToImage Url="../Photos/Stuff/BigStuff-1.JPG" Title="Тент, винтовка, топор и фильтр" GroupSingle="Партийный музей"/></Line>
+                <Line><LinkToImage Url="../Photos/Stuff/BigStuff-2.JPG" Title="Всё вместе" GroupSingle="Партийный музей"/></Line>
                 
                 <Line><LinkToImage Url="../Photos/BeerCaps/BeerCaps1.JPG" Title="Пробки в 2016 году" GroupSingle="Пивные пробки" Main="1"/></Line>
                 <Line><LinkToImage Url="../Photos/BeerCaps/BeerCaps2.JPG" Title="Пробки в 2016 году" GroupSingle="Пивные пробки"/></Line>
