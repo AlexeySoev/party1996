@@ -15,22 +15,58 @@
             </Block>
             <Block Title="Наше">
                 <LinkNText Url="aphorisms.xml" Title="Афоризмы">Партийные афоризмы собственного изготовления</LinkNText>
-                <Line>Креативы <Emphasize>Скоро</Emphasize></Line>
+                <LinkNText Url="pohod.xml" Title="Этюд о походе">Из партийых бесед у костра и монитора</LinkNText>
+                <LinkNText Url="bania.xml" Title="Этюд о бане">Из партийых бесед у костра и монитора</LinkNText>
             </Block>
             <Block Title="Галереи">
-                <Line>Партийные атрибуты <Emphasize>Скоро</Emphasize></Line>
+                <Line><LinkToImage Url="../Photos/Attributes/Flag.JPG" Title="Знамя Партии" GroupSingle="Партийные атрибуты" Main="1"/></Line>
+                <Line><LinkToImage Url="../Photos/Attributes/Stamp.JPG" Title="Партийная печать" GroupSingle="Партийные атрибуты"/></Line>
+                <Line><LinkToImage Url="../Photos/Attributes/Partbilet.JPG" Title="Партбилет" GroupSingle="Партийные атрибуты"/></Line>
+                <Line><LinkToImage Url="../Photos/Attributes/All.JPG" Title="Партийные атрибуты" GroupSingle="Партийные атрибуты"/></Line>
                 
-                <Line><LinkToImage Url="../Photos/Telega.jpg" Title="Телега" GroupSingle="Документы Партии" Main="1"/></Line>
+                <Line><LinkToImage Url="../Photos/Documents/May97List.JPG" Title="Подготовка к походу Май-97" GroupSingle="Документы Партии" Main="1"/></Line>
+                <Line><LinkToImage Url="../Photos/Documents/May98List.JPG" Title="Подготовка к походу Май-98" GroupSingle="Документы Партии"/></Line>
+                <Line><LinkToImage Url="../Photos/Documents/VanApplication.JPG" Title="Заявление Вани о вступлении в Партию" GroupSingle="Документы Партии"/></Line>
+                <Line><LinkToImage Url="../Photos/Documents/Partbilet.JPG" Title="Партбилет" GroupSingle="Документы Партии"/></Line>
+                <Line><LinkToImage Url="../Photos/Documents/BooInvitation.JPG" Title="Приглашение на банкет" GroupSingle="Документы Партии"/></Line>
+                <Line><LinkToImage Url="../Photos/Documents/BooGramota.JPG" Title="Грамота Потапычу" GroupSingle="Документы Партии"/></Line>
+                <Line><LinkToImage Url="../Photos/Documents/BooRequest.JPG" Title="Запрос Потапыча" GroupSingle="Документы Партии"/></Line>
+                <Line><LinkToImage Url="../Photos/Documents/Telega.JPG" Title="Телега из общаги" GroupSingle="Документы Партии"/></Line>
+                <Line><LinkToImage Url="../Photos/Documents/BooCat.JPG" Title="Снежный Бакс" GroupSingle="Документы Партии"/></Line>
+                <Line><LinkToImage Url="../Photos/Documents/VanSeregaNote.JPG" Title="Записка Вани и Сереги" GroupSingle="Документы Партии"/></Line>
+                <Line><LinkToImage Url="../Photos/Documents/100rub.JPG" Title="100 рублей" GroupSingle="Документы Партии"/></Line>
+                <Line><LinkToImage Url="../Photos/Documents/VanMat.JPG" Title="Борьба с матом" GroupSingle="Документы Партии"/></Line>
                 
-                <Line>Плакаты <Emphasize>Скоро</Emphasize></Line>
-                
-                <Line><LinkToImage Url="../Photos/ObchN8.jpg" Title="Общ. №8" GroupSingle="Коллажи" Main="1"/></Line>
-                <Line><LinkToImage Url="../Photos/Foto.jpg" Title="Пляж" GroupSingle="Коллажи"/></Line>
-                <Line><LinkToImage Url="../Photos/Serega.jpg" Title="Серега" GroupSingle="Коллажи"/></Line>
-                <Line><LinkToImage Url="../Photos/Camp.jpg" Title="Пикник на обочине" GroupSingle="Коллажи"/></Line>
+                <Line><LinkToImage Url="../Photos/Posters/PartyNewYear98.JPG" Title="Штаб Партии" GroupSingle="Плакаты" Main="1"/></Line>
+                <Line><LinkToImage Url="../Photos/Posters/NewYear98.JPG" Title="Праздничный плакат" GroupSingle="Плакаты"/></Line>
+                <Line><LinkToImage Url="../Photos/Posters/Party8March98.JPG" Title="Штаб Партии" GroupSingle="Плакаты"/></Line>                
+                <Line><LinkToImage Url="../Photos/Posters/Disco1.JPG" Title="Дискотека с Нагиевым" GroupSingle="Плакаты"/></Line>
+                <Line><LinkToImage Url="../Photos/Posters/Disco2.JPG" Title="Дискотека с Нагиевым" GroupSingle="Плакаты"/></Line>
+                <Line><LinkToImage Url="../Photos/Posters/Disco3.JPG" Title="Дискотека с Нагиевым" GroupSingle="Плакаты"/></Line>
+                <Line><LinkToImage Url="../Photos/Posters/HairAndPhoto.JPG" Title="Парикмахерская и фотоателье" GroupSingle="Плакаты"/></Line>
+                <Line><LinkToImage Url="../Photos/Posters/NoDrink.JPG" Title="Борьба с пьянством" GroupSingle="Плакаты"/></Line>
+                <Line><LinkToImage Url="../Photos/Posters/March99-1.JPG" Title="В походе Март-99" GroupSingle="Плакаты"/></Line>
+                <Line><LinkToImage Url="../Photos/Posters/March99-2.JPG" Title="В походе Март-99" GroupSingle="Плакаты"/></Line>
+                <Line><LinkToImage Url="../Photos/Posters/March99-3.JPG" Title="В походе Март-99" GroupSingle="Плакаты"/></Line>
+                                
+                <Line><LinkToImage Url="../Photos/Collages/Sochi.JPG" Title="Пляж" GroupSingle="Коллажи" Main="1"/></Line>
+                <Line><LinkToImage Url="../Photos/Collages/N8.JPG" Title="Общ. №8" GroupSingle="Коллажи"/></Line>
+                <Line><LinkToImage Url="../Photos/Collages/Picnic.JPG" Title="Пикник на обочине" GroupSingle="Коллажи"/></Line>
+                <Line><LinkToImage Url="../Photos/Collages/Wanted.JPG" Title="Серега" GroupSingle="Коллажи"/></Line>
+                <Line><LinkToImage Url="../Photos/Collages/Boo.JPG" Title="Потапыч и рация" GroupSingle="Коллажи"/></Line>
+                <Line><LinkToImage Url="../Photos/Collages/Egor.JPG" Title="У Егора" GroupSingle="Коллажи"/></Line>
+                <Line><LinkToImage Url="../Photos/Collages/AfterWar.JPG" Title="После Войны" GroupSingle="Коллажи"/></Line>
                 
                 <Line>Партийный склад-музей <Emphasize>Скоро</Emphasize></Line>
-                <Line>Пивные пробки <Emphasize>Скоро</Emphasize></Line>
+                
+                <Line><LinkToImage Url="../Photos/BeerCaps/BeerCaps1.JPG" Title="Пробки в 2016 году" GroupSingle="Пивные пробки" Main="1"/></Line>
+                <Line><LinkToImage Url="../Photos/BeerCaps/BeerCaps2.JPG" Title="Пробки в 2016 году" GroupSingle="Пивные пробки"/></Line>
+                <Line><LinkToImage Url="../Photos/BeerCaps/BeerCaps3.JPG" Title="Пробки в 2016 году" GroupSingle="Пивные пробки"/></Line>
+                <Line><LinkToImage Url="../Photos/BeerCaps/Calculation1999.JPG" Title="Подсчет пробок в 1999 году" GroupSingle="Пивные пробки"/></Line>
+                <Line><LinkToImage Url="../Photos/BeerCaps/Calculation2001.JPG" Title="Подсчет пробок в 2001 году" GroupSingle="Пивные пробки"/></Line>
+                
+                <Line><LinkToImage Url="../Photos/OldSiteDesign/777.JPG" Title="Дизайн 2001-2002 года. Посетитель 777. Мясо." GroupSingle="Старый дизайн партийного сайта" Main="1"/></Line>
+                <Line><LinkToImage Url="../Photos/OldSiteDesign/1000.JPG" Title="Дизайн 2001-2002 года. Тысячный посетитель." GroupSingle="Старый дизайн партийного сайта"/></Line>
             </Block>
         </Chapter></PageElement>
         
