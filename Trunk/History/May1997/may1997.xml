@@ -12,6 +12,7 @@
 		<Line><Emphasize>Участники: </Emphasize>Соев, Женя, Серега, Потапыч, Дасеич, Ваня, Сосед</Line>
 		
 		<Paragraph>
+        <Line><LinkToImage Url="../../Photos/Documents/May97List.JPG" Title="Информационно-опросный лист"/></Line>
 		<Line>Дневник похода <Emphasize>Скоро</Emphasize></Line>
 		<Line><Link Url="../../Album/May1997/index.xml">Фотоальбом</Link></Line>
 		<Line><Link Url="../../Tracks/Old/PartyTrips.xml">Место похода на карте</Link></Line>

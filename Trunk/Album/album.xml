@@ -43,6 +43,7 @@
             <Line><Link Url="Niko2010/index.xml">ДР Николаича 2010</Link></Line>
             <Line><Link Url="Niko2013/index.xml">ДР Николаича 2013</Link></Line>
             <Line><Link Url="Niko2014/index.xml">ДР Николаича 2014</Link></Line>
+            <Line>ДР Николаича 2015 <Emphasize>Скоро</Emphasize></Line>
         </Block>
         <Block Title="Дни рождения Жени">
             <Line>ДР Жени 1998 <Emphasize>Скоро</Emphasize></Line>
@@ -52,9 +53,9 @@
             <Line><Link Url="Jon2015/index.xml">ДР Жени 2015</Link></Line>
         </Block>
         <Block Title="Евровидение у Нагиева">
-            <Line>2010 <Emphasize>Скоро</Emphasize></Line>
-            <Line>2012 <Emphasize>Скоро</Emphasize></Line>
-            <Line>2014 <Emphasize>Скоро</Emphasize></Line>
+            <Line>Евровидение 2010 <Emphasize>Скоро</Emphasize></Line>
+            <Line>Евровидение 2012 <Emphasize>Скоро</Emphasize></Line>
+            <Line>Евровидение 2014 <Emphasize>Скоро</Emphasize></Line>
         </Block>
         
         </Chapter></PageElement>
