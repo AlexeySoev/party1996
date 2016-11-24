@@ -1,7 +1,5 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Xml;
 
 namespace GPSWaypointCollector
@@ -43,13 +41,13 @@ namespace GPSWaypointCollector
                 //XmlNamespaceManager nsmgr = new XmlNamespaceManager(a_doc.NameTable);
                 //nsmgr.AddNamespace("1", a_doc.DocumentElement.NamespaceURI);
 
-                XmlNodeList waypoints = a_doc.GetElementsByTagName("wpt");
+                var waypoints = a_doc.GetElementsByTagName("wpt");
                 foreach (XmlElement waypoint in waypoints)
-                    collector.AddWaypoint(waypoint);
+                    collector.AddWaypoint(waypoint, filename);
             }
             catch(Exception ex)
             {
-                Console.WriteLine(string.Format("{0}: (1)", filename, ex.Message));
+                Console.WriteLine(string.Format("{0}: {1}", filename, ex.Message));
             }
         }
     }
@@ -60,21 +58,56 @@ namespace GPSWaypointCollector
 
         public WaypointCollector()
         {
-
             m_doc.AppendChild(m_doc.CreateXmlDeclaration("1.0", "UTF-8", "no"));
-            XmlElement a_root = m_doc.CreateElement("gpx", "http://www.topografix.com/GPX/1/1");
-            m_doc.AppendChild(a_root);
-            XmlAttribute attr = m_doc.CreateAttribute("version");
+            var  root = m_doc.CreateElement("gpx", "http://www.topografix.com/GPX/1/1");
+            m_doc.AppendChild(root);
+            var attr = m_doc.CreateAttribute("version");
             attr.Value = "1.1";
-            a_root.Attributes.Append(attr);
+            root.Attributes.Append(attr);
             attr = m_doc.CreateAttribute("creator");
-            attr.Value = "MapSource 6.11.5";
-            a_root.Attributes.Append(attr);
+            attr.Value = "MapSource 6.16.3";
+            root.Attributes.Append(attr);
         }
         
-        public void AddWaypoint(XmlElement waypoint)
+        public void AddWaypoint(XmlElement waypoint, string filename)
         {
-            m_doc.DocumentElement.AppendChild(m_doc.ImportNode(waypoint, true));
+            var importedNode = (XmlElement)m_doc.ImportNode(waypoint, true);
+            UpdateWaypointWithFileName(importedNode, Path.GetFileName(filename));
+            m_doc.DocumentElement.AppendChild(importedNode);
+        }
+
+        private void UpdateWaypointWithFileName(XmlElement waypoint, string filename)
+        {
+            AppendElement(waypoint, filename, "desc");
+            AppendElement(waypoint, filename, "cmt");
+        }
+
+        private void AppendElement(XmlElement waypoint, string filename, string elementName)
+        {
+            var comment = SelectSingleElement(waypoint, elementName);
+            if (comment == null)
+            {
+                comment = m_doc.CreateElement(elementName, m_doc.DocumentElement.NamespaceURI);
+                waypoint.InsertAfter(comment, SelectSingleElement(waypoint, ("name")));
+            }
+
+            if (string.IsNullOrEmpty(comment.InnerText))
+                comment.InnerText = string.Format("Source: {0}", filename);
+            else
+                comment.InnerText = string.Format("{0} (Source: {1})", comment.InnerText, filename);
+        }
+
+        private XmlElement SelectSingleElement(XmlElement element, string name)
+        {
+            var results = element.GetElementsByTagName(name);
+            if (results.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                return (XmlElement)results[0];
+            }
         }
 
         public void Save(string filename)
