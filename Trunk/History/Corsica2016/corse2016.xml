@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+    <PageHead Title="Корсика 2016"></PageHead>
+
+    <PageBody>
+        <PageElement><MainMenu/></PageElement>
+
+        <PageElement>
+            <VKAlbum Id="238937049" />
+        </PageElement>
+
+    </PageBody>
+</PageTemplate>

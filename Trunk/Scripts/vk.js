@@ -61,7 +61,16 @@ function createAlbumMarkup(rootElement, data) {
         element += '<div class="description">' + desc + '</div>';
         
         //element += '<div class="photo"><img src="' + d[i].photo_807 + '" /></div>';
-        element += '<div class="photo"><img src="' + d[i].src_xbig + '" /></div>';
+        
+        if (d[i].src_xxbig != undefined)
+        {
+            element += '<div class="photo"><a href="' + d[i].src_xxbig + '" data-lightbox="' + d[i].pid + '"><img src="' + d[i].src_xbig + '" /></a></div>';
+        }
+        else
+        {
+            element += '<div class="photo"><img src="' + d[i].src_xbig + '" /></div>';
+        }
+        
         element += '</div>';
         rootElement.append(element);
     }
