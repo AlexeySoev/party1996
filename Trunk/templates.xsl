@@ -235,10 +235,10 @@
                         -->
                                         
                         <xsl:if test="@H">
-                                <xsl:attribute name="HEIGHT"><xsl:value-of select="@H"/></xsl:attribute>
+                                <xsl:attribute name="height"><xsl:value-of select="@H"/></xsl:attribute>
                         </xsl:if>
                         <xsl:if test="@V">
-                                <xsl:attribute name="WIDTH"><xsl:value-of select="@V"/></xsl:attribute>
+                                <xsl:attribute name="width"><xsl:value-of select="@V"/></xsl:attribute>
                         </xsl:if>
                     </img>
                 </td>
@@ -318,7 +318,7 @@
     <xsl:template match="ThumbnailPage">
         <html>
             <head><meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" /></head>
-            <script src="&ScriptsDir;/showphoto.js">error_preventing_string_for_FireFox3.0</script>
+            <script src="&ScriptsDir;/showphoto.js"></script>
             <body background="&PicsDir;/background.jpg">
             <div align="center">
             <table border="0" cellpadding="6" cellspacing="0">
@@ -351,7 +351,7 @@
                 <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
                 <script src="&ScriptsDir;/showphoto.js"></script>
             </head>
-            <FRAMESET frameborder="no" border="0" rows="*,120">
+            <frameset frameborder="no" border="0" rows="*,120">
                 <xsl:attribute name="onload">
                     makethumbs(
                         <xsl:value-of select="@Count"/>,
@@ -359,9 +359,9 @@
                         "<xsl:value-of select="@Title"/>"
                     )
                 </xsl:attribute>
-                <FRAME NAME="TopFrame" scrolling="YES" />
-                <FRAME NAME="BottomFrame" scrolling="YES" />
-            </FRAMESET>
+                <frame name="TopFrame" scrolling="yes" />
+                <frame name="BottomFrame" scrolling="yes" />
+            </frameset>
         </html>
         <xsl:apply-templates /> 
     </xsl:template>
