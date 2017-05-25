@@ -96,7 +96,10 @@ function showphoto(photonumber, count, xsltname, title)
 	var xml = loadXMLfromString(xmltext);
 	var xsl = loadXMLfromURL(xsltname);
 	var html = transformXML(xml, xsl);
-	var picwin = window.open("", "TopFrame");
+	
+    //var picwin = window.open("", "TopFrame");
+    var picwin = window.parent.document.getElementById('album-frame').contentWindow;
+    picwin.document.open();
 	picwin.document.write(html);
 	picwin.document.close();
 }
@@ -120,7 +123,10 @@ function makethumbs(count, xsltname, title)
 	var xml = loadXMLfromString(xmltext);
 	var xsl = loadXMLfromURL(xsltname);
 	var html = transformXML(xml, xsl);
-	var picwin = window.open("", "BottomFrame");	
+	
+    //var picwin = window.open("", "BottomFrame");	
+    var picwin = document.getElementById('thumbnails-frame').contentWindow;
+    picwin.document.open();
 	picwin.document.write(html);
 	picwin.document.close();
 

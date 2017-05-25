@@ -20,9 +20,11 @@
     <xsl:template match="PageHead">
         <head>
             <title>Первый сайт Партии Любителей - <xsl:value-of select="@Title"/></title>
+            <meta name="viewport" id='viewport' content="width=device-width, initial-scale=1" />
+            <script src="&Root;/Libs/jquery-2.1.4.min.js"></script>
+            <script src="&ScriptsDir;/viewport.js"></script>
             <link href="&Root;/styles.css" rel="stylesheet" />
             <link href="&Root;/Libs/lightbox/css/lightbox.css" rel="stylesheet" />
-            <script src="&Root;/Libs/jquery-2.1.4.min.js"></script>
         </head>
         <xsl:apply-templates />
     </xsl:template>
@@ -256,9 +258,12 @@
     <xsl:template match="Photo">
         <script src="&ScriptsDir;/showphoto.js"></script>
         <div class="chapter-wrapper" align="center">
+            <div class="album-title">
+                <p class="chapter-title"><xsl:value-of select="@Title"/></p>
+            </div>
             <table border="0" cellpadding="2" cellspacing="2" width="100%">
                 <tr>
-                    <td style="width:150px;" align="left" valign="top">
+                    <td class="album-title">
                         <p class="chapter-title"><xsl:value-of select="@Title"/></p>
                     </td>
                     <td align="center">
@@ -274,7 +279,7 @@
                             </tr>
                         </table>
                     </td>
-                    <td style="width:150px;"></td>
+                    <td class="album-title"></td>
                 </tr>
             </table>
         </div>
@@ -317,27 +322,32 @@
 
     <xsl:template match="ThumbnailPage">
         <html>
-            <head><meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" /></head>
-            <script src="&ScriptsDir;/showphoto.js"></script>
+            <head>
+                <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+                <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1" />
+                <script src="&Root;/Libs/jquery-2.1.4.min.js"></script>
+                <script src="&ScriptsDir;/viewport.js"></script>
+                <script src="&ScriptsDir;/showphoto.js"></script>
+            </head>
             <body background="&PicsDir;/background.jpg">
-            <div align="center">
-            <table border="0" cellpadding="6" cellspacing="0">
-                <tr valign="bottom" align="center">             
-                    
-                    <xsl:choose>
-                        <xsl:when test="@Auto[.='true']">
-                            <xsl:call-template name="For">
-                                <xsl:with-param name="n" select="@Count"/>
-                            </xsl:call-template>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:apply-templates /> 
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    
-                </tr>
-            </table>
-            </div>
+                <div align="center">
+                    <table border="0" cellpadding="6" cellspacing="0">
+                        <tr valign="bottom" align="center">             
+                            
+                            <xsl:choose>
+                                <xsl:when test="@Auto[.='true']">
+                                    <xsl:call-template name="For">
+                                        <xsl:with-param name="n" select="@Count"/>
+                                    </xsl:call-template>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:apply-templates /> 
+                                </xsl:otherwise>
+                            </xsl:choose>
+                            
+                        </tr>
+                    </table>
+                </div>
             </body>
         </html>
     </xsl:template>
@@ -349,9 +359,13 @@
                     Первый сайт Партии Любителей - Альбом - <xsl:value-of select="@Title"/>
                 </title>
                 <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+                <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1" />
+                <script src="&Root;/Libs/jquery-2.1.4.min.js"></script>
+                <script src="&ScriptsDir;/viewport.js"></script>
                 <script src="&ScriptsDir;/showphoto.js"></script>
+                <link href="&Root;/styles-album.css" rel="stylesheet" />
             </head>
-            <frameset frameborder="no" border="0" rows="*,120">
+            <body>
                 <xsl:attribute name="onload">
                     makethumbs(
                         <xsl:value-of select="@Count"/>,
@@ -359,9 +373,9 @@
                         "<xsl:value-of select="@Title"/>"
                     )
                 </xsl:attribute>
-                <frame name="TopFrame" scrolling="yes" />
-                <frame name="BottomFrame" scrolling="yes" />
-            </frameset>
+                <div id="album"><iframe class="frame" id="album-frame" name="album" frameborder="0"></iframe></div>
+                <div id="thumbnails"><iframe class="frame" id="thumbnails-frame" name="thumbnails" frameborder="0"></iframe></div>
+            </body>
         </html>
         <xsl:apply-templates /> 
     </xsl:template>

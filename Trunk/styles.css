@@ -23,6 +23,12 @@ v\:* {
 #eeffff - наисветлейший голубой (для меню)
 */
 
+/*disable font boosting in mobile browsers*/
+/*https://stackoverflow.com/questions/13430897/how-to-override-font-boosting-in-mobile-chrome*/
+/*https://gist.github.com/mojoaxel/7469194*/
+html * {max-height:1000000px;}
+/*********/
+
 #main,
 #news {
     text-align: center;
@@ -35,32 +41,24 @@ v\:* {
 .page-element {
     display: inline-block;
     width: 95%;
-    min-width: 600px;
+    min-width: 520px;
     max-width: 1250px;
     text-align: left;
 }
 
-/*
-@media all and (min-width: 807px) {
-.page-element {
-    width: 807px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+/*responsive part*/
+@media all and (max-width: 1023px) {
+    .page-element {
+        width: 100%;
+    }
 }
 
-@media all and (min-width: 1024px) {
-.page-element {
-    width: 1000px;
+@media all and (max-width: 679px) {
+    .site-menu table {
+        font-size: smaller;
+    }
 }
-}
-
-@media all and (min-width: 1280px) {
-.page-element {
-    width: 1250px;
-}
-}
-*/
+/**/
 
 .site-menu {
     margin-bottom: 5px;
@@ -215,6 +213,36 @@ a:hover {
     cursor: pointer;
 }
 
+td.album-title {
+    width: 150px;
+    vertical-align: top;
+}
+
+.photo-div img {
+    width: 100%;
+    max-width: 800px;
+}
+
+/*responsive part*/
+div.album-title {
+    display: none;
+}
+
+@media all and (max-width: 1279px) {
+    td.album-title {
+        display: none;
+    }
+    
+    div.album-title {
+        display: block;
+    }
+    
+    div.album-title .chapter-title {
+        margin-top: 0px;
+    }
+}
+/*end of responsive part*/
+
 
 /* GPS track page */
 
@@ -289,6 +317,18 @@ a:hover {
     margin-bottom: 20px;
 }
 
+/*responsive part*/
+@media all and (max-width: 799px) {
+    .track-details {
+        display: none;
+    }
+    
+    .right-pane {
+        margin-left: 150px;
+    }
+}
+/*end of responsive part*/
+
 
 /*VK album*/
 
@@ -300,7 +340,7 @@ a:hover {
 
 #VKAlbum div {
     display: inline-block;
-    width:807px;
+    width: 807px;
 }
 
 #VKAlbum .album-title{
@@ -318,9 +358,22 @@ a:hover {
     margin-top: 60px;
 }
 #VKAlbum .photo {
-    margin-top:10px;
+    margin-top: 10px;
 }
 #VKAlbum .description {
     text-indent: 10px;
     text-align: justify;
 }
+
+/*responsive part*/
+@media all and (max-width: 810px) {
+    
+    #VKAlbum div {
+        width: 100%;
+    }
+    
+    .photo img {
+        width: 100%;
+    }
+}
+/*end of responsive part*/
