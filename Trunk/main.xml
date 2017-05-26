@@ -4,7 +4,7 @@
 <PageTemplate>
     <PageHead Title="Главная"></PageHead>
         
-    <PageBody SnakeText="">
+    <PageBody SnakeText="20 лет Партии Любителей!">
         <PageElement><MainMenu /></PageElement>
         
         <PageElement><Image Src="Images/emblema_20years.jpg">

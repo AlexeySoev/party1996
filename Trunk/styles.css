@@ -1,10 +1,17 @@
 ﻿/* legacy styles TODO */
-
 v\:* {
     behavior:url(#default#VML);
 }
-.spanstyle {
-    COLOR: #ff0000; FONT-FAMILY: Verdana; FONT-SIZE: 10pt; FONT-WEIGHT: bold; POSITION: absolute; TOP: -50px; VISIBILITY: visible
+
+/*styles for snake text (see snake.js)*/
+.snake-symbol {
+    color: #ff0000;
+    font-family: Verdana;
+    font-size: 10pt;
+    font-weight: bold;
+    position: absolute;
+    top: -50px;
+    visibility: visible
 }
 
 /* my own styles */

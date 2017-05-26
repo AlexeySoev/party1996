@@ -34,6 +34,12 @@
         <div id="main">
             <xsl:apply-templates />
         </div>
+        
+        <xsl:if test="@SnakeText[.!='']">
+            <script src="&ScriptsDir;/snake.js"></script>
+            <script>createsnake("<xsl:value-of select="@SnakeText"/>")</script>
+        </xsl:if>
+        
         <script src="&Root;/Libs/lightbox/js/lightbox.min.js"></script>
         <script src="&ScriptsDir;/lb.js"></script>
         </body>
