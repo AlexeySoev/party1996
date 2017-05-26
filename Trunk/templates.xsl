@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE MyPage [
-<!ENTITY Root "file://localhost/D:/Леха/!Party/party1996/Trunk">
 <!ENTITY OfficeRoot "file://localhost/D:/!Party1996/Trunk">
 <!ENTITY TestRoot1 "http://localhost/party1996">
-<!ENTITY TestRoot2 "http://party1996.narod.ru">
+<!ENTITY TestRoot2 "file://localhost/D:/Леха/!Party/party1996/Trunk">
+<!ENTITY Root "http://party1996.narod.ru">
 <!ENTITY ScriptsDir "&Root;/Scripts">
 <!ENTITY PicsDir "&Root;/Images">
 ]>
@@ -52,7 +52,7 @@
     </xsl:template>
     
     <xsl:template match="MainMenu">
-        <div class="site-title">Первый сайт Партии Любителей</div>
+        <div class="site-title" onclick="window.parent.location.href='&Root;/index.html'">Первый сайт Партии Любителей</div>
         <div class="site-menu">
             <table width="100%" border="0" cellspacing="2" cellpadding="5" align="center">
                 <tr class="menu-item">
