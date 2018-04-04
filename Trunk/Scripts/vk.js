@@ -1,6 +1,15 @@
+var albumOwnerId = 1413115; // alexey soev 
+var downloadMode = false;
+
 function getAlbum(albumId) {
     getAlbumDescription(albumId, $('#VKAlbum'), createAlbumDescriptionMarkup);
     getAlbumPhotos(albumId, $('#VKAlbum'), createAlbumMarkup);
+}
+
+function getAlbum4Download(ownerId, albumId) {
+    albumOwnerId = ownerId;
+    downloadMode = true;
+    getAlbum(albumId);
 }
 
 function getAlbumPhotos(albumId, rootElement, cb) {
@@ -9,15 +18,15 @@ function getAlbumPhotos(albumId, rootElement, cb) {
         url: "http://api.vk.com/method/getPhotos",
         data: {
             album_id: albumId,
-            owner_id: 1413115/*,
+            owner_id: albumOwnerId,
             rev: 0,
-            v: 5.37*/
+            v: 5.74
         },
         dataType: 'jsonp',
         async: true
     }).success(function (data) {
-        //cb(rootElement, data.response.items);
-        cb(rootElement, data.response);
+        cb(rootElement, data.response.items);
+        //cb(rootElement, data.response);
     })
     .error(function (xhr, status, error) {
         console.log(err.Message);
@@ -30,15 +39,15 @@ function getAlbumDescription(albumId, rootElement, cb) {
         url: "http://api.vk.com/method/photos.getAlbums",
         data: {
             album_ids: albumId,
-            owner_id: 1413115/*,
+            owner_id: albumOwnerId,
             rev: 0,
-            v: 5.37*/
+            v: 5.74
         },
         dataType: 'jsonp',
         async: true
     }).success(function (data) {
-        //cb(rootElement, data.response.items);
-        cb(rootElement, data.response);
+        cb(rootElement, data.response.items);
+        //cb(rootElement, data.response);
     })
     .error(function (xhr, status, error) {
         console.log(err.Message);
@@ -62,13 +71,31 @@ function createAlbumMarkup(rootElement, data) {
         
         //element += '<div class="photo"><img src="' + d[i].photo_807 + '" /></div>';
         
-        if (d[i].src_xxbig != undefined)
+        if (downloadMode == false)
         {
-            element += '<div class="photo"><a href="' + d[i].src_xxbig + '" data-lightbox="' + d[i].pid + '"><img src="' + d[i].src_xbig + '" /></a></div>';
+            if (d[i].photo_1280 != undefined)
+            {
+                element += '<div class="photo"><a href="' + d[i].photo_1280 + '" data-lightbox="' + d[i].pid + '"><img src="' + d[i].photo_807 + '" /></a></div>';
+            }
+            else
+            {
+                element += '<div class="photo"><img src="' + d[i].photo_807 + '" /></div>';
+            }
         }
         else
         {
-            element += '<div class="photo"><img src="' + d[i].src_xbig + '" /></div>';
+            if (d[i].photo_2560 != undefined)
+            {
+                element += '<div class="photo"><img src="' + d[i].photo_2560 + '" /></div>';
+            }
+            else if (d[i].photo_1280 != undefined)
+            {
+                element += '<div class="photo"><img src="' + d[i].photo_1280 + '" /></div>';
+            }
+            else
+            {
+                element += '<div class="photo"><img src="' + d[i].photo_807 + '" /></div>';
+            }
         }
         
         element += '</div>';

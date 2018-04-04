@@ -2,23 +2,26 @@
 <?xml-stylesheet href="../../templates.xsl" type="text/xsl"?>
 
 <PageTemplate>
-	<PageHead Title="Алексей Соев"></PageHead>
+    <PageHead Title="Алексей Соев"></PageHead>
 
-	<PageBody SnakeText="">
-		<PageElement>
-			<MainMenu />
-		</PageElement>
+    <PageBody SnakeText="">
+        <PageElement>
+            <MainMenu />
+        </PageElement>
 
-		<PageElement>
-			<Chapter Title="Алексей Соев">
-				<Line><Link Url="Avia/Avia.xml">Авиамоделизм</Link></Line>
-				<Line><Link Url="Geocaching/Geocaching.xml">Геокэшинг</Link></Line>
-				<Line><Link Url="../../History/history-soev.xml">Мои путешествия</Link></Line>
-				<Line><Link Url="../../Album/album-soev.xml">Мои альбомы</Link></Line>
-				<Line><Link Url="../../Tracks/tracks-soev.xml">Мои треки</Link></Line>
-				<Line><Link Url="../../Funs/aphorisms-soev.xml">Выраженьица</Link></Line>
-			</Chapter>
-		</PageElement>
-	</PageBody>
+        <PageElement>
+            <Chapter Title="Алексей Соев">
+                <Line><Link Url="Avia/Avia.xml">Авиамоделизм</Link></Line>
+                <Line><Link Url="Geocaching/Geocaching.xml">Геокэшинг</Link></Line>
+                <Line><Link Url="../../History/history-soev.xml">Мои путешествия</Link></Line>
+                <Line><Link Url="../../Album/album-soev.xml">Мои альбомы</Link></Line>
+                <Line><Link Url="../../Tracks/tracks-soev.xml">Мои треки</Link></Line>
+                <Line><Link Url="../../Funs/aphorisms-soev.xml">Выраженьица</Link></Line>
+            </Chapter>
+            <Chapter Title="Лаборатория">
+                <Line><Link Url="VKAlbumDownloader/downloader.xml">VK Album Downloader</Link></Line>
+            </Chapter>
+        </PageElement>
+    </PageBody>
 </PageTemplate>
 

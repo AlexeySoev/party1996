@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../../../templates.xsl" type="text/xsl"?>
+
+<PageTemplate>
+    <PageHead Title="VK Album Downloader"></PageHead>
+
+    <PageBody>
+        <PageElement><MainMenu/></PageElement>
+
+        <PageElement>
+            <VKAlbum Owner="-8292013" Id="254632131" />
+        </PageElement>
+
+    </PageBody>
+</PageTemplate>

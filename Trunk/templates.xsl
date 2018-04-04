@@ -392,19 +392,29 @@
         <script src="&Root;/Libs/jquery-2.1.4.min.js"></script>
         <script src="&ScriptsDir;/vk.js"></script>
         
-        <script type="text/javascript">
-            $(function(){ 
-                var albumID = <xsl:value-of select="@Id"/>; 
-                getAlbum(albumID);
-            });
-        </script>
+        <xsl:if test="not(@Owner)">
+            <script type="text/javascript">
+                $(function(){ 
+                    var albumID = <xsl:value-of select="@Id"/>; 
+                    getAlbum(albumID);
+                });
+            </script>
+         </xsl:if>
+         <xsl:if test="(@Owner)">
+            <script type="text/javascript">
+                $(function(){ 
+                    var albumID = <xsl:value-of select="@Id"/>; 
+                    var ownerID = <xsl:value-of select="@Owner"/>; 
+                    getAlbum4Download(ownerID, albumID);
+                });
+            </script>
+         </xsl:if>
         
         <div id="VKAlbum">
         </div>
         
         <xsl:apply-templates />
     </xsl:template>
-    
     
     <!-- *** End of Photo Album support -->
 
