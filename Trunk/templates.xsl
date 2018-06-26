@@ -24,7 +24,7 @@
             <script src="&Root;/Libs/jquery-2.1.4.min.js"></script>
             <script src="&ScriptsDir;/viewport.js"></script>
             <link href="&Root;/styles.css" rel="stylesheet" />
-            <link href="&Root;/Libs/lightbox/css/lightbox.css" rel="stylesheet" />
+            <link href="&Root;/Libs/lightbox/css/lightbox.min.css" rel="stylesheet" />
         </head>
         <xsl:apply-templates />
     </xsl:template>
