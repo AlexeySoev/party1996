@@ -1,5 +1,6 @@
 var albumOwnerId = 1413115; // alexey soev 
 var downloadMode = false;
+var access_token = 'c0af22c0c0af22c0c0af22c0d6c0e2d315cc0afc0af22c09b9d0537ef37721dfed358f7'; // from my VK app for the site
 
 function getAlbum(albumId) {
     getAlbumDescription(albumId, $('#VKAlbum'), createAlbumDescriptionMarkup);
@@ -15,10 +16,11 @@ function getAlbum4Download(ownerId, albumId) {
 function getAlbumPhotos(albumId, rootElement, cb) {
     
     $.ajax( {
-        url: "http://api.vk.com/method/getPhotos",
+        url: "https://api.vk.com/method/getPhotos",
         data: {
             album_id: albumId,
             owner_id: albumOwnerId,
+            access_token: access_token,
             rev: 0,
             v: 5.74
         },
@@ -36,10 +38,11 @@ function getAlbumPhotos(albumId, rootElement, cb) {
 function getAlbumDescription(albumId, rootElement, cb) {
     
     $.ajax( {
-        url: "http://api.vk.com/method/photos.getAlbums",
+        url: "https://api.vk.com/method/photos.getAlbums",
         data: {
             album_ids: albumId,
             owner_id: albumOwnerId,
+            access_token: access_token,
             rev: 0,
             v: 5.74
         },
