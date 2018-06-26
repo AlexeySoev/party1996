@@ -80,9 +80,13 @@ function createAlbumMarkup(rootElement, data) {
             {
                 element += '<div class="photo"><a href="' + d[i].photo_1280 + '" data-lightbox="' + d[i].pid + '"><img src="' + d[i].photo_807 + '" /></a></div>';
             }
-            else
+            else if (d[i].photo_807 != undefined)
             {
                 element += '<div class="photo"><img src="' + d[i].photo_807 + '" /></div>';
+            }
+            else
+            {
+                element += '<div class="photo"><img src="' + d[i].photo_604 + '" /></div>';
             }
         }
         else
@@ -95,9 +99,13 @@ function createAlbumMarkup(rootElement, data) {
             {
                 element += '<div class="photo"><img src="' + d[i].photo_1280 + '" /></div>';
             }
-            else
+            else if (d[i].photo_807 != undefined)
             {
                 element += '<div class="photo"><img src="' + d[i].photo_807 + '" /></div>';
+            }
+            else
+            {
+                element += '<div class="photo"><img src="' + d[i].photo_604 + '" /></div>';
             }
         }
         
