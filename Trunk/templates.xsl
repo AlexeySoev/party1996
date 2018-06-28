@@ -36,6 +36,7 @@
         </div>
         
         <xsl:if test="@SnakeText[.!='']">
+            <div id="snakeholder"></div>
             <script src="&ScriptsDir;/snake.js"></script>
             <script>createsnake("<xsl:value-of select="@SnakeText"/>")</script>
         </xsl:if>

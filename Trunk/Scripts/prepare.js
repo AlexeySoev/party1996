@@ -36,7 +36,7 @@ function prepare()
     }
     
     if (count > 0) {
-        var msg = count + " ads blocks hidded";
+        var msg = count + " ads blocks hidden";
         //alert(msg);
         console.log(msg);
     }

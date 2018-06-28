@@ -18,17 +18,16 @@ function createsnake(text)
 
     for (i=0; i <= message.length-1; i++)
         ypos[i]=-50
-        
+    
+    var snakecontent = "";
     for (i=0; i <= message.length-1; i++)
     {
-        document.write("<span id='span"+i+"' class='snake-symbol'>")
-        document.write(message[i])
-        document.write("</span>")
+        snakecontent += "<span id='snakespan"+i+"' class='snake-symbol'>" + message[i] + "</span>"
     }
+    
+    var snakeholder = document.getElementById("snakeholder");
+    snakeholder.innerHTML = snakecontent;
      
-    if (document.layers)
-        document.captureEvents(Event.MOUSEMOVE);
-
     document.onmousemove = handlerMM;
     
     makesnake();
@@ -38,26 +37,33 @@ function makesnake()
 {
     if (flag == 1)
     {
+        var needRedraw = false;
         for (i=message.length-1; i >= 1; i--)
         {
-            xpos[i] = xpos[i-1]+step
-            ypos[i] = ypos[i-1]
-        }
-        xpos[0] = x + (2*step)
-        ypos[0] = y
-
-        var thisspan;
-        for (i=0; i <= message.length-1; i++)
-        {
-            if (document.getElementById)
-                thisspan = eval("span"+(i)+".style")
-            else if (document.layers)
-                thisspan = eval("document.span"+i)
-            else
-                break;
+            if (xpos[i] != xpos[i-1]+step)
+            {
+                xpos[i] = xpos[i-1]+step;
+                needRedraw = true;
+            }
             
-            thisspan.left=xpos[i]
-            thisspan.top=ypos[i]
+            if (ypos[i] != ypos[i-1])
+            {
+                ypos[i] = ypos[i-1];
+                needRedraw = true;
+            }
+        }
+        xpos[0] = x + (2*step);
+        ypos[0] = y;
+        
+        if (needRedraw)
+        {
+            var thisspan;
+            for (i=0; i <= message.length-1; i++)
+            {
+                thisspan = document.getElementById("snakespan"+i);
+                thisspan.style.left = xpos[i] + "px";
+                thisspan.style.top = ypos[i] + "px";
+            }
         }
     }
     
