@@ -8,7 +8,7 @@ function getAlbum(albumId) {
 }
 
 function getAlbum4Download(ownerId, albumId) {
-    albumOwnerId = ownerId;
+    albumOwnerId = ownerId; // with leading minus if owner is a group, e.g "-12334567"
     downloadMode = true;
     getAlbum(albumId);
 }
@@ -21,6 +21,7 @@ function getAlbumPhotos(albumId, rootElement, cb) {
             album_id: albumId,
             owner_id: albumOwnerId,
             access_token: access_token,
+            //offset: 1000, // in case there are more than 1000 photos in the album, take the next part
             rev: 0,
             v: 5.74
         },
