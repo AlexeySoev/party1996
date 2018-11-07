@@ -64,6 +64,12 @@ function makesnake()
                 thisspan.style.left = xpos[i] + "px";
                 thisspan.style.top = ypos[i] + "px";
             }
+
+            delay = delay + delay/20;
+        }
+        else
+        {
+            flag = 0;
         }
     }
     
@@ -74,5 +80,6 @@ function handlerMM(e)
 {
     x = (document.layers) ? e.pageX : document.body.scrollLeft + e.clientX
     y = (document.layers) ? e.pageY : document.body.scrollTop + e.clientY
-    flag = 1
+    flag = 1;
+    delay = 30;
 }
