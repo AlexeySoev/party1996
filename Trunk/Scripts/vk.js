@@ -2,9 +2,27 @@ var albumOwnerId = 1413115; // alexey soev
 var downloadMode = false;
 var access_token = 'c0af22c0c0af22c0c0af22c0d6c0e2d315cc0afc0af22c09b9d0537ef37721dfed358f7'; // from my VK app for the site
 
-function getAlbum(albumId) {
+var renameElement = 0;
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function getAlbum(albumId) {
     getAlbumDescription(albumId, $('#VKAlbum'), createAlbumDescriptionMarkup);
-    getAlbumPhotos(albumId, $('#VKAlbum'), createAlbumMarkup);
+    await sleep(1000);   
+
+    var total = 1000;
+    var chank = 50;
+    var count = 0;
+
+    do 
+    {
+        getAlbumPhotos(albumId, $('#VKAlbum'), createAlbumMarkup, count);
+        count = count + chank;
+        await sleep(1000);   
+    }
+    while (count < total);
 }
 
 function getAlbum4Download(ownerId, albumId) {
@@ -13,7 +31,7 @@ function getAlbum4Download(ownerId, albumId) {
     getAlbum(albumId);
 }
 
-function getAlbumPhotos(albumId, rootElement, cb) {
+function getAlbumPhotos(albumId, rootElement, cb, offset) {
     
     $.ajax( {
         url: "https://api.vk.com/method/getPhotos",
@@ -21,14 +39,14 @@ function getAlbumPhotos(albumId, rootElement, cb) {
             album_id: albumId,
             owner_id: albumOwnerId,
             access_token: access_token,
-            //offset: 1000, // in case there are more than 1000 photos in the album, take the next part
+            offset: offset, // in case there are more than 1000 (NOW 50!) photos in the album, take the next part
             rev: 0,
             v: 5.74
         },
         dataType: 'jsonp',
         async: true
     }).success(function (data) {
-        cb(rootElement, data.response.items);
+        cb(rootElement, data.response.items, offset);
         //cb(rootElement, data.response);
     })
     .error(function (xhr, status, error) {
@@ -58,11 +76,11 @@ function getAlbumDescription(albumId, rootElement, cb) {
     });
 }
 
-function createAlbumMarkup(rootElement, data) {
+function createAlbumMarkup(rootElement, data, offset) {
     var d = data;
     for (i = 0; i < d.length; i++)
     {
-        var element = '<div id="div'+ i +'" class="element" >';
+        var element = '<div id="div'+ (i + offset)  +'" class="element" >';
          
         var desc = d[i].text;
         /*
@@ -92,22 +110,30 @@ function createAlbumMarkup(rootElement, data) {
         }
         else
         {
+            var link = '';
             if (d[i].photo_2560 != undefined)
             {
-                element += '<div class="photo"><img src="' + d[i].photo_2560 + '" /></div>';
+                link = d[i].photo_2560;
             }
             else if (d[i].photo_1280 != undefined)
             {
-                element += '<div class="photo"><img src="' + d[i].photo_1280 + '" /></div>';
+                link = d[i].photo_1280;
             }
             else if (d[i].photo_807 != undefined)
             {
-                element += '<div class="photo"><img src="' + d[i].photo_807 + '" /></div>';
+                link = d[i].photo_807;
             }
             else
             {
-                element += '<div class="photo"><img src="' + d[i].photo_604 + '" /></div>';
+                link = d[i].photo_604;
             }
+
+            element += '<div class="photo"><img src="' + link + '" /></div>';
+            
+            var newFileName = ('00000' + (i + 1 + offset)).slice(-5) + '.jpg';
+            var oldFileName = link.split('/').pop();
+
+            $('.rename-info').append('<!-- rename ' + oldFileName + ' ' + newFileName + ' -->');
         }
         
         element += '</div>';
@@ -118,4 +144,7 @@ function createAlbumMarkup(rootElement, data) {
 function createAlbumDescriptionMarkup(rootElement, data) {
     rootElement.append('<div class="album-title">' + data[0].title + '</div>');
     rootElement.append('<div class="album-description">' + data[0].description + '</div>');
+
+    rootElement.append('<div class="rename-info"></div>');
+
 }
