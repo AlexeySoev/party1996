@@ -97,11 +97,29 @@ function showphoto(photonumber, count, xsltname, title)
 	var xsl = loadXMLfromURL(xsltname);
 	var html = transformXML(xml, xsl);
 	
-    //var picwin = window.open("", "TopFrame");
-    var picwin = window.parent.document.getElementById('album-frame').contentWindow;
-    picwin.document.open();
+	//var picwin = window.open("", "TopFrame");
+	var picwin = window.parent.document.getElementById('album-frame').contentWindow;
+	picwin.document.open();
 	picwin.document.write(html);
 	picwin.document.close();
+
+	// support arrow keyboard keys
+	picwin.onload = function() {
+		picwin.document.onkeydown = function(e) {
+			e = e || window.event;
+
+			if (e.keyCode == '37') {
+				// left arrow
+			   showphoto(prev, count, xsltname, title)
+			}
+			else if (e.keyCode == '39') {
+			   // right arrow
+			   showphoto(next, count, xsltname, title)
+			}
+		};
+	};
+	picwin.focus();
+	//
 }
 
 function makethumbs(count, xsltname, title)
@@ -124,9 +142,9 @@ function makethumbs(count, xsltname, title)
 	var xsl = loadXMLfromURL(xsltname);
 	var html = transformXML(xml, xsl);
 	
-    //var picwin = window.open("", "BottomFrame");	
-    var picwin = document.getElementById('thumbnails-frame').contentWindow;
-    picwin.document.open();
+	//var picwin = window.open("", "BottomFrame");	
+	var picwin = document.getElementById('thumbnails-frame').contentWindow;
+	picwin.document.open();
 	picwin.document.write(html);
 	picwin.document.close();
 
