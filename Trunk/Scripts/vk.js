@@ -12,9 +12,9 @@ async function getAlbum(albumId) {
     getAlbumDescription(albumId, $('#VKAlbum'), createAlbumDescriptionMarkup);
     await sleep(1000);   
 
-    var total = 1000;
+    var total = 1154;  // total qunatity of photos in the album (make it as parameter? read it from getAlbumDescription function?)
     var chank = 50;
-    var count = 0;
+    var count = 0;  // starting position, should be 0, but if more than 1000 photos in the album it makes sence to get them by thousands, i.e. set it to 0, then 1000, then 2000...
 
     do 
     {
