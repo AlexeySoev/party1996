@@ -17,14 +17,14 @@
             в общем-то и составляют нашу жизнь.
         </Paragraph>
 
-        <Block Title="Chesterfield">
-            <Line><Emphasize>Скоро</Emphasize></Line>
-        </Block>
         <Block Title="Сосед. Фильмы. 199x год.">
             <Line>Поставить на счетчик-2</Line>
             <Line>В постели с компьютером</Line>
             <Line>Приказано выпить</Line>
             <Line>Смерть на пороге универмага</Line>
+        </Block>
+        <Block Title="Chesterfield. 1998 год.">
+            <Line><LinkToImage Url="../History/May1998/Diary/03.JPG" Title="Афоризмы, записанные на пачке Chesterfield'а"/></Line>
         </Block>
         <Block Title="Потапыч. Литература. 2000 год.">
             <Line>Потапыч для чайников</Line>
