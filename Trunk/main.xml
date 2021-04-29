@@ -4,10 +4,10 @@
 <PageTemplate>
     <PageHead Title="Главная"></PageHead>
         
-    <PageBody SnakeText="20 лет Партии Любителей!">
+    <PageBody SnakeText="25 лет Партии Любителей!">
         <PageElement><MainMenu /></PageElement>
         
-        <PageElement><Image Src="Images/emblema_20years.jpg">
+        <PageElement><Image Src="Images/emblema_25years.jpg">
         <Chapter Title="Обращение">
         <Paragraph><Emphasize>Привет, соратники, друзья, товарищи и даже те, кто случайно попал сюда!</Emphasize></Paragraph>
         <Paragraph><Emphasize>

@@ -23,6 +23,9 @@
                 <Line><LinkToImage Url="../Photos/Attributes/Stamp.JPG" Title="Партийная печать" GroupSingle="Партийные атрибуты"/></Line>
                 <Line><LinkToImage Url="../Photos/Attributes/Partbilet.JPG" Title="Партбилет" GroupSingle="Партийные атрибуты"/></Line>
                 <Line><LinkToImage Url="../Photos/Attributes/All.JPG" Title="Партийные атрибуты" GroupSingle="Партийные атрибуты"/></Line>
+                <Line><LinkToImage Url="../Photos/Attributes/Emblem.JPG" Title="Емблема партии" GroupSingle="Партийные атрибуты"/></Line>
+                <Line><LinkToImage Url="../Photos/Attributes/Emblem20.JPG" Title="Емблема партии 20 лет" GroupSingle="Партийные атрибуты"/></Line>
+                <Line><LinkToImage Url="../Photos/Attributes/Emblem25.JPG" Title="Емблема партии 25 лет" GroupSingle="Партийные атрибуты"/></Line>
                 
                 <Line><LinkToImage Url="../Photos/Documents/May97List.JPG" Title="Подготовка к походу Май-97" GroupSingle="Документы Партии" Main="1"/></Line>
                 <Line><LinkToImage Url="../Photos/Documents/May98List.JPG" Title="Подготовка к походу Май-98" GroupSingle="Документы Партии"/></Line>
@@ -48,6 +51,7 @@
                 <Line><LinkToImage Url="../Photos/Posters/March99-1.JPG" Title="В походе Март-99" GroupSingle="Плакаты"/></Line>
                 <Line><LinkToImage Url="../Photos/Posters/March99-2.JPG" Title="В походе Март-99" GroupSingle="Плакаты"/></Line>
                 <Line><LinkToImage Url="../Photos/Posters/March99-3.JPG" Title="В походе Март-99" GroupSingle="Плакаты"/></Line>
+                <Line><LinkToImage Url="../Photos/Posters/Bania.JPG" Title="Пора в баню" GroupSingle="Плакаты"/></Line>
                                 
                 <Line><LinkToImage Url="../Photos/Collages/Sochi.JPG" Title="Пляж" GroupSingle="Коллажи" Main="1"/></Line>
                 <Line><LinkToImage Url="../Photos/Collages/N8.JPG" Title="Общ. №8" GroupSingle="Коллажи"/></Line>
