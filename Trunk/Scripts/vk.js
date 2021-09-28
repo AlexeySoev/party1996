@@ -1,17 +1,17 @@
 var albumOwnerId = 1413115; // alexey soev 
-var downloadMode = false;
 var access_token = 'c0af22c0c0af22c0c0af22c0d6c0e2d315cc0afc0af22c09b9d0537ef37721dfed358f7'; // from my VK app for the site
 
 //configuration params
 var chankSize = 50; // defaut VK chank is 50, let's stay with it
 var groupSize = 350; // max photos on page
-var downloadtimePerPhoto = 500 // let's give 500 ms per photo to download
+var downloadtimePerPhoto = 20 // let's give 500ms per photo to download, 20ms to display
 
 // operational vaues
 var iteration = 1; // change it when downloading photos by groups
 
 // dynamics values
 var totalPhotosInAlbum = 0;
+var downloadMode = false;
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -46,6 +46,7 @@ async function getAlbum(albumId) {
 function getAlbum4Download(ownerId, albumId) {
     albumOwnerId = ownerId; // with leading minus if owner is a group, e.g "-12334567"
     downloadMode = true;
+    downloadtimePerPhoto = 500; // increase download time since images are much bigger
     getAlbum(albumId);
 }
 
@@ -123,7 +124,7 @@ function createAlbumMarkup(rootElement, data, offset) {
 			
             if (photo_807 != photo_1280)
             {
-                element += '<div class="photo"><a href="' + photo_1280 + '" data-lightbox="' + d[i].id + '"><img src="' + photo_807 + '" /></a></div>';
+                element += '<div class="photo"><a href="' + photo_1280 + '" data-lightbox="vkalbum" data-title="' + desc.replace(/[\""]/g, '') + '"><img src="' + photo_807 + '" /></a></div>';
             }
             else
             {
