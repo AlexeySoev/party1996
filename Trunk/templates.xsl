@@ -406,7 +406,9 @@
                 $(function(){ 
                     var albumID = <xsl:value-of select="@Id"/>; 
                     var ownerID = <xsl:value-of select="@Owner"/>; 
-                    getAlbum4Download(ownerID, albumID);
+                    var imageGroupSize = <xsl:value-of select="@imageGroupSize"/>; 
+                    var iterationNumber = <xsl:value-of select="@iterationNumber"/>; 
+                    getAlbum4Download(ownerID, albumID, imageGroupSize, iterationNumber);
                 });
             </script>
          </xsl:if>

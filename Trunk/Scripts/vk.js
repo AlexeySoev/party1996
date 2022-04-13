@@ -3,11 +3,9 @@ var access_token = 'c0af22c0c0af22c0c0af22c0d6c0e2d315cc0afc0af22c09b9d0537ef377
 
 //configuration params
 var chankSize = 50; // defaut VK chank is 50, let's stay with it
-var groupSize = 350; // max photos on page
-var downloadtimePerPhoto = 20 // let's give 500ms per photo to download, 20ms to display
-
-// operational vaues
-var iteration = 1; // change it when downloading photos by groups
+var groupSize = 10000; // 10000 for display mode (i.e not limited). And, say, 300 photo for download mode (configued by xml page caller!)
+var iteration = 1; // changed when downloading photos by groups (configued by xml page caller!) (for display it's always stay 1)
+var downloadtimePerPhoto = 20 // let's give 20ms per photo to display and 1000ms to download (configued by xml page caller!)
 
 // dynamics values
 var totalPhotosInAlbum = 0;
@@ -43,10 +41,14 @@ async function getAlbum(albumId) {
 	console.log("All photos within the range requested. Exit.");
 }
 
-function getAlbum4Download(ownerId, albumId) {
-    albumOwnerId = ownerId; // with leading minus if owner is a group, e.g "-12334567"
+function getAlbum4Download(ownerId, albumId, imageGroupSize, iterationNumber) {
     downloadMode = true;
-    downloadtimePerPhoto = 500; // increase download time since images are much bigger
+    downloadtimePerPhoto = 1000; // increase download time since images are much bigger
+
+    albumOwnerId = ownerId; // with leading minus if owner is a group, e.g "-12334567"
+    groupSize = imageGroupSize;
+    iteration = iterationNumber;
+
     getAlbum(albumId);
 }
 
