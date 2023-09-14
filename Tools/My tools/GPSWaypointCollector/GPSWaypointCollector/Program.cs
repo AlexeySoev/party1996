@@ -9,10 +9,16 @@ namespace GPSWaypointCollector
         static void Main(string[] args)
         {
             if (args.Length != 2)
+            {
+                Console.WriteLine("Wrong parameters list");
                 return;
+            }
 
             if (!Directory.Exists(args[0]))
+            {
+                Console.WriteLine("Directory doesnt exist");
                 return;
+            }
 
             WaypointCollector collector = new WaypointCollector();
 
@@ -24,6 +30,12 @@ namespace GPSWaypointCollector
 
         static void ProcessDirectory(string directoryName, WaypointCollector collector)
         {
+            if (Directory.GetFiles(directoryName, "*.noimport").Length > 0 || Directory.GetFiles(directoryName, "*.noscan").Length > 0)
+            {
+                Console.WriteLine("Skipped: {0}", directoryName);
+                return;
+            }
+
             foreach (string filename in Directory.GetFiles(directoryName, "*.gpx"))
                 ProcessFile(filename, collector);
 
