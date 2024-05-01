@@ -3,7 +3,7 @@
 <!ENTITY OfficeRoot "file://localhost/D:/!Party1996/Trunk">
 <!ENTITY TestRoot1 "http://localhost/party1996">
 <!ENTITY TestRoot2 "file://localhost/D:/Леха/!Party/party1996/Trunk">
-<!ENTITY Root "http://party1996.narod.ru">
+<!ENTITY Root "https://party1996.narod.ru">
 <!ENTITY ScriptsDir "&Root;/Scripts">
 <!ENTITY PicsDir "&Root;/Images">
 ]>
